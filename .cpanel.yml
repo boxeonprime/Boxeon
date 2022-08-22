@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/m2owe0swaqa6/
-    - /bin/cp -R /home/m2owe0swaqa6/repo/ $DEPLOYPATH
