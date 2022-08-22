@@ -119,6 +119,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
         Route::get('/address', 'App\Http\Controllers\LabelsController@showAddress')->name('checkout.address');
         Route::post('/labels', 'App\Http\Controllers\LabelsController@rates')->name('labels.purchase');
         Route::get('/labels/charge', 'App\Http\Controllers\SquareController@charge');
+        Route::post('/create/card', 'App\Http\Controllers\SquareController@createCard');
+        Route::get('/create/card', 'App\Http\Controllers\SquareController@createCard');
         Route::get('/subscription', 'App\Http\Controllers\SubscriptionController@checkout')->name('subscription.checkout');
         Route::get('/subscription/create', 'App\Http\Controllers\SquareController@createSubscription')->name('subscription.upsert');
         Route::post('/subscription/create', 'App\Http\Controllers\SquareController@createSubscription')->name('subscription.upsert');

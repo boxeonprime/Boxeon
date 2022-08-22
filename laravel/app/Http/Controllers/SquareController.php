@@ -242,10 +242,6 @@ class SquareController extends Controller
         $id = auth()->user()->id;
         $user = User::find($id);
 
-        $sub = Subscription::where('user_id', '=', $id)
-            ->orderByDesc('created_at')
-            ->limit(1)
-            ->get();
 
         $subscription = json_decode($request['upsert']);
         $price = SubscriptionController::amount();
@@ -255,7 +251,7 @@ class SquareController extends Controller
 
             'source_id' => $subscription->sourceId,
             'amount' => $price['amount'] * 100,
-            'id' => $sub[0]['creator_id'],
+            'id' => $id,
 
         ]);
 
@@ -298,9 +294,9 @@ class SquareController extends Controller
         $saved = self::createCard([
 
             'source_id' => $payment_id,
-            'fullname' => $sub[0]['billing_given_name'] ?? $sub[0]['given_name'] . "" . $sub[0]['billing_family_name'] ?? $sub[0]['family_name'],
+            'fullname' => $user->billing_given_name ?? $user->given_name . "" . $user->billing_family_name ?? $user->family_name,
             'customer_id' => $user->customer_id,
-            'id' => $sub[0]['creator_id'],
+            'id' => $id,
 
         ]);
 
@@ -310,7 +306,7 @@ class SquareController extends Controller
         }
 
         // Create the subscription
-        $created_at = $sub[0]['created_at']->format('Y-m-d');
+        $created_at = $user->created_at->format('Y-m-d'); // C
         $response = Http::withHeaders(
             [
                 'Authorization' => "Bearer " . $this->config['square']['access_token'],
@@ -320,7 +316,7 @@ class SquareController extends Controller
         )->post($this->config['square']['subscriptionsEndpoint'], [
 
             "idempotency_key" => $subscription->sourceId,
-            "plan_id" => $sub[0]['plan_id'],
+            "plan_id" => $user->plan_id, // C
             "customer_id" => $user->customer_id,
             "card_id" => $saved->card->id,
             "location_id" => $this->config['square']['locationId'],
@@ -336,8 +332,7 @@ class SquareController extends Controller
         if (isset($response->subscription->id)) {
 
             Subscription::where('user_id', '=', $id)
-                ->where('creator_id', '=', $sub[0]['creator_id'])
-                ->where('plan_id', '=', $sub[0]['plan_id'])
+                ->where('plan_id', '=', $user->plan_id)
                 ->update([
 
                     'sub_id' => $response->subscription->id,
@@ -349,7 +344,7 @@ class SquareController extends Controller
             $stock = new SubscriptionController();
             $stock->updateStock(
 
-                $sub[0]['creator_id'], $sub[0]['version'], $sub[0]['stock']
+                $user->id, $user->version, $user->stock // C
             );
 
             #Queue an order placed system email

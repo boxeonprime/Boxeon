@@ -80,7 +80,7 @@
                 <div class="card step-wrapper">
                     <div>
                         <h2>3.&nbsp;&nbsp;&nbsp;Payment method</h2>
-                        <p><span class="material-icons">credit_card</span>&nbsp;<span data-type-id="payment" class="preview">Provide your card info to place your order.</span></p>
+                        <p><span class="material-icons">credit_card</span>&nbsp;<span data-type-id="payment" class="preview">Save your card info to place your order.</span></p>
                         <button data-type-id="payment" class="button edit-btn">EDIT</button>
                     </div>
                     <div id="payment" class="display-none-unimportant">
@@ -91,7 +91,7 @@
                                     type="button">&nbsp;SAVE</button>
                             </div>
 
-                            <input type='hidden' id='route' value='route'>
+                            <input type='hidden' id='route' value='/checkout/create/card'>
                         </form>
                         <div id="payment-status-container"></div>
                     </div>
