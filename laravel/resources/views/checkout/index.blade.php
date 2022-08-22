@@ -4,7 +4,6 @@
     <main id="checkout-main">
         <span></span>
         <div>
-          
             <section id="checkout-content" class="margin-top-6-em max-width-1035 three-rows-grid">
                 <div class="card step-wrapper display-none-unimportant">
                     <div>
