@@ -124,54 +124,7 @@ class SubscriptionController extends Controller
             return 3;
         }
     }
-    /**
-     * Create a subscription plan
-     *
-     * @param  Request  $request
-     * @return Response
-     */
-
-    public function createplan(Request $request)
-    {
-        $id = auth()->user()->id;
-        $user = User::find($id);
-
-        $id = auth()->user()->id;
-        $user = User::find($id);
-        $plan = json_decode($request["plan"]);
-
-        // Sets the subscription price
-        if ($plan->rate > 0) {
-            $plan->amount = $plan->total + $plan->rate;
-        } elseif ($plan->rate == 0) {
-            $plan->amount = $plan->total;
-        }
-
-        // Preparation for Square API
-        if ($plan->frequency == 1) {
-            $plan->cadence = "MONTHLY";
-        } elseif ($plan->frequency == 2) {
-            $plan->cadence = "EVERY_TWO_MONTHS";
-        } elseif ($plan->frequency == 3) {
-            $plan->cadence = "NINETY_DAYS";
-        }
-        $processor = new SquareController();
-        $response = json_decode($processor->createPlan($plan));
-
-        if (isset($response->catalog_object->id)) {
-            $plan->plan_id = $response->catalog_object->id;
-            $this->store($plan);
-            // Return plan_id for buyer to continue
-            return response()->json([
-                'plan_id' => $response->catalog_object->id,
-            ]);
-
-        } else {
-
-            return json_encode($response);
-        }
-
-    }
+    
     /**
      * Update the specified resource in storage.
      *

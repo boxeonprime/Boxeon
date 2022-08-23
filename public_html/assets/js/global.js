@@ -620,7 +620,7 @@ Subscriptions = {
 
   order: function (cart) {
 
-    let json = JSON.stringify(cart);
+    let json = JSON.stringify(cart); 
     var data = {
       method: "POST",
       action: "/checkout/order?order=" + json + "",
@@ -634,6 +634,8 @@ Subscriptions = {
         Boxeon.deleteCookie("cart");
         localStorage.setItem("celebrate", true);
         location.href = "/home/index";
+      }else{
+        console.log(re);
       }
     }
     Boxeon.loader();

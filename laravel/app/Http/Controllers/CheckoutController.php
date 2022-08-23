@@ -56,6 +56,7 @@ class CheckoutController extends Controller
     {
 
         $order = json_decode(json_decode($request["order"]));
+
         $id = auth()->user()->id;
         $user = User::find($id);
 
@@ -71,22 +72,47 @@ class CheckoutController extends Controller
             $sub["frequency"] = $item->plan;
             $sub["user_id"] = $id;
             $sub["quantity"] = $item->quantity;
+            $sub["created_at"] =  date('Y-m-d');
 
-            // Create Plan
+            # CREATE PLAN
 
-            $plan = json_decode(array("amount" => $sub["total"], "cadence" => $item->plan, "key" => uniqid()));
+            $plan = array("product" => $item->product, 
+            "amount" => $sub["total"], 
+            "frequency" => $item->plan, "key" => uniqid());
             
-            $response = SquareController::createPlan($plan);
+            $square = new SquareController();
+            
+            $response = $square->createPlan($plan);
 
+            if (isset($response->catalog_object->id)) {
+
+                $sub["plan_id"] = $response->catalog_object->id;
+
+            } else {
+
+                return json_encode($response);
+            }
+
+            // Save all results
+            
             DB::table("subscriptions")
                 ->insert($sub);
 
+            # CREATE SUBSCRIPTION
+
+          return $response = $square->createSubscription([
+
+                "plan_id" => $response->catalog_object->id
+
+           ]);
+
         }
-        // Call Square
 
         return true;
 
     }
+
+
 
     public function referal()
     {

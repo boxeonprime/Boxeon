@@ -36,7 +36,7 @@ class SquareController extends Controller
         $details['email'] = $user->email;
         $message = new OrderPlaced($user);
         SendEmailJob::dispatch($details, $message)->onQueue('emails');
-        dd($response);
+
     }
 
     /*
@@ -170,13 +170,11 @@ class SquareController extends Controller
 
             if (isset($new->customer->id)) {
 
-                $user->update([
-
-                    'customer_id' => $new->customer->id,
-                ]);
+                $user->customer_id = $new->customer->id;
+                $user->save();
 
             } else {
-                
+
                 return json_encode(array('status' => 'Unable to verify card'));
 
             }
@@ -204,23 +202,49 @@ class SquareController extends Controller
                     "postal_code" => $user->billing_postal_code ?? $user->postal_code,
                     "country" => $user->billing_country_code ?? $user->country_code,
                 ],
-                "cardholder_name" => $user->billing_given_name ?? $user->given_name . "" . $user->billing_family_name ?? $user->family_name,
+                "cardholder_name" => $user->billing_given_name ?? $user->given_name . " " . $user->billing_family_name ?? $user->family_name,
                 "customer_id" => $user->customer_id,
                 "reference_id" => "creator-id-" . $user->id,
             ],
 
         ]);
 
-        return json_decode($response);
+        // Save card ID
+
+        $response = json_decode($response);
+
+        $user->card_id = $response->card->id;
+        $user->save();
+
 
     }
 
     public function createPlan($plan)
     {
+        // Preparation for Square API
 
-        $price = (int) $plan->amount * 100;
-        // Returns 
-        return $response = Http::withHeaders(
+        if ($plan["frequency"] == 1) {
+
+            $plan["cadence"]= "MONTHLY";
+
+        } elseif ($plan["frequency"] == 2) {
+
+            $plan["cadence"]= "EVERY_TWO_MONTHS";
+
+        } elseif ($plan["frequency"] == 3) {
+
+            $plan["cadence"]= "NINETY_DAYS";
+
+        } elseif ($plan["frequency"] == 4) {
+
+            $plan["cadence"]= "ANNUAL";
+        }
+
+        $price = (int) $plan["amount"] * 100;
+
+        // NB: Returns
+
+       return  $response = Http::withHeaders(
             [
                 'Authorization' => "Bearer " . $this->config['square']['access_token'],
                 'Content-Type' => 'application/json',
@@ -228,15 +252,15 @@ class SquareController extends Controller
             ]
         )->post($this->config['square']['plansEndpoint'], [
 
-            "idempotency_key" => $plan->key,
+            "idempotency_key" => $plan["key"],
             "object" => [
                 "type" => "SUBSCRIPTION_PLAN",
                 "id" => "#plan",
                 "subscription_plan_data" => [
-                    "name" => "Subscription box",
+                    "name" => $plan["product"],
                     "phases" => [
                         [
-                            "cadence" => $plan->cadence,
+                            "cadence" => $plan["cadence"],
                             "recurring_price_money" => [
                                 "amount" => $price,
                                 "currency" => "USD",
@@ -248,24 +272,18 @@ class SquareController extends Controller
 
         ]);
 
+       
+
     }
 
-    public function createSubscription(Request $request)
+    public function createSubscription($request)
     {
 
         $id = auth()->user()->id;
         $user = User::find($id);
 
-        $subscription = json_decode($request['upsert']);
-        $price = SubscriptionController::amount();
+        $created_at = date('Y-m-d'); 
 
-
-        // Create plans
-        self::createPlan($subscription );
-
-
-        // Create the subscription
-        $created_at = $user->created_at->format('Y-m-d'); // C
         $response = Http::withHeaders(
             [
                 'Authorization' => "Bearer " . $this->config['square']['access_token'],
@@ -274,10 +292,10 @@ class SquareController extends Controller
             ]
         )->post($this->config['square']['subscriptionsEndpoint'], [
 
-            "idempotency_key" => $subscription->sourceId,
-            "plan_id" => $user->plan_id, // C
+            "idempotency_key" => uniqid(),
+            "plan_id" => $request['plan_id'], 
             "customer_id" => $user->customer_id,
-            "card_id" => $saved->card->id,
+            "card_id" => $user->card_id,
             "location_id" => $this->config['square']['locationId'],
             "start_date" => $created_at,
             "tax_percentage" => '0',
@@ -290,26 +308,19 @@ class SquareController extends Controller
 
         if (isset($response->subscription->id)) {
 
-            Subscription::where('user_id', '=', $id)
-                ->where('plan_id', '=', $user->plan_id)
-                ->update([
-
-                    'sub_id' => $response->subscription->id,
-                    'card_id' => $response->subscription->card_id,
-                    'status' => 1,
-                    'square_vid' => $response->subscription->version,
-                ]);
-
-            $stock = new SubscriptionController();
-            $stock->updateStock(
-
-                $user->id, $user->version, $user->stock// C
-            );
+            $Subscription->insert([
+                'user_id' => $id,
+                'plan_id' => $request['plan_id'],
+                'sub_id' => $response->subscription->id,
+                'card_id' => $user->card_id,
+                'status' => 1,
+                'square_vid' => $response->subscription->version,
+            ]);
 
             #Queue an order placed system email
-            $details['email'] = $user->email;
-            $message = new OrderPlaced($user);
-            SendEmailJob::dispatch($details, $message)->onQueue('emails');
+            // $details['email'] = $user->email;
+           //  $message = new OrderPlaced($user);
+          //   SendEmailJob::dispatch($details, $message)->onQueue('emails');
 
             Session::flash('message', 'Thank you!');
             return json_encode(array('redirectTo' => '/home/subscriptions'));
@@ -320,8 +331,6 @@ class SquareController extends Controller
         }
 
     }
-
-
 
     public function deleteSubscription($request)
     {
