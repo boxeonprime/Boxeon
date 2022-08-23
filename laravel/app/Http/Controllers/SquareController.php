@@ -93,10 +93,6 @@ class SquareController extends Controller
     {
         $id = auth()->user()->id;
         $user = User::find($id);
-        $subscription = Subscription::where('user_id', '=', $id)
-            ->orderByDesc('created_at')
-            ->limit(1)
-            ->get();
 
         $response = Http::withHeaders(
             [
@@ -106,18 +102,18 @@ class SquareController extends Controller
             ]
         )->post($this->config['square']['customersEndpoint'], [
 
-            "given_name" => $subscription[0]['billing_given_name'] ?? $subscription[0]['given_name'],
-            "family_name" => $subscription[0]['billing_family_name'] ?? $subscription[0]['family_name'],
+            "given_name" => $user->billing_given_name ?? $user->given_name,
+            "family_name" => $user->billing_family_name ?? $user->family_name,
             "email_address" => $user->email,
             "address" => [
-                "address_line_1" => $subscription[0]['billing_address_line_1'] ?? $subscription[0]['address_line_1'],
-                "address_line_2" => $subscription[0]['billing_address_line_2'] ?? $subscription[0]['address_line_2'] ?? "",
-                "locality" => $subscription[0]['billing_admin_area_2'] ?? $subscription[0]['admin_area_2'],
-                "administrative_district_level_1" => $subscription[0]['billing_admin_area_1'] ?? $subscription[0]['admin_area_1'],
-                "postal_code" => $subscription[0]['billing_postal_code'] ?? $subscription[0]['postal_code'],
-                "country" => $subscription[0]['billing_country_code'] ?? $subscription[0]['country_code'],
+                "address_line_1" => $user->billing_address_line_1 ?? $user->address_line_1,
+                "address_line_2" => $user->billing_address_line_2 ?? $user->address_line_2 ?? "",
+                "locality" => $user->billing_admin_area_2 ?? $user->admin_area_2,
+                "administrative_district_level_1" => $user->billing_admin_area_1 ?? $user->admin_area_1,
+                "postal_code" => $user->billing_postal_code ?? $user->postal_code,
+                "country" => $user->billing_country_code ?? $user->country_code,
             ],
-            "cardholder_name" => $subscription[0]['billing_ given_name'] ?? $subscription[0]['given_name'] . "" . $subscription[0]['billing_family_name'] ?? $subscription[0]['family_name'],
+            "cardholder_name" => $user->billing_given_name ?? $user->given_name . "" . $user->billing_family_name ?? $user->family_name,
             "reference_id" => '#early',
         ]);
         return json_decode($response);
@@ -135,12 +131,12 @@ class SquareController extends Controller
             ]
         )->post($this->config['square']['paymentsEndpoint'], [
 
-            "idempotency_key" => $request['source_id'],
+            "idempotency_key" => $request->sourceId,
             "amount_money" => [
                 "amount" => $request['amount'],
                 "currency" => "USD",
             ],
-            "source_id" => $request['source_id'],
+            "source_id" => $request->sourceId,
             "autocomplete" => true,
             "location_id" => $this->config['square']['locationId'],
             "reference_id" => "creator-id-" . $request['id'],
@@ -160,16 +156,34 @@ class SquareController extends Controller
 
     }
 
-    public function createCard($request)
+    public function createCard(Request $request)
     {
+        $request = json_decode($request["upsert"]);
 
         $id = auth()->user()->id;
         $user = User::find($id);
 
-        $subscription = Subscription::where('user_id', '=', $id)
-            ->orderByDesc('created_at')
-            ->limit(1)
-            ->get();
+        // Checkpoint 1
+        if (!isset($user->customer_id)) {
+
+            $new = self::createCustomer();
+
+            if (isset($new->customer->id)) {
+
+                $user->update([
+
+                    'customer_id' => $new->customer->id,
+                ]);
+
+            } else {
+                
+                return json_encode(array('status' => 'Unable to verify card'));
+
+            }
+        }
+
+        // Reload
+        $user = User::find($id);
 
         $response = Http::withHeaders(
             [
@@ -179,20 +193,20 @@ class SquareController extends Controller
             ]
         )->post($this->config['square']['cardsEndpoint'], [
 
-            "idempotency_key" => $request['source_id'],
-            "source_id" => $request['source_id'],
+            "idempotency_key" => $request->sourceId,
+            "source_id" => $request->sourceId,
             "card" => [
                 "billing_address" => [
-                    "address_line_1" => $subscription[0]['billing_address_line_1'] ?? $subscription[0]['address_line_1'],
-                    "address_line_2" => $subscription[0]['billing_address_line_2'] ?? $subscription[0]['address_line_2'] ?? "",
-                    "locality" => $subscription[0]['billing_admin_area_2'] ?? $subscription[0]['admin_area_2'],
-                    "administrative_district_level_1" => $subscription[0]['billing_admin_area_1'] ?? $subscription[0]['admin_area_1'],
-                    "postal_code" => $subscription[0]['billing_postal_code'] ?? $subscription[0]['postal_code'],
-                    "country" => $subscription[0]['billing_country_code'] ?? $subscription[0]['country_code'],
+                    "address_line_1" => $user->billing_address_line_1 ?? $user->address_line_1,
+                    "address_line_2" => $user->billing_address_line_2 ?? $user->address_line_2 ?? "",
+                    "locality" => $user->billing_admin_area_2 ?? $user->admin_area_2,
+                    "administrative_district_level_1" => $user->billing_admin_area_1 ?? $user->admin_area_1,
+                    "postal_code" => $user->billing_postal_code ?? $user->postal_code,
+                    "country" => $user->billing_country_code ?? $user->country_code,
                 ],
-                "cardholder_name" => $request['fullname'],
-                "customer_id" => $request['customer_id'],
-                "reference_id" => "creator-id-" . $request['id'],
+                "cardholder_name" => $user->billing_given_name ?? $user->given_name . "" . $user->billing_family_name ?? $user->family_name,
+                "customer_id" => $user->customer_id,
+                "reference_id" => "creator-id-" . $user->id,
             ],
 
         ]);
@@ -205,7 +219,7 @@ class SquareController extends Controller
     {
 
         $price = (int) $plan->amount * 100;
-
+        // Returns 
         return $response = Http::withHeaders(
             [
                 'Authorization' => "Bearer " . $this->config['square']['access_token'],
@@ -242,68 +256,13 @@ class SquareController extends Controller
         $id = auth()->user()->id;
         $user = User::find($id);
 
-
         $subscription = json_decode($request['upsert']);
         $price = SubscriptionController::amount();
 
-        // Checkpoint 1.
-        $payment_id = self::createPayment([
 
-            'source_id' => $subscription->sourceId,
-            'amount' => $price['amount'] * 100,
-            'id' => $id,
+        // Create plans
+        self::createPlan($subscription );
 
-        ]);
-
-        if ($payment_id == false) {
-
-         /*   Subscription::where('user_id', '=', $id)
-                ->orderByDesc('created_at')
-                ->limit(1)
-                ->delete();
-
-                */
-
-            return json_encode(array('status' => 'FAILURE'));
-
-        }
-
-        // Checkpoint 2.
-        if (!isset($user->customer_id)) {
-
-            $new = self::createCustomer();
-
-            if (isset($new->customer->id)) {
-
-                $user->update([
-
-                    'customer_id' => $new->customer->id,
-                ]);
-
-            } else {
-
-                return json_encode(array('status' => 'FAILURE'));
-
-            }
-        }
-
-        // Reload
-        $user = User::find($id);
-
-        // Checkpoint 3.
-        $saved = self::createCard([
-
-            'source_id' => $payment_id,
-            'fullname' => $user->billing_given_name ?? $user->given_name . "" . $user->billing_family_name ?? $user->family_name,
-            'customer_id' => $user->customer_id,
-            'id' => $id,
-
-        ]);
-
-        if (!isset($saved->card->id)) {
-
-            return json_encode(array('status' => 'FAILURE'));
-        }
 
         // Create the subscription
         $created_at = $user->created_at->format('Y-m-d'); // C
@@ -344,7 +303,7 @@ class SquareController extends Controller
             $stock = new SubscriptionController();
             $stock->updateStock(
 
-                $user->id, $user->version, $user->stock // C
+                $user->id, $user->version, $user->stock// C
             );
 
             #Queue an order placed system email
@@ -361,6 +320,8 @@ class SquareController extends Controller
         }
 
     }
+
+
 
     public function deleteSubscription($request)
     {

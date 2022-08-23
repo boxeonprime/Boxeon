@@ -1132,8 +1132,8 @@ window.onload = function () {
         "address_line_2": array[3],
         "admin_area_1": array[4],
         "admin_area_2": array[5],
-        "postal_code": array[6],
-        "country_code": array[7]
+        "postal_code": array[7],
+        "country_code": array[6]
       }
 
       Shipping.saveAddress(arr);
@@ -1170,8 +1170,8 @@ window.onload = function () {
         "billing_address_line_2": array[3],
         "billing_admin_area_1": array[4],
         "billing_admin_area_2": array[5],
-        "billing_postal_code": array[6],
-        "billing_country_code": array[7]
+        "billing_postal_code": array[7],
+        "billing_country_code": array[6]
       }
 
       Shipping.saveBilling(arr);

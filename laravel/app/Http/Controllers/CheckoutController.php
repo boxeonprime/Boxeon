@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Subscription;
+use App\Http\Controllers\SquareController;
 use App\Models\User;
 use Cookie;
 use Illuminate\Http\Request;
@@ -23,10 +23,10 @@ class CheckoutController extends Controller
 
         $id = auth()->user()->id;
         $user = User::find($id);
-      
+
         $address = DB::table("users")
-        ->where("id", $id)
-        ->get()[0];
+            ->where("id", $id)
+            ->get()[0];
 
         if (isset($_COOKIE["cart"])) {
             $cart = json_decode($_COOKIE["cart"]);
@@ -55,13 +55,13 @@ class CheckoutController extends Controller
     public function order(Request $request)
     {
 
-        $order = json_decode(json_decode($request["order"])); 
+        $order = json_decode(json_decode($request["order"]));
         $id = auth()->user()->id;
         $user = User::find($id);
 
         foreach ($order as $item) {
 
-           $basePrice = DB::table("products")
+            $basePrice = DB::table("products")
                 ->where("id", $item->product)
                 ->select("price")
                 ->get()[0]->price;
@@ -71,9 +71,15 @@ class CheckoutController extends Controller
             $sub["frequency"] = $item->plan;
             $sub["user_id"] = $id;
             $sub["quantity"] = $item->quantity;
+
+            // Create Plan
+
+            $plan = json_decode(array("amount" => $sub["total"], "cadence" => $item->plan, "key" => uniqid()));
             
+            $response = SquareController::createPlan($plan);
+
             DB::table("subscriptions")
-            ->insert($sub);
+                ->insert($sub);
 
         }
         // Call Square
