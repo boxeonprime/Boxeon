@@ -529,7 +529,7 @@ Small devices (portrait tablets and large phones, 600px and up)
 
   #header-inner-wrapper {
 
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
   }
 
   #header-inner-wrapper .button {

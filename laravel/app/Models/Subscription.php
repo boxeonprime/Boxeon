@@ -17,7 +17,7 @@ class Subscription extends Model
         'cpf',
         'sub_id',
         'date_created',
-        'version',
+        'square_vid',
         'price',
         'frequency',
         'status',

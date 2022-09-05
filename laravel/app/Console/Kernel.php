@@ -14,9 +14,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
 
-            Commands\Scraper::class,
-            Commands\DispatchCampaign::class
-        
+        Commands\Subscribe::class,
+
     ];
 
     /**
@@ -27,10 +26,10 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-         $schedule->command('minute:scrape')
-         ->everyMinute()
-         ->timezone('America/New_York')
-         ->between('03:00', '03:50');
+        $schedule->command('retry:sub')
+            ->everyMinute()
+            ->timezone('America/New_York')
+            ->between('03:00', '03:50');
     }
 
     /**
@@ -40,7 +39,7 @@ class Kernel extends ConsoleKernel
      */
     protected function commands()
     {
-        $this->load(__DIR__.'/Commands');
+        $this->load(__DIR__ . '/Commands');
 
         require base_path('routes/console.php');
     }

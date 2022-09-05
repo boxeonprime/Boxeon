@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\SubscriptionController;
 use App\Jobs\SendEmailJob;
 use App\Mail\OrderPlaced;
 use App\Models\Subscription;
@@ -10,6 +9,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\DB;
 
 class SquareController extends Controller
 {
@@ -216,7 +216,6 @@ class SquareController extends Controller
         $user->card_id = $response->card->id;
         $user->save();
 
-
     }
 
     public function createPlan($plan)
@@ -225,26 +224,26 @@ class SquareController extends Controller
 
         if ($plan["frequency"] == 1) {
 
-            $plan["cadence"]= "MONTHLY";
+            $plan["cadence"] = "MONTHLY";
 
         } elseif ($plan["frequency"] == 2) {
 
-            $plan["cadence"]= "EVERY_TWO_MONTHS";
+            $plan["cadence"] = "EVERY_TWO_MONTHS";
 
         } elseif ($plan["frequency"] == 3) {
 
-            $plan["cadence"]= "NINETY_DAYS";
+            $plan["cadence"] = "NINETY_DAYS";
 
         } elseif ($plan["frequency"] == 4) {
 
-            $plan["cadence"]= "ANNUAL";
+            $plan["cadence"] = "ANNUAL";
         }
 
         $price = (int) $plan["amount"] * 100;
 
         // NB: Returns
 
-       return  $response = Http::withHeaders(
+        return $response = Http::withHeaders(
             [
                 'Authorization' => "Bearer " . $this->config['square']['access_token'],
                 'Content-Type' => 'application/json',
@@ -272,8 +271,6 @@ class SquareController extends Controller
 
         ]);
 
-       
-
     }
 
     public function createSubscription($request)
@@ -282,9 +279,9 @@ class SquareController extends Controller
         $id = auth()->user()->id;
         $user = User::find($id);
 
-        $created_at = date('Y-m-d'); 
+        $created_at = date('Y-m-d');
 
-        $response = Http::withHeaders(
+       return Http::withHeaders(
             [
                 'Authorization' => "Bearer " . $this->config['square']['access_token'],
                 'Content-Type' => 'application/json',
@@ -292,8 +289,8 @@ class SquareController extends Controller
             ]
         )->post($this->config['square']['subscriptionsEndpoint'], [
 
-            "idempotency_key" => uniqid(),
-            "plan_id" => $request['plan_id'], 
+            "idempotency_key" => $request["key"],
+            "plan_id" => $request['plan_id'],
             "customer_id" => $user->customer_id,
             "card_id" => $user->card_id,
             "location_id" => $this->config['square']['locationId'],
@@ -304,31 +301,8 @@ class SquareController extends Controller
                 "name" => "Boxeon",
             ]]);
 
-        $response = json_decode($response);
+        # Update D
 
-        if (isset($response->subscription->id)) {
-
-            $Subscription->insert([
-                'user_id' => $id,
-                'plan_id' => $request['plan_id'],
-                'sub_id' => $response->subscription->id,
-                'card_id' => $user->card_id,
-                'status' => 1,
-                'square_vid' => $response->subscription->version,
-            ]);
-
-            #Queue an order placed system email
-            // $details['email'] = $user->email;
-           //  $message = new OrderPlaced($user);
-          //   SendEmailJob::dispatch($details, $message)->onQueue('emails');
-
-            Session::flash('message', 'Thank you!');
-            return json_encode(array('redirectTo' => '/home/subscriptions'));
-
-        } else {
-
-            return $response;
-        }
 
     }
 

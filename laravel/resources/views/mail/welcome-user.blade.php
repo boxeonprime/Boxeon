@@ -4,7 +4,8 @@
 
 
 
- <p>You have successfully joined our waiting list.</p>
+ <p>You have successfully created a Boxeon account. We're glad to have you!</p>
+ <p>Please reach out to us if you have any concerns.</p>
 
 
 Thanks you,<br>

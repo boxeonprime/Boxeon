@@ -7,7 +7,7 @@
             <img id='logo' src='{{ asset('../assets/images/logo.png') }}' alt='logo' />
         </a>
         <a class="button text-yellow hide" href="/shop/index?c=staple" title="Shop">Shop</a>
-        <a class="button text-yellow hide" href="/returns" title="Returns & Refunds">Returns & Refunds</a>
+        <a class="button text-yellow hide" href="/school/recipes" title="African Recipes">Recipes</a>
         <span class="hack"></span>
         <a id='m-shop' class='button one-em-font' href='/search/products' title='#'>
             <span class='material-icons'>search</span></a>

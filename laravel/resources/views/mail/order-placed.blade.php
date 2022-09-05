@@ -2,8 +2,7 @@
 
 Hi {{$user->given_name}}!
 
-You have sucessfully subscribed to your favorite creator. 
-Congratulations on being an early adopter of the next big thing. 
+You have sucessfully subscribed to your favorite African foods.  
 
 An email with a receipt was sent to you by our payment processor.
 

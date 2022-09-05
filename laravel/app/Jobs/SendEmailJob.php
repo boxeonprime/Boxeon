@@ -50,7 +50,7 @@ class SendEmailJob implements ShouldQueue
         dispatch(function () {
 
 
-            Mail::to($this->details['email'])->send($this->email)->cc("service@boxeon.com");
+            Mail::to($this->details['email'])->send($this->email)->cc("trevorprimenyc@gmail.com");
 
         })->afterResponse();
 

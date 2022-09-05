@@ -49,6 +49,9 @@ Route::prefix('school')->group(function () {
 
     Route::get('/subscriptions', 'App\Http\Controllers\SchoolController@index')->name('school.index');
     Route::get('/article/{article}', 'App\Http\Controllers\SchoolController@article')->name('school.article');
+    Route::get('/recipes', 'App\Http\Controllers\SchoolController@recipes')->name('school.recipes');
+    Route::get('/recipe', 'App\Http\Controllers\SchoolController@recipe')->name('school.recipe');
+
 
 });
 

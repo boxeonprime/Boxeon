@@ -8,6 +8,7 @@ use Cookie;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 class CheckoutController extends Controller
 {
@@ -60,6 +61,8 @@ class CheckoutController extends Controller
         $id = auth()->user()->id;
         $user = User::find($id);
 
+        $square = new SquareController();
+
         foreach ($order as $item) {
 
             $basePrice = DB::table("products")
@@ -72,47 +75,63 @@ class CheckoutController extends Controller
             $sub["frequency"] = $item->plan;
             $sub["user_id"] = $id;
             $sub["quantity"] = $item->quantity;
-            $sub["created_at"] =  date('Y-m-d');
+            $sub["created_at"] = date('Y-m-d');
 
             # CREATE PLAN
 
-            $plan = array("product" => $item->product, 
-            "amount" => $sub["total"], 
-            "frequency" => $item->plan, "key" => uniqid());
-            
-            $square = new SquareController();
-            
-            $response = $square->createPlan($plan);
+            $plan = array("product" => $item->product,
+                "amount" => $sub["total"],
+                "frequency" => $item->plan, "key" => uniqid());
+
+            $response = json_decode($square->createPlan($plan));
 
             if (isset($response->catalog_object->id)) {
 
                 $sub["plan_id"] = $response->catalog_object->id;
 
+                // Save all results
+
+                DB::table("subscriptions")
+                    ->insert($sub);
+
             } else {
 
-                return json_encode($response);
+                return json_decode($r);
             }
-
-            // Save all results
-            
-            DB::table("subscriptions")
-                ->insert($sub);
-
-            # CREATE SUBSCRIPTION
-
-          return $response = $square->createSubscription([
-
-                "plan_id" => $response->catalog_object->id
-
-           ]);
 
         }
 
-        return true;
+        # CREATE A SUBSCRIPTION
 
+        $upsert = array(
+
+            "plan_id" => $response->catalog_object->id,
+            "key" => uniqid());
+
+        $r = json_decode($square->createSubscription($upsert));
+
+        if (isset($r->subscription->id)) {
+
+            DB::table("subscriptions")
+                ->where("user_id", "=", $id)
+                ->where("plan_id", "=", $sub["plan_id"])
+                ->update([
+
+                    'sub_id' => $r->subscription->id,
+                    'card_id' => $user->card_id,
+                    'status' => 1,
+                    'square_vid' => $r->subscription->version,
+                ]);
+
+            # Retry failed subscription attempts
+            //Subscribe::dispatch($id)->onQueue('subs')
+            //->delay(now()->addMinutes(4));
+
+            Session::flash('message', 'Order placed!');
+            return true;
+
+        }
     }
-
-
 
     public function referal()
     {

@@ -24,4 +24,19 @@ class SchoolController extends Controller
         return view('school.' . $article, compact('user', $user));
     }
 
+
+    public function recipes(Request $request)
+    {
+       
+        $user = Auth::user();
+        return view('school.recipes.index', compact('user', $user));
+    }
+
+    public function recipe(Request $request)
+    {
+        $recipe = $request['r'];
+        $user = Auth::user();
+        return view('school.recipes.' . $recipe, compact('user', $user));
+    }
+
 }
