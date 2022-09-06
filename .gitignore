@@ -5,7 +5,6 @@
 /vendor
 .env
 server.php
-.cpanel.yml
 ftp-sync.json
 .env.backup
 .phpunit.result.cache
