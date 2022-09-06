@@ -1188,12 +1188,14 @@ window.onload = function () {
     for (let i = 0; i < form.length; i++) {
       form[i].addEventListener("submit", function (event) {
         event.preventDefault();
+        //LinkedIn
+        window.lintrk('track', { conversion_id: 9365452 });
         document.cookie = "checkout=" + "/checkout/index" + ";" + "path=/";
         location.assign("/checkout/index");
       });
     }
   }
-
+  
   // Place order
   if (document.getElementsByClassName("place-order")) {
     let form = document.getElementsByClassName("place-order");
