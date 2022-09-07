@@ -28,7 +28,7 @@
                     <ul>
                         <li>500g Soft Beef Cut</li>
 
-                        <li>1/2 Cup Suya Spice </li>
+                        <li><a href="/shop/item?id=47" class="one-em-font primary-color underline">1/2 Cup Suya Spice </a></li>
 
                         <li>Onions </li>
 
