@@ -5,7 +5,7 @@
     <main>
         <section class='section maxw1035 rounded-corner card'>
             <section class='section maxw1035 rounded-corner'>
-                <h1 class="ginormous center primary-color pacifico">Traditonal Cassava Fufu</h1>
+             
 
                 <div id="video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/qaVhde4qXIA"
@@ -16,7 +16,7 @@
                 </div>
                 <div>
                     <br>
-                    <h2 class="primary-color extra-large-font">Introduction</h2>
+                    <h1 class="font-size-3-em center primary-color">Traditonal Cassava Fufu</h1>
                     <p>Fufu (or fufuo, foofoo, foufou) is a dough-like food found in West African cuisine. In addition to
                         Ghana, it is also found in Sierra Leone, Guinea, Liberia, Cote D'Ivoire, Benin, Togo, Nigeria,
                         Cameroon, the Democratic Republic of Congo, the Central African Republic, the Republic of Congo,

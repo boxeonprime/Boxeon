@@ -1189,7 +1189,7 @@ window.onload = function () {
       form[i].addEventListener("submit", function (event) {
         event.preventDefault();
         //LinkedIn
-        window.lintrk('track', { conversion_id: 9365452 });
+      //  window.lintrk('track', { conversion_id: 9365452 });
         document.cookie = "checkout=" + "/checkout/index" + ";" + "path=/";
         location.assign("/checkout/index");
       });

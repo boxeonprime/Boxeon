@@ -5,7 +5,7 @@
     <main>
         <section class='section maxw1035 rounded-corner card'>
             <section class='section maxw1035 rounded-corner'>
-                <h1 class="ginormous center primary-color pacifico">Irresistible Honey Bean Porridge</h1>
+             
 
                 <div id="video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/Q8XZxxSOxj0?controls=0"
@@ -15,7 +15,7 @@
                 </div>
                 <div>
                     <br>
-                    <h2 class="primary-color extra-large-font">Introduction</h2>
+                    <h1 class="font-size-3-em center primary-color"> Honey Bean Porridge</h1>
                     <p>Nigerian beans porridge, also known as stewed beans, is a dietary staple in many households in the country. It is called “ewa riro” in Yoruba or sometimes just referred to as “ewa”, which means beans. It is similar to the Ghanaian “red red” and is perfect for vegetarians.</p>
                     <p>Beans are a staple food all throughout Africa because they are versatile, packed with protein, fiber, and full of flavor. It’s very common to find street vendors selling beans at the exit of most schools in Cameroon in the morning with puff-puff. You can also find them outside of the food markets in many cities and at most main plazas every day of the week. It is considered a breakfast or main meal depending on how it is prepared.</p>
                     <h2 class="primary-color extra-large-font">Ingredients</h2>

@@ -4,7 +4,7 @@
 @section('content')
     <main>
         <section class='section maxw1035 rounded-corner card'>
-            <h1 class="ginormous center primary-color pacifico">Nigerian Party Jollof Rice</h1>
+       
 
             <div id="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/z4tNAyRdo70"
@@ -13,8 +13,11 @@
                     allowfullscreen></iframe>
                 <br>
             </div>
+
             <div>
-                <h2 class="primary-color extra-large-font">Introduction</h2>
+                <br>
+                <h1 class="font-size-3-em center primary-color"> Nigerian Party Jollof Rice</h1>
+
 
                 <p>Jollof or Jollof Rice, is the most popular rice dish from West Africa. The dish is typically made with
                     long-grain rice, tomatoes, onions, spices, vegetables and meat in a single pot, although its ingredients

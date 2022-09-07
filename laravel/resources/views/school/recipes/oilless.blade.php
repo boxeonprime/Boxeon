@@ -4,7 +4,6 @@
 @section('content')
     <main>
         <section class='section maxw1035 rounded-corner card'>
-            <h1 class="ginormous center primary-color pacifico">Oilless Okra Soup</h1>
 
             <div id="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/oy8wLaviK3o?start=2"
@@ -14,7 +13,8 @@
             </div>
             <div>
                 <br>
-                <h2 class="primary-color extra-large-font">Introduction</h2>
+                <h1 class="font-size-3-em center primary-color"> Oilless Okra Soup</h1>
+
 
                 <p>Okra soup (African okro soup) is made with okra vegetables cooked in a delicious mixture of palm oil, shrimps, goat meat, fish, and African spices and simmered to perfection!</p>
                 <p>Okra Soup is one of the quickest and easiest Nigerian soups to prepare. Some argue that a lot of work goes to the cutting of the two vegetables used in preparing this recipe. Yes but once the vegetables are ready; it cooks in no time at all.</p>

@@ -4,9 +4,7 @@
 @section('content')
     <main>
         <section class='section maxw1035 rounded-corner card'>
-            <section class='section maxw1035 rounded-corner'>
-                <h1 class="ginormous center primary-color pacifico">Easy African Black Beans Stew</h1>
-
+           
                 <div id="video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/uayXFGMINlc?controls=0"
                         title="YouTube video player" frameborder="0"
@@ -15,7 +13,7 @@
                 </div>
                 <div>
                     <br>
-                    <h2 class="primary-color extra-large-font">Introduction</h2>
+                    <h1 class="primary-color font-size-3-em">African Black Beans Stew</h1>
                     <p>African Black Beans Stew - tasty and comforting bean stew flavored with garlic, ginger, onions, and intensified with crayfish for ultimate comfort food.</p>
                     <p>Beans are a staple food all throughout Africa because they are versatile, packed with protein, fiber, and full of flavor. It’s very common to find street vendors selling beans at the exit of most schools in Cameroon in the morning with puff-puff. You can also find them outside of the food markets in many cities and at most main plazas every day of the week. It is considered a breakfast or main meal depending on how it is prepared.</p>
                     <h2 class="primary-color extra-large-font">Ingredients</h2>

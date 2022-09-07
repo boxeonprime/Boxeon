@@ -4,7 +4,7 @@
 @section('content')
     <main>
         <section class='section maxw1035 rounded-corner card'>
-            <h1 class="ginormous center primary-color pacifico">Nigerian Ata Dindin / Ata Rice</h1>
+ 
 
             <div id="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5JLUhzyas?start=2"
@@ -14,7 +14,7 @@
             </div>
             <div>
                 <br>
-                <h2 class="primary-color extra-large-font">Introduction</h2>
+                <h1 class="font-size-3-em center primary-color">Nigerian Ata Dindin</h1>
 
                 <p>Nigerian peppered stew, also known as ata din din in the Yoruba language, is commonly served with rice,
                     boiled yam, roasted plantain (boli), and many other dishes.</p>

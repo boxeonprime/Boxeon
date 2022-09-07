@@ -916,6 +916,7 @@ dialog p {
   width: auto;
   display: block;
   margin: auto;
+  height: 200px;
 }
 
 #index #masthead {
@@ -926,7 +927,14 @@ dialog p {
   max-height: 56em;
 
 }
+#mealkit-masthead {
+  background-color: #d3fb95;
+  background-image: url('../images/shop.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 70em;
 
+}
 
 #box #masthead {
   height: 51em;
@@ -1384,8 +1392,8 @@ dialog p {
   position: relative;
   padding-bottom: 56.25%;
   /* 16:9 */
-  height: 0;
-  overflow: hidden;
+  height: auto;
+ margin-bottom: 4em;
   width: 100%
 }
 
@@ -2654,7 +2662,10 @@ a {
   max-width: 600px;
   width: 100%;
 }
-
+.maxw300px {
+  max-width: 300px;
+  width: 100%;
+}
 .block {
   width: 100%;
   background-color: green;
@@ -3402,7 +3413,7 @@ table {
 }
 
 .pacifico {
-  font-size: 3.25rem !important;
+  font-family: pacifico;
 }
 
 pre,

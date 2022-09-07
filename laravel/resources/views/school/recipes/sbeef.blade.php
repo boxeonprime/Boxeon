@@ -4,8 +4,6 @@
 @section('content')
     <main>
         <section class='section maxw1035 rounded-corner card'>
-            <section class='section maxw1035 rounded-corner'>
-                <h1 class="ginormous center primary-color pacifico">Delicious Nigerian Suya Beef</h1>
 
                 <div id="video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/c27vMVHEJJ4"
@@ -15,7 +13,8 @@
                 </div>
                 <div>
                     <br>
-                    <h2 class="primary-color extra-large-font">Introduction</h2>
+                    <h1 class="font-size-3-em center primary-color">Nigerian Suya Beef</h1>
+
                     <p>Suya Beef is Nigerian street food at its finest: Skewers of spiced, nutty, smoky, charred beef,
                         served with raw onions, tomatoes, cilantro, lettuce, and freshly squeezed lime juice.</p>
                     <p>Suya or tsire is traditional smoked spiced meat skewer which originates from Northern Nigeria, Hausa
@@ -47,7 +46,8 @@
 
                         <li>1 tbsp Garlic Powder </li>
 
-                        <li>2 Bouillon Cubes </li>
+                        <li><a href="/shop/item?id=53" class="one-em-font primary-color underline">2 Bouillon Cubes</a> </li>
+
                         <li>salt To Taste </li>
 
                         <li>Salt to taste</li>

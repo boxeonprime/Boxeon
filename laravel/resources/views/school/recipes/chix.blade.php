@@ -4,7 +4,7 @@
 @section('content')
     <main>
         <section class='section maxw1035 rounded-corner card'>
-            <h1 class="ginormous center primary-color pacifico">Nigerian Chicken Stew</h1>
+          
 
             <div id="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/rOwsAhJ8HpI?start=14"
@@ -14,7 +14,7 @@
             </div>
             <br>
             <div>
-                <h2 class="primary-color extra-large-font">Introduction</h2>
+                <h1 class="font-size-3-em center primary-color">Nigerian Chicken Stewn</h1>
 
                 <p>Nigerian chicken stew is a delightful West African stew made with chicken thighs and simmered in a savory
                     sauce made with tomatoes and peppers. It is so versatile and can be eaten with many different dishes!

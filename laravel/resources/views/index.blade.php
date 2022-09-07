@@ -26,6 +26,7 @@
               
             </div>
         </section>
+        
         @include('includes.shop-products')
         
         <section id="creators-bar" class="max-width-1035 section  mobile-scroll display-none">

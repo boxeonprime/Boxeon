@@ -4,7 +4,6 @@
 @section('content')
     <main>
         <section class='section maxw1035 rounded-corner card'>
-            <h1 class="ginormous center primary-color pacifico">Nigerian Egusi Soup</h1>
 
             <div id="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/XeZJlxAsP18?start=13"
@@ -15,7 +14,8 @@
             <br>
 
             <div>
-                <h2 class="primary-color extra-large-font">Introduction</h2>
+                <h1 class="font-size-3-em center primary-color">Nigerian Egusi Soup</h1>
+
                 <p>Egusi (also known by variations including egwusi, agusi, ohue, Ikpan, Ikon, and agushi) is the name for
                     the
                     protein-rich seeds of certain cucurbitaceous plants (squash, melon, gourd), which after being dried and

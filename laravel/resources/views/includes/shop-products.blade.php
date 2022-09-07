@@ -51,6 +51,7 @@ if (isset($_GET['c'])) {
                 @endphp
 
                 @include('includes.stars')
+            
                 @include('includes.plan-form')
 
             </div>

@@ -10,7 +10,7 @@
         <div>
             <img id="img-reminder" class="image-how-it-works" src="../assets/images/reminder.svg" alt="Reminder" />
             <h2 class="centered">Create subscription</h2>
-            <p class="centered">Click "Subscribe now" and then "Proceed to Checkout". No fees. Cancel anytime.</p>
+            <p class="centered">Click "Subscribe now" and then "Proceed to Checkout". Flat rate shipping. Cancel anytime.</p>
         </div>
         <div>
             <img id="img-gifts" class="image-how-it-works" src="../assets/images/gifts.svg" alt="Gifts" />
