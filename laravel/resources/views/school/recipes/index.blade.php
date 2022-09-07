@@ -216,7 +216,7 @@ $price = DB::table('products')
                 data-id="65" data-baseprice="{{ $price }}" data-price="{{ $price }}" class="cart-add button center">SUBSCRIBE NOW</button>
                 
                 <section class="section">
-                    <h2 class="center primary-color extra-large-font uppercase">Meal-kit Author</h2>
+                    <h2 class="center primary-color extra-large-font uppercase">Mealkit Author</h2>
                     <img class="center maxw300px" src="../assets/images/sisi.jpeg">
                     <h4 class="centered extra-large-font">Hi, I'm Jemimah Adebiyi, the mealkit author.<br>
                         Thanks for stopping by!</h4>
