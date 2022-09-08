@@ -1,21 +1,20 @@
 @php
 
-                
 $price = DB::table('products')
-    ->whereIn('products.id', [47, 10, 8, 36, 9, 4, 48, 14, 26, 7, 41, 38, 65, 66, 67, 53])
+    ->whereIn('products.id', [47, 10, 8, 36, 9, 4, 48, 14, 26, 7, 41, 38, 66, 67, 53])
     ->sum('price');
 
 @endphp
 
 @extends('layouts.index')
-@section('title', 'Boxeon.com African Foods Recipes')
+@section('title', 'Boxeon.com African Meal-kits Delivered Monthly')
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <div id="mealkit-masthead">
         <aside class="centered asides call-out mobile-scroll"><br>
             <h2 id="headline_h1" class="font-size-3-em">African Meal-kits Delivered To You Monthly</h2>
             <p class="centered center font-1-5-em">Don't know how to cook African foods? Boxeon's African Staples Mealkit
-                has all the ingredients and recipes you need to taste Mama Africa. Subscribe now. Cancel anytime.
+                has all the ingredients and recipes you need to taste Mama Africa.
             </p><br>
             <form class="form-plan center">
                 <select class="select-plan margin-top-zero" name="quantity">
@@ -39,8 +38,9 @@ $price = DB::table('products')
 
             </form>
             <button data-quantity="1" data-name="African Staples Mealkit" data-plan="1" data-img="sisi.jpeg"
-                data-id="[47, 10, 8, 36, 9, 4, 48, 14, 26, 7, 41, 38, 53]" data-baseprice="{{ $price }}" data-price="{{ $price }}" class="cart-add button center">SUBSCRIBE NOW</button>
-                
+                data-id="[47, 10, 8, 36, 9, 4, 48, 14, 26, 7, 41, 38, 53]" data-baseprice="{{ $price }}"
+                data-price="{{ $price }}" class="cart-add button center">SUBSCRIBE NOW</button>
+
         </aside>
         <br><br>
     </div>
@@ -57,7 +57,7 @@ $price = DB::table('products')
                 </div>
                 <div>
                     <img id="img-reminder" class="image-how-it-works" src="../assets/images/bike.png" alt="Delivery" />
-                    <h2 class="centered">Recieve subscription</h2>
+                    <h2 class="centered">Receive subscription</h2>
                     <p class="centered">Recieve your delivery at home. Use our recipes and instructional videos to prepare
                         your meals. </p>
                 </div>
@@ -72,7 +72,7 @@ $price = DB::table('products')
         <section class='section maxw1035 rounded-corner card'>
             <h2 class="center extra-large-font uppercase primary-color">Meals & Recipes</h2><br>
 
-            <div class="three-col-grid grid-gap-1-em">
+            <div class="recipes-stream">
 
                 <div class="p-relative">
                     <a href="/school/recipe?r=egusi"> <img width="500px" src="../assets/images/egusi.jpeg"></a>
@@ -180,16 +180,15 @@ $price = DB::table('products')
 
             <br>
             <section class="section margin-top-4-em">
-                <h2 class="center extra-large-font uppercase primary-color">What We Ship You</h2><br>
-
-
+                <h2 class="center extra-large-font uppercase primary-color">What We Ship You</h2>
+                <br>
             </section>
 
             @include('includes.mealkit')
 
-    
+            <section class="section margin-top-4-em">
 
-            <h2 class="center font-size-3-em primary-color">Choose schedule & subscribe!</h2><br>
+            <h2 class="center centered font-size-3-em primary-color">Choose schedule & subscribe!</h2><br>
 
             <form class="form-plan center">
                 <select class="select-plan margin-top-zero" name="quantity">
@@ -213,15 +212,15 @@ $price = DB::table('products')
 
             </form>
             <button data-quantity="1" data-name="African Mealkit by Jemimah" data-plan="1" data-img="sisi.jpeg"
-                data-id="[47, 10, 8, 36, 9, 4, 48, 14, 26, 7, 41, 38, 53]" data-baseprice="{{ $price }}" data-price="{{ $price }}" class="cart-add button center">SUBSCRIBE NOW</button>
-                
-                <section class="section">
-                    <h2 class="center primary-color extra-large-font uppercase">Mealkit Author</h2>
-                    <img class="center maxw300px" src="../assets/images/sisi.jpeg">
-                    <h4 class="centered extra-large-font">Hi, I'm Jemimah Adebiyi, the mealkit author.<br>
-                        Thanks for stopping by!</h4>
-                </section>
-
+                data-id="[47, 10, 8, 36, 9, 4, 48, 14, 26, 7, 41, 38, 53]" data-baseprice="{{ $price }}"
+                data-price="{{ $price }}" class="cart-add button center">SUBSCRIBE NOW</button>
+            <section class="section">
+                <h2 class="center primary-color extra-large-font uppercase">Mealkit Author</h2>
+                <img class="center maxw300px" src="../assets/images/sisi.jpeg">
+                <h3 class="centered center font-1-5-em">Hi, I'm Jemimah Adebiyi, the mealkit author.<br>
+                    Thanks for stopping by!</h3>
+            </section>
+        </section>
         </section>
 
 

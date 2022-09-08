@@ -3,7 +3,7 @@
 <meta property="og:description" content="African store online, Shop African food online, African snacks" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://boxeon.com" />
-<meta property="og:image" content="{{ asset('../assets/images/high-five.png') }}">
+<meta property="og:image" content="{{ asset('../assets/images/high-five.jpg') }}">
 <meta name="description"
     content="African store online, Shop African food online, African snacks." />
 <meta name="keywords"

@@ -2040,7 +2040,7 @@ dialog p {
 .secondary_color {
   color: #009688;
 }
-
+.recipes-stream,
 .three-col-grid {
   display: grid;
   grid-gap: 1em;
@@ -2345,7 +2345,10 @@ container when the user clicks on the dropdown button) */
 
 .p-title {
   position: relative;
-  bottom: 4em;
+  bottom: 50%;
+  font-size: 1em;
+  letter-spacing: 2px;
+  font-weight: normal;
 }
 
 /*.numbers {

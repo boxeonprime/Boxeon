@@ -8,6 +8,7 @@ Extra small devices (phones, 476px and down)
 
 @media only screen and (max-width: 476px) {
 
+  .three-col-grid,
   #product-stream .two-col-grid,
   #checkout-content .two-col-grid {
     display: block;
@@ -75,6 +76,13 @@ Extra small devices (phones, 600px and down)
 */
 @media only screen and (max-width: 600px) {
 
+  .p-relative img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    
+}
+
   .charitable-grid {
   
     width: auto;
@@ -103,6 +111,7 @@ Extra small devices (phones, 600px and down)
 #item #banner-footer{
 display: none;
 }
+.recipes-stream,
   #product-stream,
   #checkout-content .two-col-grid {
     display: block;
@@ -117,7 +126,7 @@ display: none;
   .margin-top-6-em {
     margin-top: 0 !important;
   }
-
+  .recipes-stream,
   #product-stream {
     grid-template-columns: 0 !important;
     grid-template-rows: auto auto !important;
@@ -269,7 +278,7 @@ display: none;
 
   /* General */
 
-  #index #masthead {
+  #index #masthead,  #mealkit-masthead, {
     height: 1100px;
     background-size: 100%, 30%;
 
@@ -513,6 +522,8 @@ Small devices (portrait tablets and large phones, 600px and up)
     display: none;
   } */
   
+  
+  .recipes-stream,
   .products-stream {
     
     grid-template-columns: 50% 50%;
@@ -709,6 +720,11 @@ Medium devices (landscape tablets, 768px and up)
 /* Large devices (laptops/desktops, 992px and down) */
 @media only screen and (max-width: 992px) {
 
+  #masthead {
+
+    background-position-x: -35em;
+  }
+
   .hack{
     display: none;
   }
@@ -739,7 +755,7 @@ Medium devices (landscape tablets, 768px and up)
    display: none;
   }
 
-  #index #masthead,
+  #mealkit-masthead,  #mealkit-masthead,
   #banner-footer {
     background-image: none;
 
@@ -751,7 +767,7 @@ Medium devices (landscape tablets, 768px and up)
 
   }
 
-  #index #masthead {
+  #index #masthead,  #mealkit-masthead, {
 
     max-height: 44em;
   }
@@ -771,7 +787,12 @@ Medium devices (landscape tablets, 768px and up)
 
 @media only screen and (min-width: 992px) {
 
- 
+  #mealkit-masthead {
+
+    background-position-x: -35em;
+}
+
+
 
 
   #header-inner-wrapper {

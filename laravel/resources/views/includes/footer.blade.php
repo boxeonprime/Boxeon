@@ -104,6 +104,7 @@
 
 <dialog id="m">
     <a href="#" class="close-dialog">X</a><br>
+    <a href="/school/recipes" class="button clearbtn">Meal Kit</a>
     <a href="/shop/index?c=staple" class="button clearbtn">Staple Essentials</a>
     <a href="/shop/index?c=spice" class="button clearbtn">Seasoning Essentials</a>
     <a href="/shop/index?c=produce" class="button clearbtn">Produce</a>

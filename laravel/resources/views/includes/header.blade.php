@@ -12,7 +12,7 @@
         <a id='m-shop' class='button one-em-font' href='/search/products' title='#'>
             <span class='material-icons'>search</span></a>
         @auth
-            <a href="tel:+1646-450-4671‬" class="button one-em-font phone-hide">646-450-4671‬</a>
+            <a href="/gifts" class="button one-em-font phone-hide">Gifts‬</a>
             <a href="/cart/index" class="white button"><span><img id="cart" class="w30px" src="../assets/images/cart.png"
                         alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
         @endauth

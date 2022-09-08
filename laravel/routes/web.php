@@ -28,6 +28,7 @@ Route::get('/signout', function () {
     return view('signout');
 });
 
+Route::get('/gifts', 'App\Http\Controllers\InvitationsController@gifts')->name('gifts');
 Route::get('/terms', 'App\Http\Controllers\HomeController@terms')->name('terms');
 Route::get('/returns', 'App\Http\Controllers\HomeController@returns')->name('returns');
 Route::get('/privacy', 'App\Http\Controllers\HomeController@privacy')->name('privacy');

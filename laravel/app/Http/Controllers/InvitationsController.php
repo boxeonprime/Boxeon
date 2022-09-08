@@ -24,11 +24,22 @@ class InvitationsController extends Controller
         $user = Auth::user();
         return view('index', compact('user'));
     }
+
+
     public function rewards(){
         $id = auth()->user()->id;
         $user = User::find($id);
         return view('invitations.rewards', compact('user', $user));
     }
+
+
+    public function gifts(){
+        $id = auth()->user()->id;
+        $user = User::find($id);
+        return view('invitations.index', compact('user', $user));
+    }
+
+
     public function show(){
         // Show a users earn rewards
     }
