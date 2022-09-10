@@ -69,7 +69,7 @@ class SquareController extends Controller
             "location_id" => $this->$config['square']['locationId'],
             "note" => "One-time purchase", 
             "app_fee_money" => [
-                "amount" => 1,
+                "amount" => 3,
                 "currency" => "USD"]]);
 
         if ($response->status() == 200) {
