@@ -941,7 +941,7 @@ dialog p {
   background-color: #fcec63;
   background-image: url('../images/ribbons.png'), url('../images/gifts.png');
   max-height: 56em;
-background-size: cover, contain;
+  background-size: cover, contain;
   background-repeat: no-repeat;
   background-position: left bottom, right top;
 
@@ -2253,7 +2253,7 @@ background-size: cover, contain;
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #B12704;
-  color:#fcec63;
+  color: #fcec63;
   cursor: pointer;
 }
 

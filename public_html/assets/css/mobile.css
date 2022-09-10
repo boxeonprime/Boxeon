@@ -278,7 +278,7 @@ display: none;
 
   /* General */
 
-  #index #masthead,  #mealkit-masthead, {
+  #index #masthead {
     height: 1100px;
     background-size: 100%, 30%;
 
@@ -719,6 +719,24 @@ Medium devices (landscape tablets, 768px and up)
 
 /* Large devices (laptops/desktops, 992px and down) */
 @media only screen and (max-width: 992px) {
+  #mealkit-masthead {
+
+    // background-position-x: -35em;
+    background-position-x: -40em;
+    background-size: auto;
+ }
+
+ .select-plan, .products-stream form select {
+   background-color:white;
+  border: 1px solid #0000001c;
+}
+  #gifts-masthead {
+    background-image: url('../images/gifts.png');
+    background-size: cover;
+    background-position: center 20em;
+}
+  
+  }
 
   #masthead {
 
@@ -755,7 +773,7 @@ Medium devices (landscape tablets, 768px and up)
    display: none;
   }
 
-  #mealkit-masthead,  #mealkit-masthead,
+ 
   #banner-footer {
     background-image: none;
 
@@ -787,12 +805,14 @@ Medium devices (landscape tablets, 768px and up)
 
 @media only screen and (min-width: 992px) {
 
-  #mealkit-masthead {
 
-    background-position-x: -35em;
+
+#gifts-masthead {
+  background-image: url('../images/ribbons.png');
+  background-size: cover;
+  background-position: -10em bottom;
+
 }
-
-
 
 
   #header-inner-wrapper {

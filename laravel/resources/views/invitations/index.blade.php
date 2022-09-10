@@ -26,7 +26,7 @@
                     <p class="centered">Click "Add to Cart" and then "Proceed to Checkout". Flat rate shipping. Cancel anytime.</p>
                 </div>
                 <div>
-                    <img id="img-shopping" class="image-how-it-works" src="../assets/images/shopping.png" alt="Shopping" />
+                    <img id="img-shopping" class="image-how-it-works" src="../assets/images/delivered.png" alt="Shopping" />
                     <h2 class="centered">We ship your gifts</h2>
                     <p class="centered">Provide the recipient's address upon checkout. We'll handle the rest.</p>
                 </div>
