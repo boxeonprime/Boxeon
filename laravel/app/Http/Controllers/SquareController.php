@@ -83,10 +83,10 @@ class SquareController extends Controller
             } else {
 
                // return json_encode(array('status' => 'FAILURE'));
-               return $completed;
+               return $response;
             }
         } else {
-            return $completed;
+            return $response;
           //  return json_encode(array('status' => 'FAILURE'));
         }
 
