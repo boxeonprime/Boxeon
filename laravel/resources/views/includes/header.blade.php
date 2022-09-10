@@ -17,7 +17,7 @@
                         alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
         @endauth
         @if (!Auth::check())
-            <a href="tel:+1646-450-4671‬" class="button phone-hide">646-450-4671‬</a>
+        <a href="/gifts" class="button one-em-font phone-hide">Gifts‬</a>
             <a href="/cart/index" class="white button"><span><img class="w30px"
                         src="../assets/images/cart.png" alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
         @endif

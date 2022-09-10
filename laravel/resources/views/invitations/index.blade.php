@@ -1,18 +1,39 @@
 @extends('layouts.index')
 @section('title', 'Boxeon.com Give Someone You Love A Taste Of Africa')
 @section('content')
-    <div id="masthead">
+    <div id="gifts-masthead">
         <aside class="centered asides call-out mobile-scroll"><br>
-            <h2 id="headline_h1" class="font-size-3-em">Give Someone You Love A Taste Of Home</h2>
-            <p class="centered center font-1-5-em">Home in a box. Subscribe to monthly deliveries of your favorite foods from
-                home
-                to save time and money. Cancel anytime.</p><br>
+            <h2 id="headline_h1" class="font-size-3-em">Gift A Special Someone A Taste Of Home</h2>
+            <p class="centered center font-1-5-em">Send your friend or relative some African snacks from their childhood to satisfy their nostalgia.</p><br>
             <a href="#whatis" class="button uppercase">GET STARTED</a>
         </aside>
         <br><br>
     </div>
     <main> <a id='whatis' href='#whatis'></a>
-        @include('includes.works')
+        
+        <section class="section maxw1035 margin-bottom-4-em  mobile-scroll">
+            <br>
+            <h2 class="centered">HOW IT WORKS</h2>
+            <div id="how-it-works" class="three-col-grid">
+                <div>
+                    <img id="img-gifts" class="image-how-it-works" src="../assets/images/gifts.svg" alt="Gifts" />
+                    <h2 class="centered">Shop gifts</h2>
+                    <p class="centered">Choose the African foods you want, then select your quantity and subscription schedule.</p>
+                </div>
+                <div>
+                    <img id="img-reminder" class="image-how-it-works" src="../assets/images/reminder.svg" alt="Reminder" />
+                    <h2 class="centered">Place order</h2>
+                    <p class="centered">Click "Subscribe now" and then "Proceed to Checkout". Flat rate shipping. Cancel anytime.</p>
+                </div>
+                <div>
+                    <img id="img-shopping" class="image-how-it-works" src="../assets/images/shopping.png" alt="Shopping" />
+                    <h2 class="centered">We ship your gifts</h2>
+                    <p class="centered">Redeem, your offers and claim your gifts. We'll handle the rest.</p>
+                </div>
+        
+            </div>
+
+        </section>
         
         @include('includes.gifts')
         

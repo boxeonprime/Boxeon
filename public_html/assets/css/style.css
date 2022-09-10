@@ -893,7 +893,7 @@ dialog p {
   bottom: 5px;
 }
 
-
+#gifts-masthead,
 #masthead {
   grid-row-end: 3;
   grid-row-start: 3;
@@ -927,12 +927,23 @@ dialog p {
   max-height: 56em;
 
 }
+
 #mealkit-masthead {
   background-color: #d3fb95;
   background-image: url('../images/shop.png');
   background-size: cover;
   background-repeat: no-repeat;
   max-height: 70em;
+
+}
+
+#gifts-masthead {
+  background-color: #fcec63;
+  background-image: url('../images/ribbons.png'), url('../images/gifts.png');
+  max-height: 56em;
+background-size: cover, contain;
+  background-repeat: no-repeat;
+  background-position: left bottom, right top;
 
 }
 
@@ -1393,7 +1404,7 @@ dialog p {
   padding-bottom: 56.25%;
   /* 16:9 */
   height: auto;
- margin-bottom: 4em;
+  margin-bottom: 4em;
   width: 100%
 }
 
@@ -2040,6 +2051,7 @@ dialog p {
 .secondary_color {
   color: #009688;
 }
+
 .recipes-stream,
 .three-col-grid {
   display: grid;
@@ -2241,7 +2253,7 @@ dialog p {
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #B12704;
-  color: yellow;
+  color:#fcec63;
   cursor: pointer;
 }
 
@@ -2665,10 +2677,12 @@ a {
   max-width: 600px;
   width: 100%;
 }
+
 .maxw300px {
   max-width: 300px;
   width: 100%;
 }
+
 .block {
   width: 100%;
   background-color: green;

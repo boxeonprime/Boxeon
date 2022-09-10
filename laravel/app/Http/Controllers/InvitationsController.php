@@ -34,8 +34,7 @@ class InvitationsController extends Controller
 
 
     public function gifts(){
-        $id = auth()->user()->id;
-        $user = User::find($id);
+        $user = Auth::user();
         return view('invitations.index', compact('user', $user));
     }
 

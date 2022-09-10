@@ -31,14 +31,14 @@ $price = DB::table('products')
                     name="plan">
                     <option invalid="">Select Subscription</option>
                     <option value="1" selected="">${{ $price }} - Every month</option>
-                    <option value="2">${{ $price }} - Every 2 months</option>
-                    <option value="3">${{ $price }} - Every 3 months</option>
-                    <option value="0">${{ $price }} - One-time purchase</option>
+                    <option value="2">${{ $price + 1}} - Every 2 months</option>
+                    <option value="3">${{ $price + 2}} - Every 3 months</option>
+                    <option value="0">${{ $price + 3 }} - One-time purchase</option>
                 </select>
 
             </form>
             <button data-quantity="1" data-name="African Staples Mealkit" data-plan="1" data-img="sisi.jpeg"
-                data-id="[47, 10, 8, 36, 9, 4, 48, 14, 26, 7, 41, 38, 53]" data-baseprice="{{ $price }}"
+                data-id="65" data-baseprice="{{ $price }}"
                 data-price="{{ $price }}" class="cart-add button center">SUBSCRIBE NOW</button>
 
         </aside>
@@ -205,14 +205,14 @@ $price = DB::table('products')
                     name="plan">
                     <option invalid="">Select Subscription</option>
                     <option value="1" selected="">${{ $price }} - Every month</option>
-                    <option value="2">${{ $price }} - Every 2 months</option>
-                    <option value="3">${{ $price }} - Every 3 months</option>
-                    <option value="0">${{ $price }} - One-time purchase</option>
+                    <option value="2">${{ $price +1}} - Every 2 months</option>
+                    <option value="3">${{ $price +2}} - Every 3 months</option>
+                    <option value="0">${{ $price +3}} - One-time purchase</option>
                 </select>
 
             </form>
             <button data-quantity="1" data-name="African Mealkit by Jemimah" data-plan="1" data-img="sisi.jpeg"
-                data-id="[47, 10, 8, 36, 9, 4, 48, 14, 26, 7, 41, 38, 53]" data-baseprice="{{ $price }}"
+                data-id="65" data-baseprice="{{ $price }}"
                 data-price="{{ $price }}" class="cart-add button center">SUBSCRIBE NOW</button>
             <section class="section">
                 <h2 class="center primary-color extra-large-font uppercase">Mealkit Author</h2>
