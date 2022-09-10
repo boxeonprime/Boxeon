@@ -65,38 +65,56 @@ class CheckoutController extends Controller
 
         foreach ($order as $item) {
 
-            $basePrice = DB::table("products")
-                ->where("id", $item->product)
-                ->select("price")
-                ->get()[0]->price;
+            if ($item->plan != 0) {
 
-            $sub["product_id"] = $item->product;
-            $sub["total"] = self::price($item->quantity, $item->plan, $basePrice);
-            $sub["frequency"] = $item->plan;
-            $sub["user_id"] = $id;
-            $sub["quantity"] = $item->quantity;
-            $sub["created_at"] = date('Y-m-d');
+                $basePrice = DB::table("products")
+                    ->where("id", $item->product)
+                    ->select("price")
+                    ->get()[0]->price;
 
-            # CREATE PLAN
+                $sub["product_id"] = $item->product;
+                $sub["total"] = self::price($item->quantity, $item->plan, $basePrice);
+                // If zero create one time purchase
+                // instead (do this also in the subscribe job):
+                $sub["frequency"] = $item->plan;
+                $sub["user_id"] = $id;
+                $sub["quantity"] = $item->quantity;
+                $sub["created_at"] = date('Y-m-d');
 
-            $plan = array("product" => $item->product,
-                "amount" => $sub["total"],
-                "frequency" => $item->plan, "key" => uniqid());
+                # CREATE PLAN
 
-            $response = json_decode($square->createPlan($plan));
+                $plan = array("product" => $item->product,
+                    "amount" => $sub["total"],
+                    "frequency" => $item->plan, "key" => uniqid());
 
-            if (isset($response->catalog_object->id)) {
+                $response = json_decode($square->createPlan($plan));
 
-                $sub["plan_id"] = $response->catalog_object->id;
+                if (isset($response->catalog_object->id)) {
 
-                // Save all results
+                    $sub["plan_id"] = $response->catalog_object->id;
 
-                DB::table("subscriptions")
-                    ->insert($sub);
+                    // Save all results
 
+                    DB::table("subscriptions")
+                        ->insert($sub);
+
+                } else {
+
+                    return json_decode($r);
+                }
             } else {
 
-                return json_decode($r);
+                # Create one-time charge
+                $item->price = self::price($item->quantity, $item->plan, $basePrice);
+                $item->key = uniqid();
+                $result = $square->charge($item);
+
+                if ($result->status == "SUCCESS") {
+
+                    Session::flash('message', 'Order placed!');
+                    return true;
+
+                }
             }
 
         }

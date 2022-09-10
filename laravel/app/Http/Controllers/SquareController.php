@@ -40,14 +40,16 @@ class SquareController extends Controller
     }
 
     /*
-     * Creates a one-time payment for shipping labels
-     * Returns to /labels/generate
+     * Creates a one-time payment
      */
-    public function charge(Request $request)
+    public function charge($charge)
     {
 
-        $charge = json_decode($request['charge']);
-        $amount = (int) $charge->amount * 100;
+        $id = auth()->user()->id;
+        $user = User::find($id);
+
+        $amount = (int) $charge->price * 100;
+
         $token = $this->$config['square']['access_token'];
 
         $response = Http::withHeaders(
@@ -57,17 +59,17 @@ class SquareController extends Controller
                 'Square-Version' => "2022-01-20",
             ]
         )->post($this->config['square']['paymentsEndpoint'], [
-            "idempotency_key" => $charge->sourceId,
+            "idempotency_key" => $charge->key,
             "amount_money" => [
                 "amount" => $amount,
                 "currency" => "USD",
             ],
-            "source_id" => $charge->sourceId,
+            "source_id" => $user->card_id,
             "autocomplete" => true,
-            "location_id" => $charge->locationId,
-            "note" => "Shipping labels", // make dynamic - change, not urgent
+            "location_id" => $this->$config['square']['locationId'],
+            "note" => "One-time purchase", 
             "app_fee_money" => [
-                "amount" => 3,
+                "amount" => 1,
                 "currency" => "USD"]]);
 
         if ($response->status() == 200) {
