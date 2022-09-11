@@ -45,13 +45,13 @@ class SquareController extends Controller
     public function charge($charge)
     {
 
-return $charge;
+return 1;
         $id = auth()->user()->id;
         $user = User::find($id);
 
         $amount = (int) $charge->price * 100;
 
-       return $token = $this->$config['square']['access_token'];
+       $token = $this->$config['square']['access_token'];
 
       return $response = Http::withHeaders(
             [
