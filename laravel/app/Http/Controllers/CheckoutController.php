@@ -65,11 +65,9 @@ class CheckoutController extends Controller
 
         foreach ($order as $item) {
 
-            $plan = (int)$item->plan; echo $plan . "--";
+            $plan = (int)$item->plan;
           
-            if ($plan != 0) {
-
-            
+            if ($plan != false) {
 
                 $basePrice = DB::table("products")
                     ->where("id", $item->product)
@@ -105,23 +103,6 @@ class CheckoutController extends Controller
                 } else {
 
                     return json_decode($r);
-                }
-            } else {
-
-              
-
-                # Create one-time charge
-                $item->price = self::price($item->quantity, $item->plan, $basePrice);
-                $item->key = uniqid();
-
-                $result = $square->charge($item);
-
-                if ($result->status == "SUCCESS") {
-                    Session::flash('message', 'Order placed!');
-                    return true;
-
-                }else{
-                     return json_encode($result);
                 }
             }
 
