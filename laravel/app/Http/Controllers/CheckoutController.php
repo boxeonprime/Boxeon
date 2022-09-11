@@ -67,6 +67,8 @@ class CheckoutController extends Controller
 
             if ($item->plan != 0) {
 
+                echo $item->plan;
+
                 $basePrice = DB::table("products")
                     ->where("id", $item->product)
                     ->select("price")
@@ -104,7 +106,7 @@ class CheckoutController extends Controller
                 }
             } else {
 
-                dd($item->plan);
+              
 
                 # Create one-time charge
                 $item->price = self::price($item->quantity, $item->plan, $basePrice);
