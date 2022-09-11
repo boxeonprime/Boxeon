@@ -64,8 +64,10 @@ class CheckoutController extends Controller
         $square = new SquareController();
 
         foreach ($order as $item) {
+
+            $plan = (int)$item->plan; echo $plan;
           
-            if ((int)$item->plan != 0) {
+            if ($plan != 0) {
 
             
 
