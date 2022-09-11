@@ -104,6 +104,21 @@ class CheckoutController extends Controller
 
                     return json_decode($r);
                 }
+            } else {
+
+                # Create one-time charge
+                $item->price = self::price($item->quantity, $item->plan, $basePrice);
+                $item->key = uniqid();
+
+                $result = $square->charge($item);
+
+                if ($result->status == "SUCCESS") {
+                    Session::flash('message', 'Order placed!');
+                    return true;
+
+                }else{
+                     return json_encode($result);
+                }
             }
 
         }
