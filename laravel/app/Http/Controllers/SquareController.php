@@ -4,12 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Jobs\SendEmailJob;
 use App\Mail\OrderPlaced;
-use App\Models\Subscription;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Session;
-use Illuminate\Support\Facades\DB;
 
 class SquareController extends Controller
 {
@@ -45,13 +42,14 @@ class SquareController extends Controller
     public function charge($charge)
     {
 
-
         $id = auth()->user()->id;
         $user = User::find($id);
-       
+
         $amount = (int) $charge->price * 100;
-       
-      return $response = Http::withHeaders(
+
+        return $this->config['square']['access_token'];
+
+        return $response = Http::withHeaders(
             [
                 'Authorization' => "Bearer " . $this->config['square']['access_token'],
                 'Content-Type' => 'application/json',
@@ -66,7 +64,7 @@ class SquareController extends Controller
             "source_id" => $user->card_id,
             "autocomplete" => true,
             "location_id" => $this->$config['square']['locationId'],
-            "note" => "One-time purchase", 
+            "note" => "One-time purchase",
             "app_fee_money" => [
                 "amount" => 0,
                 "currency" => "USD"]]);
@@ -81,13 +79,13 @@ class SquareController extends Controller
 
             } else {
 
-               // return json_encode(array('status' => 'FAILURE'));
-               return $response;
+                // return json_encode(array('status' => 'FAILURE'));
+                return $response;
             }
 
         } else {
             return $response;
-          // return json_encode(array('status' => 'FAILURE'));
+            // return json_encode(array('status' => 'FAILURE'));
         }
 
     }
@@ -284,7 +282,7 @@ class SquareController extends Controller
 
         $created_at = date('Y-m-d');
 
-       return Http::withHeaders(
+        return Http::withHeaders(
             [
                 'Authorization' => "Bearer " . $this->config['square']['access_token'],
                 'Content-Type' => 'application/json',
@@ -305,7 +303,6 @@ class SquareController extends Controller
             ]]);
 
         # Update D
-
 
     }
 
