@@ -75,17 +75,17 @@ $price = DB::table('products')
             <div class="recipes-stream">
 
                 <div class="p-relative">
-                    <a href="/school/recipe?r=egusi"> <img width="500px" src="../assets/images/egusi.jpeg"></a>
+                    <a href="/recipe?r=egusi"> <img width="500px" src="../assets/images/egusi.jpeg"></a>
 
-                    <a class="p-title" href="/school/recipe?r=egusi">
+                    <a class="p-title" href="/recipe?r=egusi">
                         <h2 class="title-style"><span class="title-style-span">Nigerian Egusi Soup</span></h2>
                     </a>
 
                 </div>
                 <div class="p-relative">
-                    <a href="/school/recipe?r=ata"> <img width="500px" src="../assets/images/ata.jpeg"></a>
+                    <a href="/recipe?r=ata"> <img width="500px" src="../assets/images/ata.jpeg"></a>
 
-                    <a class="p-title" href="/school/recipe?r=ata">
+                    <a class="p-title" href="/recipe?r=ata">
                         <h2 class="title-style"><span class="title-style-span">Nigerian Ata Dindin</h2>
                     </a>
 
@@ -93,84 +93,84 @@ $price = DB::table('products')
 
                 <div class="p-relative">
 
-                    <a href="/school/recipe?r=chix"><img width="500px" src="../assets/images/chix.jpeg"></a>
+                    <a href="/recipe?r=chix"><img width="500px" src="../assets/images/chix.jpeg"></a>
 
 
-                    <a class="p-title" href="/school/recipe?r=chix">
+                    <a class="p-title" href="/recipe?r=chix">
                         <h2 class="title-style"><span class="title-style-span">Nigerian Chicken Stew</h2>
                     </a>
 
                 </div>
 
                 <div class="p-relative">
-                    <a href="/school/recipe?r=jollof"><img width="500px" src="../assets/images/jollof.webp"></a>
+                    <a href="/recipe?r=jollof"><img width="500px" src="../assets/images/jollof.webp"></a>
 
-                    <a class="p-title" href="/school/recipe?r=jollof">
+                    <a class="p-title" href="/recipe?r=jollof">
                         <h2 class="title-style"><span class="title-style-span">Party Jollof Rice</h2>
                     </a>
 
                 </div>
                 <div class="p-relative">
-                    <a href="/school/recipe?r=psoup"><img width="500px" src="../assets/images/psoup.jpeg"></a>
+                    <a href="/recipe?r=psoup"><img width="500px" src="../assets/images/psoup.jpeg"></a>
 
-                    <a class="p-title" href="/school/recipe?r=psoup">
+                    <a class="p-title" href="/recipe?r=psoup">
                         <h2 class="title-style"><span class="title-style-span">Nigerian Pepper Soup</h2>
                     </a>
 
                 </div>
                 <div class="p-relative">
-                    <a href="/school/recipe?r=okra"><img width="500px" src="../assets/images/okra.jpeg"></a>
+                    <a href="/recipe?r=okra"><img width="500px" src="../assets/images/okra.jpeg"></a>
 
-                    <a class="p-title" href="/school/recipe?r=okra">
+                    <a class="p-title" href="/recipe?r=okra">
                         <h2 class="title-style"><span class="title-style-span">Nigerian Okra Soup</h2>
                     </a>
 
                 </div>
 
                 <div class="p-relative">
-                    <a href="/school/recipe?r=oilless"><img width="500px" src="../assets/images/oilless.jpeg"></a>
+                    <a href="/recipe?r=oilless"><img width="500px" src="../assets/images/oilless.jpeg"></a>
 
-                    <a class="p-title" href="/school/recipe?r=oilless">
+                    <a class="p-title" href="/recipe?r=oilless">
                         <h2 class="title-style"><span class="title-style-span">Oilless Okra Soup</h2>
                     </a>
 
                 </div>
 
                 <div class="p-relative">
-                    <a href="/school/recipe?r=sbeef"><img width="500px" src="../assets/images/suya.jpeg"></a>
+                    <a href="/recipe?r=sbeef"><img width="500px" src="../assets/images/suya.jpeg"></a>
 
-                    <a class="p-title" href="/school/recipe?r=sbeef">
+                    <a class="p-title" href="/recipe?r=sbeef">
                         <h2 class="title-style"><span class="title-style-span">Nigerian Suya Beef</h2>
                     </a>
                 </div>
                 <div class="p-relative">
-                    <a href="/school/recipe?r=hbp"><img width="500px" src="../assets/images/honey.jpeg"></a>
+                    <a href="/recipe?r=hbp"><img width="500px" src="../assets/images/honey.jpeg"></a>
 
-                    <a class="p-title" href="/school/recipe?r=hbp">
+                    <a class="p-title" href="/recipe?r=hbp">
                         <h2 class="title-style"><span class="title-style-span">Honey Beans Porridge</h2>
                     </a>
 
                 </div>
                 <div class="p-relative">
-                    <a href="/school/recipe?r=abb"><img width="500px" src="../assets/images/abbs.jpeg"></a>
+                    <a href="/recipe?r=abb"><img width="500px" src="../assets/images/abbs.jpeg"></a>
 
-                    <a class="p-title" href="/school/recipe?r=abb">
+                    <a class="p-title" href="/recipe?r=abb">
                         <h2 class="title-style"><span class="title-style-span">African Black Beans Stew</h2>
                     </a>
 
                 </div>
                 <div class="p-relative">
-                    <a href="/school/recipe?r=fufu"><img width="500px" src="../assets/images/fufu.webp"></a>
+                    <a href="/recipe?r=fufu"><img width="500px" src="../assets/images/fufu.webp"></a>
 
-                    <a class="p-title" href="/school/recipe?r=fufu">
+                    <a class="p-title" href="/recipe?r=fufu">
                         <h2 class="title-style"><span class="title-style-span">Cassava Fufu</h2>
                     </a>
 
                 </div>
                 <div class="p-relative">
-                    <a href="/school/recipe?r=sorrel"><img width="500px" src="../assets/images/sorrel.jpeg"></a>
+                    <a href="/recipe?r=sorrel"><img width="500px" src="../assets/images/sorrel.jpeg"></a>
 
-                    <a class="p-title" href="/school/recipe?r=sorrel">
+                    <a class="p-title" href="/recipe?r=sorrel">
                         <h2 class="title-style"><span class="title-style-span">Sobo Drink</h2>
                     </a>
 

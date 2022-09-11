@@ -27,6 +27,8 @@ Route::get('/out', 'App\Http\Controllers\LogoutController@perform')->name('logou
 Route::get('/signout', function () {
     return view('signout');
 });
+Route::get('/mealkit', 'App\Http\Controllers\SchoolController@recipes')->name('mealkit');
+Route::get('/recipe', 'App\Http\Controllers\SchoolController@recipe')->name('recipe');
 
 Route::get('/gifts', 'App\Http\Controllers\InvitationsController@gifts')->name('gifts');
 Route::get('/terms', 'App\Http\Controllers\HomeController@terms')->name('terms');
@@ -47,11 +49,9 @@ Route::get('/search/products', 'App\Http\Controllers\SearchController@index')->n
 
 #SCHOOL
 Route::prefix('school')->group(function () {
-
     Route::get('/subscriptions', 'App\Http\Controllers\SchoolController@index')->name('school.index');
     Route::get('/article/{article}', 'App\Http\Controllers\SchoolController@article')->name('school.article');
     Route::get('/recipes', 'App\Http\Controllers\SchoolController@recipes')->name('school.recipes');
-    Route::get('/recipe', 'App\Http\Controllers\SchoolController@recipe')->name('school.recipe');
 
 
 });

@@ -104,6 +104,8 @@ class CheckoutController extends Controller
                 }
             } else {
 
+                dd($item->plan);
+
                 # Create one-time charge
                 $item->price = self::price($item->quantity, $item->plan, $basePrice);
                 $item->key = uniqid();
