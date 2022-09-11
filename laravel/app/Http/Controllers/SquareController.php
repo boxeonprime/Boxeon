@@ -46,8 +46,10 @@ class SquareController extends Controller
         $user = User::find($id);
 
         $amount = (int) $charge->price * 100;
+        $config =  parse_ini_file(dirname(__DIR__, 3) .
+        "/config/app.ini", true);
 
-        return $this->config['square']['access_token'];
+        return $config['square']['access_token'];
 
         return $response = Http::withHeaders(
             [
