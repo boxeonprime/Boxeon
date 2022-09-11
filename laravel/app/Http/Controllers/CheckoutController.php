@@ -105,7 +105,7 @@ class CheckoutController extends Controller
                     return json_decode($r);
                 }
             } else {
-
+echo 1;
                 # Create one-time charge
                 $item->price = self::price($item->quantity, $item->plan, $basePrice);
                 $item->key = uniqid();
