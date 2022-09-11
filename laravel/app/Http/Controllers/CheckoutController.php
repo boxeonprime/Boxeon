@@ -65,7 +65,7 @@ class CheckoutController extends Controller
 
         foreach ($order as $item) {
 
-            $plan = (int)$item->plan; echo $plan;
+            $plan = (int)$item->plan; echo $plan . "--";
           
             if ($plan != 0) {
 
