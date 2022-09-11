@@ -50,9 +50,9 @@ class SquareController extends Controller
         $user = User::find($id);
        
         $amount = (int) $charge->price * 100;
-        return 1;
+       
        $token = $this->$config['square']['access_token'];
-
+       return 1;
       return $response = Http::withHeaders(
             [
                 'Authorization' => "Bearer " . $token,
