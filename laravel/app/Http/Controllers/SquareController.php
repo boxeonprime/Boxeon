@@ -51,7 +51,7 @@ class SquareController extends Controller
 
         $amount = (int) $charge->price * 100;
 
-        $token = $this->$config['square']['access_token'];
+       return $token = $this->$config['square']['access_token'];
 
       return $response = Http::withHeaders(
             [
