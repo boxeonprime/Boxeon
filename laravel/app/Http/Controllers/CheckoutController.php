@@ -110,7 +110,7 @@ class CheckoutController extends Controller
 
                 $item->price = $basePrice + 3;
                 $item->key = uniqid();
-
+return $item;
                 $result = $square->charge($item);
                 return json_decode($result);
 
