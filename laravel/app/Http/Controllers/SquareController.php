@@ -45,7 +45,7 @@ class SquareController extends Controller
     public function charge($charge)
     {
 
-
+return $charge;
         $id = auth()->user()->id;
         $user = User::find($id);
 
