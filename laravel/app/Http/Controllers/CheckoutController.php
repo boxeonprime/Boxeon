@@ -66,13 +66,13 @@ class CheckoutController extends Controller
         foreach ($order as $item) {
 
             $plan = (int)$item->plan;
+
+            $basePrice = DB::table("products")
+            ->where("id", $item->product)
+            ->select("price")
+            ->get()[0]->price;
           
             if ($plan != false) {
-
-                $basePrice = DB::table("products")
-                    ->where("id", $item->product)
-                    ->select("price")
-                    ->get()[0]->price;
 
                 $sub["product_id"] = $item->product;
                 $sub["total"] = self::price($item->quantity, $item->plan, $basePrice);
@@ -107,9 +107,10 @@ class CheckoutController extends Controller
             } else {
 
                 # Create one-time charge
+
                 $item->price = $basePrice + 3;
-               // $item->key = uniqid();
-return $item;
+                $item->key = uniqid();
+
                 $result = $square->charge($item);
                 return json_decode($result);
 

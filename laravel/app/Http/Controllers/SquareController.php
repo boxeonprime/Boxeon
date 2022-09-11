@@ -53,7 +53,7 @@ class SquareController extends Controller
 
         $token = $this->$config['square']['access_token'];
 
-      return  $response = Http::withHeaders(
+       $response = Http::withHeaders(
             [
                 'Authorization' => "Bearer " . $token,
                 'Content-Type' => 'application/json',
