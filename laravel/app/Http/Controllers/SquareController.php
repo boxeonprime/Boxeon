@@ -51,11 +51,9 @@ class SquareController extends Controller
        
         $amount = (int) $charge->price * 100;
        
-       $token = $this->$config['square']['access_token'];
-       return 1;
       return $response = Http::withHeaders(
             [
-                'Authorization' => "Bearer " . $token,
+                'Authorization' => "Bearer " . $this->config['square']['access_token'],
                 'Content-Type' => 'application/json',
                 'Square-Version' => "2022-01-20",
             ]
