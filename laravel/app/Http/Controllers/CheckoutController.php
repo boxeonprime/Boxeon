@@ -65,9 +65,9 @@ class CheckoutController extends Controller
 
         foreach ($order as $item) {
           
-            if ($item->plan != 0) {
+            if ((int)$item->plan != 0) {
 
-                echo $item->plan;
+            
 
                 $basePrice = DB::table("products")
                     ->where("id", $item->product)
