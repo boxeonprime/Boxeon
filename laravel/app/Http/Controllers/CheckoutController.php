@@ -64,10 +64,10 @@ class CheckoutController extends Controller
         $square = new SquareController();
 
         foreach ($order as $item) {
-            echo $item->plan;
+          
             if ($item->plan != 0) {
 
-               
+                echo $item->plan;
 
                 $basePrice = DB::table("products")
                     ->where("id", $item->product)
