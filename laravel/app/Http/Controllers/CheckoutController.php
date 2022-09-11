@@ -107,7 +107,7 @@ class CheckoutController extends Controller
             } else {
 
                 # Create one-time charge
-               // $item->price = $basePrice + 3;
+                $item->price = $basePrice + 3;
                // $item->key = uniqid();
 return $item;
                 $result = $square->charge($item);
