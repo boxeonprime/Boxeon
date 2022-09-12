@@ -77,7 +77,7 @@ class Subscribe implements ShouldQueue
                 "plan_id" => $plan["plan_id"],
                 "key" => uniqid());
 
-            $r = json_decode($square->createSubscription($upsert));
+            return $r = json_decode($square->createSubscription($upsert));
 
             if (isset($r->subscription->id)) {
 
