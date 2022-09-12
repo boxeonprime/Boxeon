@@ -66,9 +66,9 @@ class Subscribe implements ShouldQueue
             $square = new SquareController();
 
             $plan = DB::table("subscriptions")
-                ->where("sub_id", "=", null)
-                ->where("plan_id", "!=", null) // Selects subscriptions
-                ->orderBy("created_at", "desc")
+               // ->where("sub_id", "=", null)
+               // ->where("plan_id", "!=", null) // Selects subscriptions
+               // ->orderBy("created_at", "desc")
                 ->limit(1)
                 ->get();
 
