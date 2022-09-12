@@ -7,6 +7,7 @@ use App\Mail\OrderPlaced;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\DB;
 
 class SquareController extends Controller
 {
@@ -46,11 +47,8 @@ class SquareController extends Controller
         $user = User::find($id);
 
         $amount = (int) $charge->price * 100;
-        $con =  parse_ini_file(dirname(__DIR__, 3) . "/config/app.ini", true);
 
-        return $con['square']['access_token'];
-
-        return $response = Http::withHeaders(
+        $response = Http::withHeaders(
             [
                 'Authorization' => "Bearer " . $this->config['square']['access_token'],
                 'Content-Type' => 'application/json',
@@ -63,8 +61,9 @@ class SquareController extends Controller
                 "currency" => "USD",
             ],
             "source_id" => $user->card_id,
+            "customer_id"=> $user->customer_id,
             "autocomplete" => true,
-            "location_id" => $this->$config['square']['locationId'],
+            "location_id" => $this->config['square']['locationId'],
             "note" => "One-time purchase",
             "app_fee_money" => [
                 "amount" => 0,
@@ -74,20 +73,29 @@ class SquareController extends Controller
 
             $completed = json_decode($response);
 
-            if ($completed->payment->status == 'COMPLETED') {
+            if ($completed->payment->id) {
 
-                return json_encode(array('status' => 'SUCCESS'));
+                // Save Payment Id
+                DB::table("subscriptions")
+                ->where("user_id", "=", $id)
+                ->where("product_id", "=", $charge->product)
+                ->update([
+
+                    'sub_id' => $completed->payment->id,
+                    'card_id' => $user->card_id,
+                    'status' => 1
+                   
+                ]);
+
+                return true;
 
             } else {
 
-                // return json_encode(array('status' => 'FAILURE'));
-                return $response;
+                 return json_encode(array('status' => 'FAILURE'));
+                //return $response;
             }
 
-        } else {
-            return $response;
-            // return json_encode(array('status' => 'FAILURE'));
-        }
+        } 
 
     }
 

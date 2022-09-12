@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
+use App\Jobs\Subscribe;
 
 class CheckoutController extends Controller
 {
@@ -65,38 +66,34 @@ class CheckoutController extends Controller
 
         foreach ($order as $item) {
 
-            $plan = (int)$item->plan;
+            $plan = (int) $item->plan;
 
             $basePrice = DB::table("products")
-            ->where("id", $item->product)
-            ->select("price")
-            ->get()[0]->price;
-          
-            if ($plan != false) {
+                ->where("id", $item->product)
+                ->select("price")
+                ->get()[0]->price;
 
-                $sub["product_id"] = $item->product;
-                $sub["total"] = self::price($item->quantity, $item->plan, $basePrice);
-                // If zero create one time purchase
-                // instead (do this also in the subscribe job):
-                $sub["frequency"] = $item->plan;
-                $sub["user_id"] = $id;
-                $sub["quantity"] = $item->quantity;
-                $sub["created_at"] = date('Y-m-d');
+            $sub["product_id"] = $item->product;
+            $sub["total"] = self::price($item->quantity, $item->plan, $basePrice);
+            // If zero create one time purchase
+            // instead (do this also in the subscribe job):
+            $sub["frequency"] = $item->plan;
+            $sub["user_id"] = $id;
+            $sub["quantity"] = $item->quantity;
+            $sub["created_at"] = date('Y-m-d');
+
+            if ($plan != false) {
 
                 # CREATE PLAN
 
                 $plan = array("product" => $item->product,
                     "amount" => $sub["total"],
                     "frequency" => $item->plan, "key" => uniqid());
-
                 $response = json_decode($square->createPlan($plan));
 
                 if (isset($response->catalog_object->id)) {
-
                     $sub["plan_id"] = $response->catalog_object->id;
-
                     // Save all results
-
                     DB::table("subscriptions")
                         ->insert($sub);
 
@@ -106,21 +103,24 @@ class CheckoutController extends Controller
                 }
             } else {
 
-                # Create one-time charge
+                # ONE TIME CHARGE
 
-                $item->price = $basePrice + 3;
+                // Save all results
+                DB::table("subscriptions")
+                    ->insert($sub);
+
+                $item->price =  self::price($item->quantity, $item->plan, $basePrice);
                 $item->key = uniqid();
 
                 $result = $square->charge($item);
-                return json_decode($result);
 
-                if ($result->status == "SUCCESS") {
-                    
+                if ($result) {
+
                     Session::flash('message', 'Order placed!');
                     return true;
 
-                }else{
-                     return json_encode($result);
+                } else {
+                    return json_encode($result);
                 }
             }
 
@@ -148,14 +148,20 @@ class CheckoutController extends Controller
                     'square_vid' => $r->subscription->version,
                 ]);
 
-            # Retry failed subscription attempts
-            //Subscribe::dispatch($id)->onQueue('subs')
-            //->delay(now()->addMinutes(4));
 
             Session::flash('message', 'Order placed!');
             return true;
 
         }
+
+
+            # Retry failed subscription attempts
+           // Subscribe::dispatch($id)->onQueue('subs')
+           // ->delay(now()->addMinutes(4));
+
+            //->everyFiveMinutes();
+
+            $schedule->job(new Subscribe)->everyFiveMinutes();
     }
 
     public function referal()
