@@ -61,6 +61,8 @@ class Subscribe implements ShouldQueue
     {
         dispatch(function () {
 
+            return 1;
+
             $square = new SquareController();
 
             $plan = DB::table("subscriptions")
