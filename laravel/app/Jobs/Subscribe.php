@@ -32,10 +32,10 @@ class Subscribe implements ShouldQueue
     public $tries = 1;
     public $id;
 
-    public function __construct($id)
+    public function __construct()
     {
 
-        $this->id = $id;
+        //$this->id = $id;
 
     }
 
@@ -67,7 +67,7 @@ class Subscribe implements ShouldQueue
             $square = new SquareController();
 
             $plan = DB::table("subscriptions")
-                ->where("user_id", "=", $this->id)
+              // ->where("user_id", "=", $this->id)
                 ->where("sub_id", "=", null)
                 ->where("plan_id", "!=", null) // Selects subscriptions
                 ->orderBy("created_at", "desc")
