@@ -63,9 +63,8 @@ class CheckoutController extends Controller
         $id = auth()->user()->id;
         $user = User::find($id);
 
-        Subscribe::dispatch($id)->onQueue('subs')
-        ->delay(now()->addMinutes(4)); return;
-        
+        Subscribe::dispatch($id)->onQueue('subs'); return;
+
         $square = new SquareController();
 
         foreach ($order as $item) {
