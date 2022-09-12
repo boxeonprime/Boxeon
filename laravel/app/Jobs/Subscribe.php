@@ -68,7 +68,7 @@ class Subscribe implements ShouldQueue
             $plan = DB::table("subscriptions")
                 ->where("sub_id", "=", null)
                 ->where("frequency", ">", 0) // Selects subscriptions
-                ->orderBy("plan_id", "desc")
+                ->orderBy("created_at", "desc")
                 ->limit(1)
                 ->get();
 
