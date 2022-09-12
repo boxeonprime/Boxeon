@@ -61,9 +61,7 @@ class CheckoutController extends Controller
         $order = json_decode(json_decode($request["order"]));
 
         $id = auth()->user()->id;
-        $user = User::find($id);
-
-        Subscribe::dispatch($id)->onQueue('subscription'); return;
+        $user = User::find($id); 
 
         $square = new SquareController();
 
@@ -158,10 +156,8 @@ class CheckoutController extends Controller
         }
 
 
-            # Retry failed subscription attempts
-         ;
-
-            //->everyFiveMinutes();
+            # Using php artisan retry:sub instead
+            // Subscribe::dispatch()->onQueue('subscription');
 
             $schedule->job(new Subscribe)->everyFiveMinutes();
     }
