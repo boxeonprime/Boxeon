@@ -371,6 +371,15 @@ Boxeon = {
 
   },
 
+
+
+  disableButton: function (b) {
+   
+      b.disabled = true;
+
+  },
+
+
   getCookie: function (cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
@@ -620,7 +629,7 @@ Subscriptions = {
 
   order: function (cart) {
 
-    let json = JSON.stringify(cart); 
+    let json = JSON.stringify(cart);
     var data = {
       method: "POST",
       action: "/checkout/order?order=" + json + "",
@@ -634,7 +643,7 @@ Subscriptions = {
         Boxeon.deleteCookie("cart");
         localStorage.setItem("celebrate", true);
         location.href = "/home/index";
-      }else{
+      } else {
         console.log(re);
       }
     }
@@ -722,7 +731,7 @@ window.onload = function () {
   !function (f, b, e, v, n, t, s) {
     if (f.fbq) return; n = f.fbq = function () {
       n.callMethod ?
-      n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
     };
     if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
     n.queue = []; t = b.createElement(e); t.async = !0;
@@ -1189,19 +1198,20 @@ window.onload = function () {
       form[i].addEventListener("submit", function (event) {
         event.preventDefault();
         //LinkedIn
-      //  window.lintrk('track', { conversion_id: 9365452 });
+        //  window.lintrk('track', { conversion_id: 9365452 });
         document.cookie = "checkout=" + "/checkout/index" + ";" + "path=/";
         location.assign("/checkout/index");
       });
     }
   }
-  
+
   // Place order
   if (document.getElementsByClassName("place-order")) {
     let form = document.getElementsByClassName("place-order");
     for (let i = 0; i < form.length; i++) {
       form[i].addEventListener("submit", function (event) {
         event.preventDefault();
+        Boxeon.disableButton(this.querySelector('[type=submit]'));
         let cart = Boxeon.getCookie("cart");
         Subscriptions.order(cart);
       });

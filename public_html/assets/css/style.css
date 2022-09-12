@@ -996,8 +996,8 @@ dialog p {
   width: 35px;
   height: 35px;
   animation: spin 1s linear infinite;
-  position: absolute;
-  top: 22em;
+  position: fixed;
+  top: 50%;
   right: 50%;
   z-index: 10003;
   box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);

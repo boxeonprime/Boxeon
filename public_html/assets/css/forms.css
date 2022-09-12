@@ -158,6 +158,14 @@ input[type="submit"], .button, button {
   padding: .8em 1.5em .8em 1.5em;
 
 }
+
+input[type="submit"]:disabled, .button:disabled, button:disabled,
+button[disabled]{
+  border: 1px solid #999999 !important;
+  background-color: #cccccc !important;
+  color: #666666 I !important;
+}
+
 .select-plan,
 .products-stream form select {
   background-color: #0000000d;

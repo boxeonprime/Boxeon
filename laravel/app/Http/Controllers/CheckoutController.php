@@ -56,13 +56,16 @@ class CheckoutController extends Controller
 
     public function order(Request $request)
     {
-        $schedule->job(new Subscribe)->everyFiveMinutes(); return;
-        
+         
+
         $order = json_decode(json_decode($request["order"]));
 
         $id = auth()->user()->id;
         $user = User::find($id);
 
+        Subscribe::dispatch($id)->onQueue('subs')
+        ->delay(now()->addMinutes(4)); return;
+        
         $square = new SquareController();
 
         foreach ($order as $item) {
@@ -157,8 +160,7 @@ class CheckoutController extends Controller
 
 
             # Retry failed subscription attempts
-           // Subscribe::dispatch($id)->onQueue('subs')
-           // ->delay(now()->addMinutes(4));
+         ;
 
             //->everyFiveMinutes();
 
