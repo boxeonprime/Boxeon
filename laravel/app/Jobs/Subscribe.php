@@ -78,7 +78,7 @@ class Subscribe implements ShouldQueue
 
             $upsert = array(
 
-                "plan_id" => $plan["plan_id"],
+                "plan_id" => $plan[0]["plan_id"],
                 "key" => uniqid());
 
             return $r = json_decode($square->createSubscription($upsert));
@@ -86,8 +86,8 @@ class Subscribe implements ShouldQueue
             if (isset($r->subscription->id)) {
 
                 DB::table("subscriptions")
-                    ->where("user_id", "=", $plan["user_id"])
-                    ->where("plan_id", "=", $sub["plan_id"])
+                    ->where("user_id", "=", $plan[0]["user_id"])
+                    ->where("plan_id", "=", $plan["plan_id"])
                     ->update([
 
                         'sub_id' => $r->subscription->id,
