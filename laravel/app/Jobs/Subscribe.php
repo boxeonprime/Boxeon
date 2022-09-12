@@ -74,7 +74,7 @@ class Subscribe implements ShouldQueue
                 ->limit(1)
                 ->get();
 
-            return 1;
+            echo $plan[0]["plan_id"];
 
             $upsert = array(
 
