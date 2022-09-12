@@ -61,14 +61,13 @@ class Subscribe implements ShouldQueue
     {
         dispatch(function () {
 
-            return 1;
+            
 
             $square = new SquareController();
 
             $plan = DB::table("subscriptions")
                 ->where("sub_id", "=", null)
-                ->where("plan_id", "!=", null)
-                ->where("frequency", ">", 0)
+                ->where("frequency", ">", 0) // Selects subscriptions
                 ->orderBy("plan_id", "desc")
                 ->limit(1)
                 ->get();
@@ -94,10 +93,9 @@ class Subscribe implements ShouldQueue
             }
 
             # PROCESS ONE-TIME PURCHASES
-            $charge = DB::table("subscriptions")
+          /*  $charge = DB::table("subscriptions")
                 ->where("sub_id", "=", null)
-                ->where("plan_id", "=", null)
-                ->where("frequency", "=", 0)
+                ->where("frequency", "=", 0) // selects one-time purchases
                 ->orderBy("created_at", "desc")
                 ->limit(1)
                 ->get();
@@ -111,7 +109,7 @@ class Subscribe implements ShouldQueue
             $charge->price = self::price($charge[0]["quantity"], $charge[0]["frequency"], $product[0]["basePrice"]);
           
             $charge->key = uniqid();
-            $square->charge($charge);
+            $square->charge($charge);*/
 
         })->afterResponse();
     }
