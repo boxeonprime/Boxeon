@@ -63,7 +63,7 @@ class CheckoutController extends Controller
         $id = auth()->user()->id;
         $user = User::find($id);
 
-        Subscribe::dispatch($id)->onQueue('subs'); return;
+        Subscribe::dispatch($id)->onQueue('subscription'); return;
 
         $square = new SquareController();
 
