@@ -93,5 +93,7 @@ class Subscribe extends Command
             $charge->key = uniqid();
            // $square->charge($charge);
 
-        })->afterResponse();
+        });
+
+
 }
