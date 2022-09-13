@@ -46,7 +46,7 @@ class Subscribe extends Command
             $square = new SquareController();
 
             $plan = DB::table("subscriptions")
-            // ->where("user_id", "=", $this->id)
+
                 ->where("sub_id", "=", null)
                 ->where("plan_id", "!=", null) // Selects subscriptions
                 ->orderBy("created_at", "desc")
@@ -87,12 +87,12 @@ class Subscribe extends Command
                 ->where("id", "=", $charge[0]["product_id"])
                 ->get();
 
-            $charge = json_encode($charge);
+            $charge = json_encode($charge[0]);
 
-            $charge->price = self::price($charge[0]["quantity"], $charge[0]["frequency"], $product[0]["basePrice"]);
+            $charge->price = self::price($charge->quantity, $charge->frequency, $product[0]["basePrice"]);
 
             $charge->key = uniqid();
-           // $square->charge($charge);
+            $square->charge($charge);
 
         });
     }

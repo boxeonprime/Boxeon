@@ -43,8 +43,16 @@ class SquareController extends Controller
     public function charge($charge)
     {
 
-        $id = auth()->user()->id;
-        $user = User::find($id);
+        if (isset($charge->user_id)) {
+
+            $user = User::find($charge->user_id);
+            
+        } else {
+
+            $id = auth()->user()->id;
+            $user = User::find($id);
+
+        }
 
         $amount = (int) $charge->price * 100;
 
@@ -288,7 +296,7 @@ class SquareController extends Controller
         if (isset($request["user_id"])) {
 
             $user = User::find($request["user_id"]);
-            
+
         } else {
 
             $id = auth()->user()->id;
