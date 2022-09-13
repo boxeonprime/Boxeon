@@ -46,7 +46,7 @@ class SquareController extends Controller
         if (isset($charge->user_id)) {
 
             $user = User::find($charge->user_id);
-            
+
         } else {
 
             $id = auth()->user()->id;
@@ -169,7 +169,7 @@ class SquareController extends Controller
 
         } else {
 
-            return false;
+            return array("status"=> "FAILURE");
         }
 
     }
@@ -231,8 +231,12 @@ class SquareController extends Controller
 
         $response = json_decode($response);
 
-        $user->card_id = $response->card->id;
-        $user->save();
+        if (isset($response->card->id)) {
+            $user->card_id = $response->card->id;
+            $user->save();
+        } else {
+                return false;
+        }
 
     }
 

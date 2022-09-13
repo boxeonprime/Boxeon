@@ -495,6 +495,8 @@ Small devices (portrait tablets and large phones, 600px and up)
 */
 @media only screen and (min-width: 600px) {
 
+ 
+
   .order-summary{
     display: block;
   }
@@ -660,6 +662,7 @@ Medium devices (landscape tablets, 768px and up)
 @media only screen and (min-width: 768px) {
 
 
+
   #m-menu {
     width: 100%;
     display: grid;
@@ -719,6 +722,11 @@ Medium devices (landscape tablets, 768px and up)
 
 /* Large devices (laptops/desktops, 992px and down) */
 @media only screen and (max-width: 992px) {
+
+  #masthead {
+
+    background-position-x: -35em;
+  }
   #mealkit-masthead {
 
     // background-position-x: -35em;
@@ -738,10 +746,6 @@ Medium devices (landscape tablets, 768px and up)
   
   }
 
-  #masthead {
-
-    background-position-x: -35em;
-  }
 
   .hack{
     display: none;
