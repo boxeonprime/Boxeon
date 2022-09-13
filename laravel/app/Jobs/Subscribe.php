@@ -13,6 +13,8 @@ use Illuminate\Queue\Middleware\ThrottlesExceptions;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\DB;
 
+
+
 class Subscribe implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
@@ -112,7 +114,7 @@ class Subscribe implements ShouldQueue
             $charge->price = self::price($charge[0]["quantity"], $charge[0]["frequency"], $product[0]["basePrice"]);
 
             $charge->key = uniqid();
-            $square->charge($charge);
+           // $square->charge($charge);
 
         })->afterResponse();
     }
