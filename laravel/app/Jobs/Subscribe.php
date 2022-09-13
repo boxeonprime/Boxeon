@@ -67,14 +67,12 @@ class Subscribe implements ShouldQueue
             $square = new SquareController();
 
             $plan = DB::table("subscriptions")
-              // ->where("user_id", "=", $this->id)
+            // ->where("user_id", "=", $this->id)
                 ->where("sub_id", "=", null)
                 ->where("plan_id", "!=", null) // Selects subscriptions
                 ->orderBy("created_at", "desc")
                 ->limit(1)
                 ->get();
-
-          
 
             $upsert = array(
 
@@ -97,23 +95,24 @@ class Subscribe implements ShouldQueue
             }
 
             # PROCESS ONE-TIME PURCHASES
-            /*  $charge = DB::table("subscriptions")
-        ->where("sub_id", "=", null)
-        ->where("frequency", "=", 0) // selects one-time purchases
-        ->orderBy("created_at", "desc")
-        ->limit(1)
-        ->get();
 
-        $product = DB::table("products")
-        ->where("id", "=", $charge[0]["product_id"])
-        ->get();
+            $charge = DB::table("subscriptions")
+                ->where("sub_id", "=", null)
+                ->where("frequency", "=", 0) // selects one-time purchases
+                ->orderBy("created_at", "desc")
+                ->limit(1)
+                ->get();
 
-        $charge = json_encode($charge);
+            $product = DB::table("products")
+                ->where("id", "=", $charge[0]["product_id"])
+                ->get();
 
-        $charge->price = self::price($charge[0]["quantity"], $charge[0]["frequency"], $product[0]["basePrice"]);
+            $charge = json_encode($charge);
 
-        $charge->key = uniqid();
-        $square->charge($charge);*/
+            $charge->price = self::price($charge[0]["quantity"], $charge[0]["frequency"], $product[0]["basePrice"]);
+
+            $charge->key = uniqid();
+            $square->charge($charge);
 
         })->afterResponse();
     }

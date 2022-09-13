@@ -27,9 +27,9 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('retry:sub')
-            ->everyMinute();
-           // ->timezone('America/New_York')
-           // ->between('03:00', '03:50');
+            ->everyThreeMinutes()
+            ->timezone('America/New_York')
+            ->between('03:00', '04:50');
     }
 
     /**
