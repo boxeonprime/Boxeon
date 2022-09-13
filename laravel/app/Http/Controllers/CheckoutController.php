@@ -155,11 +155,6 @@ class CheckoutController extends Controller
 
         }
 
-
-            # Using php artisan retry:sub instead
-            // Subscribe::dispatch()->onQueue('subscription');
-
-            $schedule->job(new Subscribe)->everyFiveMinutes();
     }
 
     public function referal()
