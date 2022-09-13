@@ -94,6 +94,7 @@ class Subscribe extends Command
            // $square->charge($charge);
 
         });
+    }
 
 
 }
