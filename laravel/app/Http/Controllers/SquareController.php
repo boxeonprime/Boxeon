@@ -6,8 +6,8 @@ use App\Jobs\SendEmailJob;
 use App\Mail\OrderPlaced;
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Http;
 
 class SquareController extends Controller
 {
@@ -61,7 +61,7 @@ class SquareController extends Controller
                 "currency" => "USD",
             ],
             "source_id" => $user->card_id,
-            "customer_id"=> $user->customer_id,
+            "customer_id" => $user->customer_id,
             "autocomplete" => true,
             "location_id" => $this->config['square']['locationId'],
             "note" => "One-time purchase",
@@ -77,25 +77,25 @@ class SquareController extends Controller
 
                 // Save Payment Id
                 DB::table("subscriptions")
-                ->where("user_id", "=", $id)
-                ->where("product_id", "=", $charge->product)
-                ->update([
+                    ->where("user_id", "=", $id)
+                    ->where("product_id", "=", $charge->product)
+                    ->update([
 
-                    'sub_id' => $completed->payment->id,
-                    'card_id' => $user->card_id,
-                    'status' => 1
-                   
-                ]);
+                        'sub_id' => $completed->payment->id,
+                        'card_id' => $user->card_id,
+                        'status' => 1,
+
+                    ]);
 
                 return true;
 
             } else {
 
-                 return json_encode(array('status' => 'FAILURE'));
+                return json_encode(array('status' => 'FAILURE'));
                 //return $response;
             }
 
-        } 
+        }
 
     }
 
@@ -285,9 +285,16 @@ class SquareController extends Controller
 
     public function createSubscription($request)
     {
+        if (isset($request["user_id"])) {
 
-        $id = auth()->user()->id;
-        $user = User::find($id);
+            $user = User::find($request["user_id"]);
+            
+        } else {
+
+            $id = auth()->user()->id;
+            $user = User::find($id);
+
+        }
 
         $created_at = date('Y-m-d');
 

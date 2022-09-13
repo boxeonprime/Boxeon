@@ -56,6 +56,7 @@ class Subscribe extends Command
             $upsert = array(
 
                 "plan_id" => $plan[0]->plan_id,
+                "user_id" => $plan[0]->user_id,
                 "key" => uniqid());
 
             $r = json_decode($square->createSubscription($upsert));
