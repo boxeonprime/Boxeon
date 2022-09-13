@@ -40,17 +40,22 @@ class Subscribe extends Command
      */
     public function handle()
     {
-        $square = new SquareController();
+        
+        dispatch(function () {
 
-           $plan = DB::table("subscriptions")
-            ->where("sub_id", "=", null)
-            ->orderBy("plan_id", "desc")
-            ->limit(1)
-            ->get();
+            $square = new SquareController();
+
+            $plan = DB::table("subscriptions")
+            // ->where("user_id", "=", $this->id)
+                ->where("sub_id", "=", null)
+                ->where("plan_id", "!=", null) // Selects subscriptions
+                ->orderBy("created_at", "desc")
+                ->limit(1)
+                ->get();
 
             $upsert = array(
 
-                "plan_id" => $plan["plan_id"],
+                "plan_id" => $plan[0]->plan_id,
                 "key" => uniqid());
 
             $r = json_decode($square->createSubscription($upsert));
@@ -58,8 +63,8 @@ class Subscribe extends Command
             if (isset($r->subscription->id)) {
 
                 DB::table("subscriptions")
-                    ->where("user_id", "=", $plan["user_id"])
-                    ->where("plan_id", "=", $sub["plan_id"])
+                    ->where("user_id", "=", $plan[0]->user_id)
+                    ->where("plan_id", "=", $plan[0]->plan_id)
                     ->update([
 
                         'sub_id' => $r->subscription->id,
@@ -68,6 +73,25 @@ class Subscribe extends Command
                     ]);
             }
 
-        $this->info('Subscription retried successfully');
-    }
+            # PROCESS ONE-TIME PURCHASES
+
+            $charge = DB::table("subscriptions")
+                ->where("sub_id", "=", null)
+                ->where("frequency", "=", 0) // selects one-time purchases
+                ->orderBy("created_at", "desc")
+                ->limit(1)
+                ->get();
+
+            $product = DB::table("products")
+                ->where("id", "=", $charge[0]["product_id"])
+                ->get();
+
+            $charge = json_encode($charge);
+
+            $charge->price = self::price($charge[0]["quantity"], $charge[0]["frequency"], $product[0]["basePrice"]);
+
+            $charge->key = uniqid();
+           // $square->charge($charge);
+
+        })->afterResponse();
 }
