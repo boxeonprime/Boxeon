@@ -76,8 +76,6 @@ class CheckoutController extends Controller
 
             $sub["product_id"] = $item->product;
             $sub["total"] = self::price($item->quantity, $item->plan, $basePrice);
-            // If zero create one time purchase
-            // instead (do this also in the subscribe job):
             $sub["frequency"] = $item->plan;
             $sub["user_id"] = $id;
             $sub["quantity"] = $item->quantity;
