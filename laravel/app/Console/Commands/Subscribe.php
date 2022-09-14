@@ -2,10 +2,9 @@
 
 namespace App\Console\Commands;
 
-use Illuminate\Console\Command;
 use App\Http\Controllers\SquareController;
+use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Mail;
 
 class Subscribe extends Command
 {
@@ -40,7 +39,7 @@ class Subscribe extends Command
      */
     public function handle()
     {
-        
+
         dispatch(function () {
 
             $square = new SquareController();
@@ -53,6 +52,8 @@ class Subscribe extends Command
                 ->limit(1)
                 ->get();
 
+            if (!isset($plan)) {return;}
+            
             $upsert = array(
 
                 "plan_id" => $plan[0]->plan_id,
@@ -96,6 +97,5 @@ class Subscribe extends Command
 
         });
     }
-
 
 }
