@@ -52,8 +52,8 @@ class Subscribe extends Command
                 ->limit(1)
                 ->get();
 
-            if (!isset($plan)) {return;}
-            
+            if (!isset($plan[0]->plan_id)) {return;}
+
             $upsert = array(
 
                 "plan_id" => $plan[0]->plan_id,
