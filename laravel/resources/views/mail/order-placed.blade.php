@@ -2,12 +2,12 @@
 
 Hi {{$user->given_name}}!
 
-You have sucessfully subscribed to your favorite African foods.  
+You have sucessfully submitted your order.  
 
-An email with a receipt was sent to you by our payment processor.
+We're processcing your order and will keep you posted.
 
-Please save our email in your address book to ensure our shipping 
-and billing updates don't end up in your spam folder.
+Please save our email in your address book to ensure our 
+communications don't end up in your spam folder.
 
 
 

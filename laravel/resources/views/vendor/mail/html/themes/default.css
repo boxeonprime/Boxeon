@@ -28,7 +28,7 @@ blockquote {
 }
 
 a {
-    color: #3869d4;
+    color: green;
 }
 
 a img {
@@ -38,7 +38,7 @@ a img {
 /* Typography */
 
 h1 {
-    color: #3d4852;
+    color: green;
     font-size: 18px;
     font-weight: bold;
     margin-top: 0;
@@ -50,7 +50,7 @@ h2 {
     font-weight: bold;
     margin-top: 0;
     text-align: left;
-    color:#0c8dc4;
+    color:green;
 }
 
 h3 {
@@ -58,7 +58,7 @@ h3 {
     font-weight: bold;
     margin-top: 0;
     text-align: left;
-    color:#0c8dc4;
+    color:green;
 
 }
 
@@ -83,7 +83,7 @@ img {
     -premailer-cellpadding: 0;
     -premailer-cellspacing: 0;
     -premailer-width: 100%;
-    background-color: #edf2f7;
+    background-color: #edf7ef;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -111,7 +111,7 @@ img {
 }
 
 .header a {
-    color: #3d4852;
+    color: green;
     font-size: 19px;
     font-weight: bold;
     text-decoration: none;
@@ -265,8 +265,8 @@ img {
     border-top: 8px solid #e53e3e;
 }
 .button{
-    background-color: #0c8dc4;
-    border: 1px solid #087FB0;
+    background-color: green;
+    border: 1px solid green;
     border-radius: 25px;
     box-sizing: border-box;
     color: #ffffff;

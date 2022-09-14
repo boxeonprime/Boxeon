@@ -1234,15 +1234,10 @@ window.onload = function () {
   // Google Analytics -- SHOULD THIS BE MOVED UP?
 
   window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-
-    window.dataLayer.push(arguments);
-
-  }
-
+  function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-EKYP1LECWS');
+
+  gtag('config', 'G-K2QWJJNEVD');
 
 
   window.addEventListener('onbeforeunload', function () {
@@ -1265,6 +1260,8 @@ window.onload = function () {
       'event_callback': callback
     });
     return false;
+
+    
   }
 
   if (document.getElementById('survey')) {

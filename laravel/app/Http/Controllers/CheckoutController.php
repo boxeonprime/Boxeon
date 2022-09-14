@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\SquareController;
+use App\Mail\OrderPlaced;
 use App\Models\User;
 use Cookie;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
-use App\Jobs\Subscribe;
 
 class CheckoutController extends Controller
 {
@@ -56,12 +56,11 @@ class CheckoutController extends Controller
 
     public function order(Request $request)
     {
-    
 
         $order = json_decode(json_decode($request["order"]));
 
         $id = auth()->user()->id;
-        $user = User::find($id); 
+        $user = User::find($id);
 
         $square = new SquareController();
 
@@ -108,7 +107,7 @@ class CheckoutController extends Controller
                 DB::table("subscriptions")
                     ->insert($sub);
 
-                $item->price =  self::price($item->quantity, $item->plan, $basePrice);
+                $item->price = self::price($item->quantity, $item->plan, $basePrice);
                 $item->key = uniqid();
 
                 $result = $square->charge($item);
@@ -147,11 +146,16 @@ class CheckoutController extends Controller
                     'square_vid' => $r->subscription->version,
                 ]);
 
-
             Session::flash('message', 'Order placed!');
             return true;
 
         }
+
+        #Queue Order Placed Email
+
+        $details['email'] = $user->email;
+        $message = new OrderPlaced($user);
+        SendEmailJob::dispatch($details, $message)->onQueue('emails');
 
     }
 
