@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>
-			https://www.boxeon.com/
+			https://www.boxeon.com
 		</loc>
 	</url>
 	<url>
 		<loc>
-			https://www.boxeon.com/partner
+			https://www.boxeon.com/mealkit
 		</loc>
 	</url>
 	<url>
 		<loc>
-			https://www.boxeon.com/school/home
+			https://www.boxeon.com/gifts
 		</loc>
 	</url>
 	<url>
@@ -22,12 +22,32 @@
 	</url>
 	<url>
 		<loc>
-			https://www.boxeon.com/commission/index
+			https://www.boxeon.com/shop/index?c=staple
 		</loc>
 	</url>
 	<url>
 		<loc>
-			https://www.boxeon.com/invitations/home
+			https://www.boxeon.com/shop/index?c=snack
+		</loc>
+	</url>
+	<url>
+		<loc>
+			https://www.boxeon.com/shop/index?c=spice
+		</loc>
+	</url>
+	<url>
+		<loc>
+			https://www.boxeon.com/shop/index?c=produce
+		</loc>
+	</url>
+	<url>
+		<loc>
+			https://www.boxeon.com/shop/index?c=body
+		</loc>
+	</url>
+	<url>
+		<loc>
+			https://www.boxeon.com/privacy
 		</loc>
 	</url>
 </urlset>
