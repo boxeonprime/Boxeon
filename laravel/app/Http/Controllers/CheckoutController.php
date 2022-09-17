@@ -56,7 +56,8 @@ class CheckoutController extends Controller
 
     public function order(Request $request)
     {
-
+        return view('checkout.referal', compact('user'));
+        
         $order = json_decode(json_decode($request["order"]));
 
         $id = auth()->user()->id;
@@ -147,7 +148,7 @@ class CheckoutController extends Controller
                 ]);
 
             Session::flash('message', 'Order placed!');
-            return true;
+            return view('checkout.referal', compact('user'));
 
         }
 
