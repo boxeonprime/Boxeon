@@ -56,13 +56,13 @@ class CheckoutController extends Controller
 
     public function order(Request $request)
     {
-        
+        return true;
 
         $order = json_decode(json_decode($request["order"]));
 
         $id = auth()->user()->id;
         $user = User::find($id);
-        return view('checkout.referal', compact('user'));
+     
         $square = new SquareController();
 
         foreach ($order as $item) {

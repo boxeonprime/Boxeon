@@ -642,9 +642,9 @@ Subscriptions = {
       if (re == 1) {
         Boxeon.deleteCookie("cart");
         localStorage.setItem("celebrate", true);
-        location.href = "/home/index";
+        location.href = "/checkout/referal";
       } else {
-        console.log(re);
+       // inspect console
       }
     }
     Boxeon.loader();

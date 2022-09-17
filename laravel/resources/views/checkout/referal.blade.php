@@ -10,6 +10,8 @@
         <div id="refpro">
             <section id="checkout-content" class="margin-top-6-em max-width-1035 three-rows-grid">
                 <div class="step-wrapper">
+                    <h1 class="centered primary-color uppercase">Order Placed</h1>
+                    <p class="centered">Please check your email address for further information. Or visit your <a href="/home/index" class="primary-color underline one-em-font">subscriptions page</a>.</p>
                     <h2 class="centered black-font">{{$user->given_name}}, get up to $90 in store credit by <br>inviting your friends to Boxeon!</h2>
                     <p class="centered center font-size-1-5-em">For every friend that makes a purchase on Boxeon, we'll give you both $10.00 store credit.</p>
                     <div>
