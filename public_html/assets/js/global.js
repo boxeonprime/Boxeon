@@ -9,6 +9,8 @@ var controller = new AbortController();
 var signal = controller.signal;
 
 
+
+
 // import instance from './modules/messages.js'
 
 
@@ -527,12 +529,12 @@ Shipping = {
 
 Subscriptions = {
 
-  recordConversion:function(){
+  recordConversion: function () {
 
-    gtag('event', 'conversion', {
+    GTAG('event', 'conversion', {
       'send_to': 'AW-1008829526/GDl7CO_9uN8DENaIhuED',
       'transaction_id': 'sub'
-  });
+    });
 
   },
 
@@ -651,10 +653,10 @@ Subscriptions = {
       if (re == 1) {
         Boxeon.deleteCookie("cart");
         localStorage.setItem("celebrate", true);
-        Subscription.recordConversion();
+       
         location.href = "/checkout/referal";
       } else {
-       // inspect console
+        // inspect console
       }
     }
     Boxeon.loader();
@@ -1228,7 +1230,7 @@ window.onload = function () {
         Boxeon.disableButton(this.querySelector('[type=submit]'));
         let cart = Boxeon.getCookie("cart");
         Subscriptions.order(cart);
-     
+
       });
     }
   }
@@ -1245,6 +1247,15 @@ window.onload = function () {
 
   }
 
+
+  if (document.getElementById("refpro")) {
+
+    gtag('event', 'conversion', {
+      'send_to': 'AW-1008829526/GDl7CO_9uN8DENaIhuED',
+      'transaction_id': 'sub'
+    });
+
+  }
 
   // Google Analytics -- SHOULD THIS BE MOVED UP?
 
@@ -1271,7 +1282,7 @@ window.onload = function () {
   //import instance from './modules/messages.js'
 
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'AW-1008829526');
