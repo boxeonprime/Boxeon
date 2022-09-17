@@ -148,7 +148,7 @@ class CheckoutController extends Controller
                 ]);
 
             Session::flash('message', 'Order placed!');
-            return view('checkout.referal', compact('user'));
+            return true;
 
         }
 
