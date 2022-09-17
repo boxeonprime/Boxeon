@@ -5,7 +5,7 @@
 
     <main id="checkout-main">
         <span></span>
-        <div id="">
+        <div id="refpro">
             <section id="checkout-content" class="margin-top-6-em max-width-1035 three-rows-grid">
                 <div class="step-wrapper">
                     <h2 class="centered black-font">{{$user->given_name}}, get up to $90 in store credit by <br>inviting your friends to Boxeon!</h2>

@@ -374,8 +374,8 @@ Boxeon = {
 
 
   disableButton: function (b) {
-   
-      b.disabled = true;
+
+    b.disabled = true;
 
   },
 
@@ -1205,7 +1205,20 @@ window.onload = function () {
     }
   }
 
-  // Place order
+ 
+
+  // Event snippet for Waiting List Signup conversion page
+  function gtag_report_conversion() {
+
+
+    gtag('event', 'conversion', {
+      'send_to': 'AW-1008829526/GDl7CO_9uN8DENaIhuED',
+      'transaction_id': ''
+    });
+
+  }
+  
+ // Place order
   if (document.getElementsByClassName("place-order")) {
     let form = document.getElementsByClassName("place-order");
     for (let i = 0; i < form.length; i++) {
@@ -1214,6 +1227,7 @@ window.onload = function () {
         Boxeon.disableButton(this.querySelector('[type=submit]'));
         let cart = Boxeon.getCookie("cart");
         Subscriptions.order(cart);
+        gtag_report_conversion();
       });
     }
   }
@@ -1234,7 +1248,7 @@ window.onload = function () {
   // Google Analytics -- SHOULD THIS BE MOVED UP?
 
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-K2QWJJNEVD');
@@ -1247,28 +1261,22 @@ window.onload = function () {
 
   });
 
-  // Event snippet for Waiting List Signup conversion page
-  function gtag_report_conversion(url) {
 
-    var callback = function () {
-      if (typeof (url) != 'undefined') {
-        window.location = url;
-      }
-    };
-    gtag('event', 'conversion', {
-      'send_to': 'AW-10788250660/CKWeCNWaosUDEKTInpgo',
-      'event_callback': callback
-    });
-    return false;
 
-    
-  }
 
-  if (document.getElementById('survey')) {
-    document.getElementById('survey').addEventListener('click', function () {
-      gtag_report_conversion("https://boxeon.com/apply/survey");
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
 
-    });
+  gtag('config', 'AW-1008829526');
+
+
+
+  if (document.getElementById('refpro')) {
+
+   // gtag_report_conversion("https://boxeon.com/checkout/referal");
+
+
   }
 
   // Exit Intent Popup

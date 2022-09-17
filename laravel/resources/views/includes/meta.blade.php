@@ -24,6 +24,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
 <script defer type="module" src="{{ asset('../assets/js/global.js?v=2.1') }}"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2QWJJNEVD"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1008829526"></script>
 <script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
 <!-- Meta Pixel Code -->
     <noscript><img height="1" width="1" style="display:none"
