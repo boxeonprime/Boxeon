@@ -56,7 +56,7 @@ class CheckoutController extends Controller
 
     public function order(Request $request)
     {
-        return true;
+       
 
         $order = json_decode(json_decode($request["order"]));
 
