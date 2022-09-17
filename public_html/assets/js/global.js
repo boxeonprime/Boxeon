@@ -1205,20 +1205,11 @@ window.onload = function () {
     }
   }
 
- 
-
-  // Event snippet for Waiting List Signup conversion page
-  function gtag_report_conversion() {
 
 
-    gtag('event', 'conversion', {
-      'send_to': 'AW-1008829526/GDl7CO_9uN8DENaIhuED',
-      'transaction_id': ''
-    });
 
-  }
-  
- // Place order
+
+  // Place order
   if (document.getElementsByClassName("place-order")) {
     let form = document.getElementsByClassName("place-order");
     for (let i = 0; i < form.length; i++) {
@@ -1227,7 +1218,7 @@ window.onload = function () {
         Boxeon.disableButton(this.querySelector('[type=submit]'));
         let cart = Boxeon.getCookie("cart");
         Subscriptions.order(cart);
-        gtag_report_conversion();
+     
       });
     }
   }
@@ -1262,23 +1253,6 @@ window.onload = function () {
   });
 
 
-
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'AW-1008829526');
-
-
-
-  if (document.getElementById('refpro')) {
-
-   // gtag_report_conversion("https://boxeon.com/checkout/referal");
-
-
-  }
-
   // Exit Intent Popup
   document.addEventListener("mouseleave", function () {
     //document.getElementById('popup').open = true;
@@ -1286,9 +1260,15 @@ window.onload = function () {
 
   //import instance from './modules/messages.js'
 
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'AW-1008829526');
 
   // Close the dropdown menu if the user clicks outside of it
+
+  // Conversions
   window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -1301,6 +1281,9 @@ window.onload = function () {
       }
     }
   }
+
+
+
 
   if (document.getElementsByClassName("loader")[0]) {
     Boxeon.removeLoader();

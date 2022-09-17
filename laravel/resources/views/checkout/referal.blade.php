@@ -1,5 +1,7 @@
 @extends('layouts.checkout')
 @section('title', 'Boxeon.com Referal Program')
+<script defer type="module" src="{{ asset('../assets/js/gtag-conversion.js?v=2.1') }}"></script>
+
 
 @section('content')
 
