@@ -17,6 +17,16 @@ class SchoolController extends Controller
                 ->with('article', $articles);
     }
 
+  
+
+    public function nearme()
+    {
+       
+        $user = Auth::user();
+        return view('nearme.index', compact('user', $user));
+    }
+
+
     public function article(Request $request)
     {
         $article = $request['article'];

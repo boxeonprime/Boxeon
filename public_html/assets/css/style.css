@@ -818,13 +818,11 @@ dialog p {
   color: #fff;
 } */
 
-/* #banner {
+#banner {
 
-  height: 250px;
-  background-image: url("../images/about-bg.png");
-  background-repeat: no-repeat;
+  padding: 1.5em;
 
-} */
+}
 
 .max-width-1035 {
   width: 100%;
@@ -1404,7 +1402,6 @@ dialog p {
   padding-bottom: 56.25%;
   /* 16:9 */
   height: auto;
-  margin-bottom: 4em;
   width: 100%
 }
 
@@ -2716,6 +2713,10 @@ a {
   margin-top: 5em;
   width: 100%;
 } */
+#blogs-stream {
+  grid-gap: 1em;
+  grid-template-columns: 70% 30%;
+}
 
 #team-wrapper img {
   width: auto;
@@ -2896,6 +2897,7 @@ a:active {
 
 a:hover {
   text-decoration: underline;
+  color: green;
 }
 
 .learn-more:hover {

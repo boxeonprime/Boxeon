@@ -33,9 +33,9 @@ class ComposerStaticInita1a323e9c9e386c357b17c196fe1a05e
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
+        '40275907c8566c390185147049ef6e5d' => __DIR__ . '/..' . '/livewire/livewire/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
-        '40275907c8566c390185147049ef6e5d' => __DIR__ . '/..' . '/livewire/livewire/src/helpers.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
     );
 
@@ -606,6 +606,7 @@ class ComposerStaticInita1a323e9c9e386c357b17c196fe1a05e
         'App\\Actions\\Jetstream\\DeleteUser' => __DIR__ . '/../..' . '/app/Actions/Jetstream/DeleteUser.php',
         'App\\Console\\Commands\\DispatchCampaign' => __DIR__ . '/../..' . '/app/Console/Commands/DispatchCampaign.php',
         'App\\Console\\Commands\\Scraper' => __DIR__ . '/../..' . '/app/Console/Commands/Scraper.php',
+        'App\\Console\\Commands\\Subscribe' => __DIR__ . '/../..' . '/app/Console/Commands/Subscribe.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\AccountController' => __DIR__ . '/../..' . '/app/Http/Controllers/AccountController.php',
@@ -635,6 +636,7 @@ class ComposerStaticInita1a323e9c9e386c357b17c196fe1a05e
         'App\\Http\\Controllers\\SubscriptionController' => __DIR__ . '/../..' . '/app/Http/Controllers/SubscriptionController.php',
         'App\\Http\\Controllers\\YoutubeController' => __DIR__ . '/../..' . '/app/Http/Controllers/YoutubeController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
+        'App\\Http\\Livewire\\Counter' => __DIR__ . '/../..' . '/app/Http/Livewire/Counter.php',
         'App\\Http\\Middleware\\AdminMiddleware' => __DIR__ . '/../..' . '/app/Http/Middleware/AdminMiddleware.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\ContributorMiddleware' => __DIR__ . '/../..' . '/app/Http/Middleware/ContributorMiddleware.php',

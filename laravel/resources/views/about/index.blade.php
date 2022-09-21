@@ -11,8 +11,8 @@
         </div>
 
         <section id="banner" class="section wide bg-color-yellow">
-            <h1 id="banner-slogan" class="centered ginormous"><i>Welcome!</i> &nbsp;You've reached the <a class="one-em-font"
-                    href="https://www.youtube.com/channel/UCxjZrfFw9XpEsKZ5hOa4EZA" target="_blank">Home In A Box Movement</a></h1>
+            <h1 id="banner-slogan" class="centered ginormous"><i>Welcome!</i> &nbsp;You've reached the <a class="one-em-font primary-color"
+                    href="/blog/post/">Home In A Box Movement</a></h1>
             <div class="m-hide card white">
                 <h1 class="text-3em">We started Boxeon to make it simple for the diaspora to enjoy the foods they love from
                     home. But we quickly learned that Boxeon is much more than that. If you've ever had problems with time

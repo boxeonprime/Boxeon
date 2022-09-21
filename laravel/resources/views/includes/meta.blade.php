@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert%20One">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
 <script defer type="module" src="{{ asset('../assets/js/global.js?v=2.1') }}"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K2QWJJNEVD"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZLWPCSLD0Q"></script>
 <!-- Global site tag (gtag.js) - Google Ads: 1008829526 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1008829526"></script>
 

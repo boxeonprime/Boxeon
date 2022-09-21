@@ -653,7 +653,7 @@ Subscriptions = {
       if (re == 1) {
         Boxeon.deleteCookie("cart");
         localStorage.setItem("celebrate", true);
-       
+
         location.href = "/checkout/referal";
       } else {
         // inspect console
@@ -1247,6 +1247,7 @@ window.onload = function () {
 
   }
 
+  // Record Conversion - UPDATE
 
   if (document.getElementById("refpro")) {
 
@@ -1257,14 +1258,18 @@ window.onload = function () {
 
   }
 
-  // Google Analytics -- SHOULD THIS BE MOVED UP?
+  // Record Traffic
 
   window.dataLayer = window.dataLayer || [];
+
   function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
+    gtag('js', new Date());
 
-  gtag('config', 'G-K2QWJJNEVD');
+    gtag('config', 'G-ZLWPCSLD0Q');
 
+    gtag('event', 'screen_view', {
+    'traffic_type': 'internal'
+  });
 
   window.addEventListener('onbeforeunload', function () {
 
@@ -1285,7 +1290,7 @@ window.onload = function () {
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
-  gtag('config', 'AW-1008829526');
+  gtag('config', 'G-ZLWPCSLD0Q');
 
   // Close the dropdown menu if the user clicks outside of it
 

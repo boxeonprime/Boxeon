@@ -56,6 +56,24 @@ Route::prefix('school')->group(function () {
 
 });
 
+#BLOG
+Route::prefix('blog')->group(function () {
+    Route::get('/', 'App\Http\Controllers\BlogController@index')->name('blog.index');
+    Route::get('/post', 'App\Http\Controllers\BlogController@post')->name('blog.post');
+    Route::get('/recipes', 'App\Http\Controllers\SchoolController@recipes')->name('school.recipes');
+
+
+});
+
+#NEAR ME
+Route::prefix('nearme')->group(function () {
+    Route::get('/', 'App\Http\Controllers\SchoolController@nearme')->name('nearme.index');
+    Route::get('/article/{article}', 'App\Http\Controllers\SchoolController@article')->name('school.article');
+    Route::get('/recipes', 'App\Http\Controllers\SchoolController@recipes')->name('school.recipes');
+
+
+});
+
 #SHOP
 Route::prefix('shop')->group(function () {
     Route::get('/item', 'App\Http\Controllers\ShopController@item')->name('shop.item');

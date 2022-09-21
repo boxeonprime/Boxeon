@@ -13,7 +13,7 @@
             <span class='material-icons'>search</span></a>
         @auth
             <a href="/gifts" class="button one-em-font phone-hide">Gifts‬</a>
-            <a href="/cart/index" class="white button"><span><img id="cart" class="w30px" src="../assets/images/cart.png"
+            <a href="/cart/index" class="white button"><span><img id="cart" class="w30px" src='{{ asset('../assets/images/cart.png') }}'
                         alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
         @endauth
         @if (!Auth::check())
@@ -24,6 +24,7 @@
         
             <a id="showDropdown" class='fadein button margin-right-1-em m-padding-right-zero' href='#'><span class="material-icons">account_circle</span>
             </a>
+            
             <div class="dropdown">
                 <div id="myDropdown" class="dropdown-content">
                     <a class='one-em-font' href='/login'>Sign in

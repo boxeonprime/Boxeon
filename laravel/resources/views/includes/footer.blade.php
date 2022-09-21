@@ -1,7 +1,7 @@
 <footer>
     <section id="banner-footer" class="section wide">
         <div class="row">
-        <img id="img-gifts" class="center image-how-it-works" src="../assets/images/gifts.svg" alt="Gifts" />
+        <img id="img-gifts" class="center image-how-it-works" src='{{ asset('../assets/images/gifts.svg') }}' alt="Gifts" />
 
         <h2 class="centered center extra-large-font">Get 16 foods + 3 surprises for the price of 1!</h2>
         <p class="centered center">Sign up and answer a survey question to qualify. Offer ends soon.</p>
@@ -24,6 +24,7 @@
         <a href="/privacy">Privacy</a>
         <a href="/returns">Returns & Refunds</a>
         <a href="/about">About</a>
+        <a href="/blog">Blog</a>
 
     </div>
     <br>
