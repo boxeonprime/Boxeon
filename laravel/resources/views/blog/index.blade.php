@@ -4,7 +4,7 @@
     <main>
         <section class="section card maxw1035">
             @include('includes.category-nav')
-            <section id="blogs-stream" class='section two-col-grid'>
+            <div id="blogs-stream" class='two-col-grid'>
                 <div>
 
                     <a href="/blog/post/"> <img class="maxw600px" src='{{ asset('../assets/images/placeholder.webp')}}' /></a>
@@ -21,7 +21,7 @@
                 </div>
 
                 <div>
-                    <a href="#"> <img class="maxw300px" src="../assets/images/placeholder.webp" /></a>
+                    <a href="#"> <img class="w100per" src="../assets/images/placeholder.webp" /></a>
 
                     <a href="#">
                         <h2 class="primary-color">Lorem ipsum dolor sit amet</h2>
@@ -29,11 +29,11 @@
                     <div class="div-horizontal-rule"></div>
                 </div>
 
-            </section>
+            </div>
 
             <br>
             <hr>
-            <h2 class="extra-large-font uppercase">The Latest</h2>
+            <h2 class="extra-large-font uppercase">Afro Fusion</h2>
             <hr>
 
             <div class="three-col-grid">

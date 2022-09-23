@@ -1267,9 +1267,9 @@ window.onload = function () {
 
     gtag('config', 'G-ZLWPCSLD0Q');
 
-    /*gtag('event', 'screen_view', {
+    gtag('event', 'screen_view', {
     'traffic_type': 'internal'
-  });*/
+  });
 
   window.addEventListener('onbeforeunload', function () {
 

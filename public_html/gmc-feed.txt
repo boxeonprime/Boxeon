@@ -1,0 +1,1303 @@
+<rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
+	<channel>
+		<title>Boxeon - Monthly African Food Subscription</title>
+		<link>http://www.boxeon.com
+		<description>Home in a box. Subscribe to monthly deliveries of your favorite foods from home to save time and money. Cancel anytime.</description><item>
+			<g:id>1</g:id>
+			<g:title>Yellow Gari</g:title>
+			<g:description>Satisfy your cravings with our delicious Nigerian yellow gari. Made from organically grown cassava, and freshly ground</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=1</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/yellow-gari.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>9.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>2</g:id>
+			<g:title>Ogbono Seeds (Whole)</g:title>
+			<g:description>Our Ogbono is deliciously aromatic, adds a thickening consistency and an incredible nutty flavor to rich West African Soups/Stews.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=2</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/ogbono-seeds-whole.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>11.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>3</g:id>
+			<g:title>African White Beans</g:title>
+			<g:description>Africa White Beans has a distinct white color with a black spot and is a favorite alternative to the traditional Honey or Sweet Bean.  It has a mild flavor and is very versatile. African White Beans Can be used in any bean recipe.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=3</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/african-white-beans.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>8.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>4</g:id>
+			<g:title>Ground Crayfish (Sand Free)</g:title>
+			<g:description>Create authentic Nigerian dishes with fresh Nigerian crayfish! Ground crayfish adds a rich flavor and a unique taste to your soup or stew. It is essential to most Nigerian dishes.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=4</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/ground-crayfish.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>9.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>5</g:id>
+			<g:title>Atama Leaves</g:title>
+			<g:description>Aromatic and slightly bitter. Atama leaves is used to make Abak Atama a popular soup consumed in Nigeria. Get ready to get hooked on this spicy yet soothing soup!</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=5</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/atama-leaves.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>9.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>6</g:id>
+			<g:title>Ijebu Gari</g:title>
+			<g:description>This cassava cereal is made by Ijebu farmers who have made the artisanal creation of gari renowned by locals and foreigners alike. Our garri is carefully processed to perfection without any synthetic chemicals to produce the finest grains ever. </g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=6</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/ijebu-gari.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>10.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>7</g:id>
+			<g:title>Sweet (Honey) Beans</g:title>
+			<g:description>Sweet (Honey) Beans is a sweeter version of black eyed peas. It has a unique lightly sweet taste that works when cooked by itself or in complicated West African recipes like Moin-Moin (Bean cakes) or Akara (Bean Fritters). </g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=7</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/sweet-honey-beans.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>10.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>8</g:id>
+			<g:title>Ground Egusi</g:title>
+			<g:description>Prized for it’s thickening qualities for savory West African stews, it lends a distinctive and delicious nutty flavor to any dish it is added to. Our Egusi seeds are carefully selected and processed to the highest standard to bring you the best</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=8</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/ground-egusi.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>10.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>9</g:id>
+			<g:title>Ugu (Pumpkin) Leaves</g:title>
+			<g:description>This popular leaf is a vitamin packed west African favorite! It has a lightly sweet finish and is a great accompaniment to any African Soup/Stew.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=9</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/ugu-pumpkin-leaves.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>8.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>10</g:id>
+			<g:title>Whole Egusi</g:title>
+			<g:description>These protein rich melon seeds is packed with nutrients and popular in West African cooking. Prized for it’s thickening qualities for savory West African stews, it lends a distinctive and delicious nutty flavor to any dish it is added to. </g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=10</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/whole-egusi.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>8.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>11</g:id>
+			<g:title>Yam Flour (Elubo)</g:title>
+			<g:description>This flour is packed with fiber and has less calories than other staple flours. When cooked to instructions, this dark fufu will be light and fluffy and will pair deliciously with hearty West African soups or stews.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=11</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/yam-flour.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>11.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>12</g:id>
+			<g:title>Birdseye Chillies</g:title>
+			<g:description>African Birdseye Chillie spice blend is made from Peri-Peri, a very hot and pungent variety of the capsicum chili pepper. </g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=12</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/african-birdseye-chillies.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>11.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Spice</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>13</g:id>
+			<g:title>Berber</g:title>
+			<g:description>Afrofood Berber spice blend has sweet and smoky flavor profiles. It is extremely versatile and can be used on grilled meats, poultry, and fish.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=13</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/berber-spice.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>11.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Spice</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>14</g:id>
+			<g:title>Curry Powder</g:title>
+			<g:description>This curry is made of hand picked herbs and spices mixed in the Masala style. A natural choice for vegetable or fish curries. Adds great flavor to potato, chicken and pasta salads.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=14</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/curry-powder.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>11.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Spice</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>15</g:id>
+			<g:title>Pepper Soup Spice</g:title>
+			<g:description>To warm the coldest of souls, add a few teaspoonfuls to a pot of soup for intensified flavor and fragrance. The spices in this mix are made from ingredients picked and blended by young women in Africa as a means of supporting their families.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=15</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/pepper-soup-spice.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>11.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Spice</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>16</g:id>
+			<g:title>Ras El Hanout</g:title>
+			<g:description>Ras el Hanout spice blend uses the finest sweet spices to create a unique and versatile mixture that pairs well with Moroccan dishes such as couscous and any dish combining meat and fruit.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=16</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/raselhanout.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>11.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Spice</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>17</g:id>
+			<g:title>Dried Okra Powder</g:title>
+			<g:description>Grown with care and harvested at its peak freshness, these okra vegetables are sun-dried and processed into a fine powder. It adds that special “kick” to west African okra soup or acts as a thickener for other African soups and stews.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=17</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/dried-okra.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>9.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>18</g:id>
+			<g:title>Plantain</g:title>
+			<g:description>Nourish your familys spirit with fried over-ripe plantains with our 100% pure organic ripe plantains. </g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=18</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/plantain.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>6.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Produce</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>19</g:id>
+			<g:title>Banana</g:title>
+			<g:description>Nourish yourself and loved ones with our 100% pure organic bananas grown in the most fertile soil in West Africa.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=19</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/banana.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>6.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Produce</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>20</g:id>
+			<g:title>Lime</g:title>
+			<g:description>Please your family with a refreshing lime juice made from our 100% pure organic limes grown in the most fertile African soils.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=20</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/lime.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>6.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Produce</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>21</g:id>
+			<g:title>Lemon</g:title>
+			<g:description>Make delicious organic lemonade made from scratch! Our lemons are 100% pure organic lemons grown on sustainable organic farms. Subscribe today!</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=21</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/lemon.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>6.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Produce</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>22</g:id>
+			<g:title>Dudu Osun</g:title>
+			<g:description>Dudu Osun is a natural African black soap. Help with rash. This soap helps in removing irritation. This also removes itching.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=22</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/duduosun.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>3.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Body</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>23</g:id>
+			<g:title>Red Onions</g:title>
+			<g:description>These 100% organic red onions are stronger than most so you end up needing less of it.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=23</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/red-onions.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>7.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Produce</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>26</g:id>
+			<g:title>Nanas Rice (Long Grain)</g:title>
+			<g:description>Nanas Rice will change everything about how you look at rice.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=26</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/nanas-rice.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>15.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>27</g:id>
+			<g:title>Agege Artisan Bread</g:title>
+			<g:description>Taste our delicious white bread made from an authentic recipe by a former Lagos master baker.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=27</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/naira-bread.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>7.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>28</g:id>
+			<g:title>Chin Chin (8 Pack)</g:title>
+			<g:description>Jibs chin chin is made for on-the-go snacking. Each bag is made for sharing and there is enough to go around for everyone</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=28</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/chin-chin.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>24.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Snack</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>31</g:id>
+			<g:title>Banku Mix</g:title>
+			<g:description>Give old favorites a new flavor or try a brand new dish with Banku Mix Flour. Our blend of flour is as versatile as it is flavorful.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=31</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/banku-mix.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>15.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>32</g:id>
+			<g:title>Cheese Balls (Family Size)</g:title>
+			<g:description>Add a little kick to your day and a taste of your Nigerian childhood with these delicious Cheese Balls.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=32</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/cheese-balls.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>5.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Snack</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>33</g:id>
+			<g:title>Ghana Black Chocolate (10 Bars)</g:title>
+			<g:description>This single origin dark chocolate delivers smooth taste and aroma without any artificial additives or preservatives. With its delicious flavor profile, Ghana Black Chocolates are sure to please both casual chocoholics and connoisseurs alike!</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=33</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/ghana-black-chocolate.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>21.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Snack</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>34</g:id>
+			<g:title>Kingsbite Milk Chocolate (10 Bars)</g:title>
+			<g:description>Satisfy your craving for a taste of home or discover a delicious African snack. The "Golden Tree" brand of luxury chocolate is prepared to the highest standards of art by chocolate manufacturers, and has won many international awards.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=34</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/kingsbite-milk-chocolate.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>10.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Snack</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>35</g:id>
+			<g:title>Macleans</g:title>
+			<g:description>Get the perfect white smile and fresh breath with Macleans. It protects against decay and freshens your breath. Use morning and night to leave you with a freshness you can feel.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=35</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/macleans.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>6.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; body</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>36</g:id>
+			<g:title>Nigerian Red Palm Oil</g:title>
+			<g:description>Premium quality Nigerian Red Palm Oil. Start cooking with ancient African tradition. Nigerians cook with red palm oil because it brings out the flavors in their dishes better than any other oil! Our unrefined palm oil is pure and healthy.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=36</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/palm-oil.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>29.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>37</g:id>
+			<g:title>Praise Palm Oil</g:title>
+			<g:description>Start cooking with ancient African tradition. Nigerians cook with red palm oil because it brings out the flavors in their dishes better than any other oil! Our unrefined palm oil is pure and healthy.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=37</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/praise-palm-oil.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>13.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>38</g:id>
+			<g:title>Tropiway Plantain Fufu Flour</g:title>
+			<g:description>How do I make fufu? Easily make a delicious meal at home with Tropiway Plantain Fufu Flour. It can also be used for frying meats, fish and poultry and thickening gravy, soup or stew.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=38</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/tropiway-plantain-fufu.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>12.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>39</g:id>
+			<g:title>Ugu Leaves (Dried)</g:title>
+			<g:description>Create a tasty African dish today! Ugu leaves are perfect for soups like egusi, okra, or ogbono soup! Soak leaves in cool water before use.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=39</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/ugu-pumpkin-leaves.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>4.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>41</g:id>
+			<g:title>African Black Beans</g:title>
+			<g:description>They taste as good as they are good for you!  Our Organic Black Beans are imported directly from Africa where they are grown organically.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=41</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/african-black-beans.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>8.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>42</g:id>
+			<g:title>African Black Pepper</g:title>
+			<g:description>African Black Pepper. PRACTICAL AND VERSATILE: These selim spice are perfect for seasoning food, use as an aromatic note in your stew, or add a bit of spice to fish.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=42</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/african-black-pepper.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>17.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Spice</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>43</g:id>
+			<g:title>Jollof Rice Seasoning</g:title>
+			<g:description>Jollof Rice Pilaf Seasoning.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=43</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/jollof-seasoning.jpg</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>7.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Spice</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>44</g:id>
+			<g:title>Alaffia Liquid Black Soap</g:title>
+			<g:description>African Black Soap is detoxifying, clarifying, and gently cleanses while promoting radiant, healthy-looking hair and skin. It can help combat acne while smoothing out skin texture.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=44</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/alaffia-african-liquid-black-soap.jpg</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>13.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Body</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>45</g:id>
+			<g:title>Badia Fried Rice Seasoning</g:title>
+			<g:description>Badia Fried Rice Seasoning.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=45</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/badia-fried-rice-seasoning.jpg</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>6.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Spice</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>46</g:id>
+			<g:title>Badia Jollof Rice Seasoning</g:title>
+			<g:description>Badia Jollof Rice Seasoning.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=46</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/badia-jollof-rice-seasoning.jpg</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>6.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Spice</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>47</g:id>
+			<g:title>Suya</g:title>
+			<g:description>Suya Seasoning.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=47</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/suya-seasoning.jpg</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>14.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Spice</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>48</g:id>
+			<g:title>Dried Smoked Shrimp</g:title>
+			<g:description>Satisfy any craving from a childhood favorite to a sophisticated palate! Dried Smoked shrimp is used to add succulent shrimp flavor without the hassle of thawing. </g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=48</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/dried-smoked-shrimp.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>8.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>49</g:id>
+			<g:title>Indomie Noodles (10 pack)</g:title>
+			<g:description>Nigerian Noodles? We have got it! Nigerian Indomie Noodles is a spicy noodle which is not salty like Ramen noodles. It has 3 seasonings which are great tasting!</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=49</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/indomie.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>20.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Snack</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>50</g:id>
+			<g:title>Milkose Butter Milk Candy (48 candies)</g:title>
+			<g:description>For a treat like no other, try Milkose Nigerian Rich Butter Milk Candy!</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=50</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/milkose.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>11.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Snack</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>51</g:id>
+			<g:title>Milo Energy Cubes (50 Cubes)</g:title>
+			<g:description>Choco Milo is a popular Milo Energy Cube made in Ghana West Africa by Nestle Ghana. Each packet contains 50 cubes. 100% Satisfaction Guaranteed. Great Gift idea for Friends &amp; Family. Melts in the mouth and can be brewed with water. </g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=51</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/milo-energy-cubes.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>13.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Snack</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>53</g:id>
+			<g:title>Maggi Cubes</g:title>
+			<g:description>Maggi Seasoning Cubes.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=53</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/maggi-cubes.jpg</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>12.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Spice</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>54</g:id>
+			<g:title>Ground Ogbono</g:title>
+			<g:description> Our Ogbono is deliciously aromatic, adds a thickening consistency and an incredible nutty flavor to rich West African Soups/Stews. </g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=54</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/ground-ogbono.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>8.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>55</g:id>
+			<g:title>Plantain Flour (Plantain Elubo)</g:title>
+			<g:description>This is a great alternative for the health conscious as Afrofood Plantain flour creates a lighter calorically dense fufu than other fufu staples. With it’s distinctive texture and lightly sweet flavor, it is easy to forget this fufu is good for you!</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=55</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/plantain-fufu-flour.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>11.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>56</g:id>
+			<g:title>African Hot Pepper (Red)</g:title>
+			<g:description>Our hot pepper powder is a delicious and spicy blend of hot peppers sourced right from the motherland. This blend can be used for any dish needing that certain spicy kick!</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=56</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/african-hot-pepper.jpeg</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>7.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Spice</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>57</g:id>
+			<g:title>Peeled Black Eye Peas</g:title>
+			<g:description>Make delicious Nigerian Moin-moin at home! Our Peeled Black Eye Beans are organic and imported straight from West Africa.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=57</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/peeled-black-eyed-beans.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>20.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>58</g:id>
+			<g:title>Lion Curry Powder</g:title>
+			<g:description>Popular Nigerian Lion Curry Powder.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=58</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/lion-curry-powder.jpeg</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>7.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Spice</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>59</g:id>
+			<g:title>Kuli Kuli Peanut Cracker (4 Pack)</g:title>
+			<g:description>First made by the Nupe tribe of West Africa and it is a popular snack in Nigeria, Benin, Northern Cameroon and Ghana. Kuli Kuli can be eaten at any time of the day. </g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=59</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/kuli-kuli.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>31.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Snack</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>60</g:id>
+			<g:title>Aunties Puff Puff Mix (Makes 30)</g:title>
+			<g:description>The mixture is made up of only five ingredients -- nutmeg, salt, sugar, flour, and yeast. This simple snack can be made with only three steps, starting off with adding water, then mixing the blend, and frying the puff puffs.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=60</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/puff-puff-mix.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>13.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Snack</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>61</g:id>
+			<g:title>Kilishi (Spicy Beef Jerky)</g:title>
+			<g:description>This brand has been in beef jerky business for 7 years and has the expertise in producing quality and delicious African beef jerky to your taste. Kilishi originates from the northern part of Nigeria and is a peppery snack.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=61</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/kilishi.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>18.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Snack</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>62</g:id>
+			<g:title>Tom Tom Candies (40 Pieces)</g:title>
+			<g:description>A product of Cadbury, they’ve got a minty, menthol flavor, which makes them especially popular when one feels a bit of a cold coming on.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=62</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/tom-tom.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>6.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Snack</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>63</g:id>
+			<g:title>Jacobs Cream Crackers (4 Pack)</g:title>
+			<g:description>Jacobs Cream Crackers are crisp and flaky crackers perfect with cheese.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=63</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/jacobs-crackers.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>18.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Snack</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>64</g:id>
+			<g:title>Nanas Rice (Short Grain)</g:title>
+			<g:description>This will change everything about how you look at rice.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=64</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/nanas-rice-short-grain-1kg.png</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>15.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; Staple</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item><item>
+			<g:id>65</g:id>
+			<g:title>African Staples Mealkit</g:title>
+			<g:description>African staples mealkit.</g:description>
+			<g:link>https://www.boxeon.com/shop/item?id=65</g:link>
+			<g:image_link>https://boxeon.com/assets/images/products/medium/</g:image_link>
+			<g:condition>new</g:condition>
+			<g:availability>in stock</g:availability>
+			<g:price>154.00 USD</g:price>
+			<g:shipping>
+				<g:country>US</g:country>
+				<g:service>Flat Rate</g:service>
+				<g:price>17.00 USD</g:price>
+			</g:shipping>
+			
+			<g:gtin></g:gtin>
+			<g:brand></g:brand>
+			<g:mpn></g:mpn>
+			
+
+			<g:google_product_category>Food &gt; mealkit</g:google_product_category>
+			<g:product_type>African</g:product_type>
+		</item></channel></rss>
