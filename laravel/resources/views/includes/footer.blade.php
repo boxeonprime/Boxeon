@@ -24,7 +24,7 @@
         <a href="/privacy">Privacy</a>
         <a href="/returns">Returns & Refunds</a>
         <a href="/about">About</a>
-        <a href="/blog">Blog</a>
+    
 
     </div>
     <br>

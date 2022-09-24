@@ -731,12 +731,22 @@ dialog p {
 
 }
 
+
+.blog-title {
+  padding: 0.5em;
+  background: #f8f8c1;
+  font-weight: 600;
+}
+
 .title-style-span {
   padding: 0.5em;
   background-color: green;
   color: white;
   width: fit-content;
-
+  font-size: .8em;
+  line-height: 1.3em;
+  text-align: left;
+  display: block;
 
 }
 
@@ -1975,6 +1985,16 @@ main h1 {
   font-family: 'Open Sans';
 
 } */
+h2{
+  font-size: 2em;
+  color:green;
+}
+h3{
+  font-size: 1.6em;
+  color:green;
+  font-weight: normal;
+}
+
 
 .extra-large-font {
   font-size: 2em;
@@ -2056,6 +2076,7 @@ main h1 {
   grid-template-columns: auto auto auto;
   margin: 2em;
   margin: auto;
+
 }
 
 #about .grid-two-cols img {
@@ -2337,6 +2358,11 @@ container when the user clicks on the dropdown button) */
   position: relative;
 }
 
+.p-relative {
+  position: relative;
+
+}
+
 .p-relative img {
   width: 100%;
 
@@ -2351,11 +2377,13 @@ container when the user clicks on the dropdown button) */
 }
 
 .p-title {
-  position: relative;
+  position: absolute;
+  left:0;
   bottom: 50%;
   font-size: 1em;
   letter-spacing: 2px;
   font-weight: normal;
+  min-height:69px;
 }
 
 /*.numbers {
@@ -2660,7 +2688,7 @@ a {
 }
 
 .section h3 {
-  font-weight: bold;
+  //font-weight: bold;
 }
 
 .maxw800px {
@@ -2907,6 +2935,84 @@ a:hover {
   text-decoration: none;
 
 }
+.table-of-contents{
+  background-color: #8bc34a0a;
+  padding:1em;
+  padding-bottom:2em;
+}
+.table-of-contents ul li{
+
+  border-bottom:1px solid #ccc;
+  padding:.5em;
+
+}
+.table-of-contents ul{
+
+  padding-left:.0;
+
+}
+
+.nutrition-col {
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  float: right;
+  margin: 0 0 4.375rem 3.125rem;
+ 
+}
+.nutrition-col .macro-facts {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 2;
+}
+.nutrition-col .macro-facts__main-thead {
+  border-bottom: 0.1875rem solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nutrition-col .macro-table {
+  border-bottom: 0.1875rem solid #ccc;
+  font-size: .9375rem;
+  padding-bottom: 0.5rem;
+}
+.nutrition-col .macro-table__thead:first-child {
+  margin-top: 0.5rem;
+}
+
+.nutrition-col .macro-table__thead {
+  border-bottom: 0.0625rem solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.nutrition-col .macro-table__nutration {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.nutrition-col .macro-table__values {
+  margin-left: 1rem;
+}
+
+.nutrition-col .daily-values {
+    margin-bottom: 1rem;
+    margin-top: 0.5625rem;
+}
+
+.nutrition-col .daily-values p, .nutrition-col .micro-facts-vitamins {
+  font-size: .8125rem;
+  font-weight: 500;
+}
+
 
 .charitable-grid {
   display: grid !important;
@@ -2915,6 +3021,21 @@ a:hover {
   grid-gap: 1em;
 
   width: 414px;
+}
+.nutrition-col .micro-facts-vitamins>ul {
+  -moz-columns: 2;
+  -webkit-columns: 2;
+  -webkit-column-gap: 4.25rem;
+  -moz-column-gap: 4.25rem;
+  column-gap: 4.25rem;
+  columns: 2;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nutrition-col .macro-table__thead:last-child {
+  border-bottom: none;
 }
 
 .charitable-grid img {
@@ -3455,11 +3576,12 @@ ul li {
 }
 
 ul, p {
-  line-height: 140%;
+  line-height: 160%;
   color: #023256;
 }
 
 ul li, ol li, td, p, a, label {
+  line-height: 1.8em;
   font-size: 1.3em;
   /* Don't change */
 }
@@ -3483,12 +3605,6 @@ td ul li {
   box-shadow: 2px 4px 12px #0c8dc41a;
 }
 
-
-h3 {
-
-  font-size: 2em;
-
-}
 
 html, body {
   margin: 0;
