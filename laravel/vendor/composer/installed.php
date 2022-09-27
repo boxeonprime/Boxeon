@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '2019963753b8cc4be67526614074796145530cd0',
+        'reference' => '02bb4bf37f6837555ff44a93ffcac25c38de0c41',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -472,7 +472,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '2019963753b8cc4be67526614074796145530cd0',
+            'reference' => '02bb4bf37f6837555ff44a93ffcac25c38de0c41',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -679,15 +679,6 @@
             'reference' => '9229e15f2e6ba772f0c55dd6986c563b937170a8',
             'dev_requirement' => false,
         ),
-        'paragonie/random_compat' => array(
-            'pretty_version' => 'v9.99.100',
-            'version' => '9.99.100.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../paragonie/random_compat',
-            'aliases' => array(),
-            'reference' => '996434e5492cb4c3edcb9168db6fbb1359ef965a',
-            'dev_requirement' => false,
-        ),
         'phar-io/manifest' => array(
             'pretty_version' => '2.0.3',
             'version' => '2.0.3.0',
@@ -740,15 +731,6 @@
             'install_path' => __DIR__ . '/../phpoption/phpoption',
             'aliases' => array(),
             'reference' => 'eab7a0df01fe2344d172bff4cd6dbd3f8b84ad15',
-            'dev_requirement' => false,
-        ),
-        'phpseclib/phpseclib' => array(
-            'pretty_version' => '3.0.16',
-            'version' => '3.0.16.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../phpseclib/phpseclib',
-            'aliases' => array(),
-            'reference' => '7181378909ed8890be4db53d289faac5b77f8b05',
             'dev_requirement' => false,
         ),
         'phpspec/prophecy' => array(
@@ -963,15 +945,6 @@
             'install_path' => __DIR__ . '/../ramsey/uuid',
             'aliases' => array(),
             'reference' => 'fc9bb7fb5388691fd7373cd44dcb4d63bbcf24df',
-            'dev_requirement' => false,
-        ),
-        'renoki-co/laravel-web3' => array(
-            'pretty_version' => '3.1.0',
-            'version' => '3.1.0.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../renoki-co/laravel-web3',
-            'aliases' => array(),
-            'reference' => '3c12abec29d3f61387a431b2a09743d405842015',
             'dev_requirement' => false,
         ),
         'rhumsaa/uuid' => array(
@@ -1431,17 +1404,6 @@
             'install_path' => __DIR__ . '/../voku/portable-ascii',
             'aliases' => array(),
             'reference' => '87337c91b9dfacee02452244ee14ab3c43bc485a',
-            'dev_requirement' => false,
-        ),
-        'web3-php/web3' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../web3-php/web3',
-            'aliases' => array(
-                0 => '9999999-dev',
-            ),
-            'reference' => '33950e298ef06f212f7366fc03a362f03b2c0c62',
             'dev_requirement' => false,
         ),
         'webmozart/assert' => array(

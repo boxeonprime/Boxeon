@@ -110,12 +110,6 @@ $price = DB::table('products')
             <button data-quantity="1" data-name="African Mealkit by Jemimah" data-plan="1" data-img="sisi.jpeg"
                 data-id="68" data-baseprice="{{ $price }}"
                 data-price="{{ $price }}" class="cart-add button center">SUBSCRIBE NOW</button>
-            <section class="section">
-                <h2 class="center primary-color extra-large-font uppercase">Mealkit Author</h2>
-                <img class="center maxw300px" src="../assets/images/sisi.jpeg">
-                <h3 class="centered center font-1-5-em">Hi, I'm Jemimah Adebiyi, the mealkit author.<br>
-                    Thanks for stopping by!</h3>
-            </section>
         </section>
         </section>
 

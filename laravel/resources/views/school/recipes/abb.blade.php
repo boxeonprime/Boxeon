@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com African Foods Recipes')
+@section('title', 'Boxeon.com African Black Beans Stew')
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
@@ -11,7 +11,7 @@
                     <h1 class="blog-title font-size-3-em">African Black Beans Stew</h1>
                     <img class="w100per margin-bottom-2-em" src="../assets/images/products/abbs.jpeg">
 
-                    <p>African Black Beans Stew - tasty and comforting bean stew flavored with garlic, ginger, onions, and
+                    <p><span class="pacifico font-size-2-em primary-color">A</span>frican Black Beans Stew - tasty and comforting bean stew flavored with garlic, ginger, onions, and
                         intensified with crayfish for ultimate comfort food.</p>
                     <p>Beans are a staple food all throughout Africa because they are versatile, packed with protein, fiber,
                         and full of flavor. It’s very common to find street vendors selling beans at the exit of most
@@ -163,6 +163,9 @@
                     <h2>Conclusion</h2>
                     <p>African Black Beans is an African superfood with health benefits, amazing taste, easy to prepare, and
                         readily purchased here on Boxeon. Give it a try!</p>
+
+                        @include('includes.comments')
+
                     <h2>More African recipes to try</h2>
 
                     @include('includes.recipes-stream')

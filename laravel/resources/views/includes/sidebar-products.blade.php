@@ -15,9 +15,8 @@ if (isset($_GET['c'])) {
 
 @endphp
 
-<span></span>
-<section>
-   <h2>Subscribe And Save On African Staples</h2>
+<section class="r-float maxw250px">
+   
     <div>
         @for ($i = 0; $i < count($product); $i++)
 
@@ -29,12 +28,12 @@ if (isset($_GET['c'])) {
             @endphp
 
 
-            <div class="fit-content margin-auto">
-                <a href="/shop/item?id={{ $product[$i]->id }}"><img
+            <div class="maxw250px margin-auto">
+                <a href="/shop/item?id={{ $product[$i]->id }}"><img class="maxw250px"
                         src="../assets/images/products/medium/{{ $img }}"
                         alt="{{ $product[$i]->name }}"></a>
                 <a class="" href="/shop/item?id={{ $product[$i]->id }}">
-                    <p class="product-title">{{ $product[$i]->name }}</p>
+                    <p class="alt-product-title">{{ $product[$i]->name }}</p>
                 </a>
                 <p>Weight: {{$product[$i]->weight}} {{$product[$i]->unit}}</p>
 

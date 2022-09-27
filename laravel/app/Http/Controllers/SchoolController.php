@@ -46,7 +46,10 @@ class SchoolController extends Controller
     {
         $recipe = $request['r'];
         $user = Auth::user();
-        return view('school.recipes.' . $recipe, compact('user', $user));
+        //Find comments
+        $comments = DB::table('comments')->get();
+        return view('school.recipes.' . $recipe, compact('user', $user))
+        ->with("comments", $comments);
     }
 
 }

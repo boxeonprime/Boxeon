@@ -78,7 +78,12 @@ Brown skin: #a0616a
   overflow: hidden;
   white-space: nowrap;
 }
-
+.alt-product-title {
+ 
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .cartcheckout img {
   margin-bottom: 2em;
 }
@@ -736,6 +741,7 @@ dialog p {
   padding: 0.5em;
   background: #f8f8c1;
   font-weight: 600;
+  font-family: pacifico;
 }
 
 .title-style-span {
@@ -863,9 +869,7 @@ dialog p {
   grid-template-rows: auto;
 }
 
-/* #invite-creator-ui {
-  margin: 0 auto;
-} */
+
 
 #m-menu,
 #invites-menu {
@@ -878,6 +882,10 @@ dialog p {
   grid-template-rows: 10em 5em 5em 5em;
   grid-gap: 2em;
 
+}
+
+.r-float{
+  float:right;
 }
 
 .w300 {
@@ -1278,7 +1286,9 @@ main h1 {
 .maxw200px {
   max-width: 200px;
 }
-
+.maxw250px {
+  max-width: 250px;
+}
 /* #signin {
 
   padding-left: 2em;
@@ -2116,6 +2126,8 @@ h3{
   /* color: #fff;
   box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%); */
   font-weight: 700;
+  color:#000;
+
 }
 
 .call-out p {
@@ -2963,6 +2975,8 @@ a:hover {
   flex-direction: column;
   float: right;
   margin: 0 0 4.375rem 3.125rem;
+  margin-top:1em;
+  width:250px;
  
 }
 .nutrition-col .macro-facts {
@@ -3554,6 +3568,7 @@ table {
 
 .pacifico {
   font-family: pacifico;
+  margin-right:.2em;
 }
 
 pre,
