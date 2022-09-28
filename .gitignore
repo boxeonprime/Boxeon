@@ -3,7 +3,7 @@
 /public/storage
 /storage/*.key
 /vendor
-resources/views/includes/meta.blade.php
+/resources/views/includes/meta.blade.php
 .env
 server.php
 ftp-sync.json
