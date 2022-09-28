@@ -20,3 +20,4 @@ mix.js('resources/js/app.js', 'public_html/js')
 if (mix.inProduction()) {
     mix.version();
 }
+

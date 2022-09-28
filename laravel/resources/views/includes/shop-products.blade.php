@@ -24,7 +24,7 @@ if (isset($_GET['c'])) {
             @php
                 // HACK
                 $name = explode('.', $product[$i]->img);
-                $img = $name[0] . '.jpeg';
+                $img = $name[0] . '.webp';
                 
             @endphp
 

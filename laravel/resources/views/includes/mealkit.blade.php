@@ -22,7 +22,7 @@ $product = DB::table('products')
         @php
             // HACK
             $name = explode('.', $product[$i]->img);
-            $img = $name[0] . '.jpeg';
+            $img = $name[0] . '.webp';
             
         @endphp
 
