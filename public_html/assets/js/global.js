@@ -8,12 +8,6 @@ var Subscriptions = Subscriptions || {};
 var controller = new AbortController();
 var signal = controller.signal;
 
-
-
-
-// import instance from './modules/messages.js'
-
-
 /**
  * Utility functions
  */
@@ -1284,9 +1278,6 @@ window.onload = function () {
       }
     }
   }
-
-
-
 
   if (document.getElementsByClassName("loader")[0]) {
     Boxeon.removeLoader();

@@ -2006,7 +2006,12 @@ h3{
   color:green;
   font-weight: normal;
 }
-
+.learn-more h2{
+  font-size:1.6em;
+  color:white;
+  position:relative;
+  top:.1em;
+}
 
 .extra-large-font {
   font-size: 2em;

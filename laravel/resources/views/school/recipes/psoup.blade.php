@@ -22,37 +22,37 @@
                     <br>
                     <div class="table-of-contents">
                     <ul>
-                        <li> Assorted Meat</li>
+                        <li><form><input type="checkbox" name="1"> Assorted Meat</form></li>
 
-                        <li>Blended Onions</li>
+                        <li><form><input type="checkbox" name="1">Blended Onions</form></li>
 
-                        <li>Spring Onions </li>
+                        <li><form><input type="checkbox" name="1">Spring Onions </form></li>
 
-                        <li>Basil Leaves</li>
+                        <li><form><input type="checkbox" name="1">Basil Leaves</form></li>
 
-                        <li>Chilli for Garnishing </li>
+                        <li><form><input type="checkbox" name="1">Chilli for Garnishing</form></li>
 
-                        <li><a href="/shop/item?id=53" class="one-em-font primary-color underline">Bouillon Cubes</a> </li>
+                        <li><form><input type="checkbox" name="1"><a href="/shop/item?id=53" class="one-em-font primary-color underline">Bouillon Cubes</a> </form></li>
 
-                        <li>Salt</li>
+                        <li><form><input type="checkbox" name="1">Salt</form></li>
                     </ul>
                     </div>
                     <a href="#abb3" id="abb3"></a>
                     <h2 class="primary-color extra-large-font">Nigerian Okra Soup instructions</h2>
                     <div class="table-of-contents">
                         <ul>
-                            <li>Soak your beans in a covered container or pot of water for 8 hours</li>
-                            <li>Drain and rise the beans</li>
-                            <li>Cook beans until its just starting to become tender
-                            </li>
-                            <li>Heat up a pot with Palm Oil
-                            </li>
-                            <li>Place your onions, tomatoes, ginger, garlic, and parprika into the oil
-                            </li>
-                            <li>Once the above ingredients begin to give off their aromas, put in the chicken, maggi cubes,
+                            <li><form><input type="checkbox" name="1">Soak your beans in a covered container or pot of water for 8 hours</form></li>
+                            <li><form><input type="checkbox" name="1">Drain and rise the beans</form></li>
+                            <li><form><input type="checkbox" name="1">Cook beans until its just starting to become tender
+                            </form></li>
+                            <li><form><input type="checkbox" name="1">Heat up a pot with Palm Oil
+                            </form></li>
+                            <li><form><input type="checkbox" name="1">Place your onions, tomatoes, ginger, garlic, and parprika into the oil
+                            </form></li>
+                            <li><form><input type="checkbox" name="1">Once the above ingredients begin to give off their aromas, put in the chicken, maggi cubes,
                                 smoked shrimp, stock water, chicken, and Afican Black Beans into the pot
-                            </li>
-                            <li>Throw in a whole scotch bonnet pepper and salt to taste</li>
+                            </form></li>
+                            <li><form><input type="checkbox" name="1">Throw in a whole scotch bonnet pepper and salt to taste</form></li>
                         </ul>
                     </div>
                     <div id="video">

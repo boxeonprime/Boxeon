@@ -39,6 +39,9 @@ class ShopController extends Controller
             ->where("id", "=", $id)
             ->get();
 
+            $new = $re = explode(".", $product[0]->img);
+            $product[0]->img = $new[0] . ".webp";
+
             $reviews = DB::table("reviews")
             ->where("product", "=", $id)
             ->get();

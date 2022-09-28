@@ -1,3 +1,4 @@
+@php header("Cache-Control: max-age=2592000"); @endphp
 <title>@yield('title', config('app.name'))</title>
 <meta property="og:title" content="Boxeon.com Monthly African Food Subscription Box" />
 <meta property="og:description" content="African store online, Shop African food online, African snacks" />

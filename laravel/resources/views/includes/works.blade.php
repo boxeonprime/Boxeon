@@ -1,9 +1,9 @@
 <section class="section maxw1035 margin-bottom-4-em  mobile-scroll">
     <br>
-    <h2 class="centered">HOW IT WORKS</h2>
+    <h2 class="centered text-black">HOW IT WORKS</h2>
     <div id="how-it-works" class="three-col-grid">
         <div>
-            <img id="img-shopping" class="image-how-it-works" src="../assets/images/shopping.png" alt="Shopping" />
+            <img id="img-shopping" class="image-how-it-works" src="../assets/images/shopping.webp" alt="Shopping" />
             <h2 class="centered">Shop items</h2>
             <p class="centered">Choose the African foods you want, then select your quantity and subscription schedule.</p>
         </div>
