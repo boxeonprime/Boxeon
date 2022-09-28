@@ -9,7 +9,7 @@
             <div id="orgs" class="three-col-grid">
                 <div>
                     <a href="https://www.timeout4africa.com/stem-camp-for-girls" target="_blank">
-                        <img id="img-reminder" class="image-how-it-works h70px" src="../assets/images/stem-girls.jpg"
+                        <img id="img-reminder" class="image-how-it-works h70px" src="../assets/images/stem-girls.webp"
                             alt="Timeout 4 Africa" />
                     </a>
                     <h2 class="centered">STEM Camp for Girls</h2>
@@ -19,7 +19,7 @@
                 </div>
                 <div>
                     <a href="https://wtec.org.ng/" target="_blank">
-                        <img id="img-gifts" class="image-how-it-works h70px" src="../assets/images/wtech.jpg" alt="WTEC" />
+                        <img id="img-gifts" class="image-how-it-works h70px" src="../assets/images/wtech.webp" alt="WTEC" />
                     </a>
                     <h2 class="centered">Women's Tech Empowerment Centre</h2>
                     <p class="centered">Women's Tech Empowerment Centre focuses on fostering Nigeria's next generation
@@ -29,7 +29,7 @@
                 </div>
                 <div>
                     <a href="https://tabithahome.org/" target="_blank">
-                        <img id="img-shopping" class="image-how-it-works h70px" src="../assets/images/tabitha-girl.jpg"
+                        <img id="img-shopping" class="image-how-it-works h70px" src="../assets/images/tabitha-girl.webp"
                             alt="Hope Rising" />
                     </a>
                     <h2 class="centered">Tabitha Homes</h2>
