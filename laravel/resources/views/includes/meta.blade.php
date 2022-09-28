@@ -15,7 +15,7 @@
 <link rel="icon" type="image/svg+xml" href="{{ asset('../assets/images/favicon.png') }}">
 <link rel="alternate icon" href="{{ asset('../assets/images/favicon.png') }}">
 <link rel="mask-icon" href="https://boxeon.com/images/favicon.png" color="#fff">
-<link rel="stylesheet" href="{{ asset('../assets/css/style.css?v=35') }}">
+<link rel="stylesheet" href="{{ asset('../assets/css/style.css?v=37') }}">
 <link rel="stylesheet" href="{{ asset('../assets/css/forms.css?v=35') }}">
 <link rel="stylesheet" href="{{ asset('../css/app.css') }}">
 <link rel="stylesheet" media="screen and (min-width: 200px) and (max-width: 1810px)"

@@ -41,33 +41,5 @@
 
         @include('includes.gifts')
 
-        <section id="creators-bar" class="max-width-1035 section  mobile-scroll display-none">
-            <div class="center div-horizontal-rule"></div>
-            <h2 class="centered primary-color">BEST products</h2>
-            <div id="as-seen-on" class="four-col-grid">
-                @php
-                    $products = DB::table('products')
-                        ->where('category', '=', 'Snack')
-                        ->take(4)
-                        ->get();
-                    
-                @endphp
-                @for ($i = 0; $i < count($products); $i++)
-                    @php
-                        
-                        $n = explode('.', $products[$i]->img);
-                        $imgs = $n[0] . '.webp';
-                        
-                    @endphp
-                    <div>
-                        <a href="/shop/item?id={{ $products[$i]->id }}">
-                            <img class="maxw200px" src="../assets/images/products/{{ $imgs }}"></a>
-                        <a class="" href="/shop/item?id={{ $products[$i]->id }}">
-                            <p>{{ $products[$i]->name }}</p>
-                        </a>
-                    </div>
-                @endfor
-            </div>
-        </section>
     </main>
 @endsection

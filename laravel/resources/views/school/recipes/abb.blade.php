@@ -9,7 +9,7 @@
                 <div>
 
                     <h1 class="blog-title font-size-3-em">African Black Beans Stew</h1>
-                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/abbs.jpeg">
+                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/abbs.webp">
 
                     <p><span class="pacifico font-size-2-em primary-color">A</span>frican Black Beans Stew - tasty and comforting bean stew flavored with garlic, ginger, onions, and
                         intensified with crayfish for ultimate comfort food.</p>
