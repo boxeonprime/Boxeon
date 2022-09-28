@@ -11,7 +11,8 @@
                     <h1 class="blog-title font-size-3-em">Nigerian Party Jollof Rice</h1>
                     <img class="w100per margin-bottom-2-em" src="../assets/images/products/jollof.webp">
 
-                    <p><span class="pacifico font-size-2-em primary-color">J</span>ollof Rice is the most popular rice dish from West Africa. The dish is typically made
+                    <p><span class="pacifico font-size-2-em primary-color">J</span>ollof Rice is the most popular rice dish
+                        from West Africa. The dish is typically made
                         with
                         long-grain rice, tomatoes, onions, spices, vegetables and meat in a single pot, although its
                         ingredients
@@ -38,81 +39,159 @@
                     <br>
                     <div class="table-of-contents">
                         <h2>Table of contents</h2>
-                        <ul>
-                            <li><a class="one-em-font primary-color" href="#abb1">What are some health benefits of Jollof
-                                    Rice?</a></li>
+                        <ol>
+                            <li>
+                                <a class="one-em-font primary-color" href="#abb1">What are some health benefits of Jollof
+                                    Rice?</a>
+                            </li>
 
-                            <li><a class="one-em-font primary-color" href="#abb8">Can pregnant women eat Jollof Rice?</a>
-                            </li>
-                            <li><a class="one-em-font primary-color" href="#abb2">Jollof Rice
-                                    recipe</a></li>
-                            <li><a class="one-em-font primary-color" href="#abb3">Jollof Rice instructions</a>
-                            </li>
-                            <li><a class="one-em-font primary-color" href="#abb4">Recipe variations</a>
-                            </li>
-                            <li><a class="one-em-font primary-color" href="#abb5">Tips and tricks</a></li>
-                            <li><a class="one-em-font primary-color" href="#abb6">Serving and storage
-                                    instructions</a></li>
-                            <li><a class="one-em-font primary-color" href="#abb7">Where can you find
-                                    Jollof Rice?</a></li>
-                            <li><a class="one-em-font primary-color" href="#abb8">What goes with Jollof Rice?</a></li>
+                            <li>
+                                <a class="one-em-font primary-color" href="#abb8">Can pregnant women eat Jollof Rice?</a>
 
-                            <li><a class="one-em-font primary-color" href="#abb10">Conclusion</a></li>
-                            <li><a class="one-em-font primary-color" href="#abb9">More African
-                                    recipes to try</a></li>
-                        </ul>
+                            </li>
+                            <li>
+                                <a class="one-em-font primary-color" href="#abb2">Jollof Rice
+                                    recipe</a>
+                            </li>
+                            <li>
+                                <a class="one-em-font primary-color" href="#abb3">Jollof Rice instructions</a>
+
+                            </li>
+                            <li>
+                                <a class="one-em-font primary-color" href="#abb4">Recipe variations</a>
+
+                            </li>
+                            <li>
+                                <a class="one-em-font primary-color" href="#abb5">Tips and tricks</a>
+                            </li>
+                            <li>
+                                <a class="one-em-font primary-color" href="#abb6">Serving and storage
+                                    instructions</a>
+                            </li>
+                            <li>
+                                <a class="one-em-font primary-color" href="#abb7">Where can you find
+                                    Jollof Rice?</a>
+                            </li>
+                            <li>
+                                <a class="one-em-font primary-color" href="#abb8">What goes with Jollof Rice?</a>
+                            </li>
+
+                            <li>
+                                <a class="one-em-font primary-color" href="#abb10">Conclusion</a>
+                            </li>
+                            <li>
+                                <a class="one-em-font primary-color" href="#abb9">More African
+                                    recipes to try</a>
+                            </li>
+                        </ol>
 
                     </div>
 
                     <a href="#abb1" id="abb1"></a>
                     <h2 class="primary-color extra-large-font">What are the health benefits of Jollof Rice?</h2>
-
-
                     <h2 class="primary-color extra-large-font">Nigerian Party Jollof Rice recipe</h2>
                     <div class="table-of-contents">
                         <ul>
                             <li>
 
-                            <li><a href="/shop/item?id=26" class="one-em-font primary-color ">4 Cups African
-                                    Rice</a></li>
+                                <form><input type="checkbox" name="1"><a href="/shop/item?id=26"
+                                        class="one-em-font primary-color ">4 Cups African
+                                        Rice</a>
+                                </form>
+                            </li>
 
-                            <li>2 Red Bell Peppers (Tatashe)</li>
+                            <li>
+                                <form><input type="checkbox" name="1">2 Red Bell Peppers (Tatashe)
+                                </form>
+                            </li>
 
-                            <li>1 Can of Plum Tomatoes/ 5 Medium Size Tomatoes</li>
+                            <li>
+                                <form><input type="checkbox" name="1">1 Can of Plum Tomatoes/ 5 Medium Size Tomatoes
 
-                            <li>3 Chilli Peppers (Shombo)</li>
+                                </form>
+                            </li>
 
-                            <li>2 Paprika Peppers</li>
+                            <li>
+                                <form><input type="checkbox" name="1">3 Chilli Peppers (Shombo)
+                                </form>
+                            </li>
 
-                            <li>2 Scotch Bonnet (Ata Rodo)</li>
+                            <li>
+                                <form><input type="checkbox" name="1">2 Paprika Peppers
+                                </form>
+                            </li>
 
-                            <li>1 cup Beef or Chicken Stock</li>
+                            <li>
+                                <form><input type="checkbox" name="1">2 Scotch Bonnet (Ata Rodo)
+                                </form>
+                            </li>
 
-                            <li>120g Tomato Paste</li>
+                            <li>
+                                <form><input type="checkbox" name="1">1 cup Beef or Chicken Stock
+                                </form>
+                            </li>
 
-                            <li>2 Onions</li>
+                            <li>
+                                <form><input type="checkbox" name="1">120g Tomato Paste
+                                </form>
+                            </li>
 
-                            <li>150ml Cooking oil
+                            <li>
+                                <form><input type="checkbox" name="1">2 Onions
+                                </form>
+                            </li>
 
-                            <li>4 Tbsp Butter</li>
+                            <li>
+                                <form><input type="checkbox" name="1">150ml Cooking oil</form>
+                            </li>
 
-                            <li>3cm Ginger Root</li>
+                            <li>
+                                <form><input type="checkbox" name="1">4 Tbsp Butter
+                                </form>
+                            </li>
 
-                            <li>2 tbsp Curry powder and Thyme</li>
+                            <li>
+                                <form><input type="checkbox" name="1">3cm Ginger Root
+                                </form>
+                            </li>
 
-                            <li><a href="/shop/item?id=53" class="one-em-font primary-color ">Maggi Seasoning
-                                    cubes</a></li>
+                            <li>
+                                <form><input type="checkbox" name="1">2 tbsp Curry powder and Thyme
+                                </form>
+                            </li>
+
+                            <li>
+                                <form><input type="checkbox" name="1"><a href="/shop/item?id=53"
+                                        class="one-em-font primary-color ">Maggi Seasoning
+                                        cubes</a>
+                                </form>
+                            </li>
 
 
-                            <li>1.5 tbsp White pepper</li>
+                            <li>
+                                <form><input type="checkbox" name="1">1.5 tbsp White pepper
+                                </form>
+                            </li>
 
-                            <li>3 Bay Leaves</li>
+                            <li>
+                                <form><input type="checkbox" name="1">3 Bay Leaves
+                                </form>
+                            </li>
 
-                            <li>1 Medium Size Tomato for Garnishing</li>
+                            <li>
+                                <form><input type="checkbox" name="1">1 Medium Size Tomato for Garnishing
+                                </form>
+                            </li>
 
-                            <li>1 Small Onion for Garnishing</li>
+                            <li>
+                                <form><input type="checkbox" name="1">1 Small Onion for Garnishing
+                                </form>
+                            </li>
 
-                            <li>Salt to Taste</li>
+                            <li>
+                                <form><input type="checkbox" name="1">Salt to Taste
+                                </form>
+                            </li>
                         </ul>
                     </div>
 
@@ -120,18 +199,44 @@
                     <h2 class="primary-color extra-large-font">Jollof Spice Stew instructions</h2>
                     <div class="table-of-contents">
                         <ul>
-                            <li>Soak your beans in a covered container or pot of water for 8 hours</li>
-                            <li>Drain and rise the beans</li>
-                            <li>Cook beans until its just starting to become tender
+                            <li>
+                                <form><input type="checkbox" name="1">Soak your beans in a covered container or pot
+                                    of water for 8 hours
+                                </form>
                             </li>
-                            <li>Heat up a pot with Palm Oil
+                            <li>
+                                <form><input type="checkbox" name="1">Drain and rise the beans
+                                </form>
                             </li>
-                            <li>Place your onions, tomatoes, ginger, garlic, and parprika into the oil
+                            <li>
+                                <form><input type="checkbox" name="1">Cook beans until its just starting to become
+                                    tender
+
+                                </form>
                             </li>
-                            <li>Once the above ingredients begin to give off their aromas, put in the chicken, maggi cubes,
-                                smoked shrimp, stock water, chicken, and Afican Black Beans into the pot
+                            <li>
+                                <form><input type="checkbox" name="1">Heat up a pot with Palm Oil
+
+                                </form>
                             </li>
-                            <li>Throw in a whole scotch bonnet pepper and salt to taste</li>
+                            <li>
+                                <form><input type="checkbox" name="1">Place your onions, tomatoes, ginger, garlic,
+                                    and parprika into the oil
+
+                                </form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Once the above ingredients begin to give off
+                                    their aromas, put in the chicken, maggi cubes,
+                                    smoked shrimp, stock water, chicken, and Afican Black Beans into the pot
+
+                                </form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Throw in a whole scotch bonnet pepper and salt
+                                    to taste
+                                </form>
+                            </li>
                         </ul>
                     </div>
                     <div id="video">
@@ -141,10 +246,7 @@
                             allowfullscreen></iframe>
                     </div>
 
-                    <a href="#abb4" id="abb4"></a>
-                    <h2>Recipe variations</h2>
-                    <a href="#abb5" id="abb5"></a>
-                    <h2>Tips and tricks</h2>
+                    <br>
                     <a href="#abb5" id="abb5"></a>
                     <h2>Serving and storage instructions</h2>
                     <a href="#abb6" id="abb6"></a>
@@ -162,8 +264,8 @@
                         Bodybuilding.</p>
                     <a href="#abb8" id="abb8"></a>
                     <h2>2. Where can I find Jollof Spice?</h2>
-                    <p>You can conviently find <a href="/shop/item?id=41"
-                            class="one-em-font primary-color ">Jollof Spice</a> right here on Boxeon. We
+                    <p>You can conviently find <a href="/shop/item?id=41" class="one-em-font primary-color ">Jollof
+                            Spice</a> right here on Boxeon. We
                         currently ship everywhere in the
                         United States, flat rate.</p>
                     <a href="#abb9" id="abb9"></a>
@@ -174,7 +276,9 @@
                     <h2>Conclusion</h2>
                     <p>Jollof Spice is an African superfood with health benefits, amazing taste, easy to prepare, and
                         readily purchased here on Boxeon. Give it a try!</p>
-                    <h2>More African recipes to try</h2>
+
+
+                    @include('includes.comments')
 
                     @include('includes.recipes-stream')
 

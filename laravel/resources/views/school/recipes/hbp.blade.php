@@ -17,27 +17,27 @@
                 <br>
                 <div class="table-of-contents">
                     <h2>Table of contents</h2>
-                    <ul>
-                        <li><a class="one-em-font primary-color" href="#abb1">What are some health benefits of Honey Beans?</a></li>
+                    <ol>
+                        <li> <a class="one-em-font primary-color" href="#abb1">What are some health benefits of Honey Beans?</a></li> 
 
-                        <li><a class="one-em-font primary-color" href="#abb8">Can pregnant women eat Honey Beans Porridge?</a>
-                        </li>
-                        <li><a class="one-em-font primary-color" href="#abb2">Honey Beans Porridge
-                                recipe</a></li>
-                        <li><a class="one-em-font primary-color" href="#abb3">Honey Beans Porridge instructions</a></li>
-                        <li><a class="one-em-font primary-color" href="#abb4">Recipe variations</a>
-                        </li>
-                        <li><a class="one-em-font primary-color" href="#abb5">Tips and tricks</a></li>
-                        <li><a class="one-em-font primary-color" href="#abb6">Serving and storage
-                                instructions</a></li>
-                        <li><a class="one-em-font primary-color" href="#abb7">Where can you find
-                                Honey Beans?</a></li>
-                        <li><a class="one-em-font primary-color" href="#abb8">What goes with Honey Beans Porridge?</a></li>
+                        <li> <a class="one-em-font primary-color" href="#abb8">Can pregnant women eat Honey Beans Porridge?</a>
+                        </li> 
+                        <li> <a class="one-em-font primary-color" href="#abb2">Honey Beans Porridge
+                                recipe</a>></li> 
+                        <li> <a class="one-em-font primary-color" href="#abb3">Honey Beans Porridge instructions</a></li> 
+                        <li> <a class="one-em-font primary-color" href="#abb4">Recipe variations</a>
+                        </li> 
+                        <li> <a class="one-em-font primary-color" href="#abb5">Tips and tricks</a></li> 
+                        <li> <a class="one-em-font primary-color" href="#abb6">Serving and storage
+                                instructions</a></li> 
+                        <li> <a class="one-em-font primary-color" href="#abb7">Where can you find
+                                Honey Beans?</a></li> 
+                        <li> <a class="one-em-font primary-color" href="#abb8">What goes with Honey Beans Porridge?</a></li> 
 
-                        <li><a class="one-em-font primary-color" href="#abb10">Conclusion</a></li>
-                        <li><a class="one-em-font primary-color" href="#abb9">More African
-                                recipes to try</a></li>
-                    </ul>
+                        <li> <a class="one-em-font primary-color" href="#abb10">Conclusion</a></li> 
+                        <li> <a class="one-em-font primary-color" href="#abb9">More African
+                                recipes to try</a></li> 
+                    </ol>
 
                 </div>
 
@@ -49,23 +49,23 @@
                 <h2 class="primary-color extra-large-font">Honey Beans Porridge recipe</h2>
                 <div class="table-of-contents">
                 <ul>
-                    <li> <a href="/shop/item?id=7" class="one-em-font primary-color underline">3 Cups Honey Beans</a></li>
+                    <li> <form><input type="checkbox" name="1"> <a href="/shop/item?id=7" class="one-em-font primary-color underline">3 Cups Honey Beans</a></form></li> 
 
-                    <li>3 Ripe Plantains</li>
+                    <li> <form><input type="checkbox" name="1">3 Ripe Plantains</form></li> 
 
-                    <li><a href="/shop/item?id=36" class="one-em-font primary-color underline">1 Cooking Spoons Palm Oil</a></li>
+                    <li> <form><input type="checkbox" name="1"><a href="/shop/item?id=36" class="one-em-font primary-color underline">1 Cooking Spoons Palm Oil</a></form></li> 
 
-                    <li>2 Red Bell Pepper (Tatashe)</li>
+                    <li> <form><input type="checkbox" name="1">2 Red Bell Pepper (Tatashe)</form></li> 
 
-                    <li>1/2 Cup Smoked Prawns</li>
+                    <li> <form><input type="checkbox" name="1">1/2 Cup Smoked Prawns</form></li> 
 
-                    <li><a href="/shop/item?id=4" class="one-em-font primary-color underline">3 Tablespoons Crayfish Powder</a></li>
+                    <li> <form><input type="checkbox" name="1"><a href="/shop/item?id=4" class="one-em-font primary-color underline">3 Tablespoons Crayfish Powder</a></form></li> 
 
-                    <li>2 Onions</li>
+                    <li> <form><input type="checkbox" name="1">2 Onions</form></li> 
 
-                    <li>3 Cloves Garlic</li>
+                    <li> <form><input type="checkbox" name="1">3 Cloves Garlic</form></li> 
 
-                    <li>Seasoning</li>
+                    <li> <form><input type="checkbox" name="1">Seasoning</form></li> 
                 </ul>
 
             </div>
@@ -73,18 +73,18 @@
                 <h2 class="primary-color extra-large-font">Honey Beans Porridge instructions</h2>
                 <div class="table-of-contents">
                     <ul>
-                        <li>Soak your beans in a covered container or pot of water for 8 hours</li>
-                        <li>Drain and rise the beans</li>
-                        <li>Cook beans until its just starting to become tender
-                        </li>
-                        <li>Heat up a pot with Palm Oil
-                        </li>
-                        <li>Place your onions, tomatoes, ginger, garlic, and parprika into the oil
-                        </li>
-                        <li>Once the above ingredients begin to give off their aromas, put in the chicken, maggi cubes,
+                        <li> <form><input type="checkbox" name="1">Soak your beans in a covered container or pot of water for 8 hours</form></li> 
+                        <li> <form><input type="checkbox" name="1">Drain and rise the beans</form></li> 
+                        <li> <form><input type="checkbox" name="1">Cook beans until its just starting to become tender
+                        </form></li> 
+                        <li> <form><input type="checkbox" name="1">Heat up a pot with Palm Oil
+                        </form></li> 
+                        <li> <form><input type="checkbox" name="1">Place your onions, tomatoes, ginger, garlic, and parprika into the oil
+                        </form></li> 
+                        <li> <form><input type="checkbox" name="1">Once the above ingredients begin to give off their aromas, put in the chicken, maggi cubes,
                             smoked shrimp, stock water, chicken, and Honey Beans Porridge into the pot
-                        </li>
-                        <li>Throw in a whole scotch bonnet pepper and salt to taste</li>
+                        </form></li> 
+                        <li> <form><input type="checkbox" name="1">Throw in a whole scotch bonnet pepper and salt to taste</form></li> 
                     </ul>
                 </div>
                 <div id="video">
@@ -94,10 +94,7 @@
                     allowfullscreen></iframe>
                 </div>
 
-                <a href="#abb4" id="abb4"></a>
-                <h2>Recipe variations</h2>
-                <a href="#abb5" id="abb5"></a>
-                <h2>Tips and tricks</h2>
+
                 <a href="#abb5" id="abb5"></a>
                 <h2>Serving and storage instructions</h2>
                 <a href="#abb6" id="abb6"></a>
@@ -107,7 +104,7 @@
                     Palm Oil will make the plastic harder to clean.
                 </p>
                 <a href="#abb7" id="abb7"></a>
-                <h2>Frequently Asked Questions</h2>
+                <h2 class="text-black">Frequently Asked Questions</h2>
                 <h2>1. Can Honey Beans Porridge make your butt bigger?</h2>
                 <p>Absolutely! Eating about 40 grams of protein from African Blacks Beans coupled with squats will give
                     you visible results in two months. You will need to acquire some body building knowladge to make
@@ -127,7 +124,9 @@
                 <h2>Conclusion</h2>
                 <p>Honey Beans Porridgeis an African superfood with health benefits, amazing taste, easy to prepare, and
                     readily purchased here on Boxeon. Give it a try!</p>
-                <h2>More African recipes to try</h2>
+
+
+                @include('includes.comments')
 
                 @include('includes.recipes-stream')
                 

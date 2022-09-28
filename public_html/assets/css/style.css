@@ -1995,9 +1995,11 @@ main h1 {
   font-family: 'Open Sans';
 
 } */
+
 h2{
   font-size: 2em;
   color:green;
+  text-transform: capitalize;
 }
 h3{
   font-size: 1.6em;
@@ -3273,7 +3275,13 @@ header {
   max-width: 1035px;
   width: 100%;
 }
-
+li form input{
+  margin-right:1em;
+}
+li form{
+  display: grid;
+  grid-template-columns: 5% 95%;
+}
 #feedback-thanks {
   display: none;
   padding: 2em;

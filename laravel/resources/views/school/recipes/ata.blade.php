@@ -8,15 +8,16 @@
                 <div>
                     <h1 class="blog-title font-size-3-em">Nigerian Ata Dindin Rice</h1>
                     <img class="w100per margin-bottom-2-em" src="../assets/images/products/ata.jpeg">
-
-                    <p><span class="pacifico font-size-2-em primary-color">N</span>igerian peppered stew, also known as ata dindin in the Yoruba language, is commonly served with
+                    <p><span class="pacifico font-size-2-em primary-color">N</span>igerian peppered stew, also known as ata
+                        dindin in the Yoruba language, is commonly served with
                         rice,
                         boiled yam, roasted plantain (boli), and many other dishes.</p>
-                        <p>Ata Dindin as a sauce is uniquely traditional in taste and is considered a comfort food like the other dishes in the Boxeon Mealkit.</p>
+                    <p>Ata Dindin as a sauce is uniquely traditional in taste and is considered a comfort food like the
+                        other dishes in the Boxeon Mealkit.</p>
                     <br>
                     <div class="table-of-contents">
                         <h2>Table of contents</h2>
-                        <ul>
+                        <ol>
                             <li><a class="one-em-font primary-color" href="#abb1">What are the health benefits of Ata
                                     Dindin?</a></li>
 
@@ -37,8 +38,7 @@
                             <li><a class="one-em-font primary-color" href="#abb10">Conclusion</a></li>
                             <li><a class="one-em-font primary-color" href="#abb9">More African
                                     recipes to try</a></li>
-                        </ul>
-
+                        </ol>
                     </div>
                     <h2>What are the health benefits of Ata
                         Dindin?</h2>
@@ -48,50 +48,50 @@
                     <h2 class="primary-color extra-large-font">Ata Dindin recipe</h2>
                     <div class="table-of-contents">
                         <ul>
-                            <li><b>For meat:</b></li>
+                            <li><form><input type="checkbox" name="1"><b>For meat:</b></form></li>
                         </ul>
                         <ul>
 
-                            <li>Assorted Meats (Goat meat, Tripe, Beef, Cow foot)</li>
+                            <li><form><input type="checkbox" name="1">Assorted Meats (Goat meat, Tripe, Beef, Cow foot)</form></li>
 
-                            <li><a href="/shop/item?id=14" class="one-em-font primary-color ">African Curry Powder</a>
-                            </li>
+                            <li><form><input type="checkbox" name="1"><a href="/shop/item?id=14" class="one-em-font primary-color ">African Curry Powder</a>
+                            </form></li>
 
-                            <li>Thyme </li>
+                            <li><form><input type="checkbox" name="1">Thyme </form></li>
 
-                            <li><a href="/shop/item?id=53" class="one-em-font primary-color ">Maggi Seasoning Cubes</a>
-                            </li>
+                            <li><form><input type="checkbox" name="1"><a href="/shop/item?id=53" class="one-em-font primary-color ">Maggi Seasoning Cubes</a>
+                            </form></li>
 
 
-                            <li>Salt</li>
+                            <li><form><input type="checkbox" name="1">Salt</form></li>
 
-                            <li>Water </li>
+                            <li><form><input type="checkbox" name="1">Water </form></li>
                         </ul>
 
                         <ul>
-                            <li><b>For the Stew:</b></li>
+                            <li><form><input type="checkbox" name="1"><b>For the Stew:</b></form></li>
                         </ul>
                         <ul>
-                            <li>1 Cup Bleached Palm Oil</li>
+                            <li><form><input type="checkbox" name="1">1 Cup Bleached Palm Oil</form></li>
 
-                            <li>6 Dried Tatashe (Red Bell Pepper) </li>
+                            <li><form><input type="checkbox" name="1">6 Dried Tatashe (Red Bell Pepper) </form></li>
 
-                            <li>4 Bell Peppers</li>
+                            <li><form><input type="checkbox" name="1">4 Bell Peppers</form></li>
 
-                            <li>2 Onions</li>
+                            <li><form><input type="checkbox" name="1">2 Onions</form></li>
 
-                            <li>4 Scotch Bonnet Peppers</li>
+                            <li><form><input type="checkbox" name="1">4 Scotch Bonnet Peppers</form></li>
 
-                            <li>4 Chilli Peppers</li>
+                            <li><form><input type="checkbox" name="1">4 Chilli Peppers</form></li>
 
-                            <li><a href="/shop/item?id=4" class="one-em-font primary-color ">1/4 cup crayfish
+                            <li><form><input type="checkbox" name="1"><a href="/shop/item?id=4" class="one-em-font primary-color ">1/4 cup crayfish
                                     powder</a>
-                            </li>
+                            </form></li>
 
-                            <li><a href="/shop/item?id=53" class="one-em-font primary-color ">Maggi Seasoning cubes</a>
-                            </li>
+                            <li><form><input type="checkbox" name="1"><a href="/shop/item?id=53" class="one-em-font primary-color ">Maggi Seasoning cubes</a>
+                            </form></li>
 
-                            <li>Salt </li>
+                            <li><form><input type="checkbox" name="1">Salt </form></li>
                         </ul>
                     </div>
 
@@ -99,18 +99,18 @@
 
                     <div class="table-of-contents">
                         <ul>
-                            <li>Soak your beans in a covered container or pot of water for 8 hours</li>
-                            <li>Drain and rise the beans</li>
-                            <li>Cook beans until its just starting to become tender
-                            </li>
-                            <li>Heat up a pot with Palm Oil
-                            </li>
-                            <li>Place your onions, tomatoes, ginger, garlic, and parprika into the oil
-                            </li>
-                            <li>Once the above ingredients begin to give off their aromas, put in the chicken, maggi cubes,
+                            <li><form><input type="checkbox" name="1">Soak your beans in a covered container or pot of water for 8 hours</form></li>
+                            <li><form><input type="checkbox" name="1">Drain and rise the beans</form></li>
+                            <li><form><input type="checkbox" name="1">Cook beans until its just starting to become tender
+                            </form></li>
+                            <li><form><input type="checkbox" name="1">Heat up a pot with Palm Oil
+                            </form></li>
+                            <li><form><input type="checkbox" name="1">Place your onions, tomatoes, ginger, garlic, and parprika into the oil
+                            </form></li>
+                            <li><form><input type="checkbox" name="1">Once the above ingredients begin to give off their aromas, put in the chicken, maggi cubes,
                                 smoked shrimp, stock water, chicken, and Afican Black Beans into the pot
-                            </li>
-                            <li>Throw in a whole scotch bonnet pepper and salt to taste</li>
+                            </form></li>
+                            <li><form><input type="checkbox" name="1">Throw in a whole scotch bonnet pepper and salt to taste</form></li>
                         </ul>
                     </div>
 
@@ -121,10 +121,15 @@
                             allowfullscreen></iframe>
                     </div>
 
-                    <a href="#abb4" id="abb4"></a>
-                    <h2>Recipe variations</h2>
                     <a href="#abb5" id="abb5"></a>
-                    <h2>Tips and tricks</h2>
+                    <h2>Serving and storage instructions</h2>
+                    <a href="#abb6" id="abb6"></a>
+                    <p>We like to store ours in the pot that it was cooked in to avoid having more to wash. Sometimes, we
+                        turn the lid upside down to allow other items to be placed on top.
+                        If you choose not to store your stew in the pot, try to avoid using a plastic container since the
+                        Palm Oil will make the plastic harder to clean.
+                    </p>
+                                    
                     <a href="#abb5" id="abb5"></a>
                     <h2>Serving and storage instructions</h2>
                     <a href="#abb6" id="abb6"></a>
@@ -134,7 +139,7 @@
                         Palm Oil will make the plastic harder to clean.
                     </p>
                     <a href="#abb7" id="abb7"></a>
-                    <h2>Frequently Asked Questions</h2>
+                    <h2 class="text-black">Frequently Asked Questions</h2>
                     <h2>1. Can African Black Beans make your butt bigger?</h2>
                     <p>Absolutely! Eating about 40 grams of protein from African Blacks Beans coupled with squats will give
                         you visible results in two months. You will need to acquire some body building knowladge to make
@@ -154,12 +159,12 @@
                     <h2>Conclusion</h2>
                     <p>African Black Beans is an African superfood with health benefits, amazing taste, easy to prepare, and
                         readily purchased here on Boxeon. Give it a try!</p>
-                    <h2>More African recipes to try</h2>
+
+                    @include('includes.comments')
 
                     @include('includes.recipes-stream')
                 </div>
             </div>
-
 
             <section>
                 <div class="nutrition-col">

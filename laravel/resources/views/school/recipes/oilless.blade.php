@@ -1,109 +1,112 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com Low Fat Okra Soup Recipe')
+@section('title', 'Boxeon.com Low Fat Oilless Nigerian Okra Soup')
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
         <section id="blogs-stream" class='section maxw1035 two-col-grid rounded-corner card'>
 
             <div>
-     
-            <div>
-                <h1 class="blog-title font-size-3-em">Oilless Okra Soup</h1>
-                <img class="w100per margin-bottom-2-em" src="../assets/images/products/oilless.jpeg">
-     
-                <p><span class="pacifico font-size-2-em primary-color">O</span>kra soup (African okro soup) is made with okra vegetables cooked in a delicious mixture of palm oil, shrimps, goat meat, fish, and African spices and simmered to perfection!</p>
-                <p>Okra Soup is one of the quickest and easiest Nigerian soups to prepare. Some argue that a lot of work goes to the cutting of the two vegetables used in preparing this recipe. Yes but once the vegetables are ready; it cooks in no time at all.</p>
-                
-                <h2 class="primary-color extra-large-font"> Oilless Okra Soup recipe</h2>
-                <br>
-                <div class="table-of-contents">
-                <ul>
-                    <li>
-                    <li>10 Okra fingers (blended)</li>
 
-                    <li>15 Okra fingers (chopped)</li>
+                <div>
+                    <h1 class="blog-title font-size-3-em">Low Fat Oilless Okra Soup</h1>
+                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/oilless.jpeg">
 
-                    <li>Fish or any protein of your choosing (I'm using Red Sea bream and Mackerel)</li>
+                    <p><span class="pacifico font-size-2-em primary-color">O</span>kra soup (African okro soup) is made with
+                        okra vegetables cooked in a delicious mixture of palm oil, shrimps, goat meat, fish, and African
+                        spices and simmered to perfection!</p>
+                    <p>Okra Soup is one of the quickest and easiest Nigerian soups to prepare. Some argue that a lot of work
+                        goes to the cutting of the two vegetables used in preparing this recipe. Yes but once the vegetables
+                        are ready; it cooks in no time at all.</p>
 
-                    <li>Beef/chicken or Fish broth</li>
+                    <h2 class="primary-color extra-large-font"> Oilless Okra Soup recipe</h2>
+                    <br>
+                    <div class="table-of-contents">
+                        <ul>
+                            <li>
+                            <li>10 Okra fingers (blended)</li>
 
-                    <li>Chopped bell peppers and scotch bonnet</li>
+                            <li>15 Okra fingers (chopped)</li>
 
-                    <li>Chopped Onions</li>
+                            <li>Fish or any protein of your choosing (I'm using Red Sea bream and Mackerel)</li>
 
-                    <li><a href="/shop/item?id=36" class="one-em-font primary-color ">Stock Cubes</a></li>
+                            <li>Beef/chicken or Fish broth</li>
 
-                    <li><a href="/shop/item?id=4" class="one-em-font primary-color ">Crayfish Powder</a></li>
+                            <li>Chopped bell peppers and scotch bonnet</li>
 
-                    <li>Cameroon Pepper</li>
+                            <li>Chopped Onions</li>
 
-                    <li>Salt</li>
-                    </li>
-                </ul>
+                            <li><a href="/shop/item?id=36" class="one-em-font primary-color ">Stock Cubes</a></li>
+
+                            <li><a href="/shop/item?id=4" class="one-em-font primary-color ">Crayfish Powder</a></li>
+
+                            <li>Cameroon Pepper</li>
+
+                            <li>Salt</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#abb3" id="abb3"></a>
+                    <h2 class="primary-color extra-large-font">Okra Soup instructions</h2>
+                    <div class="table-of-contents">
+                        <ul>
+                            <li>Soak your beans in a covered container or pot of water for 8 hours</li>
+                            <li>Drain and rise the beans</li>
+                            <li>Cook beans until its just starting to become tender
+                            </li>
+                            <li>Heat up a pot with Palm Oil
+                            </li>
+                            <li>Place your onions, tomatoes, ginger, garlic, and parprika into the oil
+                            </li>
+                            <li>Once the above ingredients begin to give off their aromas, put in the chicken, maggi cubes,
+                                smoked shrimp, stock water, chicken, and Afican Black Beans into the pot
+                            </li>
+                            <li>Throw in a whole scotch bonnet pepper and salt to taste</li>
+                        </ul>
+                    </div>
+                    <div id="video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/oy8wLaviK3o?start=2"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <br>
+                    <a href="#abb5" id="abb5"></a>
+                    <h2>Serving and storage instructions</h2>
+                    <a href="#abb6" id="abb6"></a>
+                    <p>We like to store ours in the pot that it was cooked in to avoid having more to wash. Sometimes, we
+                        turn the lid upside down to allow other items to be placed on top.
+                        If you choose not to store your in the pot, try to avoid using a plastic container since the
+                        Palm Oil will make the plastic harder to clean.
+                    </p>
+                    <a href="#abb7" id="abb7"></a>
+                    <h2 class="text-black">Frequently Asked Questions</h2>
+                    <h2>1. Can Okra Soup make your butt bigger?</h2>
+                    <p>Absolutely! Eating about 40 grams of protein from African Blacks Beans coupled with squats will give
+                        you visible results in two months. You will need to acquire some body building knowladge to make
+                        this work but a great resource is available: Arnold Schwarzenegger's The New Encyclopedia of Modern
+                        Bodybuilding.</p>
+                    <a href="#abb8" id="abb8"></a>
+                    <h2>2. Where can I find Okra Soup?</h2>
+                    <p>You can conviently find <a href="/shop/item?id=41" class="one-em-font primary-color ">Okra Soup</a>
+                        right here on Boxeon. We
+                        currently ship everywhere in the
+                        United States, flat rate.</p>
+                    <a href="#abb9" id="abb9"></a>
+                    <h2>3. What meats goes with Okra Soup ?</h2>
+                    <p>Okra Soup goes well with chicken, turkey, other white meats, and Tofu. Slices of Agege
+                        bread on the side also make for a good addition.</p>
+                    <a href="#abb10" id="abb10"></a>
+                    <h2>Conclusion</h2>
+                    <p>Okra Soup is an African superfood with health benefits, amazing taste, easy to prepare, and
+                        readily purchased here on Boxeon. Give it a try!</p>
+                 
+
+                    @include('includes.comments')
+
+                    @include('includes.recipes-stream')
+
                 </div>
-                <a href="#abb3" id="abb3"></a>
-                <h2 class="primary-color extra-large-font">Okra Soup instructions</h2>
-                <div class="table-of-contents">
-                    <ul>
-                        <li>Soak your beans in a covered container or pot of water for 8 hours</li>
-                        <li>Drain and rise the beans</li>
-                        <li>Cook beans until its just starting to become tender
-                        </li>
-                        <li>Heat up a pot with Palm Oil
-                        </li>
-                        <li>Place your onions, tomatoes, ginger, garlic, and parprika into the oil
-                        </li>
-                        <li>Once the above ingredients begin to give off their aromas, put in the chicken, maggi cubes,
-                            smoked shrimp, stock water, chicken, and Afican Black Beans into the pot
-                        </li>
-                        <li>Throw in a whole scotch bonnet pepper and salt to taste</li>
-                    </ul>
-                </div>
-                <div id="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oy8wLaviK3o?start=2"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                </div>
-
-                <a href="#abb4" id="abb4"></a>
-                <h2>Recipe variations</h2>
-                <a href="#abb5" id="abb5"></a>
-                <h2>Tips and tricks</h2>
-                <a href="#abb5" id="abb5"></a>
-                <h2>Serving and storage instructions</h2>
-                <a href="#abb6" id="abb6"></a>
-                <p>We like to store ours in the pot that it was cooked in to avoid having more to wash. Sometimes, we
-                    turn the lid upside down to allow other items to be placed on top.
-                    If you choose not to store your  in the pot, try to avoid using a plastic container since the
-                    Palm Oil will make the plastic harder to clean.
-                </p>
-                <a href="#abb7" id="abb7"></a>
-                <h2 class="text-black">Frequently Asked Questions</h2>
-                <h2>1. Can Okra Soup make your butt bigger?</h2>
-                <p>Absolutely! Eating about 40 grams of protein from African Blacks Beans coupled with squats will give
-                    you visible results in two months. You will need to acquire some body building knowladge to make
-                    this work but a great resource is available: Arnold Schwarzenegger's The New Encyclopedia of Modern
-                    Bodybuilding.</p>
-                <a href="#abb8" id="abb8"></a>
-                <h2>2. Where can I find Okra Soup?</h2>
-                <p>You can conviently find <a href="/shop/item?id=41"
-                        class="one-em-font primary-color ">Okra Soup</a> right here on Boxeon. We
-                    currently ship everywhere in the
-                    United States, flat rate.</p>
-                <a href="#abb9" id="abb9"></a>
-                <h2>3. What meats goes with Okra Soup ?</h2>
-                <p>Okra Soup goes well with chicken, turkey, other white meats, and Tofu. Slices of Agege
-                    bread on the side also make for a good addition.</p>
-                <a href="#abb10" id="abb10"></a>
-                <h2>Conclusion</h2>
-                <p>Okra Soup is an African superfood with health benefits, amazing taste, easy to prepare, and
-                    readily purchased here on Boxeon. Give it a try!</p>
-                <h2>More African recipes to try</h2>
-
-                @include('includes.recipes-stream')
-                
-            </div>
 
             </div>
 

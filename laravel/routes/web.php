@@ -59,6 +59,7 @@ Route::prefix('school')->group(function () {
 #BLOG
 Route::prefix('blog')->group(function () {
     Route::get('/', 'App\Http\Controllers\BlogController@index')->name('blog.index');
+    Route::post('/comment', 'App\Http\Controllers\BlogController@comment')->name('blog.comment');
     Route::get('/post', 'App\Http\Controllers\BlogController@post')->name('blog.post');
     Route::get('/recipes', 'App\Http\Controllers\SchoolController@recipes')->name('school.recipes');
 

@@ -21,27 +21,27 @@
 
                     <div class="table-of-contents">
                         <h2>Table of contents</h2>
-                        <ul>
-                            <li><a class="one-em-font primary-color" href="#abb1">What are some health benefits of African
+                        <ol>
+                             <li> <a class="one-em-font primary-color" href="#abb1">What are some health benefits of African
                                     Black Beans?</a></li>
-                            <li><a class="one-em-font primary-color" href="#abb2">African Black Beans Stew
+                             <li> <a class="one-em-font primary-color" href="#abb2">African Black Beans Stew
                                     recipe</a></li>
-                            <li><a class="one-em-font primary-color" href="#abb3">African Black
+                             <li> <a class="one-em-font primary-color" href="#abb3">African Black
                                     Beans Stew instructions</a></li>
-                            <li><a class="one-em-font primary-color" href="#abb4">Recipe variations</a>
+                             <li> <a class="one-em-font primary-color" href="#abb4">Recipe variations</a>
                             </li>
-                            <li><a class="one-em-font primary-color" href="#abb5">Tips and tricks</a></li>
-                            <li><a class="one-em-font primary-color" href="#abb6">Serving and storage
+                             <li> <a class="one-em-font primary-color" href="#abb5">Tips and tricks</a></li>
+                             <li> <a class="one-em-font primary-color" href="#abb6">Serving and storage
                                     instructions</a></li>
-                            <li><a class="one-em-font primary-color" href="#abb7">Where can you find
+                             <li> <a class="one-em-font primary-color" href="#abb7">Where can you find
                                     African Black Beans?</a></li>
-                            <li><a class="one-em-font primary-color" href="#abb8">What goes with African
+                             <li> <a class="one-em-font primary-color" href="#abb8">What goes with African
                                     Black Beans Stew?</a></li>
                            
-                            <li><a class="one-em-font primary-color" href="#abb10">Conclusion</a></li>
-                            <li><a class="one-em-font primary-color" href="#abb9">More African
+                             <li> <a class="one-em-font primary-color" href="#abb10">Conclusion</a></li>
+                             <li> <a class="one-em-font primary-color" href="#abb9">More African
                                 recipes to try</a></li>
-                        </ul>
+                        </ol>
 
                     </div>
 
@@ -88,21 +88,21 @@
 
                     <div class="table-of-contents">
                         <ul>
-                            <li>
-                            <li><a href="/shop/item?id=41" class="one-em-font primary-color underline">4 -14.5 ounce canned
-                                    beans or 1 pound dried beans</a></li>
-                            <li><a href="/shop/item?id=36" class="one-em-font primary-color underline">1/2 - 3/4 cup palm
-                                    oil</a></li>
-                            <li>1 medium onion</li>
-                            <li>2 Tomatoes</li>
-                            <li><a href="/shop/item?id=53" class="one-em-font primary-color underline">1 tablespoon bouillon
-                                    powder</a></li>
-                            <li>½ pound smoked turkey/chicken</li>
-                            <li>1 tablespoon ginger</li>
-                            <li>½ tablespoon garlic</li>
-                            <li>2 - 3 cups stock/ water</li>
-                            <li>1 tablespoon paprika</li>
-                            <li>Salt and pepper as needed</li>
+                            
+                             <li> <form><input type="checkbox" name="1"><a href="/shop/item?id=41" class="one-em-font primary-color ">4 -14.5 ounce canned
+                                    beans or 1 pound dried beans</a></form></li>
+                             <li> <form><input type="checkbox" name="1"><a href="/shop/item?id=36" class="one-em-font primary-color ">1/2 - 3/4 cup palm
+                                    oil</a></form></li>
+                             <li> <form><input type="checkbox" name="1">1 medium onion</form></li>
+                             <li> <form><input type="checkbox" name="1">2 Tomatoes</form></li>
+                             <li> <form><input type="checkbox" name="1"><a href="/shop/item?id=53" class="one-em-font primary-color ">1 tablespoon bouillon
+                                    powder</a></form></li>
+                             <li> <form><input type="checkbox" name="1">½ pound smoked turkey/chicken</form></li>
+                             <li> <form><input type="checkbox" name="1">1 tablespoon ginger</form></li>
+                             <li> <form><input type="checkbox" name="1">½ tablespoon garlic</form></li>
+                             <li> <form><input type="checkbox" name="1">2 - 3 cups stock/ water</form></li>
+                             <li> <form><input type="checkbox" name="1">1 tablespoon paprika</form></li>
+                             <li> <form><input type="checkbox" name="1">Salt and pepper as needed</form></li>
 
                         </ul>
                     </div>
@@ -114,26 +114,24 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
+
                     <div class="table-of-contents">
                         <ul>
-                            <li>Soak your beans in a covered container or pot of water for 8 hours</li>
-                            <li>Drain and rise the beans</li>
-                            <li>Cook beans until its just starting to become tender
-                            </li>
-                            <li>Heat up a pot with Palm Oil
-                            </li>
-                            <li>Place your onions, tomatoes, ginger, garlic, and parprika into the oil
-                            </li>
-                            <li>Once the above ingredients begin to give off their aromas, put in the chicken, maggi cubes,
+                            <li> <form><input type="checkbox" name="1">Soak your beans in a covered container or pot of water for 8 hours</form></form></li>
+                             <li> <form><input type="checkbox" name="1">Drain and rise the beans</form></li>
+                             <li> <form><input type="checkbox" name="1">Cook beans until its just starting to become tender
+                            </form></li>
+                             <li> <form><input type="checkbox" name="1">Heat up a pot with Palm Oil
+                            </form></li>
+                             <li> <form><input type="checkbox" name="1">Place your onions, tomatoes, ginger, garlic, and parprika into the oil
+                            </form></li>
+                             <li> <form><input type="checkbox" name="1">Once the above ingredients begin to give off their aromas, put in the chicken, maggi cubes,
                                 smoked shrimp, stock water, chicken, and Afican Black Beans into the pot
-                            </li>
-                            <li>Throw in a whole scotch bonnet pepper and salt to taste</li>
+                            </form></li>
+                             <li> <form><input type="checkbox" name="1">Throw in a whole scotch bonnet pepper and salt to taste</form></li>
                         </ul>
                     </div>
-                    <a href="#abb4" id="abb4"></a>
-                    <h2>Recipe variations</h2>
-                    <a href="#abb5" id="abb5"></a>
-                    <h2>Tips and tricks</h2>
+                
                     <a href="#abb5" id="abb5"></a>
                     <h2>Serving and storage instructions</h2>
                     <a href="#abb6" id="abb6"></a>
@@ -143,7 +141,7 @@
                         Palm Oil will make the plastic harder to clean.
                     </p>
                     <a href="#abb7" id="abb7"></a>
-                    <h2>Frequently Asked Questions</h2>
+                    <h2 class="text-black">Frequently Asked Questions</h2>
                     <h2>1. Can African Black Beans make your butt bigger?</h2>
                     <p>Absolutely! Eating about 40 grams of protein from African Blacks Beans coupled with squats will give
                         you visible results in two months. You will need to acquire some body building knowladge to make
@@ -152,7 +150,7 @@
                         <a href="#abb8" id="abb8"></a>
                     <h2>2. Where can I find African Black Beans?</h2>
                     <p>You can conviently find <a href="/shop/item?id=41"
-                            class="one-em-font primary-color underline">African Black Beans</a> right here on Boxeon. We
+                            class="one-em-font primary-color ">African Black Beans</a> right here on Boxeon. We
                         currently ship everywhere in the
                         United States, flat rate.</p>
                         <a href="#abb9" id="abb9"></a>
@@ -166,15 +164,13 @@
 
                         @include('includes.comments')
 
-                    <h2>More African recipes to try</h2>
-
                     @include('includes.recipes-stream')
 
                 </div>
             </div>
             <section>
                 <div class="nutrition-col">
-                    <h2 class="nutrition-col__nutritionalFacts-title">African Black Beans Nutritional Info </h2>
+                    <h2 class="nutrition-col__nutritionalFacts-title">Black Beans Nutrients </h2>
                     <div class="nutrition-col__serving"><span>Serving Size</span><span class="nutrition-col__serving-value">
                             0.25 Cup </span></div>
                     <div class="macro-facts">
@@ -241,21 +237,21 @@
                     <div class="micro-facts-vitamins">
                         <ul>
                             <li class="micro-facts-vitamins__li"><span class="micro-facts-vitamins__li-values"> Vitamin C
-                                </span><span class="micro-facts-vitamins__li-percent"> 0% </span></li>
+                                </span><span class="micro-facts-vitamins__li-percent"> 0% </span></form></li>
                             <li class="micro-facts-vitamins__li"><span class="micro-facts-vitamins__li-values"> Iron
-                                </span><span class="micro-facts-vitamins__li-percent"> 11% </span></li>
+                                </span><span class="micro-facts-vitamins__li-percent"> 11% </span></form></li>
                             <li class="micro-facts-vitamins__li"><span class="micro-facts-vitamins__li-values"> Vitamin B6
-                                </span><span class="micro-facts-vitamins__li-percent"> 0% </span></li>
+                                </span><span class="micro-facts-vitamins__li-percent"> 0% </span></form></li>
                             <li class="micro-facts-vitamins__li"><span class="micro-facts-vitamins__li-values"> Magnesium
-                                </span><span class="micro-facts-vitamins__li-percent"> 0% </span></li>
+                                </span><span class="micro-facts-vitamins__li-percent"> 0% </span></form></li>
                             <li class="micro-facts-vitamins__li"><span class="micro-facts-vitamins__li-values"> Calcium
-                                </span><span class="micro-facts-vitamins__li-percent"> 6% </span></li>
+                                </span><span class="micro-facts-vitamins__li-percent"> 6% </span></form></li>
                             <li class="micro-facts-vitamins__li"><span class="micro-facts-vitamins__li-values"> Vitamin D
-                                </span><span class="micro-facts-vitamins__li-percent"> 0% </span></li>
+                                </span><span class="micro-facts-vitamins__li-percent"> 0% </span></form></li>
                             <li class="micro-facts-vitamins__li"><span class="micro-facts-vitamins__li-values"> Cobalamin
-                                </span><span class="micro-facts-vitamins__li-percent"> 0% </span></li>
+                                </span><span class="micro-facts-vitamins__li-percent"> 0% </span></form></li>
                             <li class="micro-facts-vitamins__li"><span class="micro-facts-vitamins__li-values"> Vitamin A
-                                </span><span class="micro-facts-vitamins__li-percent"> 0% </span></li>
+                                </span><span class="micro-facts-vitamins__li-percent"> 0% </span></form></li>
                         </ul>
                     </div>
                 </div>

@@ -1,8 +1,9 @@
-<h2 class='center margin-top-4-em'>Community Comments</h2>
+
+<h2 class='text-red margin-top-4-em'>Community Comments</h2>
 <br>
 @if (count($comments) > 0)
     @for ($i = 0; $i < count($comments); $i++)
-        <div class="review two-col-grid">
+        <div class="review">
             <div class="three-col-grid reviewer-grid">
              <span class="material-icons margin-block-start-end">account_circle</span>
                 
@@ -37,23 +38,25 @@
                 </div>
             </div>
             <div>
-                <p>@php echo nl2br($comments[$i]->review); @endphp</p>
+               
             </div>
+            <p class="comment">@php echo nl2br($comments[$i]->message); @endphp</p>
         </div>
     @endfor
 @else
     <div class="alert-info">
-        <p><span class="material-icons">star</span>&nbsp;Be the first to leave a comment!</p>
+        <p><span class="material-icons">star</span>&nbsp;Help future visitors with a thoughtful comment. Be the first!</p>
     </div>
 @endif
-<button id="show-review-form" class="button center margin-top-4-em">WRITE A COMMENT</button>
-<form class="w100per" id="form-comments" action='/comments/submit' method='post'>
+<br>
+<h2>Post your comment</h2>
+<form class="w100per" id="form-comments" action='/blog/comment' method='post'>
     @csrf
     @method('POST')
     <div class="row">
         <div class="col-75">
-            <input type="hidden" value="{{ $product[0]->id }}" name="product">
-            <input type="text" required placeholder="Name" name="name">
+            <input type="hidden" value="{{$id}}" name="blog_id">
+            <input type="text" required placeholder="First and last name" name="name">
         </div>
         <div class="col-75">
             <select name="stars" required>
@@ -66,12 +69,13 @@
             </select>
         </div>
         <div class="col-75">
-            <textarea required rows="10" cols="40" name="review" placeholder="Write a review"></textarea>
+            <textarea required rows="10" cols="40" name="message" placeholder="Write something thoughtful..."></textarea>
         </div>
     </div>
     <div class="row">
         <div class="col-75">
-            <input type='submit' value='SUBMIT'>
+            <input type='submit' value='POST COMMENT'>
         </div>
     </div>
 </form>
+<div class="div-horizontal-rule"></div>
