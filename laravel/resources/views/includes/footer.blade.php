@@ -28,7 +28,7 @@
 
     </div>
     <br>
-    <img id='footer-logo' src='{{ asset('../assets/images/logo-black.png') }}' alt='logo' />
+    <img id='footer-logo' src='{{ asset('../assets/images/logo-black.webp') }}' alt='logo' />
     <p class='centered one-em-font'>
         244 5th Avenue, Suite 7,&nbsp;
         New York, NY 10001<br>
@@ -41,7 +41,7 @@
     <a href="#" class="close-dialog">X</a>
     <form>
         <fieldset class="border-bottom">
-            <img class="center display-block" src="../assets/images/b.png" alt="Logo">
+            <img class="center display-block" src="../assets/images/b.webp" alt="Logo">
             <br>
             <b>
                 <p class="centered">Help us serve you better</p>
@@ -117,7 +117,7 @@
 
 <div id="m-menu" class="three-col-grid">
     <a id="menu-icon" href="#" class="button white"><span class="material-icons">shop</span>&nbsp;Shop</a>
-    <a href="/cart/index" class="white button"><span><img class="w30px" src="../assets/images/cart.png"
+    <a href="/cart/index" class="white button"><span><img class="w30px" src="../assets/images/cart.webp"
                 alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
     <button id="m-feedback" class="button m-padding-right-zero"><span
             class=" hide material-icons">message</span>&nbsp;Feedback</button>

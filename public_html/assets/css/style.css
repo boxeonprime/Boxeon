@@ -649,7 +649,7 @@ dialog p {
 }
 
 #card-button {
-  background-image: url("../images/lock.png");
+  background-image: url("../images/lock.webp");
   background-repeat: no-repeat;
   background-position: left !important;
   background-position: 30% !important;
@@ -828,7 +828,7 @@ dialog p {
 /* #div-banner-blank {
   max-width: 1036px;
   height: 275px;
-  background-image: url("../images/banner.png");
+  background-image: url("../images/banner.webp");
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
@@ -937,7 +937,7 @@ dialog p {
 
 #index #masthead {
   background-color: #d3fb95;
-  background-image: url('../images/new-bg.jpg');
+  background-image: url('../images/new-bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
   max-height: 56em;
@@ -946,7 +946,7 @@ dialog p {
 
 #mealkit-masthead {
   background-color: #d3fb95;
-  background-image: url('../images/shop.png');
+  background-image: url('../images/shop.webp');
   background-size: cover;
   background-repeat: no-repeat;
   max-height: 70em;
@@ -955,7 +955,7 @@ dialog p {
 
 #gifts-masthead {
   background-color: #fcec63;
-  background-image: url('../images/ribbons.png'), url('../images/gifts.png');
+  background-image: url('../images/ribbons.webp'), url('../images/gifts.webp');
   max-height: 56em;
   background-size: cover, contain;
   background-repeat: no-repeat;
@@ -1900,7 +1900,7 @@ main h1 {
 }
 
 /*#exe-sub {
-  background-image: url(../images/lock.png);
+  background-image: url(../images/lock.webp);
   background-repeat: no-repeat;
   background-position: left;
 }*/

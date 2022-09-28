@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com Monthly African Foods Delivery')
+@section('title', 'Boxeon.com Monthly African Food Nationwide Delivery')
 @section('content')
     <div id="masthead">
         <aside class="centered asides call-out mobile-scroll"><br>
@@ -15,10 +15,9 @@
         @include('includes.works')
         <section class="block maxw1035 section">
           
-                
                 <div class="learn-more-index-wrapper">
                     <img class="float-left h50px border-radius margin-right-1-em border-yellow"
-                        src="../assets/images/tabitha-girl.jpg" alt="Boxeon" />
+                        src="../assets/images/tabitha-girl.webp" alt="Charitable Giving" />
                     <a class="learn-more" href="/school/subscriptions">
                         <h2>Learn more about Boxeon subscriptions<span class="material-icons">arrow_forward</span></h2>
                     </a>
