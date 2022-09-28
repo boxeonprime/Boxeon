@@ -1247,28 +1247,6 @@ window.onload = function () {
 
   }
 
-  // Record Conversion - UPDATE
-
-  if (document.getElementById("refpro")) {
-
-    gtag('event', 'conversion', {
-      'send_to': 'AW-1008829526/GDl7CO_9uN8DENaIhuED',
-      'transaction_id': 'sub'
-    });
-
-  }
-
-  // Record Traffic
-
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-ZLWPCSLD0Q');
-    gtag('event', 'screen_view', {
-    'traffic_type': 'internal'
-  });
 
   window.addEventListener('onbeforeunload', function () {
 

@@ -5,9 +5,9 @@
 <meta property="og:url" content="https://boxeon.com" />
 <meta property="og:image" content="{{ asset('../assets/images/high-five.jpg') }}">
 <meta name="description"
-    content="African store online, Shop African food online, African snacks." />
+    content="Boxeon makes it easy for the African diapora to buy African foods from home. Shop West African foods and snacks." />
 <meta name="keywords"
-    content="Boxeon, buy black, subscription box, African foods">
+    content="Boxeon, buy black, subscription box, African foods, Nigerian Foods, Jollof Rice, Fufu">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="csrf-token" content="{{ csrf_token() }}" />
@@ -27,8 +27,4 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1008829526"></script>-->
 
 <script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>
-<!-- Meta Pixel Code -->
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=552073569711730&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+
