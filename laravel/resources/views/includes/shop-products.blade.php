@@ -32,7 +32,7 @@ if (isset($_GET['c'])) {
             <div class="fit-content margin-auto">
                 <a href="/shop/item?id={{ $product[$i]->id }}"><img
                         src="../assets/images/products/medium/{{ $img }}"
-                        alt="{{ $product[$i]->name }}"></a>
+                        alt="{{ $product[$i]->name }}" loading="lazy"></a>
                 <a class="" href="/shop/item?id={{ $product[$i]->id }}">
                     <p class="product-title">{{ $product[$i]->name }}</p>
                 </a>

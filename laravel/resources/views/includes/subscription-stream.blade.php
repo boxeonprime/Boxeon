@@ -36,7 +36,7 @@
                         <div class="fit-content margin-auto">
                             <a href="/shop/item?id={{ $subscriptions[$i]->id }}"><img
                                     src="../assets/images/products/medium/{{ $img }}"
-                                    alt="{{ $subscriptions[$i]->name }}"></a>
+                                    alt="{{ $subscriptions[$i]->name }}" loading="lazy"></a>
                             <a class="" href="/shop/item?id={{ $subscriptions[$i]->id }}">
                                 <p>{{ $subscriptions[$i]->name }}</p>
                             </a>
