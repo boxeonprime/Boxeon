@@ -1,5 +1,7 @@
 @php
 
+
+
 $nonce = $_COOKIE['hash'];
 
 @endphp
