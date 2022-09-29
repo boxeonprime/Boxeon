@@ -12,9 +12,9 @@ foreach ($files as $file) {
        //unlink($file);
   //  }
   
-  if (exif_imagetype($file) == 2) { //  jpeg
+  if (exif_imagetype($file) == 3) { //  png
     $name = $re[0] . ".webp";
-    $image = imagecreatefromjpeg($file);
+    $image = imagecreatefrompng($file);
     imagewebp($image, $name);
 
 }
