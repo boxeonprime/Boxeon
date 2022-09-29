@@ -1,15 +1,13 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com Nigerian Suya Beef Recipe')
+@section('title', 'Juicy Nigerian Suya Beef: Marinate And Gril | Nigerian Beef Skewers')
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
         <section id="blogs-stream" class='section maxw1035 two-col-grid rounded-corner card'>
-
             <div>
-
                 <div>
-                    <h1 class="blog-title font-size-3-em">Nigerian Suya Beef</h1>
-                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/suya.jpeg">
+                    <h1 class="blog-title font-size-3-em">Juicy Nigerian Suya Beef: Marinate And Gril - Nigerian Beef Skewers</h1>
+                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/suya.webp" alt="Nigerian Suya Beef">
 
                     <p><span class="pacifico font-size-2-em primary-color">S</span>uya Beef is Nigerian street food at its finest: Skewers of spiced, nutty, smoky, charred beef,
                         served with raw onions, tomatoes, cilantro, lettuce, and freshly squeezed lime juice.</p>

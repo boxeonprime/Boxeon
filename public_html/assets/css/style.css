@@ -739,9 +739,15 @@ dialog p {
 
 .blog-title {
   padding: 0.5em;
-  background: #f8f8c1;
-  font-weight: 600;
-  font-family: pacifico;
+  font-size: 3.25rem !important;
+  line-height: 3.5rem;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 0.2em;
+  border-radius: 0.2em;
+  font-weight: 700;
+  color: green;
+ 
 }
 
 .title-style-span {
@@ -1416,7 +1422,9 @@ main h1 {
 #video-place-holder {
   width: 100%;
 }
-
+input[type="checkbox"]{
+  border:1px solid green;
+}
 #video {
   position: relative;
   padding-bottom: 56.25%;

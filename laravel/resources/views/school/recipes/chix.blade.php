@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com Nigerian Chicken Stew')
+@section('title', 'Low Fat Easy Nigerian Chicken Stew, Secret Ingredient')
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
@@ -8,8 +8,8 @@
             <div>
 
                 <div>
-                    <h1 class="blog-title font-size-3-em">Nigerian Chicken Stew</h1>
-                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/chix.jpeg">
+                    <h1 class="blog-title font-size-3-em">Low Fat Easy Nigerian Chicken Stew With Secret Ingredient</h1>
+                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/chix.webp" alt="Low Fat Easy Nigerian Chicken Stew">
 
                     <p><span class="pacifico font-size-2-em primary-color">N</span>igerian chicken stew is a delightful West
                         African stew made with chicken thighs and simmered in a
@@ -76,11 +76,11 @@
                             </li>
 
                             <li>
-                                <form><input type="checkbox" name="1">4 Chilli Peppers</form>
+                                <form><input type="checkbox" name="1">4 Chilli Peppers (optional)</form>
                             </li>
 
                             <li>
-                                <form><input type="checkbox" name="1">3 Scotch Bonnet Peppers</form>
+                                <form><input type="checkbox" name="1">3 Scotch Bonnet Peppers (optional)</form>
                             </li>
 
                             <li>

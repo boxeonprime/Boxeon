@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com Low Fat Oilless Nigerian Okra Soup')
+@section('title', 'Easy Low Fat Nigerian Okra Soup With Caribbean Twist')
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
@@ -8,8 +8,8 @@
             <div>
 
                 <div>
-                    <h1 class="blog-title font-size-3-em">Low Fat Oilless Okra Soup</h1>
-                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/oilless.jpeg">
+                    <h1 class="blog-title font-size-3-em">Easy Low Fat Nigerian Okra Soup With Caribbean Twist</h1>
+                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/oilless.webp" alt="Low Fat Nigerian Okra">
 
                     <p><span class="pacifico font-size-2-em primary-color">O</span>kra soup (African okro soup) is made with
                         okra vegetables cooked in a delicious mixture of palm oil, shrimps, goat meat, fish, and African

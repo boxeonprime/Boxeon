@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com Nigerian Egusi Soup Recipe')
+@section('title', 'Traditional Recipe: Nigerian Egusi Soup | Get Free Gifts')
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
@@ -8,8 +8,8 @@
             <div>
 
                 <div>
-                    <h1 class="blog-title font-size-3-em">Nigerian Egusi Soup</h1>
-                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/egusi.jpeg">
+                    <h1 class="blog-title font-size-3-em">Traditional Recipe: Nigerian Egusi Soup - Get Free Gifts</h1>
+                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/egusi.webp" alt="Nigerian Egusi Soup">
 
                     <p><span class="pacifico font-size-2-em primary-color">E</span>gusi (also known by variations including egwusi, agusi, ohue, Ikpan, Ikon, and agushi) is the name
                         for

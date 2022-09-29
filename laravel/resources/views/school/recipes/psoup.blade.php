@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com Nigerian Pepper Soup Recipe')
+@section('title', 'Simple Nigerian Pepper Soup Recipe: 7 Easy Steps')
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
@@ -8,8 +8,8 @@
             <div>
 
                 <div>
-                    <h1 class="blog-title font-size-3-em">Nigerian Pepper Soup</h1>
-                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/psoup.jpeg">
+                    <h1 class="blog-title font-size-3-em">Simple Nigerian Pepper Soup Recipe: 7 Easy Steps</h1>
+                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/psoup.webp" alt="Nigerian Pepper Soup">
 
                     <p><span class="pacifico font-size-2-em primary-color">N</span>igerian Pepper Soup is a one-pot dish that's defined by the nutty, bitter, woodsy, and floral notes
                         imparted by a mix of spices and herbs.</p>
@@ -105,7 +105,7 @@
 
             <section>
                 <div class="nutrition-col">
-                    <h2 class="nutrition-col__nutritionalFacts-title">Pepper Soup Nutritional Info </h2>
+                    <h2 class="nutrition-col__nutritionalFacts-title">Pepper Soup Nutrients </h2>
                     <div class="nutrition-col__serving"><span>Serving Size:</span><span
                             class="nutrition-col__serving-value">
                             100 g </span></div>

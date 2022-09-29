@@ -1,15 +1,13 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com Nigerian Party Jollof Rice')
+@section('title', 'Easy Nigerian Party-Style Jollof Rice | Award Winning Recipe')
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
         <section id="blogs-stream" class='section maxw1035 two-col-grid rounded-corner card'>
-
             <div>
-
                 <div>
-                    <h1 class="blog-title font-size-3-em">Nigerian Party Jollof Rice</h1>
-                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/jollof.webp">
+                    <h1 class="blog-title font-size-3-em">Easy Nigerian Party-Style Jollof Rice | Award Winning Recipe</h1>
+                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/jollof.webp" alt="Nigerian Party Jollof Rice">
 
                     <p><span class="pacifico font-size-2-em primary-color">J</span>ollof Rice is the most popular rice dish
                         from West Africa. The dish is typically made

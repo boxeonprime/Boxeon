@@ -1,15 +1,13 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com Best Nigerian Cassava Fufu')
+@section('title', 'How To Make Fufu In USA: Modern Techniques | Nigerian Cassava Fufu')
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
         <section id="blogs-stream" class='section maxw1035 two-col-grid rounded-corner card'>
-
             <div>
-
                 <div>
-                    <h1 class="blog-title font-size-3-em">Nigerian Cassava Fufu</h1>
-                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/fufu.webp">
+                    <h1 class="blog-title font-size-3-em">How To Make Fufu In USA: Modern Techniques - Nigerian Cassava Fufu</h1>
+                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/fufu.webp" alt="How To Make Fufu">
                     <p><span class="pacifico font-size-2-em primary-color">F</span>ufu (or fufuo, foofoo, foufou) is a
                         dough-like food found in West African cuisine. In addition to
                         Ghana, it is also found in Sierra Leone, Guinea, Liberia, Cote D'Ivoire, Benin, Togo, Nigeria,
@@ -26,8 +24,6 @@
                     </p>
                     <p>Fufu is traditionally eaten with the fingers, and a small ball of it can be dipped into an
                         accompanying soup or sauce.</p>
-
-
                     <br>
                     <div class="table-of-contents">
                         <h2>Table of contents</h2>
@@ -54,7 +50,6 @@
                             <li><a class="one-em-font primary-color" href="#abb9">More African
                                     recipes to try</a></li>
                         </ol>
-
                     </div>
 
                     <a href="#abb1" id="abb1"></a>

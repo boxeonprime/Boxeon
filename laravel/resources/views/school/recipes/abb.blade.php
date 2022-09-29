@@ -1,15 +1,13 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com African Black Beans Stew')
+@section('title', '7 Easy Organic African Black Beans Stew Recipe Variations')
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
         <section id="blogs-stream" class='section maxw1035 two-col-grid rounded-corner card'>
             <div>
-
                 <div>
-
-                    <h1 class="blog-title font-size-3-em">African Black Beans Stew</h1>
-                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/abbs.webp">
+                    <h1 class="blog-title font-size-3-em">7 Easy Organic African Black Beans Stew Recipe Variations</h1>
+                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/abbs.webp"alt="African Black Beans Stew">
 
                     <p><span class="pacifico font-size-2-em primary-color">A</span>frican Black Beans Stew - tasty and comforting bean stew flavored with garlic, ginger, onions, and
                         intensified with crayfish for ultimate comfort food.</p>

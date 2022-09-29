@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com Nigerian Sobo Drink Recipe')
+@section('title', 'Easy Hibiscus Tea: Best Nigerian Sobo Drink: Perfect Sorrel Juice Recipe')
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
@@ -8,8 +8,8 @@
             <div>
 
                 <div>
-                    <h1 class="blog-title font-size-3-em">Nigerian Sobo Drink</h1>
-                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/sorrel.jpeg">
+                    <h1 class="blog-title font-size-3-em">Easy Hibiscus Tea: Best Nigerian Sobo Drink: Perfect Sorrel Juice Recipe</h1>
+                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/sorrel.webp" alt="Hibiscus Flowers Tea">
 
                     <p><span class="pacifico font-size-2-em primary-color">S</span>orrel drink, also known as Zobo drink or Sobolo, is a tangy, refreshing, and satisfying drink that
                         tastes amazing and is highly nutritious. Enjoy on a hot summer day or as a relaxing evening drink!

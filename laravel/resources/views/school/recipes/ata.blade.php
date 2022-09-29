@@ -1,19 +1,17 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com Nigerian Ata Dindin Rice')
+@section('title', 'Burna Boy\'s Favorite Stew: Nigerian Ata Dindin | Get 16 Free Foods')
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
         <section id="blogs-stream" class='section maxw1035 two-col-grid rounded-corner card'>
             <div>
                 <div>
-                    <h1 class="blog-title font-size-3-em">Nigerian Ata Dindin Rice</h1>
-                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/ata.jpeg">
-                    <p><span class="pacifico font-size-2-em primary-color">N</span>igerian peppered stew, also known as ata
-                        dindin in the Yoruba language, is commonly served with
-                        rice,
-                        boiled yam, roasted plantain (boli), and many other dishes.</p>
-                    <p>Ata Dindin as a sauce is uniquely traditional in taste and is considered a comfort food like the
-                        other dishes in the Boxeon Mealkit.</p>
+                    <h1 class="blog-title font-size-3-em">Burna Boy's Favorite Stew: Nigerian Ata Dindin | Get 16 Free Foods</h1>
+                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/ata.webp" alt="Nigerian Ata Dindin Rice">
+                    <p><span class="pacifico font-size-2-em primary-color">B</span>urna Boy recently mention in a Men's Health interview that Fried Yam and Stew is his favorite meal. As he puts it "igerian peppered stew, also known as ata
+                        dindin in the Yoruba language, is commonly served with". If you'love to know all about this special Nigerian stew, continue reading. For a bonus, we'd also inform you on how to get 16 free African foods delivered to you monthly.</p>
+                    <p>Ata Dindin as a stew is uniquely traditional in taste and is considered a comfort food like the
+                        other dishes in the Boxeon Mealkit. So, if you're thinking of cooking Ata Dindin for a native Nigerian or even West African, go for it.</p>
                     <br>
                     <div class="table-of-contents">
                         <h2>Table of contents</h2>
@@ -25,7 +23,7 @@
                             </li>
                             <li><a class="one-em-font primary-color" href="#abb2">Ata Dindin
                                     recipe</a></li>
-                            <li><a class="one-em-font primary-color" href="#abb3">Ata Dindin instructions</a></li>
+                            <li><a class="one-em-font primary-color" href="#abb3">How to cook Ata Dindin?</a></li>
                             <li><a class="one-em-font primary-color" href="#abb4">Recipe variations</a>
                             </li>
                             <li><a class="one-em-font primary-color" href="#abb5">Tips and tricks</a></li>
@@ -42,6 +40,8 @@
                     </div>
                     <h2>What are the health benefits of Ata
                         Dindin?</h2>
+                        
+                        <p></p>
 
                     <h2>Can pregnant women eat Ata Dindin?</h2>
 
@@ -115,7 +115,7 @@
                     </div>
 
                     <div id="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5JLUhzyas?start=2"
+                        <iframe width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/5g5JLUhzyas?start=2"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
