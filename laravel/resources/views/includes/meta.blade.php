@@ -163,8 +163,6 @@ $nonce = $_COOKIE['hash'];
         padding: 0;
     }
 
-
-
     :-moz-focusring {
         outline: 1px dotted ButtonText;
     }

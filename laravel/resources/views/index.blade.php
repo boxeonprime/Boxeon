@@ -19,7 +19,7 @@
                     <img class="float-left h50px border-radius margin-right-1-em border-yellow"
                         src="../assets/images/tabitha-girl.webp" alt="Charitable Giving" />
                     <a class="learn-more" href="/school/subscriptions">
-                        <h2>Learn more about Boxeon subscriptions<span class="material-icons">arrow_forward</span></h2>
+                        <h2>Learn more about Boxeon subscriptions</h2>
                     </a>
             </div>
         </section>
