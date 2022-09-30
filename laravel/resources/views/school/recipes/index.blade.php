@@ -36,7 +36,7 @@ $price = DB::table('products')
                 </select>
 
             </form>
-            <button data-quantity="1" data-name="African Staples Mealkit" data-plan="1" data-img="sisi.jpeg"
+            <button data-quantity="1" data-name="African Staples Mealkit" data-plan="1" data-img="sisi.webp"
                 data-id="68" data-baseprice="{{ $price }}"
                 data-price="{{ $price }}" class="cart-add button center">SUBSCRIBE NOW</button>
 
@@ -106,7 +106,7 @@ $price = DB::table('products')
                 </select>
 
             </form>
-            <button data-quantity="1" data-name="African Mealkit by Jemimah" data-plan="1" data-img="sisi.jpeg"
+            <button data-quantity="1" data-name="African Mealkit by Jemimah" data-plan="1" data-img="sisi.webp"
                 data-id="68" data-baseprice="{{ $price }}"
                 data-price="{{ $price }}" class="cart-add button center">SUBSCRIBE NOW</button>
         </section>

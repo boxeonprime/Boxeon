@@ -23,11 +23,11 @@ foreach ($files as $file) {
         //$imgResized = imagescale($image, 320, 466);
         //imagewebp($image, $name);
 
-    } elseif (exif_imagetype($file) == 18 && (int)$info[0] > 1600) { // webp
+    } elseif (exif_imagetype($file) == 18 && (int)$info[0] > 320) { // webp
 
         $image = imagecreatefromwebp($file);
-         $imgResized = imagescale($image, 494, 721);
-       // imagewebp($imgResized, $name); 
+         $imgResized = imagescale($image, 320, 466);
+       imagewebp($imgResized, $name); 
 
     }
 

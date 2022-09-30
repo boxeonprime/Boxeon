@@ -47,7 +47,7 @@
 
                 </div>
                 <div class="p-relative">
-                    <a href="/recipe?r=sorrel"><img width="500px" src="../assets/images/products/medium/sorrel.webp"  loading="lazy" alt="Hibiscus Flowers Tea"></a>
+                    <a href="/recipe?r=sorrel"><img width="500px" src="../assets/images/products/medium/sobo.webp"  loading="lazy" alt="Hibiscus Flowers Tea"></a>
 
                     <a class="p-title" href="/recipe?r=sorrel">
                         <h2 class="title-style"><span class="title-style-span">Nigerian Sobo Drink</h2>
