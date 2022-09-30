@@ -3,7 +3,7 @@
 @section('content')
     <main id="about">
         <div id="video">
-            <iframe class="about-video"
+            <iframe class="about-video" loading="lazy"
                 src="https://www.youtube.com/embed/IZja3pAZ0Y4?clip=Ugkxsq7RQ9S-ZExQ3P50fXBsBedXaY0QctFO&clipt=EMmaLxjhjzA&autoplay=1&mute=1&modestbranding=1&autohide=1&showinfo=0&controls=0&rel=0"
                  frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -33,7 +33,7 @@
                         <div>
                             <a href="https://www.timeout4africa.com/stem-camp-for-girls" target="_blank">
                                 <img id="img-reminder" class="image-how-it-works h70px"
-                                    src="../assets/images/stem-girls.jpg" alt="Timeout 4 Africa" />
+                                    src="../assets/images/stem-girls.webp"  alt="Timeout 4 Africa" />
                             </a>
                             <h2 class="centered">STEM Camp for Girls</h2>
                             <p class="centered">Young girls in Minna, Nigeria, have limited access to science, technology,
@@ -43,7 +43,7 @@
                         </div>
                         <div>
                             <a href="https://wtec.org.ng/" target="_blank">
-                                <img id="img-gifts" class="image-how-it-works h70px" src="../assets/images/wtech.jpg"
+                                <img id="img-gifts" class="image-how-it-works h70px" loading="lazy" src="../assets/images/wtech.webp"
                                     alt="WTEC" />
                             </a>
                             <h2 class="centered">Women's Tech Empowerment Centre</h2>
@@ -57,7 +57,7 @@
                         <div>
                             <a href="https://tabithahome.org/" target="_blank">
                                 <img id="img-shopping" class="image-how-it-works h70px"
-                                    src="../assets/images/tabitha-girl.jpg" alt="Hope Rising" />
+                                    src="../assets/images/tabitha-girl.webp" loading="lazy" alt="Hope Rising" />
                             </a>
                             <h2 class="centered">Tabitha Homes</h2>
                             <p class="centered">Tabitha Home's mission is to rehabilitate and transform former disadvantaged
@@ -192,7 +192,7 @@
             <div id="team-wrapper" class="three-rows-grid">
                 <div class="four-col-grid">
                     <span></span>
-                    <img src="../assets/images/pledge-1.png" alt="Sustainability pledge">
+                    <img src="../assets/images/pledge-1.webp" loading="lazy" alt="Sustainability pledge">
                     <div>
                         <p>To make it easy for you, our community, to work eco-friendly, sustainably-minded choices into
                             your food consumption. We’re focused on three areas: Reducing waste, Recyclability. and
@@ -202,7 +202,7 @@
                 </div>
                 <div class="four-col-grid">
                     <span></span>
-                    <img src="../assets/images/pledge-2.png" alt="Women's pledge">
+                    <img src="../assets/images/pledge-2.webp"  loading="lazy" alt="Women's pledge">
                     <div>
                         <p>We’re committed to lifting up and celebrating women in business to honor their accomplishments.
                             We intentionally partner with women-founded, owned, and run food brands, making it easy for our
@@ -214,7 +214,7 @@
                 </div>
                 <div class="four-col-grid">
                     <span></span>
-                    <img src="../assets/images/pledge-3.png" alt="Pan African pledge">
+                    <img src="../assets/images/pledge-3.webp" loading="lazy" alt="Pan African pledge">
                     <div>
                         <p>To make it easy for our community to experience the best Afro food products, we extend our search
                             for the best quality food products throughout various African countries, the Caribbean, and the
