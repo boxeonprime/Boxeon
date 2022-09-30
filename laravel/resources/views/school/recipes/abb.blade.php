@@ -1,6 +1,5 @@
 @extends('layouts.index')
 @section('title', '7 Easy Organic African Black Beans Stew Recipe Variations')
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
         <section id="blogs-stream" class='section maxw1035 two-col-grid rounded-corner card'>
@@ -107,7 +106,7 @@
                     <a href="#abb3" id="abb3"></a>
                     <h2 class="primary-color extra-large-font">African Black Beans Stew instructions</h2>
                     <div id="video" class="margin-bottom-4-em">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/uayXFGMINlc?controls=0"
+                        <iframe width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/uayXFGMINlc?controls=0"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>

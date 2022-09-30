@@ -8,7 +8,6 @@ $price = DB::table('products')
 
 @extends('layouts.index')
 @section('title', 'Boxeon.com African Meal-kits Delivered Monthly')
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <div id="mealkit-masthead">
         <aside class="centered asides call-out mobile-scroll"><br>

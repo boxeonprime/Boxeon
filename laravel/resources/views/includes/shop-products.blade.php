@@ -14,7 +14,6 @@ if (isset($_GET['c'])) {
 }
 
 @endphp
-
 <span></span>
 <section class='section card maxw1036'>
     @include('includes.category-nav')

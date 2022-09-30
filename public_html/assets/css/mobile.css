@@ -87,6 +87,7 @@ Extra small devices (phones, 600px and down)
   
     width: auto;
   }
+  #blogs-stream,
   .reviewer-grid  {
 
  display: block;

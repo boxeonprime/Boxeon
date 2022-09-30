@@ -1,7 +1,7 @@
 <footer>
     <section id="banner-footer" class="section wide">
         <div class="row">
-        <img id="img-gifts" class="center image-how-it-works" src='{{ asset('../assets/images/gifts.svg') }}' alt="Gifts" />
+        <img id="img-gifts" loading="lazy" class="center image-how-it-works" src='{{ asset('../assets/images/gifts.svg') }}' alt="Gifts" />
 
         <h2 class="centered center extra-large-font">Get 16 foods + 3 surprises for the price of 1!</h2>
         <p class="centered center">Sign up and answer a survey question to qualify. Offer ends soon.</p>
@@ -18,8 +18,8 @@
         </form>
     </section>
 
-    <div id="footer-content-wrapper" class="margin-top-4-em"> <a>&copy; {{ date('Y') }} Boxeon
-            LLC.</a>
+    <div id="footer-content-wrapper" class="margin-top-4-em"> <span>&copy; {{ date('Y') }} Boxeon
+            LLC.</span>
         <a href="/terms">Terms Of Use</a>
         <a href="/privacy">Privacy</a>
         <a href="/returns">Returns & Refunds</a>
@@ -28,7 +28,7 @@
 
     </div>
     <br>
-    <img id='footer-logo' src='{{ asset('../assets/images/logo-black.webp') }}' alt='logo' />
+    <img id='footer-logo'loading="lazy" src='{{ asset('../assets/images/logo-black.webp') }}' alt='logo' />
     <p class='centered one-em-font'>
         244 5th Avenue, Suite 7,&nbsp;
         New York, NY 10001<br>

@@ -27,6 +27,9 @@ Route::get('/out', 'App\Http\Controllers\LogoutController@perform')->name('logou
 Route::get('/signout', function () {
     return view('signout');
 });
+
+Route::middleware('cache.headers:public;max_age=2628000')->group(function () {
+
 Route::get('/mealkit', 'App\Http\Controllers\SchoolController@recipes')->name('mealkit');
 Route::get('/recipe', 'App\Http\Controllers\SchoolController@recipe')->name('recipe');
 
@@ -79,6 +82,8 @@ Route::prefix('nearme')->group(function () {
 Route::prefix('shop')->group(function () {
     Route::get('/item', 'App\Http\Controllers\ShopController@item')->name('shop.item');
     Route::get('/index', 'App\Http\Controllers\ShopController@index')->name('shop.index');
+
+});
 
 });
 

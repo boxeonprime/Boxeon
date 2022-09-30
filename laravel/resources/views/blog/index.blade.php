@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com Blog')
+@section('title', 'Boxeon.com African Food Blog')
 @section('content')
     <main>
         <section class="section card maxw1035">

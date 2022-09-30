@@ -1,6 +1,5 @@
 @extends('layouts.index')
 @section('title', 'Simple Nigerian Pepper Soup Recipe: 7 Easy Steps')
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
         <section id="blogs-stream" class='section maxw1035 two-col-grid rounded-corner card'>
@@ -56,7 +55,7 @@
                         </ul>
                     </div>
                     <div id="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/CBBj6ibfgSk?start=2"
+                        <iframe width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/CBBj6ibfgSk?start=2"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>

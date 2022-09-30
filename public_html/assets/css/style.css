@@ -5,6 +5,9 @@ Fair skin: #ffd5d8
 Brown skin: #a0616a
 
 */
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -2013,6 +2016,7 @@ h3{
   font-size: 1.6em;
   color:green;
   font-weight: normal;
+  text-transform: capitalize;
 }
 .learn-more h2{
   font-size:1.6em;
@@ -3588,7 +3592,7 @@ table {
 }
 
 .pacifico {
-  font-family: pacifico;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   margin-right:.2em;
 }
 

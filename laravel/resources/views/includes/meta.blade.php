@@ -1,7 +1,5 @@
 @php
-
-
-
+header('Accept-Encoding: gzip, compress, br');
 $nonce = $_COOKIE['hash'];
 
 @endphp
@@ -17,16 +15,16 @@ $nonce = $_COOKIE['hash'];
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="csrf-token" content="{{ csrf_token() }}" />
-<link rel="icon" type="image/svg+xml" href="{{ asset('../assets/images/favicon.png') }}">
-<link rel="alternate icon" href="{{ asset('../assets/images/favicon.png') }}">
-<link rel="mask-icon" href="https://boxeon.com/images/favicon.png" color="#fff">
+<link rel="icon" type="image/svg+xml" href="{{ asset('../assets/images/favicon.webp') }}">
+<link rel="alternate icon" href="{{ asset('../assets/images/favicon.webp') }}">
+<link rel="mask-icon" href="https://boxeon.com/images/favicon.webp" color="#fff">
 <link rel="stylesheet" href="{{ asset('../assets/css/style.css?v=37') }}">
 <link rel="stylesheet" href="{{ asset('../assets/css/forms.css?v=35') }}">
 <link defer rel="stylesheet" href="{{ asset('../css/app.css') }}">
 <link rel="stylesheet" media="screen and (min-width: 200px) and (max-width: 1810px)"
     href="{{ asset('../assets/css/mobile.css?v=3.6') }}" />
-<link defer rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link defer rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+<link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton&display=swap">
 <script defer type="module" src="{{ asset('../assets/js/global.js?v=2.1') }}"></script>
 <script defer src="https://apis.google.com/js/platform.js?onload=onLoadCallback"></script>
 

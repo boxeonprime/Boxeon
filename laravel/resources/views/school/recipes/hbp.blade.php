@@ -1,18 +1,15 @@
 @extends('layouts.index')
 @section('title', 'Easy Low Fat Honey Beans Porridge: Nigerian Stewed Beans')
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
         <section id="blogs-stream" class='section maxw1035 two-col-grid rounded-corner card'>
             <div>
-     
             <div>
                 <h1 class="blog-title font-size-3-em">Easy Low Fat Honey Beans Porridge: Nigerian Stewed Beans</h1>
                 <img class="w100per margin-bottom-2-em" src="../assets/images/products/honey.webp" alt="Honey Beans Porridge">
                 <p><span class="pacifico font-size-2-em primary-color">N</span>igerian beans porridge, also known as stewed beans, is a dietary staple in many households in the country. It is called “ewa riro” in Yoruba or sometimes just referred to as “ewa”, which means beans. It is similar to the Ghanaian “red red” and is perfect for vegetarians.</p>
                 <p>Beans are a staple food all throughout Africa because they are versatile, packed with protein, fiber, and full of flavor. It’s very common to find street vendors selling beans at the exit of most schools in Cameroon in the morning with puff-puff. You can also find them outside of the food markets in many cities and at most main plazas every day of the week. It is considered a breakfast or main meal depending on how it is prepared.</p>
-                
-                
+
                 <br>
                 <div class="table-of-contents">
                     <h2>Table of contents</h2>
@@ -44,7 +41,6 @@
                 <a href="#abb1" id="abb1"></a>
                 <h2 class="primary-color extra-large-font">What are the health benefits of Honey Beans Porridge?</h2>
               
-                
                 <h2 class="primary-color extra-large-font">Honey Beans Porridge recipe</h2>
                 <div class="table-of-contents">
                 <ul>
@@ -87,12 +83,11 @@
                     </ul>
                 </div>
                 <div id="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q8XZxxSOxj0?controls=0"
+                    <iframe width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/Q8XZxxSOxj0?controls=0"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 </div>
-
 
                 <a href="#abb5" id="abb5"></a>
                 <h2>Serving and storage instructions</h2>

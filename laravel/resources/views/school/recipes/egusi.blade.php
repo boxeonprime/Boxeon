@@ -1,17 +1,19 @@
 @extends('layouts.index')
 @section('title', 'Traditional Recipe: Nigerian Egusi Soup | Get Free Gifts')
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
 @section('content')
     <main>
+
         <section id="blogs-stream" class='section maxw1035 two-col-grid rounded-corner card'>
 
             <div>
 
                 <div>
                     <h1 class="blog-title font-size-3-em">Traditional Recipe: Nigerian Egusi Soup - Get Free Gifts</h1>
-                    <img class="w100per margin-bottom-2-em" src="../assets/images/products/egusi.webp" alt="Nigerian Egusi Soup">
+                    <img class="w100per margin-bottom-2-em" loading="lazy" src="../assets/images/products/egusi.webp"
+                        alt="Nigerian Egusi Soup">
 
-                    <p><span class="pacifico font-size-2-em primary-color">E</span>gusi (also known by variations including egwusi, agusi, ohue, Ikpan, Ikon, and agushi) is the name
+                    <p><span class="pacifico font-size-2-em primary-color">E</span>gusi (also known by variations including
+                        egwusi, agusi, ohue, Ikpan, Ikon, and agushi) is the name
                         for
                         the
                         protein-rich seeds of certain cucurbitaceous plants (squash, melon, gourd), which after being dried
@@ -36,25 +38,25 @@
                     <div class="table-of-contents">
                         <h2>Table of contents</h2>
                         <ol>
-                             <li><a class="one-em-font primary-color" href="#abb1">What are some health benefits of Egusi
+                            <li><a class="one-em-font primary-color" href="#abb1">What are some health benefits of Egusi
                                     Soup?</a> </li>
 
-                             <li><a class="one-em-font primary-color" href="#abb8">Can pregnant women eat Egusi Soup?</a>
-                             </li>
-                             <li><a class="one-em-font primary-color" href="#abb2">Egusi Soup
+                            <li><a class="one-em-font primary-color" href="#abb8">Can pregnant women eat Egusi Soup?</a>
+                            </li>
+                            <li><a class="one-em-font primary-color" href="#abb2">Traditional Egusi Soup
                                     recipe</a> </li>
-                             <li><a class="one-em-font primary-color" href="#abb3">Egusi Soup instructions</a> </li>
-                             <li><a class="one-em-font primary-color" href="#abb4">Recipe variations</a>
-                             </li>
-                             <li><a class="one-em-font primary-color" href="#abb5">Tips and tricks</a> </li>
-                             <li><a class="one-em-font primary-color" href="#abb6">Serving and storage
+                            <li><a class="one-em-font primary-color" href="#abb3">Egusi Soup instructions</a> </li>
+                            <li><a class="one-em-font primary-color" href="#abb4">Recipe variations</a>
+                            </li>
+                            <li><a class="one-em-font primary-color" href="#abb5">Tips and tricks</a> </li>
+                            <li><a class="one-em-font primary-color" href="#abb6">Serving and storage
                                     instructions</a> </li>
-                             <li><a class="one-em-font primary-color" href="#abb7">Where can you find
+                            <li><a class="one-em-font primary-color" href="#abb7">Where can you find
                                     Egusi?</a> </li>
-                             <li><a class="one-em-font primary-color" href="#abb8">What goes with Egusi Soup?</a> </li>
+                            <li><a class="one-em-font primary-color" href="#abb8">What goes with Egusi Soup?</a> </li>
 
-                             <li><a class="one-em-font primary-color" href="#abb10">Conclusion</a> </li>
-                             <li><a class="one-em-font primary-color" href="#abb9">More African
+                            <li><a class="one-em-font primary-color" href="#abb10">Conclusion</a> </li>
+                            <li><a class="one-em-font primary-color" href="#abb9">More African
                                     recipes to try</a> </li>
                         </ol>
 
@@ -62,129 +64,232 @@
 
                     <a href="#abb1" id="abb1"></a>
                     <h2 class="primary-color extra-large-font">What are some health benefits of Egusi Soups?</h2>
-                    <p>Egusi Soups have antioxidants, fiber, protein, and carbohydrates. A rich diet of African
-                        Black Beans may improve your chance at reducing the risk of many medical conditions due to the beans
-                        helping your body to process calories more effectively.</p>
-                    <h3 class="primary-color">Blood Sugar Regulation</h3>
+                    <p>Egusi Soup has some incredible health benefits to go with it bold flavors. These are the most prominent benefits:</p>
+                    <h3>Improves Appetite and weight loss</h3>
+                    <p>The vitamin B1 (thiamine) and vitamin B2 (riboflavin) in Egusi Seeds make the fats and oil in the
+                        body undergo metabolism and help to increase appetite.</p>
+                        <h3>Improves the Skin</h3> 
+                        <p>The vitamin E in Egusi
+                        Seeds helps improve skin health.</p>
 
-                    <p>Egusi Soups eaten with rice have been found to reduce blood sugar levels. This is unique,
-                        other foods rich in carbohydrates, have been shown to do the opposite. This makes African Black
-                        Beans ideal for people with diabetes who're seeking to improve blood sugar levels while preserving
-                        and/or improving heart health.</p>
+                    <p>These vitamins are used in the production of skincare products. Vitamin E also helps to reduce the
+                        signs of aging: wrinkles and loose skin. Antioxidant properties Egusi seed contains
+                        alpha-tocopherol, an antioxidant.</p>
 
+                    <p>This antioxidant prevents ulcers and health conditions associated with the oxidation processes in the
+                        body. Helps in Digestion Egusi Seeds are rich in fibers. These fibers aid digestion and prevent
+                        digestive disorders such as constipation and irregular bowel movement.</p>
 
-                    <h3 class="primary-color">Heart Health</h3>
+                    <h3>Improves Vision</h3>
 
-                    <p>The fiber, potassium, folate, vitamin B6, and phytonutrient content of Egusi Soups, coupled
-                        with its lack of cholesterol, all support heart health. This fiber helps lower the total amount of
-                        cholesterol in the blood and decrease the risk of heart disease.</p>
+                    <p> The Vitamin A content in Egusi improves vision. Reduces Inflammation Egusi Seeds contain
+                        anti-inflammatory properties to help with swelling in the body and inflammation.</p>
 
-                    <p>Saponins found in Egusi Soups help lower blood lipid and blood cholesterol levels, preventing
-                        damage to the heart and blood vessels.</p>
+                    <p>Methanol extract from melon seed is an ingredient in anti-inflammatory medicines.</p>
+                    <h3> Promotes Heart Health</h3>
+                    <p>Egusi contains a high amount of <a
+                            href="https://www.sciencedirect.com/topics/medicine-and-dentistry/unsaturated-fatty-acid"
+                            target="_blank" class="one-em-font primary-color">unsaturated fatty acids</a>. This makes Egusi Seeds beneficial for
+                        reducing the chances of heart diseases by reducing blood cholesterol. </p>
+                    <h3>Prevents Malnutrition</h3>
+                    <p> Its protein content, as well as other essential minerals and vitamins, makes it great for combating
+                        malnutrition.</p>
 
-
-                    <h3 class="primary-color">Eye Health</h3>
-
-                    <p>The antioxidants in Egusi Soups protect your eyes from macular degeneration related to aging
-                        and cataracts. </p>
-
-                    <p>The National Eye Institute (a USA based research institute) demonstrated that when people at high
-                        risk of advanced macular degeneration took high doses of antioxidants; their risk decreased by
-                        twenty five percent. Antioxidants also reduced vision loss in the same high-risk group by nieteen
-                        percent.</p>
-
-                    <h3 class="primary-color">Weight loss</h3>
-                    <p>The dietary fiber in Egusi Soups is vital in weight management. This fiber increases your
-                        sense of fullness after eating, reducing your appetite; therefore lowering your total calorie
-                        intake.</p>
+                    <p>In some places, Egusi Seeds are grounded and used as a supplement for baby food. Good for Bones Egusi
+                        contains potassium, calcium, magnesium, and phosphorous which are essential for bone health. Its
+                        consumption can help alleviate some bone diseases and disorders.</p>
                     <a href="#abb2" id="abb2"></a>
-                    <h2 class="primary-color extra-large-font" id="abb2">Egusi Soup recipe</h2>
+                    <h2 class="primary-color extra-large-font" id="abb2">Traditional Egusi Soup recipe</h2>
                     <div class="table-of-contents">
                         <ul>
-                             <li><form><input type="checkbox" name="1">Assorted Meats (Beef, Ponmo, Goat meat, Cow leg, Shaki and other offals are ideal)</form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Assorted Meats (Beef, Ponmo, Goat meat, Cow leg,
+                                    Shaki and other offals are ideal)</form>
+                            </li>
 
-                             <li><form><input type="checkbox" name="1"><span><a href="/shop/item?id=10" class="one-em-font primary-color ">1.5 Cups Whole
-                                    Egusi</a> or <a href="/shop/item?id=8" class="one-em-font primary-color ">1 Cup
-                                    Ground Egusi</a></span></form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1"><span><a href="/shop/item?id=10"
+                                            class="one-em-font primary-color ">1.5 Cups Whole
+                                            Egusi</a> or <a href="/shop/item?id=8" class="one-em-font primary-color ">1 Cup
+                                            Ground Egusi</a></span></form>
+                            </li>
 
-                             <li><form><input type="checkbox" name="1"><a href="/shop/item?id=36" class="one-em-font primary-color ">1 Cup Palm Oil</a>
-                            </form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1"><a href="/shop/item?id=36"
+                                        class="one-em-font primary-color ">1 Cup Palm Oil</a>
+                                </form>
+                            </li>
 
-                             <li><form><input type="checkbox" name="1">2 Cups Chicken / Meat Stock</form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1">2 Cups Chicken / Meat Stock</form>
+                            </li>
 
-                             <li><form><input type="checkbox" name="1">4 Red Bell Pepper (Tatashe)</form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1">4 Red Bell Pepper (Tatashe)</form>
+                            </li>
 
-                             <li><form><input type="checkbox" name="1">2 Paprika Peppers</form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1">2 Paprika Peppers</form>
+                            </li>
 
-                             <li><form><input type="checkbox" name="1">Chili Peppers (Shombo)</form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Chili Peppers (Shombo)</form>
+                            </li>
 
-                             <li><form><input type="checkbox" name="1">2 Medium Onions</form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1">2 Medium Onions</form>
+                            </li>
 
-                             <li><form><input type="checkbox" name="1">2-3 Scotch Bonnet (Atarodo)</form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1">2-3 Scotch Bonnet (Atarodo)</form>
+                            </li>
 
-                             <li><form><input type="checkbox" name="1"><a href="/shop/item?id=9" class="one-em-font primary-color ">1 Cup Chopped Ugu
-                                    leaves</a>
-                            </form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1"><a href="/shop/item?id=9"
+                                        class="one-em-font primary-color ">1 Cup Chopped Ugu
+                                        leaves</a>
+                                </form>
+                            </li>
 
-                             <li><form><input type="checkbox" name="1"><a href="/shop/item?id=4" class="one-em-font primary-color ">Crayfish powder</a>
-                            </form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1"><a href="/shop/item?id=4"
+                                        class="one-em-font primary-color ">Crayfish powder</a>
+                                </form>
+                            </li>
 
-                             <li><form><input type="checkbox" name="1"><a href="/shop/item?id=48" class="one-em-font primary-color ">African Smoked Fish
-                                    (or
-                                    African Smoked Shrimp)</a></form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1"><a href="/shop/item?id=48"
+                                        class="one-em-font primary-color ">African Smoked Fish
+                                        (or
+                                        African Smoked Shrimp)</a></form>
+                            </li>
 
-                             <li><form><input type="checkbox" name="1">Stockfish</form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Stockfish</form>
+                            </li>
 
-                             <li><form><input type="checkbox" name="1"><a href="/shop/item?id=53" class="one-em-font primary-color ">Maggi Seasoning
-                                    cubes</a>
-                            </form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1"><a href="/shop/item?id=53"
+                                        class="one-em-font primary-color ">Maggi Seasoning
+                                        cubes</a>
+                                </form>
+                            </li>
 
-                             <li><form><input type="checkbox" name="1">Salt to Taste</form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Salt to Taste</form>
+                            </li>
                         </ul>
                     </div>
                     <a href="#abb3" id="abb3"></a>
                     <h2 class="primary-color extra-large-font">Nigerian Egusi Soup instructions</h2>
                     <div class="table-of-contents">
                         <ul>
-                             <li><form><input type="checkbox" name="1">Season your meat with blended onions, salt, and maggi cubes, and scotch bonett pepper</form> </li>
-                             <li><form><input type="checkbox" name="1">Cover the seasoned meat in a pot and allow it to simmer for about 20 minutes</form> </li>
-                             <li><form><input type="checkbox" name="1">Add enough water to cook the meat
-                            </form> </li>
-                             <li><form><input type="checkbox" name="1">Remove goat meat and beef when soft
-                            </form> </li>
-                             <li><form><input type="checkbox" name="1">Remove cow foot and stripe when soft
-                            </form> </li>
-                             <li><form><input type="checkbox" name="1">Grill the meat for about 20 minutes at 250 degrees fahrenheit (120 celcius)
-                            </form> </li>
-                             <li><form><input type="checkbox" name="1">Cook and wash off the locust beans and smoked fish</form> </li>
-                             <li><form><input type="checkbox" name="1">Blend the onions and peppers</form> </li>
-                             <li><form><input type="checkbox" name="1">Blend the egusi seeds into a fine powder</form> </li>
-                             <li><form><input type="checkbox" name="1">Place ugu leaves in a bowl and pour boiling water over leaves</form> </li>
-                             <li><form><input type="checkbox" name="1">Allow ugu leaves to sit in the water for 2 minutes then drain the water from leaves</form> </li>
-                             <li><form><input type="checkbox" name="1">Rough cut the ugu leaves to desired size</form> </li>
-                             <li><form><input type="checkbox" name="1">Add crayfish powder to Egusi powder then add a bit of warm water and mix everything into a very thick paste</form> </li>
-                             <li><form><input type="checkbox" name="1">Heat up a pan of palm oil then add some chopped onions and allow to fry for 2 minutes</form> </li>
-                             <li><form><input type="checkbox" name="1">Add locust beans to the frying pan and allow to fry for 2 minutes</form> </li>
-                             <li><form><input type="checkbox" name="1">Add some crayfish to the frying pan and allow to fry for no more than 30 seconds</form> </li>
-                             <li><form><input type="checkbox" name="1">Add the blended peppers to the frying pan together with salt and maggi cubes. Mix and allow to cook for 20 - 30 minutes</form> </li>
-                             <li><form><input type="checkbox" name="1">Add the smoked fish and meats to the frying pan and allow to cook for 5 - 10 minutes</form> </li>
-                             <li><form><input type="checkbox" name="1">Add meat broth, mix, and cover and allow to cook for 3 minutes</form> </li>
-                             <li><form><input type="checkbox" name="1">Roll the Egusi paste into balls and add them to the frying pan</form> </li>
-                             <li><form><input type="checkbox" name="1">Cover the frying pan and allow to cook for 15 ninutes</form> </li>
-                             <li><form><input type="checkbox" name="1">Break up the Egusi balls in the frying pan</form> </li>
-                             <li><form><input type="checkbox" name="1">Add ugu leaves to the frying pan</form> </li>
-                             <li><form><input type="checkbox" name="1">Add a bit of meat stock and crayfish powder to the frying pan and let simmer for 2 minutes</form> </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Season your meat with blended onions, salt, and
+                                    maggi cubes, and scotch bonett pepper</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Cover the seasoned meat in a pot and allow it to
+                                    simmer for about 20 minutes</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Add enough water to cook the meat
+                                </form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Remove goat meat and beef when soft
+                                </form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Remove cow foot and stripe when soft
+                                </form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Grill the meat for about 20 minutes at 250
+                                    degrees fahrenheit (120 celcius)
+                                </form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Cook and wash off the locust beans and smoked
+                                    fish</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Blend the onions and peppers</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Blend the egusi seeds into a fine powder
+                                </form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Place ugu leaves in a bowl and pour boiling
+                                    water over leaves</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Allow ugu leaves to sit in the water for 2
+                                    minutes then drain the water from leaves</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Rough cut the ugu leaves to desired size
+                                </form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Add crayfish powder to Egusi powder then add a
+                                    bit of warm water and mix everything into a very thick paste</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Heat up a pan of palm oil then add some
+                                    chopped onions and allow to fry for 2 minutes</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Add locust beans to the frying pan and allow
+                                    to fry for 2 minutes</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Add some crayfish to the frying pan and allow
+                                    to fry for no more than 30 seconds</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Add the blended peppers to the frying pan
+                                    together with salt and maggi cubes. Mix and allow to cook for 20 - 30 minutes</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Add the smoked fish and meats to the frying
+                                    pan and allow to cook for 5 - 10 minutes</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Add meat broth, mix, and cover and allow to
+                                    cook for 3 minutes</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Roll the Egusi paste into balls and add them
+                                    to the frying pan</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Cover the frying pan and allow to cook for 15
+                                    ninutes</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Break up the Egusi balls in the frying pan
+                                </form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Add ugu leaves to the frying pan</form>
+                            </li>
+                            <li>
+                                <form><input type="checkbox" name="1">Add a bit of meat stock and crayfish powder to
+                                    the frying pan and let simmer for 2 minutes</form>
+                            </li>
                         </ul>
                     </div>
 
                     <div id="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XeZJlxAsP18?start=13"
+                        <iframe width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/XeZJlxAsP18?start=13"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                   <br>
-                  
+                    <br>
+
                     <a href="#abb5" id="abb5"></a>
                     <h2>Serving and storage instructions</h2>
                     <a href="#abb6" id="abb6"></a>
@@ -202,8 +307,8 @@
                         Bodybuilding.</p>
                     <a href="#abb8" id="abb8"></a>
                     <h2>2. Where can I find Egusi Soups?</h2>
-                    <p>You can conviently find <a href="/shop/item?id=41"
-                            class="one-em-font primary-color ">Egusi Soups</a> right here on Boxeon. We
+                    <p>You can conviently find <a href="/shop/item?id=41" class="one-em-font primary-color ">Egusi
+                            Soups</a> right here on Boxeon. We
                         currently ship everywhere in the
                         United States, flat rate.</p>
                     <a href="#abb9" id="abb9"></a>
@@ -214,9 +319,9 @@
                     <h2>Conclusion</h2>
                     <p>Egusi Soups is an African superfood with health benefits, amazing taste, easy to prepare, and
                         readily purchased here on Boxeon. Give it a try!</p>
-                        <br>
+                    <br>
 
-                        @include('includes.comments')
+                    @include('includes.comments')
 
                     @include('includes.recipes-stream')
 
@@ -225,7 +330,8 @@
             </div>
 
             <section>
-                <div class="nutrition-col">
+                <div class="nutrition-col"
+                    data="https://www.finelib.com/about/nigeria-food-produce/about-melon-seed-egusi-and-its-numerous-health-benefits/237">
                     <h2 class="nutrition-col__nutritionalFacts-title">Egusi Seed Nutrients </h2>
                     <div class="nutrition-col__serving"><span>Serving Size:</span><span
                             class="nutrition-col__serving-value">

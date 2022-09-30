@@ -1,6 +1,5 @@
 @extends('layouts.index')
-@section('title', 'Low Fat Easy Nigerian Chicken Stew, Secret Ingredient')
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+@section('title', 'Easy Low Fat Nigerian Chicken Stew, Secret Ingredient')
 @section('content')
     <main>
         <section id="blogs-stream" class='section maxw1035 two-col-grid rounded-corner card'>
@@ -8,7 +7,7 @@
             <div>
 
                 <div>
-                    <h1 class="blog-title font-size-3-em">Low Fat Easy Nigerian Chicken Stew With Secret Ingredient</h1>
+                    <h1 class="blog-title font-size-3-em">Easy Low Fat Nigerian Chicken Stew With Secret Ingredient</h1>
                     <img class="w100per margin-bottom-2-em" src="../assets/images/products/chix.webp" alt="Low Fat Easy Nigerian Chicken Stew">
 
                     <p><span class="pacifico font-size-2-em primary-color">N</span>igerian chicken stew is a delightful West
@@ -20,8 +19,7 @@
                     <p>In Nigeria, it is quite common to have a pot of this chicken stew in your fridge at any point in
                         time.
                     </p>
-                    <p>This African stew is quite spicy, but there are ways to cut down on the heat. But if you love spicy
-                        foods, this chicken stew will be right up your alley!</p>
+                    <p>If you're looking to explore a low fat African dish with a bit of a Jamaican twist to it, then read along.</p>
 
                     <br>
                     <div class="table-of-contents">
@@ -58,7 +56,9 @@
 
                     <a href="#abb1" id="abb1"></a>
                     <h2 class="primary-color extra-large-font">What are some health benefits of Nigerian Chicken Stew?</h2>
-
+                    <p>For a snapshot of the health benefits of eating Nigerian Chicken Stew, check out the infographic below:</p>
+                    <img class="w100per" src="../assets/images/health-benefits-of-chicken.jpeg" alt="Chicken Health Benefits Infographic">
+                    <div class="div-horizontal-rule"></div>
                     <h2>Nigerian Chicken Stew recipe</h2>
                     <div class="table-of-contents">
                         <ul>
@@ -163,7 +163,7 @@
                     </div>
                     <br>
                     <div id="video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rOwsAhJ8HpI?start=14"
+                        <iframe width="560" height="315" loading="lazy" src="https://www.youtube.com/embed/rOwsAhJ8HpI?start=14"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
