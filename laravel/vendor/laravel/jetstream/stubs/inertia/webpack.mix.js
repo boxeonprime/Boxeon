@@ -21,3 +21,4 @@ mix.js('resources/js/app.js', 'public/js').vue()
 if (mix.inProduction()) {
     mix.version();
 }
+mix.minify('public_html/assets/css/style.css');
