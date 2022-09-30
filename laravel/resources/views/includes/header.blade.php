@@ -22,7 +22,8 @@
                         src="../assets/images/cart.webp" alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
         @endif
         
-            <a id="showDropdown" class='fadein button margin-right-1-em m-padding-right-zero' href='#'><span class="material-icons">account_circle</span>
+            <a id="showDropdown" class='fadein button margin-right-1-em m-padding-right-zero' href='#'><span><img class="w30px" src='{{ asset('../assets/images/account_circle.svg') }}'
+                alt="Cart" /></span>
             </a>
             
             <div class="dropdown">

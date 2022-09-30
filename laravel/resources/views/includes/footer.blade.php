@@ -28,7 +28,7 @@
 
     </div>
     <br>
-    <img id='footer-logo'loading="lazy" src='{{ asset('../assets/images/logo-black.webp') }}' alt='logo' />
+    <img id='footer-logo' loading="lazy" src='{{ asset('../assets/images/logo-black.webp') }}' alt='logo' />
     <p class='centered one-em-font'>
         244 5th Avenue, Suite 7,&nbsp;
         New York, NY 10001<br>
@@ -41,7 +41,7 @@
     <a href="#" class="close-dialog">X</a>
     <form>
         <fieldset class="border-bottom">
-            <img class="center display-block" src="../assets/images/b.webp" alt="Logo">
+            <img class="center display-block" loading="lazy" src="../assets/images/b.webp" alt="Logo">
             <br>
             <b>
                 <p class="centered">Help us serve you better</p>
@@ -50,12 +50,15 @@
         </fieldset>
         <fieldset id="start">
             <h2>What's your feedback?</h2>
-            <label id="thumb_up" class="sentiment"><span class="material-icons">thumb_up</span>I like something
+            <label id="thumb_up" class="sentiment"><span><img class="material-icons" loading="lazy" src="../assets/images/thumb_up.svg"
+                alt="Like" /></span>I like something
             </label>
-            <label id="thumb_down" class="sentiment"><span class="material-icons">thumb_down</span>I don't like
+            <label id="thumb_down" class="sentiment"><span><img class="material-icons" loading="lazy" src="../assets/images/thumb_down.svg"
+                alt="Dislike" /></span>I don't like
                 something
             </label>
-            <label id="lightbulb" class="sentiment"><span class="material-icons">lightbulb</span>I have a
+            <label id="lightbulb" class="sentiment"><span><img class="material-icons" loading="lazy" src="../assets/images/lightbulb.svg"
+                alt="Suggestion" /></span>I have a
                 suggestion
             </label>
         </fieldset>
@@ -104,7 +107,7 @@
 </dialog>
 
 <dialog id="m">
-    <a href="#" class="close-dialog">X</a><br>
+    <a href="#" class="close-dialog primary-color">X</a><br>
     <a href="/school/recipes" class="button clearbtn">Meal Kit</a>
     <a href="/shop/index?c=staple" class="button clearbtn">Staple Essentials</a>
     <a href="/shop/index?c=spice" class="button clearbtn">Seasoning Essentials</a>
@@ -113,12 +116,14 @@
     <a href="/shop/index?c=snack" class="button clearbtn">Snacks</a>
 </dialog>
 
-<button id="feedback" class="button"><span class="show material-icons">message</span>&nbsp;Feedback</button>
+<button id="feedback" class="button"><span class="show"><img loading="lazy" class="w24px material-icons" src="../assets/images/chat.svg"
+    alt="Feedback" /></span>Feedback</button>
 
 <div id="m-menu" class="three-col-grid">
     <a id="menu-icon" href="#" class="button white"><span class="material-icons">shop</span>&nbsp;Shop</a>
-    <a href="/cart/index" class="white button"><span><img class="w30px" src="../assets/images/cart.webp"
+    <a href="/cart/index" class="white button"><span><img loading="lazy" class="w30px" src="../assets/images/cart.webp"
                 alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
     <button id="m-feedback" class="button m-padding-right-zero"><span
-            class=" hide material-icons">message</span>&nbsp;Feedback</button>
+            class="hide mobile-chat-icon"><img loading="lazy" class="w24px" src="../assets/images/chat.svg"
+            alt="Feedback" /></span>Feedback</button>
 </div>

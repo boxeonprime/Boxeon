@@ -23,10 +23,9 @@ $nonce = $_COOKIE['hash'];
 <link defer rel="stylesheet" href="{{ asset('../css/app.css') }}">
 <link rel="stylesheet" media="screen and (min-width: 200px) and (max-width: 1810px)"
     href="{{ asset('../assets/css/mobile.css?v=3.6') }}" />
-<link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton&display=swap">
 <script defer type="module" src="{{ asset('../assets/js/global.js?v=2.1') }}"></script>
-<script defer src="https://apis.google.com/js/platform.js?onload=onLoadCallback"></script>
+<!--<script defer src="https://apis.google.com/js/platform.js?onload=onLoadCallback"></script>!-->
 
 <style type="text/css" nonce="{{$nonce}}">
     *,
