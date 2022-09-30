@@ -120,7 +120,8 @@
     alt="Feedback" /></span>Feedback</button>
 
 <div id="m-menu" class="three-col-grid">
-    <a id="menu-icon" href="#" class="button white"><span class="material-icons">shop</span>&nbsp;Shop</a>
+    <a id="menu-icon" href="#" class="button white"><span><img loading="lazy" class="w24px mobile-chat-icon" src="../assets/images/shop.svg"
+        alt="Shop" /></span>Shop</a>
     <a href="/cart/index" class="white button"><span><img loading="lazy" class="w30px" src="../assets/images/cart.webp"
                 alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
     <button id="m-feedback" class="button m-padding-right-zero"><span

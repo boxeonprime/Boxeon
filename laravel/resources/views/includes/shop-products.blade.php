@@ -1,4 +1,24 @@
-@php
+@php   
+
+$product = DB::table('products')
+->get();
+
+$num = count($product);
+for($i=0; $i< $num; $i++){
+
+    $name = explode('.', $product[$i]->img);
+    $img = $name[0] . '.webp';
+
+    DB::table("products")
+                ->where("id", "=",  $product[$i]->id)
+                ->update([
+
+                    'img' => $img
+               
+                ]);
+
+}
+return;
 
 if (isset($_GET['c'])) {
     $query = ucfirst($_GET['c']);

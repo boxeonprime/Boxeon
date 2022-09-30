@@ -6,6 +6,8 @@
             <div>
                 <div>
                     <h1 class="blog-title font-size-3-em">Easy Nigerian Party-Style Jollof Rice | Award Winning Recipe</h1>
+                    <p>By Trevor Prime &nbsp; &nbsp; Published September 21 2022</p><br>
+                    <div class="sharethis-inline-share-buttons margin-bottom-2-em"></div>
                     <img class="w100per margin-bottom-2-em" src="../assets/images/products/jollof.webp" alt="Nigerian Party Jollof Rice">
 
                     <p><span class="pacifico font-size-2-em primary-color">J</span>ollof Rice is the most popular rice dish

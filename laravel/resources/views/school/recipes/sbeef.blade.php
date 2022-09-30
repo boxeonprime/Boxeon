@@ -6,6 +6,8 @@
             <div>
                 <div>
                     <h1 class="blog-title font-size-3-em">Juicy Nigerian Suya Beef: Marinate And Gril - Nigerian Beef Skewers</h1>
+                    <p>By Trevor Prime &nbsp; &nbsp; Published September 21 2022</p><br>
+                    <div class="sharethis-inline-share-buttons margin-bottom-2-em"></div>
                     <img class="w100per margin-bottom-2-em" src="../assets/images/products/suya.webp" alt="Nigerian Suya Beef">
 
                     <p><span class="pacifico font-size-2-em primary-color">S</span>uya Beef is Nigerian street food at its finest: Skewers of spiced, nutty, smoky, charred beef,
@@ -14,55 +16,79 @@
                         Land and is a popular food item across West Africa. Suya (also pronounced Soya) is a big part of
                         Hausa culture and food and is historically prepared and made by Hausa men 'Mai nama' (not women).
                     </p>
-
-                    <h2 class="primary-color extra-large-font">Ingredients</h2>
+                    <div class="table-of-contents">
+                        <h2>Table of contents</h2>
+                        <ol>
+                            <li> <a class="one-em-font primary-color" href="#abb1">What are some health benefits of Honey Beans?</a></li> 
+    
+                            <li> <a class="one-em-font primary-color" href="#abb8">Can pregnant women eat Suya Beef?</a>
+                            </li> 
+                            <li> <a class="one-em-font primary-color" href="#abb2">Suya Beef
+                                    recipe</a></li> 
+                            <li> <a class="one-em-font primary-color" href="#abb3">Suya Beef instructions</a></li> 
+                            <li> <a class="one-em-font primary-color" href="#abb4">Recipe variations</a>
+                            </li> 
+                            <li> <a class="one-em-font primary-color" href="#abb5">Tips and tricks</a></li> 
+                            <li> <a class="one-em-font primary-color" href="#abb6">Serving and storage
+                                    instructions</a></li> 
+                            <li> <a class="one-em-font primary-color" href="#abb7">Where can you find
+                                    Suya Beef?</a></li> 
+                            <li> <a class="one-em-font primary-color" href="#abb8">What goes with Suya Beef?</a></li> 
+    
+                            <li> <a class="one-em-font primary-color" href="#abb10">Conclusion</a></li> 
+                            <li> <a class="one-em-font primary-color" href="#abb9">More African
+                                    recipes to try</a></li> 
+                        </ol>
+    
+                    </div>
+                    <h2 class="primary-color extra-large-font">Nigerian Suya Beef Recipe</h2>
                     <div class="table-of-contents">
                     <ul>
-                        <li>500g Soft Beef Cut</li>
+                        <li><form><input type="checkbox" name="1"> 500g Soft Beef Cut</form></li>
 
-                        <li><a href="/shop/item?id=47" class="one-em-font primary-color underline">1/2 Cup Suya Spice </a></li>
+                        <li><form><input type="checkbox" name="1"> <a href="/shop/item?id=47" class="one-em-font primary-color underline">1/2 Cup Suya Spice </a></form></li>
 
-                        <li>Onions </li>
+                        <li><form><input type="checkbox" name="1"> Onions </form></li>
 
-                        <li>Tomatoes</li>
+                        <li><form><input type="checkbox" name="1"> Tomatoes</form></li>
 
-                        <li>Cucumber </li>
+                        <li><form><input type="checkbox" name="1"> Cucumber </form></li>
                     </ul>
 
                     <ul>
                         <li><b>To Marinate The Beef:</b></li>
                     </ul>
                     <ul>
-                        <li>1/4 Cup Vegetable Oil </li>
+                        <li><form><input type="checkbox" name="1"> 1/4 Cup Vegetable Oil </form></li>
 
-                        <li>1 tbsp Onion Powder </li>
+                        <li><form><input type="checkbox" name="1"> 1 tbsp Onion Powder </form></li>
 
-                        <li>1 tbsp Garlic Powder </li>
+                        <li><form><input type="checkbox" name="1"> 1 tbsp Garlic Powder </form></li>
 
-                        <li><a href="/shop/item?id=53" class="one-em-font primary-color underline">2 Bouillon Cubes</a> </li>
+                        <li><form><input type="checkbox" name="1"> <a href="/shop/item?id=53" class="one-em-font primary-color underline">2 Bouillon Cubes</a> </form></li>
 
-                        <li>salt To Taste </li>
+                        <li><form><input type="checkbox" name="1"> salt To Taste </form></li>
 
-                        <li>Salt to taste</li>
+                        <li><form><input type="checkbox" name="1"> Salt to taste</form></li>
                     </ul>
                     </div>
                
-                    <a href="#abb3" id="abb3"></a>
-                    <h2 class="primary-color extra-large-font">Nigerian Okra Soup instructions</h2>
+            
+                    <h2 class="primary-color extra-large-font" id="abb3">Nigerian Suya Beef Instructions</h2>
                     <div class="table-of-contents">
                         <ul>
-                            <li>Soak your beans in a covered container or pot of water for 8 hours</li>
-                            <li>Drain and rise the beans</li>
-                            <li>Cook beans until its just starting to become tender
-                            </li>
-                            <li>Heat up a pot with Palm Oil
-                            </li>
-                            <li>Place your onions, tomatoes, ginger, garlic, and parprika into the oil
-                            </li>
-                            <li>Once the above ingredients begin to give off their aromas, put in the chicken, maggi cubes,
+                            <li><form><input type="checkbox" name="1"> Soak your beans in a covered container or pot of water for 8 hours</form></li>
+                            <li><form><input type="checkbox" name="1"> Drain and rise the beans</form></li>
+                            <li><form><input type="checkbox" name="1"> Cook beans until its just starting to become tender
+                            </form></li>
+                            <li><form><input type="checkbox" name="1"> Heat up a pot with Palm Oil
+                            </form></li>
+                            <li><form><input type="checkbox" name="1"> Place your onions, tomatoes, ginger, garlic, and parprika into the oil
+                            </form></li>
+                            <li><form><input type="checkbox" name="1"> Once the above ingredients begin to give off their aromas, put in the chicken, maggi cubes,
                                 smoked shrimp, stock water, chicken, and Afican Black Beans into the pot
-                            </li>
-                            <li>Throw in a whole scotch bonnet pepper and salt to taste</li>
+                            </form></li>
+                            <li><form><input type="checkbox" name="1"> Throw in a whole scotch bonnet pepper and salt to taste</form></li>
                         </ul>
                     </div>
                     <div id="video">
@@ -72,37 +98,35 @@
                         allowfullscreen></iframe>
                     </div>
 
-                    <a href="#abb4" id="abb4"></a>
-                    <h2>Recipe variations</h2>
-                    <a href="#abb5" id="abb5"></a>
-                    <h2>Tips and tricks</h2>
-                    <a href="#abb5" id="abb5"></a>
-                    <h2>Serving and storage instructions</h2>
-                    <a href="#abb6" id="abb6"></a>
+                   
+                    <h2 id="abb4">Recipe variations</h2>
+               
+                    <h2 id="abb5">Tips and tricks</h2>
+                  
+                    <h2 id="abb6">Serving and storage instructions</h2>
+                 
                     <p>We like to store ours in the pot that it was cooked in to avoid having more to wash. Sometimes, we
                         turn the lid upside down to allow other items to be placed on top.
                         If you choose not to store your stew in the pot, try to avoid using a plastic container since the
                         Palm Oil will make the plastic harder to clean.
                     </p>
-                    <a href="#abb7" id="abb7"></a>
-                    <h2>Frequently Asked Questions</h2>
+                   
+                    <h2 id="abb7">Frequently Asked Questions</h2>
                     <h2>1. Can African Black Beans make your butt bigger?</h2>
                     <p>Absolutely! Eating about 40 grams of protein from African Blacks Beans coupled with squats will give
                         you visible results in two months. You will need to acquire some body building knowladge to make
                         this work but a great resource is available: Arnold Schwarzenegger's The New Encyclopedia of Modern
                         Bodybuilding.</p>
-                    <a href="#abb8" id="abb8"></a>
-                    <h2>2. Where can I find African Black Beans?</h2>
+              
+                    <h2 id="abb8">2. Where can I find African Black Beans?</h2>
                     <p>You can conviently find <a href="/shop/item?id=41"
                             class="one-em-font primary-color underline">African Black Beans</a> right here on Boxeon. We
                         currently ship everywhere in the
                         United States, flat rate.</p>
-                    <a href="#abb9" id="abb9"></a>
-                    <h2>3. What meats goes with Nigerian Okra Soup?</h2>
+                    <h2 id="abb9">3. What meats goes with Nigerian Okra Soup?</h2>
                     <p>African Black Beans goes well with chicken, turkey, other white meats, and Tofu. Slices of Agege
                         bread on the side also make for a good addition.</p>
-                    <a href="#abb10" id="abb10"></a>
-                    <h2>Conclusion</h2>
+                    <h2 id="abb10">Conclusion</h2>
                     <p>African Black Beans is an African superfood with health benefits, amazing taste, easy to prepare, and
                         readily purchased here on Boxeon. Give it a try!</p>
                     <h2>More African recipes to try</h2>

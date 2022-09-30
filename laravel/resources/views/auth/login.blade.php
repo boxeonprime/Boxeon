@@ -5,7 +5,7 @@
             <section class=" card rounded-corners maxw1035 margin-auto bg-yellow">
                 <section class="section box-shadow">
                     <div class="center fit-content">
-                        <h1 class="primary-color extra-large-font"><span class="material-icons">circle_arrow_right</span>&nbsp;Sign in to continue</h1>
+                        <h1 class="primary-color extra-large-font">+ Sign in to continue</h1>
                         <br>
                         <a class="button" href="{{ url('auth/google') }}">
                             Sign in with Google
@@ -14,7 +14,7 @@
                         <form action="/auth/email" method="post">
                             @csrf
                             <div class="row">
-                                <h2>Sign in with your email</h2>
+                                <h2>+ Sign in with your email</h2>
                                 @if (session('status'))
                                 <div class="mb-4 font-medium text-sm text-red-600">
                                     {{ session('status') }}

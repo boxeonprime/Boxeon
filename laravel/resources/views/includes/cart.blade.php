@@ -14,7 +14,7 @@
                         @csrf
                         <input type="submit" class="button yellowbtn" value="Proceed to checkout">
                         <p class="float-right">Secure checkout powered by</p>
-                        <img class="float-right" src="../assets/images/square-logo.png" alt="Square">
+                        <img class="float-right" src="../assets/images/square-logo.webp" alt="Square">
                     </form>
                 </div>
             </section>
@@ -65,7 +65,8 @@
                                 </select>
                                 <button data-quantity="1" data-name="{{ $cart[$i]->name }}" data-plan="1" data-img="{{ $cart[$i]->img }}" data-id="{{ $cart[$i]->product }}" data-basePrice="{{$cart[$i]->price }}" data-price="{{$cart[$i]->price }}" class="cart-add button display-none">SUBSCRIBE NOW</button>
                             </form>
-                            <a href="#" title="Delete"><span data-product="{{ $cart[$i]->product }}" class="material-icons delete-icon w300">delete_forever</span></a>
+                            <a href="#" title="Delete"><span data-product="{{ $cart[$i]->product }}" class="delete-icon w300"><img loading="lazy" class="w24px material-icons" src="../assets/images/delete.svg"
+                                alt="Delete" /></span></a>
                         </div>
                     </div>
                 </div>
@@ -78,7 +79,7 @@
                 @csrf
                 <input type="submit" class="button yellowbtn" value="Proceed to checkout">
                 <p class="float-right">Secure checkout powered by</p>
-                <img class="float-right clear-both" src="../assets/images/square-logo.png" alt="Square">
+                <img class="float-right clear-both" src="../assets/images/square-logo.webp" alt="Square">
             </form>
         </div>
         </div>
@@ -93,7 +94,7 @@
                     @csrf
                     <input type="submit" class="button yellowbtn" value="Proceed to checkout">
                     <p class="float-right">Secure checkout powered by</p>
-                    <img class="float-right" src="../assets/images/square-logo.png" alt="Square"><br>
+                    <img class="float-right" src="../assets/images/square-logo.webp" alt="Square"><br>
                 </form>
             </div>
         </section>

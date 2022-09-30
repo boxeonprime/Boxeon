@@ -9,6 +9,8 @@
 
                 <div>
                     <h1 class="blog-title font-size-3-em">Traditional Recipe: Nigerian Egusi Soup - Get Free Gifts</h1>
+                    <p>By Trevor Prime &nbsp; &nbsp; Published September 21 2022</p><br>
+                    <div class="sharethis-inline-share-buttons margin-bottom-2-em"></div>
                     <img class="w100per margin-bottom-2-em" loading="lazy" src="../assets/images/products/egusi.webp"
                         alt="Nigerian Egusi Soup">
 

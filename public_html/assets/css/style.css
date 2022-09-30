@@ -262,6 +262,7 @@ dialog p {
   position:relative;
   top:.2em;
   left:1em;
+  color:#fff;
 }
 .mobile-chat-icon{
   position:relative;
@@ -1231,6 +1232,7 @@ main h1 {
 }
 input[type="checkbox"]{
   border:1px solid green;
+  //padding:1em;
 }
 #video {
   position: relative;
@@ -2999,7 +3001,8 @@ header {
   width: 100%;
 }
 li form input{
-  margin-right:1em;
+  margin-right:.6em;
+ 
 }
 li form{
   display: grid;

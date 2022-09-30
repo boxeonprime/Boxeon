@@ -6,6 +6,8 @@
             <div>
                 <div>
                     <h1 class="blog-title font-size-3-em">7 Easy Organic African Black Beans Stew Recipe Variations</h1>
+                    <p>By Trevor Prime &nbsp; &nbsp; Published September 21 2022</p><br>
+                    <div class="sharethis-inline-share-buttons margin-bottom-2-em"></div>
                     <img class="w100per margin-bottom-2-em" src="../assets/images/products/abbs.webp"alt="African Black Beans Stew">
 
                     <p><span class="pacifico font-size-2-em primary-color">A</span>frican Black Beans Stew - tasty and comforting bean stew flavored with garlic, ginger, onions, and

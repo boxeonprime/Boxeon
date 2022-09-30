@@ -47,21 +47,21 @@ $price = DB::table('products')
 
         <section class="section maxw1035 margin-bottom-4-em  mobile-scroll">
             <br>
-            <h2 class="centered">HOW IT WORKS</h2>
+            <h2 class="centered text-black">HOW IT WORKS</h2>
             <div id="how-it-works" class="three-col-grid">
                 <div>
-                    <img id="img-shopping" class="image-how-it-works" src="../assets/images/shopping.webp" alt="Shopping" />
+                    <img id="img-shopping" class="image-how-it-works" loading="lazy" src="../assets/images/shopping.webp" alt="Shopping" />
                     <h2 class="centered">Shop Kit</h2>
                     <p class="centered">Subscribe to the monthly meal kit. Flat rate shipping. Cancel anytime.</p>
                 </div>
                 <div>
-                    <img id="img-reminder" class="image-how-it-works" src="../assets/images/bike.webp" alt="Delivery" />
+                    <img id="img-reminder" class="image-how-it-works" loading="lazy" src="../assets/images/bike.webp" alt="Delivery" />
                     <h2 class="centered">Receive subscription</h2>
                     <p class="centered">Recieve your delivery at home. Use our recipes and instructional videos to prepare
                         your meals. </p>
                 </div>
                 <div>
-                    <img id="img-gifts" class="image-how-it-works" src="../assets/images/schedule.webp" alt="Schedule" />
+                    <img id="img-gifts" class="image-how-it-works" loading="lazy" src="../assets/images/schedule.webp" alt="Schedule" />
                     <h2 class="centered">Adjust subscription</h2>
                     <p class="centered">Visit your subscriptions page to adjust schedule or cancel items if needed.</p>
                 </div>
@@ -111,8 +111,6 @@ $price = DB::table('products')
                 data-price="{{ $price }}" class="cart-add button center">SUBSCRIBE NOW</button>
         </section>
         </section>
-
-
 
     </main>
 

@@ -8,6 +8,8 @@
      
             <div>
                 <h1 class="blog-title font-size-3-em">10 Easy Nigerian Okra Soup Recipe Variations | African Food Box</h1>
+                <p>By Trevor Prime &nbsp; &nbsp; Published September 21 2022</p><br>
+                <div class="sharethis-inline-share-buttons margin-bottom-2-em"></div>
                 <img class="w100per margin-bottom-2-em" src="../assets/images/products/okra.webp" alt="">
      
                 <p><span class="pacifico font-size-2-em primary-color">O</span>kra soup (African okro soup) is made with okra vegetables cooked in a delicious mixture of palm oil, shrimps, goat meat, fish, and African spices and simmered to perfection!</p>

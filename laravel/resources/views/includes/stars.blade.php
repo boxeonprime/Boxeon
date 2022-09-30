@@ -22,11 +22,17 @@
     @endphp
 
     @for ($s = 0; $s < $stars; $s++)
-        <span class="material-icons text-black">star</span>
+        <span>
+        <img loading="lazy" class="w24px" src="../assets/images/star.svg"
+        alt="Star" /></span>
     @endfor
 
     @for ($d = 0; $d < $diff; $d++)
-        <span class="material-icons text-grey">star</span>
+        
+    <span>
+        <img loading="lazy" class="w24px" src="../assets/images/star_empty.svg"
+        alt="Star" /></span>
+        
     @endfor
     <span>{{ $total_reviews }} Reviews</span>
 </div>

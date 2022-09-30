@@ -6,6 +6,8 @@
             <div>
                 <div>
                     <h1 class="blog-title font-size-3-em">How To Make Fufu In USA: Modern Techniques - Nigerian Cassava Fufu</h1>
+                    <p>By Trevor Prime &nbsp; &nbsp; Published September 21 2022</p><br>
+                    <div class="sharethis-inline-share-buttons margin-bottom-2-em"></div>
                     <img class="w100per margin-bottom-2-em" src="../assets/images/products/fufu.webp" alt="How To Make Fufu">
                     <p><span class="pacifico font-size-2-em primary-color">F</span>ufu (or fufuo, foofoo, foufou) is a
                         dough-like food found in West African cuisine. In addition to

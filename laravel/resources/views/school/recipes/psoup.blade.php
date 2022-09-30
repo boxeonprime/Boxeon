@@ -8,6 +8,8 @@
 
                 <div>
                     <h1 class="blog-title font-size-3-em">Simple Nigerian Pepper Soup Recipe: 7 Easy Steps</h1>
+                    <p>By Trevor Prime &nbsp; &nbsp; Published September 21 2022</p><br>
+                    <div class="sharethis-inline-share-buttons margin-bottom-2-em"></div>
                     <img class="w100per margin-bottom-2-em" src="../assets/images/products/psoup.webp" alt="Nigerian Pepper Soup">
 
                     <p><span class="pacifico font-size-2-em primary-color">N</span>igerian Pepper Soup is a one-pot dish that's defined by the nutty, bitter, woodsy, and floral notes

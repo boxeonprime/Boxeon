@@ -29,7 +29,7 @@
                 </div>
                 <div class="card step-wrapper">
                     <h2>1.&nbsp;&nbsp;&nbsp;Shipping address</h2>
-                    <p><span class="material-icons">pin_drop</span><span data-type-id="shipping-address" class="preview">{{ $address->address_line_1 ?? 'Enter your shipping address to continue.'}}</span></p>
+                    <p><span data-type-id="shipping-address" class="preview">{{ $address->address_line_1 ?? 'Enter your shipping address to continue.'}}</span></p>
                     <button data-type-id="shipping-address" class="button edit-btn">EDIT</button>
                     <div>
                         <form onsubmit="return false"  id="shipping-address" class="display-none-unimportant">
@@ -56,7 +56,7 @@
                 </div>
                 <div class="card step-wrapper">
                     <h2>2.&nbsp;&nbsp;&nbsp;Billing address</h2>
-                    <p><span class="material-icons">pin_drop</span><span data-type-id="billing-address" class="preview">{{ $address->billing_address_line_1 ?? 'Enter the billing address for your payment method.'}}</span></p>
+                    <p><span data-type-id="billing-address" class="preview">{{ $address->billing_address_line_1 ?? 'Enter the billing address for your payment method.'}}</span></p>
                     <button data-type-id="billing-address" class="button edit-btn">EDIT</button>
                     <div>
                         <form onsubmit="return false" id="billing-address" class="display-none-unimportant">
@@ -78,7 +78,7 @@
                 <div class="card step-wrapper">
                     <div>
                         <h2>3.&nbsp;&nbsp;&nbsp;Payment method</h2>
-                        <p><span class="material-icons">credit_card</span>&nbsp;<span data-type-id="payment" class="preview">Save your card info to place your order.</span></p>
+                        <p><span data-type-id="payment" class="preview">Save your card info to place your order.</span></p>
                         <button data-type-id="payment" class="button edit-btn">EDIT</button>
                     </div>
                     <div id="payment" class="display-none-unimportant">
