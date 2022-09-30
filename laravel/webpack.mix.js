@@ -21,4 +21,4 @@ if (mix.inProduction()) {
     mix.version();
 }
 
-
+mix.minify('../public_html/assets/css/mobile.css');
