@@ -246,6 +246,7 @@
 dialog {
   display: none;
   padding: 2em;
+  border:1px solid green;
 }
 
 dialog p {
@@ -709,7 +710,9 @@ dialog p {
 .r-float{
   float:right;
 }
-
+.l-float{
+  float:left;
+}
 .w300 {
   width: 90%;
   max-width: 300px;

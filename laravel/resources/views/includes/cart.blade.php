@@ -102,7 +102,8 @@
 @else
     <section class="section maxw1035">
         <div class="alert-info">
-            <p><span class="material-icons">star</span>&nbsp;Your cart is empty.</p>
+            <p><span><img loading="lazy" class="w24px l-float" src="../assets/images/star.svg"
+                alt="Shop" /></span>&nbsp;Your cart is empty.</p>
         </div>
     </section>
 
