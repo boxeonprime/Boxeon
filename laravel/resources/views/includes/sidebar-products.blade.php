@@ -20,17 +20,10 @@ if (isset($_GET['c'])) {
     <div>
         @for ($i = 0; $i < count($product); $i++)
 
-            @php
-                // HACK
-                $name = explode('.', $product[$i]->img);
-                $img = $name[0] . '.webp';
-                
-            @endphp
-
 
             <div class="maxw250px margin-auto">
                 <a href="/shop/item?id={{ $product[$i]->id }}"><img class="maxw250px"
-                        src="../assets/images/products/medium/{{ $img }}"
+                        src="../assets/images/products/medium/{{ $product[$i]->img }}"
                         alt="{{ $product[$i]->name }}" loading="lazy"></a>
                 <a class="" href="/shop/item?id={{ $product[$i]->id }}">
                     <p class="alt-product-title">{{ $product[$i]->name }}</p>

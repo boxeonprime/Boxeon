@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: boxeon.com
+Token: 4d92b33516bb7ff1c02611eb8e7fedde12379328660a08414e3adce232f55233
