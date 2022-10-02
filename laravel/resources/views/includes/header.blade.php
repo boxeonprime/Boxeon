@@ -4,7 +4,7 @@
     <span id="top-bar"></span>
     <div id="header-inner-wrapper">
         <a id='logo' href="/" title='Boxeon'>
-            <img id='logo' src='{{ asset('../assets/images/logo.webp') }}' alt='logo' />
+            <img id='logo' width="127px" height="30px" src='{{ asset('../assets/images/logo.webp') }}' alt='logo' />
         </a>
         <a class="button text-yellow hide" href="/shop/index?c=staple" title="Shop">Shop</a>
         <a class="button text-yellow hide" href="/mealkit" title="African Recipes">Meal Kit</a>
@@ -13,16 +13,16 @@
             <span class='material-icons'>search</span></a>
         @auth
             <a href="/gifts" class="button one-em-font phone-hide">Gifts‬</a>
-            <a href="/cart/index" class="white button"><span><img id="cart" class="w30px" src='{{ asset('../assets/images/cart.webp') }}'
+            <a href="/cart/index" class="white button"><span><img id="cart" width="30px" height="auto"  src='{{ asset('../assets/images/cart.webp') }}'
                         alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
         @endauth
         @if (!Auth::check())
         <a href="/gifts" class="button one-em-font phone-hide">Gifts‬</a>
-            <a href="/cart/index" class="white button"><span><img class="w30px"
+            <a href="/cart/index" class="white button"><span><img width="30px" height="21"
                         src="../assets/images/cart.webp" alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
         @endif
         
-            <a id="showDropdown" class='fadein button margin-right-1-em m-padding-right-zero' href='#'><span><img class="w30px" src='{{ asset('../assets/images/account_circle.svg') }}'
+            <a id="showDropdown" class='fadein button margin-right-1-em m-padding-right-zero' href='#'><span><img width="30px" height="30px" src='{{ asset('../assets/images/account_circle.svg') }}'
                 alt="Cart" /></span>
             </a>
             

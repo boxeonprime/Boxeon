@@ -23,14 +23,14 @@
 
     @for ($s = 0; $s < $stars; $s++)
         <span>
-        <img loading="lazy" class="w24px" src="../assets/images/star.svg"
+        <img loading="lazy" width="24px" height="24px" src="../assets/images/star.svg"
         alt="Star" /></span>
     @endfor
 
     @for ($d = 0; $d < $diff; $d++)
         
     <span>
-        <img loading="lazy" class="w24px" src="../assets/images/star_empty.svg"
+        <img loading="lazy" width="24px" height="24px"  src="../assets/images/star_empty.svg"
         alt="Star" /></span>
         
     @endfor

@@ -7,7 +7,11 @@ $price = DB::table('products')
 @endphp
 
 @extends('layouts.index')
-@section('title', 'Boxeon.com African Meal-kits Delivered Monthly')
+@section('title', 'African Meal kit Delivery Service | Boxeon')
+@section('og:image',  asset('../assets/images/logo_square.png'))
+@section('og:image:alt',  asset('../assets/images/logo_square2.png')) 
+@section('keywords',  "Boxeon, African Subscription Box, African Snack Box, Nigerian Cuisine, Caribbean Foods, African Food Recipes")
+@section('description',  "Boxeon is an African food and meal kit delivery service helping the diaspora automate and repatriate their grocery shopping. We specialize in African and Caribbean foods and deliver nationwide. Get 16 free foods - this offer ends soon.")
 @section('content')
     <div id="mealkit-masthead">
         <aside class="centered asides call-out mobile-scroll"><br>
@@ -106,7 +110,7 @@ $price = DB::table('products')
                 </select>
 
             </form>
-            <button data-quantity="1" data-name="African Mealkit by Jemimah" data-plan="1" data-img="sisi.webp"
+            <button data-quantity="1" data-name="African Mealkit by Jemimah" data-plan="1" data-img="sisi.jpeg"
                 data-id="68" data-baseprice="{{ $price }}"
                 data-price="{{ $price }}" class="cart-add button center">SUBSCRIBE NOW</button>
         </section>

@@ -31,7 +31,7 @@ Route::get('/signout', function () {
 Route::middleware('cache.headers:public;max_age=2628000')->group(function () {
 
 Route::get('/mealkit', 'App\Http\Controllers\SchoolController@recipes')->name('mealkit');
-Route::get('/recipe', 'App\Http\Controllers\SchoolController@recipe')->name('recipe');
+Route::get('/recipe/{uri}', 'App\Http\Controllers\SchoolController@recipe')->name('recipe');
 
 Route::get('/gifts', 'App\Http\Controllers\InvitationsController@gifts')->name('gifts');
 Route::get('/terms', 'App\Http\Controllers\HomeController@terms')->name('terms');

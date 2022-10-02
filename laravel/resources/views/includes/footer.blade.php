@@ -1,7 +1,7 @@
 <footer>
     <section id="banner-footer" class="section wide">
         <div class="row">
-        <img id="img-gifts" loading="lazy" class="center image-how-it-works" src='{{ asset('../assets/images/gifts.svg') }}' alt="Gifts" />
+        <img id="img-gifts" loading="lazy" class="center image-how-it-works" width="70px" height="48px" src='{{ asset('../assets/images/gifts.svg') }}' alt="Gifts" />
 
         <h2 class="centered center extra-large-font">Get 16 foods + 3 surprises for the price of 1!</h2>
         <p class="centered center">Sign up and answer a survey question to qualify. Offer ends soon.</p>
@@ -28,7 +28,7 @@
 
     </div>
     <br>
-    <img id='footer-logo' loading="lazy" src='{{ asset('../assets/images/logo-black.webp') }}' alt='logo' />
+    <img id='footer-logo' loading="lazy" width="127px" height="30px" src='{{ asset('../assets/images/logo-black.webp') }}' alt='logo' />
     <p class='centered one-em-font'>
         244 5th Avenue, Suite 7,&nbsp;
         New York, NY 10001<br>
@@ -41,7 +41,7 @@
     <a href="#" class="close-dialog">X</a>
     <form>
         <fieldset class="border-bottom">
-            <img class="center display-block" loading="lazy" src="../assets/images/b.webp" alt="Logo">
+            <img class="center display-block" width="70px" height="70px" loading="lazy" src="../assets/images/b.webp" alt="Logo">
             <br>
             <b>
                 <p class="centered">Help us serve you better</p>
@@ -120,9 +120,9 @@
     alt="Feedback" /></span>Feedback</button>
 
 <div id="m-menu" class="three-col-grid">
-    <a id="menu-icon" href="#" class="button white"><span><img loading="lazy" class="w24px mobile-chat-icon" src="../assets/images/shop.svg"
+    <a id="menu-icon" href="#" class="button white"><span><img loading="lazy" width="24" height="24" mobile-chat-icon" src="../assets/images/shop.svg"
         alt="Shop" /></span>Shop</a>
-    <a href="/cart/index" class="white button"><span><img loading="lazy" class="w30px" src="../assets/images/cart.webp"
+    <a href="/cart/index" class="white button"><span><img loading="lazy" width="30px" height="21px" src="../assets/images/cart.webp"
                 alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
     <button id="m-feedback" class="button m-padding-right-zero"><span
             class="hide mobile-chat-icon"><img loading="lazy" class="w24px" src="../assets/images/chat.svg"

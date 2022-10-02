@@ -3,21 +3,27 @@ header('Accept-Encoding: gzip, compress, br');
 
 @endphp
 <title>@yield('title', config('app.name'))</title>
-<meta property="og:title" content="Boxeon.com Monthly African Food Subscription Box" />
-<meta property="og:description" content="African store online, Shop African food online, African snacks" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://boxeon.com" />
-<meta property="og:image" content="{{ asset('../assets/images/high-five.jpg') }}">
-<meta name="description"
-    content="Boxeon makes it easy for the African diapora to buy African foods from home. Shop West African foods and snacks." />
-<meta name="keywords" content="Boxeon, buy black, subscription box, African foods, Nigerian Foods, Jollof Rice, Fufu">
+<meta property="og:title" content="@yield('title')" />
+<meta property="og:description" content="@yield('description')" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{url()->current()}}" />
+<meta property="og:image" content="@yield('og:image')">
+<meta property="og:image:alt" content="@yield('og:image:alt')">
+<meta property="og:image:size" content="320" />
+<meta property="og:locale" content="en-us" />
+<meta property="og:locale:alternate" content="en-ca" />
+<meta property="og:site_name" content="{{config('app.name')}}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="@yield('title')" />
+<meta name="twitter:site" content="@boxeonofficial" />
+<meta name="keywords" content="@yield('keywords')">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="csrf-token" content="{{ csrf_token() }}" />
 <link rel="icon" type="image/svg+xml" href="{{ asset('../assets/images/favicon.webp') }}">
 <link rel="alternate icon" href="{{ asset('../assets/images/favicon.webp') }}">
 <link rel="mask-icon" href="https://boxeon.com/images/favicon.webp" color="#fff">
-<link rel="stylesheet" href="{{ asset('../assets/css/style.min.css?v=37') }}">
+<link rel="stylesheet" href="{{ asset('../assets/css/style.css?v=37') }}">
 <link rel="stylesheet" href="{{ asset('../assets/css/forms.css?v=35') }}">
 <link defer rel="stylesheet" href="{{ asset('../css/app.css') }}">
 <link rel="stylesheet" media="screen and (min-width: 200px) and (max-width: 1810px)"

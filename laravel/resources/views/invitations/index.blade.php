@@ -1,5 +1,9 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com Give Someone You Love A Taste Of Africa')
+@section('title', 'African Snacks Delivery Service | Boxeon')
+@section('og:image',  asset('../assets/images/logo_square.png'))
+@section('og:image:alt',  asset('../assets/images/logo_square2.png')) 
+@section('keywords',  "Boxeon, African Subscription Box, African Snack Box, Nigerian Cuisine, Caribbean Foods, African Food Recipes")
+@section('description',  "Boxeon is an African snacks and food delivery service helping the diaspora automate and repatriate their grocery shopping. We specialize in African and Caribbean foods and deliver nationwide. Get 16 free foods - this offer ends soon.")
 @section('content')
     <div id="gifts-masthead">
         <aside class="centered asides call-out mobile-scroll"><br>

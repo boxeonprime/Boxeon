@@ -45,7 +45,8 @@
     @endfor
 @else
     <div class="alert-info">
-        <p><span class="material-icons">star</span>&nbsp;Help future visitors with a thoughtful comment. Be the first!</p>
+        <p><span><img loading="lazy" width="24" height="24" class="l-float" src="../assets/images/star.svg"
+            alt="Black Star" /></span>&nbsp;Help future visitors with a thoughtful comment. Be the first!</p>
     </div>
 @endif
 <br>

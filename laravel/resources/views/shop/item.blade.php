@@ -1,5 +1,9 @@
 @extends('layouts.home')
-<title>Boxeon.com <?php echo 'Shop ' . $product[0]->name; ?> | Best African Market Online</title>
+<title><?php echo 'Shop ' . $product[0]->name; ?> | African Food Delivery Service | Boxeon</title>
+@section('og:image',  asset('../assets/images/{{ $product[0]->img }}'))
+@section('og:image:alt',  asset('../assets/images/logo_square2.png')) 
+@section('keywords',  "Boxeon, African Food Delivery Service")
+@section('description',  "Home in a box. Shop imported African foods on Boxeon with flat rate delivery on all orders. Nationwide delivery. Get 16 free foods - this offer ends soon.")
 @section('content')
     @if (session()->has('message'))
         <dialog class="alert">

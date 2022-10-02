@@ -1,22 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
     @include('includes.meta')
-    @php
-    if(isset($_COOKIE["hash"])){
-
-        $hash = $_COOKIE["hash"];
-    }
-    @endphp
-
-    
-  
-
 </head>
-
 <body id='index'>
-
     <div id="container">
         <span></span><!-- Hack-->
         @include('includes.header')
@@ -25,5 +12,4 @@
         @include('includes.footer')
   
 </body>
-
 </html>

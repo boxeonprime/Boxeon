@@ -14,18 +14,15 @@ class SchoolController extends Controller
         $articles = DB::table('school')->get();
         $user = Auth::user();
         return view('school.index', compact('user', $user))
-                ->with('article', $articles);
+            ->with('article', $articles);
     }
-
-  
 
     public function nearme()
     {
-       
+
         $user = Auth::user();
         return view('nearme.index', compact('user', $user));
     }
-
 
     public function article(Request $request)
     {
@@ -34,25 +31,34 @@ class SchoolController extends Controller
         return view('school.' . $article, compact('user', $user));
     }
 
-
     public function recipes(Request $request)
     {
-       
+
         $user = Auth::user();
         return view('school.recipes.index', compact('user', $user));
     }
 
     public function recipe(Request $request)
     {
-        $recipe = $request['r'];
+        $uri = $request['uri'];
         $user = Auth::user();
         //Find comments
         $comments = DB::table('comments')
-        ->where("blog_id", "=",  $recipe)
-        ->get();
-        return view('school.recipes.' . $recipe, compact('user', $user))
-        ->with("comments", $comments)
-        ->with("id", $recipe);
+            ->where("blog_id", "=", $uri)
+            ->get();
+        //Find recipe
+        $content = DB::table("blog")
+            ->where("uri", "=", $uri)
+            ->get()[0];
+        $meta = $content;
+        $content = json_decode($content->json);
+       
+
+        return view('school.recipes.compiler', compact('user', $user))
+            ->with("comments", $comments)
+            ->with("id", $uri)
+            ->with("meta", $meta)
+            ->with("content", $content);
     }
 
 }

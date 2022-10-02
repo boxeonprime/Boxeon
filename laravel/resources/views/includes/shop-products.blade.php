@@ -20,11 +20,10 @@ if (isset($_GET['c'])) {
     <div class="products-stream">
         @for ($i = 0; $i < count($product); $i++)
 
-
             <div class="fit-content margin-auto">
                 <a href="/shop/item?id={{ $product[$i]->id }}"><img
                         src="../assets/images/products/medium/{{ $product[$i]->img }}"
-                        alt="{{ $product[$i]->name }}" loading="lazy"></a>
+                        alt="{{ $product[$i]->name }}" width="300" height="437"></a>
                 <a class="" href="/shop/item?id={{ $product[$i]->id }}">
                     <p class="product-title">{{ $product[$i]->name }}</p>
                 </a>

@@ -1,5 +1,9 @@
 @extends('layouts.index')
-@section('title', 'Boxeon.com Monthly African Food Nationwide Delivery')
+@section('title', 'African Food And Meal Kit Delivery Service | Boxeon')
+@section('og:image',  asset('../assets/images/logo_square.png'))
+@section('og:image:alt',  asset('../assets/images/logo_square2.png')) 
+@section('keywords',  "Boxeon, African Subscription Box, African Snack Box, Nigerian Cuisine, Caribbean Foods, African Food Recipes")
+@section('description',  "Boxeon is an African food and meal kit delivery service helping the diaspora automate and repatriate their grocery shopping. We specialize in African and Caribbean foods and deliver nationwide. Get 16 free foods - this offer ends soon.")
 @section('content')
     <div id="masthead">
         <aside class="centered asides call-out mobile-scroll"><br>

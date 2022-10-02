@@ -11,8 +11,16 @@
                     <h1 class="blog-title font-size-3-em">Traditional Recipe: Nigerian Egusi Soup - Get Free Gifts</h1>
                     <p>By Trevor Prime &nbsp; &nbsp; Published September 21 2022</p><br>
                     <div class="sharethis-inline-share-buttons margin-bottom-2-em"></div>
-                    <img class="w100per margin-bottom-2-em" loading="lazy" src="../assets/images/products/egusi.webp"
-                        alt="Nigerian Egusi Soup">
+                        
+                    <picture>
+                        <source 
+                           media="(max-width: 650px)"
+                           srcset="../assets/images/products/medium/sobo.webp">
+                        <source 
+                           media="(max-width: 465px)"
+                           srcset="../assets/images/products/medium/sobo.webp">
+                           <img class="w100per margin-bottom-2-em" src="../assets/images/products/sobo.webp" loading="lazy" alt="Hibiscus Flowers Tea">
+                     </picture>
 
                     <p><span class="pacifico font-size-2-em primary-color">E</span>gusi (also known by variations including
                         egwusi, agusi, ohue, Ikpan, Ikon, and agushi) is the name
