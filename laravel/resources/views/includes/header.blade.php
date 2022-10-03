@@ -21,7 +21,7 @@
             <a href="/cart/index" class="white button"><span><img width="30px" height="21"
                         src="../assets/images/cart.webp" alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
         @endif
-        
+        <div class="p-relative">
             <a id="showDropdown" class='fadein button margin-right-1-em m-padding-right-zero' href='#'><span><img width="30px" height="30px" src='{{ asset('../assets/images/account_circle.svg') }}'
                 alt="Cart" /></span>
             </a>
@@ -37,6 +37,7 @@
                     <a class="one-em-font" href="/signout">Sign Out</a>
                 </div>
             </div>
+        </div>
        
     </div>
 </header>
