@@ -30,6 +30,8 @@
                 <div id="myDropdown" class="dropdown-content">
                     <a class='one-em-font' href='/login'>Sign in
                     </a>
+                    <a class='one-em-font' href='/blockchain'>Connect
+                    </a>
                     <a class="one-em-font" href="/home/index">Subscriptions</a>
                     <a class="one-em-font" href="/account/home">Account</a>
                     <a class="one-em-font" href="/signout">Sign Out</a>

@@ -30,6 +30,8 @@ Route::get('/signout', function () {
 
 Route::middleware('cache.headers:public;max_age=2628000')->group(function () {
 
+    Route::get('/blockchain', 'App\Http\Controllers\BlockchainController@connect')->name('blockchain.connect');
+
 Route::get('/mealkit', 'App\Http\Controllers\SchoolController@recipes')->name('mealkit');
 Route::get('/recipe/{uri}', 'App\Http\Controllers\SchoolController@recipe')->name('recipe');
 
