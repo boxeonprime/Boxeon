@@ -3,7 +3,7 @@
 
 
 $product = DB::table('products')
-    ->whereIn('products.id', [47, 10, 8, 36, 9, 4, 48, 14, 26, 7, 41, 38, 66, 67, 53])
+    ->whereIn('products.id', [47, 10, 8, 36, 9, 4, 48, 14, 26, 7, 41, 38, 66, 67, 53, 18])
     ->get();
 
     $price = DB::table('products')
@@ -30,11 +30,6 @@ $product = DB::table('products')
         <div class="fit-content margin-auto">
             <a href="/shop/item?id={{ $product[$i]->id }}"><img src="../assets/images/products/medium/{{ $img }}"
                     alt="{{ $product[$i]->name }}" loading="lazy"></a>
-            <a class="" href="/shop/item?id={{ $product[$i]->id }}">
-                <p class="product-title">{{ $product[$i]->name }}</p>
-            </a>
-            <p>Weight: {{ $product[$i]->weight }} {{ $product[$i]->unit }}</p>
-            <p class="text-red">Original price: ${{ $product[$i]->price + 3}}</p>
             @php
                 
                 $r = DB::table('reviews')

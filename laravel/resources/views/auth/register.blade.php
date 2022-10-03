@@ -7,8 +7,7 @@
 
             <section class="section box-shadow">
                 <div class="center fit-content">
-                    <h2 class="extra-large-font primary-color"><span
-                            class="material-icons">circle_arrow_right</span>&nbsp;Register new account</h2>
+                    <h2 class="extra-large-font primary-color">+&nbsp;Register new account</h2>
 
                     @if (session('status'))
                         <div class="mb-4 font-medium text-sm text-red-600">

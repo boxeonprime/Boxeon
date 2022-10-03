@@ -11,14 +11,14 @@
                 <source media="(max-width: 650px)" srcset="../assets/images/products/medium/{{ $content->img }}">
                 <source media="(max-width: 465px)" srcset="../assets/images/products/medium/{{ $content->img }}">
                 <img class="w100per margin-bottom-2-em" width="640px" height="932px" src="../assets/images/products/{{ $content->img }}" loading="lazy"
-                    alt="Hibiscus Flowers Tea">
+                    alt="{{ $content->title }}">
             </picture>
 
             <p>{{ $content->p1 }}</p>
             <p>{{ $content->p2 }}</p>
             <br>
             <div class="table-of-contents">
-                <h2>Inside this Article</h2>
+                <h2>Contents</h2>
                 <ol>
 
                     @foreach ($content->text->tableOfContents as $item)

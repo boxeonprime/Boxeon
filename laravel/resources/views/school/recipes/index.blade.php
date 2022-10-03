@@ -16,7 +16,7 @@ $price = DB::table('products')
     <div id="mealkit-masthead">
         <aside class="centered asides call-out mobile-scroll"><br>
             <h2 id="headline_h1" class="font-size-3-em">African Meal-kits Delivered To You Monthly</h2>
-            <p class="centered center font-1-5-em">Don't know how to cook African foods? Boxeon's African Staples Mealkit
+            <p class="centered center font-1-5-em">Don't know what to buy? Boxeon's African Staples Mealkit
                 has all the ingredients and recipes you need to taste Mama Africa.
             </p><br>
             <form class="form-plan center">
@@ -73,13 +73,13 @@ $price = DB::table('products')
             </div>
         </section>
         <section class='section maxw1035 rounded-corner card'>
-            <h2 class="center extra-large-font uppercase primary-color">Meals & Recipes</h2><br>
+            <h2 class="center font-size-3-em uppercase primary-color">Enjoy 60+ meals each month</h2><br>
             
 @include("includes.recipes-stream")
 
             <br>
             <section class="section margin-top-4-em">
-                <h2 class="center extra-large-font uppercase primary-color">What We Ship You</h2>
+                <h2 class="center font-size-3-em  uppercase primary-color">What We Ship You</h2>
                 <br>
             </section>
 
@@ -87,7 +87,7 @@ $price = DB::table('products')
 
             <section class="section margin-top-4-em">
 
-            <h2 class="center centered font-size-3-em primary-color">Choose schedule & subscribe!</h2><br>
+            <h2 class="center font-size-3-em centered primary-color">We save you serious time and stress</h2><br>
 
             <form class="form-plan center">
                 <select class="select-plan margin-top-zero" name="quantity">
@@ -120,3 +120,4 @@ $price = DB::table('products')
 
 
 @endsection
+

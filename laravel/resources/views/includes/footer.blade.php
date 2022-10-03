@@ -128,3 +128,11 @@
             class="hide mobile-chat-icon"><img loading="lazy" class="w24px" src="../assets/images/chat.svg"
             alt="Feedback" /></span>Feedback</button>
 </div>
+How does Boxeon's meal kit delivery service work?
+Which food meal plans & recipes does Boxeon offer?
+How many times a week does Boxeon deliver?
+Does Boxeon give nutrition & calorie information?
+Why should I choose Boxeon as my meal kit service?
+How much does Boxeon cost?
+Does Boxeon support a healthy lifestyle?
+Can I skip a week of delivery?

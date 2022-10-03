@@ -2175,12 +2175,12 @@ container when the user clicks on the dropdown button) */
 
 .p-title {
   position: absolute;
-  left:0;
-  bottom: 50%;
-  font-size: 1em;
-  letter-spacing: 2px;
+  left: 0;
+  bottom: -1em;
   font-weight: normal;
-  min-height:69px;
+  min-height: 69px;
+  width: 100%;
+  background-color: green;
 }
 
 .one-em-font {
@@ -2884,11 +2884,10 @@ h4 {
 }
 
 header {
-
   grid-row-end: 2;
   grid-row-start: 2;
   background-color: green;
-  height: 68px;
+  height: 78px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -2961,7 +2960,6 @@ header {
   margin: 0;
 }
 
-
 .text-red {
   color: #B12704 !important;
 }
@@ -2971,7 +2969,6 @@ header {
   top: -1.8em;
   line-height: 16px;
 }
-
 
 #product-stream {
   grid-gap: 20px;
@@ -3105,12 +3102,12 @@ header a {
 
 ul {
   list-style: none;
-  /* Remove default bullets */
+
 }
 
 ol {
   list-style: disc;
-  /* Remove default bullets */
+
 }
 
 .order-summary,
@@ -3202,18 +3199,12 @@ ol {
 
 #contact ul li::before {
   content: "\2022";
-  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: #343434;
-  ;
-  /* Change the color */
   font-weight: bold;
-  /* If you want it to be bold */
   display: inline-block;
-  /* Needed to add space between the bullet and the text */
   width: 1em;
-  /* Also needed for space (tweak if needed) */
   margin-left: -1em;
-  /* Also needed for space (tweak if needed) */
+
 }
 
 #subscriptions-stream {
@@ -3308,7 +3299,7 @@ ul, p {
 ul li, ol li, td, p, a, label {
   line-height: 1.8em;
   font-size: 1.3em;
-  /* Don't change */
+
 }
 
 td ul li {
@@ -3319,7 +3310,6 @@ td ul li {
 #home main p {
   max-width: 600px;
 }
-
 
 html, body {
   margin: 0;

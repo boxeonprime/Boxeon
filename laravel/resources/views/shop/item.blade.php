@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 @extends('layouts.home')
 <title><?php echo 'Shop ' . $product[0]->name; ?> | African Food Delivery Service | Boxeon</title>
 @section('og:image',  asset('../assets/images/{{ $product[0]->img }}'))
@@ -51,7 +52,7 @@
                     </form>
                     <button data-quantity="1" data-name="{{ $product[0]->name }}" data-plan="1" data-img="{{ $product[0]->img }}" data-id="{{ $product[0]->id }}" data-basePrice="{{$product[0]->price }}" data-price="{{$product[0]->price }}" class="cart-add button">SUBSCRIBE NOW</button>
                     <div class="two-col-grid charitable-grid">
-                        <img class="w40px" src="../assets/images/girl.jpg" alt="Orphan Girl" />
+                        <img width="40px" height="40px" src="../assets/images/tabitha-girl.webp" alt="Orphan Girl" />
                         <a href="/school/subscriptions" class="primary-color">
                             Learn about Boxeon subscriptions
                         </a>
@@ -64,7 +65,8 @@
                 @for ($i = 0; $i < count($reviews); $i++)
                     <div class="review two-col-grid">
                         <div class="three-col-grid reviewer-grid">
-                         <span class="material-icons margin-block-start-end">account_circle</span>
+                         <span class=""><img width="30px" height="30px" src='{{ asset('../assets/images/account_circle.svg') }}'
+                            alt="Commentor" /></span>
                             
                                 <p class="bold">{{ $reviews[$i]->name }}</p>
                             
