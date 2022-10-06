@@ -218,7 +218,7 @@ Nigerian Party Jollof Rice recipe
 
 
 
-    https://www.youtube.com/embed/z4tNAyRdo70
+    https://www.youtube.com/embed/
 
 
 

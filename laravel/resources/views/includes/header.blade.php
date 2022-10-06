@@ -22,15 +22,13 @@
                         src="../assets/images/cart.webp" alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
         @endif
         <div class="p-relative">
-            <a id="showDropdown" class='fadein button margin-right-1-em m-padding-right-zero' href='#'><span><img width="30px" height="30px" src='{{ asset('../assets/images/account_circle.svg') }}'
-                alt="Cart" /></span>
+            <a id="showDropdown" class='fadein button margin-right-1-em m-padding-right-zero' href='#'><span><img class="w30px" width="30px" height="30px" src='{{ asset('../assets/images/account_circle.svg') }}'
+                alt="Account" /></span>
             </a>
             
             <div class="dropdown">
                 <div id="myDropdown" class="dropdown-content">
                     <a class='one-em-font' href='/login'>Sign in
-                    </a>
-                    <a class='one-em-font' href='/blockchain'>Connect
                     </a>
                     <a class="one-em-font" href="/home/index">Subscriptions</a>
                     <a class="one-em-font" href="/account/home">Account</a>

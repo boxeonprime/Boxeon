@@ -1,24 +1,23 @@
 {
-    "title": "Nigerian Egusi Soup: A Recipe For Prosperity",
-    "p1": "Egusi (also known by variations including egwusi, agusi, ohue, Ikpan, Ikon, and agushi) is the name for the protein-rich seeds of certain cucurbitaceous plants (squash, melon, gourd), which after being dried and ground are used as a major ingredient in West African cuisine.",
-    "p2": "In Nigeria, egusi is common among the people of the southwestern Yoruba people, Efik, Ibibio, and Annang people of south-south Nigeria, and the southeastern part of Nigeria by the Igbo people of southern Nigeria.",
-    "p3": "In Ghana, egusi is also called akatoa or agushi, and as in Nigeria is used for soup and stew, and most popularly in palaver sauce.",
+    "title": "Simple Nigerian Pepper Soup Recipe: 7 Easy Steps",
+    "p1": "Nigerian Pepper Soup is a one-pot dish that's defined by the nutty, bitter, woodsy, and floral notes imparted by a mix of spices and herbs.",
+    "p2": "Pepper soup has a light, watery texture. The name is a misnomer because the soup is not necessarily defined by a pepper-forward flavor profile, that is, the flavors are much more complex, with nutty, bitter, woodsy, and floral notes, as well as warmth. It is considered to be a delicacy in West Africa, and is traditionally prepared with some medicinal herbs.",
     "text": {
         "tableOfContents": {
-            "li1": "What are the health benefits of Nigerian Egusi Soup?",
-            "li2": "Can pregnant women eat Nigerian Egusi Soup?",
-            "li3": "Our Favorite Nigerian Egusi Soup recipe",
-            "li4": "How to cook Nigerian Egusi Soup?",
+            "li1": "What are the health benefits of Nigerian Pepper Soup?",
+            "li2": "Can pregnant women eat Nigerian Pepper Soup?",
+            "li3": "Our Favorite Nigerian Pepper Soup recipe",
+            "li4": "How to cook Nigerian Pepper Soup?",
             "li5": "Recipe variations",
             "li6": "Tips and tricks",
             "li7": "Serving and storage instructions",
             "li10": "Conclusion",
             "li11": "More African recipes to try",
-            "li18": "Where can you find Nigerian Egusi Soup?",
-            "li19": "What goes with Nigerian Egusi Soup?"
+            "li18": "Where can you find Nigerian Pepper Soup?",
+            "li19": "What goes with Nigerian Pepper Soup?"
         },
         "content": {
-            "h2": "What are the health benefits of Nigerian Egusi Soup?",
+            "h2": "What are the health benefits of Nigerian Pepper Soup?",
             "paragraphs": {
                 "p": "Egusi or Citrullus Colocynthis (botanical name) improves appetite.",
                 "p1": "Egusi seeds contain many vitamins that are beneficial to one's health; among them are vitamin B1 (Thiamine) and Vitamin B2 (Riboflavin). These help the body's fat and oil undergo metabolism and help improve one's appetite.",
@@ -35,7 +34,7 @@
             }
         },
         "li3": {
-            "h2": "Our Favorite Nigerian Egusi Soup recipe",
+            "h2": "Our Favorite Nigerian Pepper Soup recipe",
             "h41": "For The Meat:",
             "h42": "For The Stew:",
             "recipe": {
@@ -60,7 +59,7 @@
             }
         },
         "li4": {
-            "h2": "How to cook Nigerian Egusi Soup?",
+            "h2": "How to cook Nigerian Pepper Soup?",
             "instructions": {
                 "li1": "Soak your beans in a covered container or pot of water for 8 hours",
                 "li2": "Drain and rise the beans",
@@ -91,13 +90,13 @@
             }
         },
         "li8": {
-            "h2": "Where can you find Nigerian Egusi Soup?",
+            "h2": "Where can you find Nigerian Pepper Soup?",
             "paragraphs": {
             "p": "You can conviently find Egusi seeds and the other African ingredients to make this delicious recipe right here on Boxeon. We currently ship everywhere in the United States, flat rate."
             }
         },
         "li9": {
-            "h2": "What goes with Nigerian Egusi Soup?",
+            "h2": "What goes with Nigerian Pepper Soup?",
             "paragraphs": {
             "p": "I serve Egusi soup with gari, fufu, or pounded yam. Personally, I like a slice or two of Agege bread with my Egusi soup."
             }
@@ -110,6 +109,6 @@
         }
 
     },
-    "img": "egusi.webp",
-    "videoID": "XeZJlxAsP18"
+    "img": "psoup.webp",
+    "videoID": "CBBj6ibfgSk"
 }

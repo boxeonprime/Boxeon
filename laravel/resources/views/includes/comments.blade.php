@@ -1,13 +1,15 @@
-
-<h2 class='text-red margin-top-4-em'>Community Comments</h2>
+<div class="div-horizontal-rule"></div>
+<h2 class='text-red margin-top-2-em'>Community Comments</h2>
 <br>
 @if (count($comments) > 0)
     @for ($i = 0; $i < count($comments); $i++)
         <div class="review">
             <div class="three-col-grid reviewer-grid">
-             <span class="material-icons margin-block-start-end">account_circle</span>
+                <p class="bold"> <span class="margin-block-start-end"><img
+                loading="lazy" class="w24px fix-comment-thumb" width="24px" height="24px" src="{{ asset("../assets/images/account_circle_black.svg")}}"
+                alt="Feedback" /></span>
                 
-                    <p class="bold">{{ $comments[$i]->name }}</p>
+                   {{ $comments[$i]->name }}</p>
                 
                 <div class="stars-grid">
                     @php

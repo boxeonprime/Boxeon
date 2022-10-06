@@ -1,19 +1,8 @@
-Easy Low Fat Nigerian Chicken Stew With Secret Ingredient
-By Trevor Prime
-Published September 21 2022
+{
+    "title": 
 
 
-
-Nigerian chicken stew is a delightful West
-African stew made with chicken thighs and simmered in a
-savory
-sauce made with tomatoes and peppers. It is so versatile and can be eaten with many different
-dishes!
-
-In Nigeria, it is quite common to have a pot of this chicken stew in your fridge at any point in
-time.
-
-If you're looking to explore a low fat African dish with a bit of a Jamaican twist to it, then read along.
+    "p1": "Nigerian chicken stew is a delightful West African stew made with chicken thighs and simmered in a savory sauce made with tomatoes and peppers. It is so versatile and can be eaten with many different dishes! In Nigeria, it is quite common to have a pot of this chicken stew in your fridge at any point in time. If you're looking to explore a low fat African dish with a bit of a Jamaican twist to it, then read along.",
 
 
 
@@ -151,8 +140,6 @@ Throw in a whole scotch bonnet pepper and salt
 to taste
 
 
-
-https://www.youtube.com/embed/rOwsAhJ8HpI?start=14
 
 
 

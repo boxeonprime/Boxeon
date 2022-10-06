@@ -28,7 +28,7 @@
             </div>
         </section>
         
-        @include('includes.shop-products')
+      @include('includes.shop-products')
         
     </main>
 @endsection

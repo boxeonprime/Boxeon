@@ -1,41 +1,38 @@
 {
-    "title": "Nigerian Egusi Soup: A Recipe For Prosperity",
-    "p1": "Egusi (also known by variations including egwusi, agusi, ohue, Ikpan, Ikon, and agushi) is the name for the protein-rich seeds of certain cucurbitaceous plants (squash, melon, gourd), which after being dried and ground are used as a major ingredient in West African cuisine.",
-    "p2": "In Nigeria, egusi is common among the people of the southwestern Yoruba people, Efik, Ibibio, and Annang people of south-south Nigeria, and the southeastern part of Nigeria by the Igbo people of southern Nigeria.",
-    "p3": "In Ghana, egusi is also called akatoa or agushi, and as in Nigeria is used for soup and stew, and most popularly in palaver sauce.",
+    "title": "Easy Nigerian Party-Style Jollof Rice | Accolade Winning Recipe",
+    "p1": "Jollof Rice is so good it survived the brutality of the Trans African Ocean Trade in Africans to become popular in the Caribbean. Being from Grenada, I've been eating it since I was a child. It is a testament to the fact that while others perished, we not only survived but refused to relinguish our culture.",
+    "p2": "Jollof Rice is typically made with long-grain rice, tomatoes, onions, spices, vegetables and meat in a single pot, although its ingredients and preparation methods vary across different regions.",
+    "p3": "Jollof originates from the Senegambian region that was ruled by the Wolof or Jolof Empire in the 14th century, spanning parts of today's Senegal, The Gambia and Mauritania, where rice is grown. The dish has its roots in a traditional dish called thieboudienne, containing rice, fish, shellfish and vegetables.",
+   "p4":"Each West African country has at least one variant form of the dish, with Ghana, Nigeria, Sierra Leone, Liberia and Cameroon particularly competitive as to which country makes the best jollof. This is especially prominent between Nigeria and Ghana, in a rivalry dubbed the 'Jollof Wars'.",
     "text": {
         "tableOfContents": {
-            "li1": "What are the health benefits of Nigerian Egusi Soup?",
-            "li2": "Can pregnant women eat Nigerian Egusi Soup?",
-            "li3": "Our Favorite Nigerian Egusi Soup recipe",
-            "li4": "How to cook Nigerian Egusi Soup?",
+            "li1": "What are the health benefits of Nigerian Jollof Rice?",
+            "li2": "Can pregnant women eat Nigerian Jollof Rice?",
+            "li3": "Our Favorite Nigerian Jollof Rice recipe",
+            "li4": "How to cook Nigerian Jollof Rice?",
             "li5": "Recipe variations",
             "li6": "Tips and tricks",
             "li7": "Serving and storage instructions",
             "li10": "Conclusion",
             "li11": "More African recipes to try",
-            "li18": "Where can you find Nigerian Egusi Soup?",
-            "li19": "What goes with Nigerian Egusi Soup?"
+            "li18": "Where can you find Nigerian Jollof Rice?",
+            "li19": "What goes with Nigerian Jollof Rice?"
         },
         "content": {
-            "h2": "What are the health benefits of Nigerian Egusi Soup?",
+            "h2": "What are the benefits of eating Jollof Rice?",
             "paragraphs": {
-                "p": "Egusi or Citrullus Colocynthis (botanical name) improves appetite.",
-                "p1": "Egusi seeds contain many vitamins that are beneficial to one's health; among them are vitamin B1 (Thiamine) and Vitamin B2 (Riboflavin). These help the body's fat and oil undergo metabolism and help improve one's appetite.",
-                "p2": "Egusi seed contains alpha-tocopherol that acts as an antioxidant and a source of Vitamin E. It reduces wrinkles, dry skin, and other signs of aging.",
-                "p3": "Egusi is rich in vitamin A, which helps improve eyesight.",
-                "p4": "Egusi has many minerals, such as potassium, calcium, magnesium, and phosphorous - essential for bone health. Consuming egusi will help cure or reduce some bone diseases and disorders."
-        
+                "p": "Imagine if the 50 million black people in the United States largely ate jollof and other African foods. This would lead to better health outcomes, industrial revolutions on the continent, and a strong black economic bloc. This is what eating jollof is about: our economic interest. And -",
+                "p1": "That's what Boxeon is about."
             }
         },
         "li2": {
-            "h2": "Can pregnant women eat Egusi Soup?",
+            "h2": "Can pregnant women eat Jollof Rice?",
             "paragraphs": {
-                "p": "Absolutely! Babies would be delighted by the plethora of nutrients that this African superfood delivers."
+                "p": "Absolutely! Babies would be delighted by the plethora of nutrients that this African superfood delivers. Be sure to consume it in moderation, however. Please consult your physician if you have any concerns."
             }
         },
         "li3": {
-            "h2": "Our Favorite Nigerian Egusi Soup recipe",
+            "h2": "Our Favorite Nigerian Jollof Rice recipe",
             "h41": "For The Meat:",
             "h42": "For The Stew:",
             "recipe": {
@@ -60,7 +57,7 @@
             }
         },
         "li4": {
-            "h2": "How to cook Nigerian Egusi Soup?",
+            "h2": "How to cook Nigerian Jollof Rice?",
             "instructions": {
                 "li1": "Soak your beans in a covered container or pot of water for 8 hours",
                 "li2": "Drain and rise the beans",
@@ -72,9 +69,10 @@
             }
         },
         "li5": {
-            "h2": "Recipe variations",
+            "h2": "Jollof Rice recipe variations",
             "paragraphs": {
-            "p": "edit"
+            "p": "For a healthier version, make this recipe vegan.",
+            "p1": "For a healthier version, make this recipe vegan."
             }
 
         },
@@ -91,13 +89,13 @@
             }
         },
         "li8": {
-            "h2": "Where can you find Nigerian Egusi Soup?",
+            "h2": "Where can you find Nigerian Jollof Rice?",
             "paragraphs": {
             "p": "You can conviently find Egusi seeds and the other African ingredients to make this delicious recipe right here on Boxeon. We currently ship everywhere in the United States, flat rate."
             }
         },
         "li9": {
-            "h2": "What goes with Nigerian Egusi Soup?",
+            "h2": "What goes with Nigerian Jollof Rice?",
             "paragraphs": {
             "p": "I serve Egusi soup with gari, fufu, or pounded yam. Personally, I like a slice or two of Agege bread with my Egusi soup."
             }
@@ -110,6 +108,6 @@
         }
 
     },
-    "img": "egusi.webp",
-    "videoID": "XeZJlxAsP18"
+    "img": "jollof.webp",
+    "videoID": "z4tNAyRdo70"
 }
