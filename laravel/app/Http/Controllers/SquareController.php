@@ -195,9 +195,9 @@ class SquareController extends Controller
                 $user->save();
 
             } else {
-                return $new;
 
-                return json_encode(array('status' => 'FAILURE', 'msg' => 'Unable to verify card'));
+
+                return json_encode(array('status' => 'FAILURE', 'message' => 'Unable to verify customer details'));
 
             }
         }
@@ -238,8 +238,10 @@ class SquareController extends Controller
         if (isset($response->card->id)) {
             $user->card_id = $response->card->id;
             $user->save();
+            
         } else {
-                return false;
+            return json_encode(array('status' => 'FAILURE', 'message' => 'Unable to verify card'));
+
         }
 
     }
