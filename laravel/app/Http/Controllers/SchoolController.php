@@ -30,6 +30,15 @@ class SchoolController extends Controller
         $user = Auth::user();
         return view('school.' . $article, compact('user', $user));
     }
+// RECIPES HOME PAGE
+    public function home(Request $request)
+    {
+
+        $user = Auth::user();
+        return view('school.recipes.home', compact('user', $user));
+    }
+
+    // MEALKIT
 
     public function recipes(Request $request)
     {
@@ -52,7 +61,6 @@ class SchoolController extends Controller
             ->get()[0];
         $meta = $content;
         $content = json_decode($content->json);
-       
 
         return view('school.recipes.compiler', compact('user', $user))
             ->with("comments", $comments)

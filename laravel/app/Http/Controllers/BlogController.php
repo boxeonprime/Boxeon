@@ -79,7 +79,9 @@ class BlogController extends Controller
     public function save(Request $request)
     {
         $user = Auth::user();
-        $new = json_encode($request->all());
+        $new = $request->all();
+
+        $json = self::createJson($new);
 
         $blog = DB::table("blog")
             ->get();
@@ -90,12 +92,65 @@ class BlogController extends Controller
 
     }
 
-    public function createJson(Request $request)
+    public function createJson($blog)
     {
-        $user = Auth::user();
-        $blog = json_encode($request["blog"]);
-        $json = [];
+    
+       $user = Auth::user();
+       $num = count($blog);
 
-        return $json;
+        for($i=0; $i < $num; $i++){
+
+            echo $blog->rr . $i;
+        }
+
+        $body = [
+
+          
+        ];
+
+        $json = [
+
+            "title"=> $blog->title,
+            "p1"=> $blog->p1,
+            "p2"=>$blog->p2,
+            "text"=>[
+                "tableOfContents"=>[
+
+                    "li1"=> $blog->li1,
+                    "li2"=> $blog->li2,
+                    "li3"=> $blog->li3,
+                    "li4"=> $blog->li4,
+                    "li5"=> $blog->li5,
+                    "li6"=> $blog->li6,
+                    "li7"=> $blog->li7,
+                    "li10"=> $blog->li8,
+                    "li11"=> $blog->li9,
+                    "li18"=> $blog->li10,
+                    "li19"=> $blog->li0
+
+                ],
+                "content"=>[
+
+                        "h2"=> "",
+                        "paragraphs"=> [
+                            "p"=> "",
+                            "p1"=> "",
+                            "p2"=> "",
+                            "p3"=> "",
+                            "p4"=> ""
+                    
+                        ]
+
+                ],
+
+                $body
+
+
+            ],
+            "img"=>$blog->img,
+            "videoID"=>$blog->videoID
+        ];
+
+        return json_encode($json);
     }
 }
