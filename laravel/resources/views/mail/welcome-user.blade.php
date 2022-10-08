@@ -26,7 +26,8 @@ one day spark industrial revolutions in our home countries. That's what Boxeon i
 
 Thank you,<br>
 The {{ config('app.name') }} Team<br>
-244 5th Avenue, Suite 7,  New York, NY 10001<br>
+244 5th Avenue, Suite 7,<br>  
+New York, NY 10001<br>
 service@boxeon.com<br>
 646.450.4670‬<br>
 @endcomponent
