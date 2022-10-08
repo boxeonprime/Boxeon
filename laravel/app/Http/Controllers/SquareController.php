@@ -136,8 +136,8 @@ class SquareController extends Controller
             "reference_id" => '#early',
         ]);
        
-       //return json_decode($response);
-       return $response;
+       return json_decode($response);
+      
 
     }
 
