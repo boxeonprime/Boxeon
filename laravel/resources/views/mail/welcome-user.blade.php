@@ -4,8 +4,9 @@
 
 
 
- <p>Welcome to the Home In A Box Movement. You have successfully created a Boxeon account. We're glad to have you!</p>
- <p>Please reach out to us if you have any concerns.</p>
+ <p>And welcome to the Home In A Box Movement. You have successfully created a Boxeon account. We're glad to have you, {{$user->given_name}}!</p>
+ 
+ <p>Please reach out if you need help.</p>
 
  <h2>About Boxeon</h2>
 
@@ -24,8 +25,8 @@ one day spark industrial revolutions in our home countries. That's what Boxeon i
 
 
 Thank you,<br>
-The {{ config('app.name') }} Team
-244 5th Avenue, Suite 7,  New York, NY 10001
-service@boxeon.com
-646.450.4670‬
+The {{ config('app.name') }} Team<br>
+244 5th Avenue, Suite 7,  New York, NY 10001<br>
+service@boxeon.com<br>
+646.450.4670‬<br>
 @endcomponent
