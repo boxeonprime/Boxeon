@@ -1,6 +1,5 @@
 @php
 header('Accept-Encoding: gzip, compress, br');
-
 @endphp
 <title>@yield('title', config('app.name'))</title>
 <meta property="og:title" content="@yield('title')" />

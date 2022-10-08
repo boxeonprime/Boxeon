@@ -16,6 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
+ // ON LOCAL ONLY
+ Route::get('/publish', 'App\Http\Controllers\BlogController@edit')->name('blog.edit');
+ Route::post('/publish/save', 'App\Http\Controllers\BlogController@save')->name('blog.save');
+ Route::post('/publish/getblog', 'App\Http\Controllers\BlogController@get')->name('blog.get');
+
 Route::post('/pmf/email', 'App\Http\Controllers\HomeController@waiting')->name('waiting');
 Route::post('/feedback/submit/{feedback}', 'App\Http\Controllers\MessagesController@feedback');
 Route::get('/feedback/submit/', 'App\Http\Controllers\MessagesController@feedback');

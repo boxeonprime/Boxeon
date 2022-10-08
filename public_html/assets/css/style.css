@@ -570,7 +570,9 @@ dialog p {
 
 }
 
-
+#publish form fieldset{
+  border:none;
+}
 .blog-title {
   padding: 0.5em;
   font-size: 3.25rem !important;
@@ -735,7 +737,7 @@ dialog p {
   display: inline;
   margin: auto;
   position: relative;
-  left: 2%;
+
   bottom: 5px;
 }
 
@@ -2978,7 +2980,7 @@ header {
   align-items: center;
   grid-gap: 2%;
   display: grid;
-  grid-template-columns: auto auto auto auto 15% auto auto auto;
+  grid-template-columns: 1em auto auto auto auto 21% auto auto auto 1em;
 }
 
 #m-menu .button,

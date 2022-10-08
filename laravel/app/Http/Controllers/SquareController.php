@@ -109,6 +109,7 @@ class SquareController extends Controller
 
     public function createCustomer()
     {
+       
         $id = auth()->user()->id;
         $user = User::find($id);
 
@@ -134,7 +135,9 @@ class SquareController extends Controller
             "cardholder_name" => $user->billing_given_name ?? $user->given_name . "" . $user->billing_family_name ?? $user->family_name,
             "reference_id" => '#early',
         ]);
-        return json_decode($response);
+       
+       //return json_decode($response);
+       return $response;
 
     }
 
@@ -192,8 +195,9 @@ class SquareController extends Controller
                 $user->save();
 
             } else {
+                return $new;
 
-                return json_encode(array('status' => 'Unable to verify card'));
+                return json_encode(array('status' => 'FAILURE', 'msg' => 'Unable to verify card'));
 
             }
         }
