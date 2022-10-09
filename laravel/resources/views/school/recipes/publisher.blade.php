@@ -34,8 +34,8 @@
                     <fieldset>
                         <h2>Opening Paragraphs</h2>
 
-                        <textarea required name="p1" col="45" rows="8" placeholder="(Required)">{{ $json->p1 ?? '(Required)' }}</textarea>
-                        <textarea required name="p2" col="45" rows="8" placeholder="(Required)">{{ $json->p2 ?? '(Required)' }}</textarea>
+                        <textarea required name="p1" col="45" rows="8" placeholder="(Required)">{{ $json->p1 ?? '' }}</textarea>
+                        <textarea required name="p2" col="45" rows="8" placeholder="(Required)">{{ $json->p2 ?? '' }}</textarea>
 
 
                     </fieldset>
