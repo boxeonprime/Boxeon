@@ -164,6 +164,7 @@
 <dialog id="m">
     <a href="#" class="close-dialog primary-color">X</a><br>
     <a href="/school/recipes" class="button clearbtn">Meal Kit</a>
+    <a href="/school/recipes" class="button clearbtn">Recipes</a>
     <a href="/shop/index?c=staple" class="button clearbtn">Staple Essentials</a>
     <a href="/shop/index?c=spice" class="button clearbtn">Seasoning Essentials</a>
     <a href="/shop/index?c=produce" class="button clearbtn">Produce</a>
@@ -176,7 +177,7 @@
 
 <div id="m-menu" class="three-col-grid">
     <a id="menu-icon" href="#" class="button white"><span><img loading="lazy" width="24" height="24"
-        class="w24px mobile-chat-icon"  src="../assets/images/shop.svg" alt="Shop" /></span>Shop</a>
+        class="w24px mobile-chat-icon"  src="../assets/images/menu.svg" alt="Shop" /></span>Menu</a>
 
     <a href="/cart/index" class="white button"><span><img loading="lazy" width="30px" height="21px"
                 src="../assets/images/cart.webp" alt="Cart" /></span><span

@@ -1201,10 +1201,6 @@ window.onload = function () {
     }
   }
 
-
-
-
-
   // Place order
   if (document.getElementsByClassName("place-order")) {
     let form = document.getElementsByClassName("place-order");
@@ -1237,7 +1233,9 @@ window.onload = function () {
       lnk.addEventListener('click', function () {
         var copy = this.previousElementSibling;
         var clone = copy.cloneNode();
-        Boxeon.insertAfter(clone,this.previousElementSibling)
+        Boxeon.insertAfter(clone,this.previousElementSibling);
+        clone.value = "";
+        clone.focus();
       });
     }
 
@@ -1247,28 +1245,12 @@ window.onload = function () {
     for(var i=0; i < links.length; i++){
       var lnk = links[i];
       lnk.addEventListener('click', function () {
-       
         var copy = this.previousElementSibling.previousElementSibling;
         copy.remove();
       });
     }
 
   }
-
-  window.addEventListener('onbeforeunload', function () {
-
-   //// document.getElementBy("container").setAttribute("class", "fadeout");
-
-
-  });
-
-
-  // Exit Intent Popup
-  document.addEventListener("mouseleave", function () {
-    //document.getElementById('popup').open = true;
-  });
-
-  //import instance from './modules/messages.js'
 
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
@@ -1277,7 +1259,6 @@ window.onload = function () {
   gtag('config', 'G-ZLWPCSLD0Q');
 
   // Close the dropdown menu if the user clicks outside of it
-
 
   window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {

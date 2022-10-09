@@ -217,7 +217,7 @@ class BlogController extends Controller
 
                     "paragraphs" =>
 
-                    $blog['rv'],
+                    $blog['si'],
 
                 ],
                 "li7" => [
@@ -226,7 +226,7 @@ class BlogController extends Controller
 
                     "paragraphs" =>
 
-                    $blog['si'],
+                    $blog['pe'],
 
                 ],
 
@@ -236,7 +236,7 @@ class BlogController extends Controller
 
                     "paragraphs" =>
 
-                    $blog['pe'],
+                    $blog['wh'],
 
                 ],
                 "li9" => [
