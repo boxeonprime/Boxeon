@@ -22,8 +22,10 @@
                 <h2>Contents</h2>
                 <ol>
 
-                    @foreach ($content->text->tableOfContents as $item)
+                    @foreach ($content->text->tableOfContents as $items)
+                    @foreach((array)$items as $item)
                         <li><a class="one-em-font primary-color" href="#abb1">{{ $item }}</a> </li>
+                        @endforeach
                     @endforeach
 
                 </ol>
@@ -54,11 +56,13 @@
 
                 <ul>
                     @foreach ($content->text->li3->recipe->recipe1 as $items)
+                    @foreach((array)$items as $item)
                         <li>
-                            <form><input type="checkbox" id="{{ $items }}" name="1"><label
-                                    for="{{ $items }}">{{ $items }}</label>
+                            <form><input type="checkbox" id="{{ $item }}" name="1"><label
+                                    for="{{ $item }}">{{ $item }}</label>
                             </form>
                         </li>
+                        @endforeach
                     @endforeach
                 </ul>
                 @if (isset($content->text->li3->recipe->recipe2))
@@ -67,11 +71,13 @@
                     @endif
                     <ul>
                         @foreach ($content->text->li3->recipe->recipe2 as $items)
+                        @foreach((array)$items as $item)
                             <li>
-                                <form><input type="checkbox" id="{{ $items }}" name="1"><label
-                                        for="{{ $items }}">{{ $items }}</label>
+                                <form><input type="checkbox" id="{{ $item }}" name="1"><label
+                                        for="{{ $item }}">{{ $item }}</label>
                                 </form>
                             </li>
+                            @endforeach
                         @endforeach
                     </ul>
                 @endif
@@ -83,10 +89,12 @@
             <div class="table-of-contents">
                 <ul>
                     @foreach ($content->text->li4->instructions as $items)
+                    @foreach((array)$items as $item)
                         <li>
-                            <form><input type="checkbox" id="{{ $items }}" name="1"><label
-                                    for="{{ $items }}">{{ $items }}</label></form>
+                            <form><input type="checkbox" id="{{ $item }}" name="1"><label
+                                    for="{{ $item }}">{{ $item }}</label></form>
                         </li>
+                        @endforeach
                     @endforeach
 
                 </ul>
@@ -106,44 +114,56 @@
             <br>
             @if (isset($content->text->li5->h2))
             <h2>{{ $content->text->li5->h2 }}</h2>
-            @foreach ($content->text->li5->paragraphs as $paragraph)
+            @foreach ($content->text->li5->paragraphs as $paragraphs)
+            @foreach((array)$paragraphs as $paragraph)
                 <p>{{ $paragraph }}
                 <p>
+            @endforeach
             @endforeach
             @endif
             @if (isset($content->text->li6->h2))
                 <h2>{{ $content->text->li6->h2 }}</h2>
-                @foreach ($content->text->li6->paragraphs as $paragraph)
+                @foreach ($content->text->li6->paragraphs as $paragraphs)
+                @foreach((array)$paragraphs as $paragraph)
                     <p>{{ $paragraph }}
                     <p>
+                @endforeach
                 @endforeach
             @endif
             @if (isset($content->text->li7->h2))
             <h2>{{ $content->text->li7->h2 }}</h2>
-            @foreach ($content->text->li7->paragraphs as $paragraph)
+            @foreach ($content->text->li7->paragraphs as $paragraphs)
+            @foreach((array)$paragraphs as $paragraph)
                 <p>{{ $paragraph }}
                 <p>
+            @endforeach
             @endforeach
             @endif
             @if (isset($content->text->li8->h2))
             <h2>{{ $content->text->li8->h2 }}</h2>
-            @foreach ($content->text->li8->paragraphs as $paragraph)
+            @foreach ($content->text->li8->paragraphs as $paragraphs)
+            @foreach((array)$paragraphs as $paragraph)
                 <p>{{ $paragraph }}
                 <p>
+            @endforeach
             @endforeach
             @endif
             @if (isset($content->text->li9->h2))
             <h2>{{ $content->text->li9->h2 }}</h2>
-            @foreach ($content->text->li9->paragraphs as $paragraph)
+            @foreach ($content->text->li9->paragraphs as $paragraphs)
+            @foreach((array)$paragraphs as $paragraph)
                 <p>{{ $paragraph }}
                 <p>
+            @endforeach
             @endforeach
             @endif
             @if (isset($content->text->li10->h2))
             <h2>{{ $content->text->li10->h2 }}</h2>
-            @foreach ($content->text->li10->paragraphs as $paragraph)
+            @foreach ($content->text->li10->paragraphs as $paragraphs)
+            @foreach((array)$paragraphs as $paragraph)
                 <p>{{ $paragraph }}
                 <p>
+            @endforeach
             @endforeach
             @endif
 
