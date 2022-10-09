@@ -83,9 +83,15 @@ class BlogController extends Controller
 
         $id = $new["id"];
 
-        $test = DB::table("blog")
+        $b = DB::table("blog")
             ->where("id", "=", $id)
-            ->get()[0];
+            ->get();
+
+            if(isset($b)){
+                $test = $b;
+            }
+
+
 
         $json = self::createJson($new);
 
