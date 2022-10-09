@@ -17,5 +17,4 @@ yarn-error.log
 /.vscode
 /public_html/assets/js/square.js
 
-laravel/resources/views/school/recipes/publisher.blade.php
 laravel/resources/views/includes/meta.blade.php
