@@ -44,8 +44,9 @@ Boxeon = {
       }
     }
   },
-  insertAfter:function(newNode, existingNode) {
-    existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+
+removeParagraph:function(){
+  alert(this);
 },
 
   feedback: function (string) {
@@ -736,9 +737,6 @@ window.onload = function () {
 
   }
 
-
-
-
   if (document.getElementsByClassName("delete-icon")) {
 
     let icons = document.getElementsByClassName("delete-icon");
@@ -767,9 +765,6 @@ window.onload = function () {
       }
 
     })
-
-
-
   }
 
   if (document.getElementsByClassName("select-plan")) {
@@ -1226,31 +1221,7 @@ window.onload = function () {
     }
 
   }
-  if (document.getElementsByClassName("add-field")) {
-    let links = document.getElementsByClassName("add-field");
-    for(var i=0; i < links.length; i++){
-      var lnk = links[i];
-      lnk.addEventListener('click', function () {
-        var copy = this.previousElementSibling;
-        var clone = copy.cloneNode();
-        Boxeon.insertAfter(clone,this.previousElementSibling);
-        clone.value = "";
-        clone.focus();
-      });
-    }
 
-  }
-  if (document.getElementsByClassName("remove-field")) {
-    let links = document.getElementsByClassName("remove-field");
-    for(var i=0; i < links.length; i++){
-      var lnk = links[i];
-      lnk.addEventListener('click', function () {
-        var copy = this.previousElementSibling.previousElementSibling;
-        copy.remove();
-      });
-    }
-
-  }
 
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }

@@ -2220,9 +2220,12 @@ container when the user clicks on the dropdown button) */
 
 .p-relative {
   position: relative;
+  margin-bottom: 1.3em;
 
 }
-
+.point-7-em-font{
+  font-size: .7em;
+}
 .p-relative img {
   width: 100%;
   height: auto;

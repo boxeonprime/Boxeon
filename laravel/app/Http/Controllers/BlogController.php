@@ -56,7 +56,7 @@ class BlogController extends Controller
 
             $blog = DB::table("blog")
                 ->get();
-
+            Session::flash('message', 'Success.');
             return view('school.recipes.publisher', compact('user', $user))
                 ->with("json", '')
                 ->with("blog", $blog);
@@ -71,6 +71,7 @@ class BlogController extends Controller
         $blog = DB::table("blog")
             ->get();
         $json = json_decode($edit->json);
+        Session::flash('message', 'Success.');
         return view('school.recipes.publisher', compact('user', $user))
             ->with("blog", $blog)
             ->with("json", $json)
@@ -85,13 +86,11 @@ class BlogController extends Controller
 
         $b = DB::table("blog")
             ->where("id", "=", $id)
-            ->get();
+            ->get()[0];
 
-            if(isset($b)){
-                $test = $b;
-            }
-
-
+        if (isset($b)) {
+            $test = $b;
+        }
 
         $json = self::createJson($new);
 
@@ -110,26 +109,25 @@ class BlogController extends Controller
 
                 ]);
 
-  
         } else {
 
             DB::table("blog")
-            ->where("id", "=", $id)
-            ->insert([
+                ->where("id", "=", $id)
+                ->insert([
 
-                "json" => $json,
-                "keywords" => $new["keywords"],
-                "category" => $new["category"],
-                "uri" => $new["uri"],
-                "blurb" => $new["blurb"],
-                "short_title" => $new["short_title"],
-            ]);
+                    "json" => $json,
+                    "keywords" => $new["keywords"],
+                    "category" => $new["category"],
+                    "uri" => $new["uri"],
+                    "blurb" => $new["blurb"],
+                    "short_title" => $new["short_title"],
+                ]);
 
         }
 
         $blog = DB::table("blog")
             ->get();
-
+        Session::flash('message', 'Saved.');
         return view('school.recipes.publisher', compact('user', $user))
             ->with("json", '')
             ->with("blog", $blog);
@@ -148,7 +146,7 @@ class BlogController extends Controller
             "short_title" => $blog['short_title'],
             "p1" => $blog["p1"],
             "p2" => $blog["p2"],
-            
+
             "text" => [
                 "tableOfContents" =>
 
@@ -177,37 +175,37 @@ class BlogController extends Controller
                 "li3" => [
 
                     "h2" => $blog['topics'][2],
-                    "h41" => $blog['rech4'][0] ?? "",
-                    "h42" => $blog['rech4'][1] ?? "",
-         
-                "recipe" => [
+                    "h41" => $blog['rech4'][0] ?? '',
+                    "h42" => $blog['rech4'][1] ?? '',
 
-                    "recipe1" => [
+                    "recipe" => [
 
-                        "paragraphs" =>
+                        "recipe1" => [
 
-                        $blog['rec'],
+                            "paragraphs" =>
 
+                            $blog['rec'],
+
+                        ],
+                        "recipe2" => [
+
+                            "paragraphs" =>
+
+                            $blog['rec2'] ?? '',
+
+                        ],
                     ],
-                    "recipe2" => [
+                ],
+                "li4" => [
 
-                        "paragraphs" =>
+                    "h2" => $blog['topics'][3],
 
-                        $blog['rec2'] ?? ""
+                    "instructions" =>
 
-                    ]
-                ]
-                    ],
-                    "li4" => [
+                    $blog['in'],
 
-                        "h2" => $blog['topics'][3],
-    
-                        "instructions" =>
-    
-                        $blog['in'],
-    
-                    ],
-          
+                ],
+
                 "li5" => [
 
                     "h2" => $blog['topics'][4],
@@ -253,11 +251,25 @@ class BlogController extends Controller
 
                     $blog['c'],
 
-                ]
+                ],
 
             ],
-            "img" => $blog["img"],
-            "videoID" => $blog["videoID"],
+            "inserts" => [
+
+                "uls" => [
+
+                    $blog['ul'] ?? '',
+
+                ],
+                "subs" => [
+
+                    $blog['sub'] ?? '',
+                ],
+
+            ],
+            "img" => $blog['img'],
+            "videoID" => $blog['videoID'],
+
         ];
 
         return json_encode($json);
