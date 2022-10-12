@@ -102,11 +102,12 @@
                                 <div>
                                     <input type="text" name="topics[]" value="" placeholder="Topic">
                                     <div>
-                                    <a href="#/" data-type-id="add-topic" onclick="createItem(this)"
-                                        class="add-field point-7-em-font">+Topic</a> &nbsp;|&nbsp;
-                                    <a href="#/" data-type-id="remove-top" onclick="removeTopic(this)"
-                                        class="remove-field point-7-em-font">-Topic</a>
-                                </div></div>
+                                        <a href="#/" data-type-id="add-topic" onclick="createItem(this)"
+                                            class="add-field point-7-em-font">+Topic</a> &nbsp;|&nbsp;
+                                        <a href="#/" data-type-id="remove-top" onclick="removeTopic(this)"
+                                            class="remove-field point-7-em-font">-Topic</a>
+                                    </div>
+                                </div>
                             @endif
 
                         </fieldset>
@@ -126,16 +127,22 @@
                                     </div>
                                     @include('school.recipes.inserts')
                                 @endforeach
-                            @else
+                        @else
+                        @php
+                        $parent = 0;
+                        @endphp
+
+                            @for($loop=0; $loop < 2; $loop++)
                                 @php
                                     $section = 'hb';
-                                    $parent = 1;
+                                    $parent++;
                                 @endphp
                                 <div>
                                     <textarea required name="hb[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
                                     @include('school.recipes.editor')
                                 </div>
                                 @include('school.recipes.inserts')
+                                @endfor
                             @endif
 
                         </fieldset>
@@ -156,15 +163,21 @@
                                     @include('school.recipes.inserts')
                                 @endforeach
                             @else
-                                @php
-                                    $section = 'preg';
-                                    $parent = 1;
-                                @endphp
-                                <div>
-                                    <textarea required name="preg[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
-                                    @include('school.recipes.editor')
-                                </div>
-                                @include('school.recipes.inserts')
+                            @php
+                            $parent = 0;
+                            @endphp
+    
+                                @for($loop=0; $loop < 2; $loop++)
+                                    @php
+                                        $section = 'preg';
+                                        $parent++;
+                                    @endphp
+                                    <div>
+                                        <textarea required name="preg[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+                                        @include('school.recipes.editor')
+                                    </div>
+                                    @include('school.recipes.inserts')
+                                    @endfor
                             @endif
 
                         </fieldset>
@@ -181,24 +194,26 @@
                                 @foreach ($json->text->li3->recipe->recipe1 as $items)
                                     @php
                                         $section = 'rec';
-                                       
+                                        
                                     @endphp
                                     @foreach ((array) $items as $item)
                                         <div>
                                             <input type="text" name="rec[]" value="{{ $item ?? '' }}"
                                                 required placeholder="((Measurement and ingredient))">
-                                                <div>
-                                            <a href="#/" data-type-id="add-in" onclick="createItem(this)"
-                                                class="add-field point-7-em-font">+Ingredient</a> &nbsp;|&nbsp;
-                                            <a href="#/" data-type-id="remove-in" onclick="removeTopic(this)"
-                                                class="remove-field point-7-em-font">-Ingredient</a>
-                                        </div></div>
+                                            <div>
+                                                <a href="#/" data-type-id="add-in" onclick="createItem(this)"
+                                                    class="add-field point-7-em-font">+Ingredient</a> &nbsp;|&nbsp;
+                                                <a href="#/" data-type-id="remove-in"
+                                                    onclick="removeTopic(this)"
+                                                    class="remove-field point-7-em-font">-Ingredient</a>
+                                            </div>
+                                        </div>
                                     @endforeach
                                 @endforeach
                             @else
                                 @php
                                     $section = 'rec';
-                                   
+                                    
                                 @endphp
                                 <div>
                                     <input type="text" name="rec[]" value="" required
@@ -211,12 +226,12 @@
                                 <div>
                                     <input type="text" name="rec[]" value="" required
                                         placeholder="(Measurement and ingredient)">
-                                        <div>
-                                    <a href="#/" data-type-id="add-in" onclick="createItem(this)"
-                                        class="add-field point-7-em-font">+Ingredient</a> &nbsp;|&nbsp;
-                                    <a href="#/" data-type-id="remove-in" onclick="removeTopic(this)"
-                                        class="remove-field point-7-em-font">-Ingredient</a>
-                                        </div>
+                                    <div>
+                                        <a href="#/" data-type-id="add-in" onclick="createItem(this)"
+                                            class="add-field point-7-em-font">+Ingredient</a> &nbsp;|&nbsp;
+                                        <a href="#/" data-type-id="remove-in" onclick="removeTopic(this)"
+                                            class="remove-field point-7-em-font">-Ingredient</a>
+                                    </div>
                                 </div>
                             @endif
 
@@ -225,10 +240,10 @@
                                     <div>
                                         <input type="text" name="rech4[]" value="{{ $json->text->li3->h42 }}">
                                         <div>
-                                        <a href="#/" data-type-id="add-in" onclick="createItem(this)"
-                                            class="add-field point-7-em-font">+Ingredient</a> &nbsp;|&nbsp;
-                                        <a href="#/" data-type-id="remove-in" onclick="removeTopic(this)"
-                                            class="remove-field point-7-em-font">-Ingredient</a>
+                                            <a href="#/" data-type-id="add-in" onclick="createItem(this)"
+                                                class="add-field point-7-em-font">+Ingredient</a> &nbsp;|&nbsp;
+                                            <a href="#/" data-type-id="remove-in" onclick="removeTopic(this)"
+                                                class="remove-field point-7-em-font">-Ingredient</a>
                                         </div>
                                     </div>
                                 @endif
@@ -237,12 +252,13 @@
                                         <div>
                                             <input placeholder="(Measurement and ingredient)" required type="text"
                                                 name="rec2[]" value="{{ $item ?? '' }}">
-                                                <div>
-                                            <a href="#/" data-type-id="add-in" onclick="createItem(this)"
-                                                class="add-field point-7-em-font">+Ingredient</a> &nbsp;|&nbsp;
-                                            <a href="#/" data-type-id="remove-in" onclick="removeTopic(this)"
-                                                class="remove-field point-7-em-font">-Ingredient</a>
-                                                </div>
+                                            <div>
+                                                <a href="#/" data-type-id="add-in" onclick="createItem(this)"
+                                                    class="add-field point-7-em-font">+Ingredient</a> &nbsp;|&nbsp;
+                                                <a href="#/" data-type-id="remove-in"
+                                                    onclick="removeTopic(this)"
+                                                    class="remove-field point-7-em-font">-Ingredient</a>
+                                            </div>
                                         </div>
                                     @endforeach
                                 @endforeach
@@ -309,15 +325,22 @@
                                     </div>
                                 @endforeach
                             @else
-                                @php
-                                    $section = 'rv';
-                                    $parent = 1;
-                                @endphp
-                                <div>
-                                    <textarea required name="rv[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
-                                    @include('school.recipes.editor')
-                                </div>
-                              
+                            @php
+                            $parent = 0;
+                            @endphp
+    
+                                @for($loop=0; $loop < 2; $loop++)
+                                    @php
+                                        $section = 'rv';
+                                        $parent++;
+                                    @endphp
+                                    <div>
+                                        <textarea required name="rv[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+                                        @include('school.recipes.editor')
+                                    </div>
+                                    @include('school.recipes.inserts')
+                                    @endfor
+
                             @endif
 
                         </fieldset>
@@ -337,15 +360,22 @@
                                     </div>
                                 @endforeach
                             @else
-                                @php
-                                    $section = 'si';
-                                    $parent = 1;
-                                @endphp
-                                <div>
-                                    <textarea required name="si[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
-                                    @include('school.recipes.editor')
-                                </div>
-                              
+                            @php
+                            $parent = 0;
+                            @endphp
+    
+                                @for($loop=0; $loop < 2; $loop++)
+                                    @php
+                                        $section = 'si';
+                                        $parent++;
+                                    @endphp
+                                    <div>
+                                        <textarea required name="si[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+                                        @include('school.recipes.editor')
+                                    </div>
+                                    @include('school.recipes.inserts')
+                                    @endfor
+
                             @endif
 
                         </fieldset>
@@ -365,15 +395,22 @@
                                         <div>
                                 @endforeach
                             @else
-                                @php
-                                    $section = 'pe';
-                                    $parent = 1;
-                                @endphp
-                                <div>
-                                    <textarea required name="pe[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
-                                    @include('school.recipes.editor')
-                                </div>
-                             
+                            @php
+                            $parent = 0;
+                            @endphp
+    
+                                @for($loop=0; $loop < 2; $loop++)
+                                    @php
+                                        $section = 'pe';
+                                        $parent++;
+                                    @endphp
+                                    <div>
+                                        <textarea required name="pe[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+                                        @include('school.recipes.editor')
+                                    </div>
+                                    @include('school.recipes.inserts')
+                                    @endfor
+
                             @endif
 
                         </fieldset>
@@ -392,15 +429,22 @@
                                     </div>
                                 @endforeach
                             @else
-                                @php
-                                    $section = 'wh';
-                                    $parent = 1;
-                                @endphp
-                                <div>
-                                    <textarea required name="wh[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
-                                    @include('school.recipes.editor')
-                                </div>
-                              
+                            @php
+                            $parent = 0;
+                            @endphp
+    
+                                @for($loop=0; $loop < 2; $loop++)
+                                    @php
+                                        $section = 'wh';
+                                        $parent++;
+                                    @endphp
+                                    <div>
+                                        <textarea required name="wh[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+                                        @include('school.recipes.editor')
+                                    </div>
+                                    @include('school.recipes.inserts')
+                                    @endfor
+
                             @endif
 
                         </fieldset>
@@ -419,15 +463,21 @@
                                     </div>
                                 @endforeach
                             @else
-                                @php
-                                    $section = 'c';
-                                    $parent = 1;
-                                @endphp
-                                <div>
-                                    <textarea required name="c[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
-                                    @include('school.recipes.editor')
-                                </div>
-                              
+                            @php
+                            $parent = 0;
+                            @endphp
+    
+                                @for($loop=0; $loop < 2; $loop++)
+                                    @php
+                                        $section = 'c';
+                                        $parent++;
+                                    @endphp
+                                    <div>
+                                        <textarea required name="c[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+                                        @include('school.recipes.editor')
+                                    </div>
+                                    @include('school.recipes.inserts')
+                                    @endfor
                             @endif
 
                         </fieldset>

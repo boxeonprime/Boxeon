@@ -2,6 +2,7 @@
 // Publisher.js
 
 
+
 function insertAfter(newNode, existingNode) {
 
     existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
@@ -14,15 +15,37 @@ function listEditor() {
     a.setAttribute("onclick", "createListItem(this)");
     a.className = "point-7-em-font";
     a.innerText = "+List item";
+
     var a2 = document.createElement("a");
     a2.href = "#/";
     a2.setAttribute("onclick", "removeItem(this)");
     a2.className = "point-7-em-font";
     a2.innerText = "-List item";
+
+    /*var a3 = document.createElement("a");
+    a3.href = "#/";
+    a3.setAttribute("onclick", "copyPreviousParagraph(this)");
+    a3.className = "point-7-em-font";
+    a3.innerText = "+Paragraph";
+
+    var a4 = document.createElement("a");
+    a4.href = "#/";
+    a4.setAttribute("onclick", "createSubheading(this)");
+    a4.className = "point-7-em-font";
+    a4.innerText = "+Subheading";*/
+
+
+
     div.appendChild(a);
     var sp = document.createTextNode("\u00A0|\u00A0");
+    //var sp2 = document.createTextNode("\u00A0|\u00A0");
+    //var sp3 = document.createTextNode("\u00A0|\u00A0");
     div.appendChild(sp);
     div.appendChild(a2);
+   // div.appendChild(sp2);
+   // div.appendChild(a3);
+   // div.appendChild(sp3);
+   // div.appendChild(a4);
     return div;
 
 }
@@ -35,21 +58,42 @@ function createParagraph(a) {
     insertAfter(clone, p);
     clone.getElementsByTagName("textarea")[0].value = "";
     clone.getElementsByTagName("textarea")[0].focus();
-
+   
     updateIDS(a);
 
 }
+function copyPreviousParagraph(a){
 
+    var p = document.getElementsByTagName("textarea");
+    var p = p[p.length -1];
+    var clone = p.parentNode.cloneNode(true);
+    var loc = a.parentNode.parentNode;
+
+    insertAfter(clone, loc);
+    clone.getElementsByTagName("textarea")[0].value = "";
+    clone.getElementsByTagName("textarea")[0].focus();
+   
+    updateIDS(a);
+
+}
 function updateIDS(a) {
 
-    var section = a.parentNode.
-    getAttribute("data-type-section");
-    var div = document.
-    querySelectorAll(`[data-type-section=${section}]`);
-    var count = div.length;
+    let section = a.getAttribute("data-type-section");
+   
+ 
+    var div = document.getElementsByClassName(section); 
+  
+    var count = div.length;  
+   
     for (var i = 0; i < count; i++) {
 
         div[i].setAttribute("data-type-parent", i);
+        
+        var lnks = div[i].getElementsByTagName("a");
+        for(var e=0; e < lnks.length; e++){
+
+            lnks[e].setAttribute("data-type-parent", i)
+        }
 
     }
 }
