@@ -137,6 +137,8 @@ class BlogController extends Controller
     public function createJson($blog)
     {
 
+      //  dd( $blog['ul']);
+
         $user = Auth::user();
         $num = count($blog);
 
