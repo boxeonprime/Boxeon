@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'a985b05ae616da0842317928419d347f31acc07b',
+        'reference' => 'a2abf411ce285703fd8ff2af4f7461d722bfd1af',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -433,6 +433,15 @@
             'reference' => 'daa11c43729510b3700bc34d414664966b03bffe',
             'dev_requirement' => false,
         ),
+        'jorenvanhocht/laravel-share' => array(
+            'pretty_version' => '4.2.0',
+            'version' => '4.2.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../jorenvanhocht/laravel-share',
+            'aliases' => array(),
+            'reference' => '86af334068038a840567ed62f2082fe3ac981476',
+            'dev_requirement' => false,
+        ),
         'kodova/hamcrest-php' => array(
             'dev_requirement' => true,
             'replaced' => array(
@@ -472,7 +481,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'a985b05ae616da0842317928419d347f31acc07b',
+            'reference' => 'a2abf411ce285703fd8ff2af4f7461d722bfd1af',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(
@@ -916,6 +925,15 @@
             'replaced' => array(
                 0 => '4.2.3',
             ),
+        ),
+        'riverskies/laravel-mobile-detect' => array(
+            'pretty_version' => '1.3',
+            'version' => '1.3.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../riverskies/laravel-mobile-detect',
+            'aliases' => array(),
+            'reference' => '0ddb27d31a4a1148875424426b9feda6598f2f14',
+            'dev_requirement' => false,
         ),
         'sebastian/cli-parser' => array(
             'pretty_version' => '1.0.1',

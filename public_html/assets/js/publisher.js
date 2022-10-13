@@ -15,37 +15,15 @@ function listEditor() {
     a.setAttribute("onclick", "createListItem(this)");
     a.className = "point-7-em-font";
     a.innerText = "+List item";
-
     var a2 = document.createElement("a");
     a2.href = "#/";
     a2.setAttribute("onclick", "removeItem(this)");
     a2.className = "point-7-em-font";
     a2.innerText = "-List item";
-
-    /*var a3 = document.createElement("a");
-    a3.href = "#/";
-    a3.setAttribute("onclick", "copyPreviousParagraph(this)");
-    a3.className = "point-7-em-font";
-    a3.innerText = "+Paragraph";
-
-    var a4 = document.createElement("a");
-    a4.href = "#/";
-    a4.setAttribute("onclick", "createSubheading(this)");
-    a4.className = "point-7-em-font";
-    a4.innerText = "+Subheading";*/
-
-
-
     div.appendChild(a);
     var sp = document.createTextNode("\u00A0|\u00A0");
-    //var sp2 = document.createTextNode("\u00A0|\u00A0");
-    //var sp3 = document.createTextNode("\u00A0|\u00A0");
     div.appendChild(sp);
     div.appendChild(a2);
-   // div.appendChild(sp2);
-   // div.appendChild(a3);
-   // div.appendChild(sp3);
-   // div.appendChild(a4);
     return div;
 
 }

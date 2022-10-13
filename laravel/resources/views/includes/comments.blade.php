@@ -53,7 +53,7 @@
 @endif
 <br>
 <h2>Post your comment</h2>
-<form class="w100per" id="form-comments" action='/blog/comment' method='post'>
+<form class="fixed-w100per" id="form-comments" action='/blog/comment' method='post'>
     @csrf
     @method('POST')
     <div class="row">

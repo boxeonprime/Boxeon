@@ -4,14 +4,16 @@
 
         <div>
             <h1 class="blog-title font-size-3-em">{{ $meta->short_title }}</h1>
-            <p><span><img id="author" width="30px" height="30px" src='{{ asset('../assets/images/me.webp') }}'
-                        alt="Trevor Prime" /></span> Chef Trevor Prime &nbsp; &nbsp; Published September 21 2022</p><br>
+            <p class="p-author"><span><img id="author" width="30px" height="30px"
+                        src='{{ asset('../assets/images/me.webp') }}' alt="Trevor Prime" /></span> Chef Trevor Prime
+                &nbsp; &nbsp; Published September 21 2022</p><br>
             <div class="sharethis-inline-share-buttons margin-bottom-2-em"></div>
+
 
             <picture>
                 <source media="(max-width: 650px)" srcset="../assets/images/products/medium/{{ $content->img }}">
                 <source media="(max-width: 465px)" srcset="../assets/images/products/medium/{{ $content->img }}">
-                <img class="w100per margin-bottom-2-em" width="640px" height="423px"
+                <img class="fixed-w100per margin-bottom-2-em" width="640px" height="423px"
                     src="../assets/images/products/{{ $content->img }}" loading="lazy" alt="{{ $content->title }}">
             </picture>
 
@@ -23,8 +25,8 @@
                 <ol>
 
                     @foreach ($content->text->tableOfContents as $items)
-                    @foreach((array)$items as $item)
-                        <li><a class="one-em-font primary-color" href="#abb1">{{ $item }}</a> </li>
+                        @foreach ((array) $items as $item)
+                            <li><a class="one-em-font primary-color" href="#abb1">{{ $item }}</a> </li>
                         @endforeach
                     @endforeach
 
@@ -33,17 +35,27 @@
             </div>
 
             <h2 class="primary-color extra-large-font">{{ $content->text->content->h2 }}</h2>
-
+            @php $parent = 0; @endphp
             @foreach ($content->text->content->paragraphs as $paragraph)
                 <p>{{ $paragraph }}
                 <p>
+                    @php
+                        $section = 'hb';
+                        $parent++;
+                    @endphp
+                    @include('school.recipes.inserted')
             @endforeach
 
             <h2 class="primary-color extra-large-font" id="abb2">{{ $content->text->li2->h2 }}</h2>
-
+            @php $parent = 0; @endphp
             @foreach ($content->text->li2->paragraphs as $paragraph)
                 <p>{{ $paragraph }}
                 <p>
+                    @php
+                        $section = 'preg';
+                        $parent++;
+                    @endphp
+                    @include('school.recipes.inserted')
             @endforeach
             <h2>{{ $content->text->li3->h2 }}</h2>
             <p>This&nbsp;{{ $meta->short_title }}&nbsp; calls for specific African ingredients that you can purchase
@@ -56,12 +68,12 @@
 
                 <ul>
                     @foreach ($content->text->li3->recipe->recipe1 as $items)
-                    @foreach((array)$items as $item)
-                        <li>
-                            <form><input type="checkbox" id="{{ $item }}" name="1"><label
-                                    for="{{ $item }}">{{ $item }}</label>
-                            </form>
-                        </li>
+                        @foreach ((array) $items as $item)
+                            <li>
+                                <form><input type="checkbox" id="{{ $item }}" name="1"><label
+                                        for="{{ $item }}">{{ $item }}</label>
+                                </form>
+                            </li>
                         @endforeach
                     @endforeach
                 </ul>
@@ -71,12 +83,12 @@
                     @endif
                     <ul>
                         @foreach ($content->text->li3->recipe->recipe2 as $items)
-                        @foreach((array)$items as $item)
-                            <li>
-                                <form><input type="checkbox" id="{{ $item }}" name="1"><label
-                                        for="{{ $item }}">{{ $item }}</label>
-                                </form>
-                            </li>
+                            @foreach ((array) $items as $item)
+                                <li>
+                                    <form><input type="checkbox" id="{{ $item }}" name="1"><label
+                                            for="{{ $item }}">{{ $item }}</label>
+                                    </form>
+                                </li>
                             @endforeach
                         @endforeach
                     </ul>
@@ -89,11 +101,11 @@
             <div class="table-of-contents">
                 <ul>
                     @foreach ($content->text->li4->instructions as $items)
-                    @foreach((array)$items as $item)
-                        <li>
-                            <form><input type="checkbox" id="{{ $item }}" name="1"><label
-                                    for="{{ $item }}">{{ $item }}</label></form>
-                        </li>
+                        @foreach ((array) $items as $item)
+                            <li>
+                                <form><input type="checkbox" id="{{ $item }}" name="1"><label
+                                        for="{{ $item }}">{{ $item }}</label></form>
+                            </li>
                         @endforeach
                     @endforeach
 
@@ -113,58 +125,93 @@
             </div>
             <br>
             @if (isset($content->text->li5->h2))
-            <h2>{{ $content->text->li5->h2 }}</h2>
-            @foreach ($content->text->li5->paragraphs as $paragraphs)
-            @foreach((array)$paragraphs as $paragraph)
-                <p>{{ $paragraph }}
-                <p>
-            @endforeach
-            @endforeach
+                <h2>{{ $content->text->li5->h2 }}</h2>
+                @foreach ($content->text->li5->paragraphs as $paragraphs)
+                    @foreach ((array) $paragraphs as $paragraph)
+                        <p>{{ $paragraph }}
+                        <p>
+                            @php
+                                $section = 'rv';
+                                $parent++;
+                            @endphp
+                            @include('school.recipes.inserted')
+                    @endforeach
+                @endforeach
             @endif
             @if (isset($content->text->li6->h2))
                 <h2>{{ $content->text->li6->h2 }}</h2>
+                @php $parent = 0; @endphp
                 @foreach ($content->text->li6->paragraphs as $paragraphs)
-                @foreach((array)$paragraphs as $paragraph)
-                    <p>{{ $paragraph }}
-                    <p>
-                @endforeach
+                    @foreach ((array) $paragraphs as $paragraph)
+                        <p>{{ $paragraph }}
+                        <p>
+                            @php
+                                $section = 'si';
+                                $parent++;
+                            @endphp
+                            @include('school.recipes.inserted')
+                    @endforeach
                 @endforeach
             @endif
             @if (isset($content->text->li7->h2))
-            <h2>{{ $content->text->li7->h2 }}</h2>
-            @foreach ($content->text->li7->paragraphs as $paragraphs)
-            @foreach((array)$paragraphs as $paragraph)
-                <p>{{ $paragraph }}
-                <p>
-            @endforeach
-            @endforeach
+                <h2>{{ $content->text->li7->h2 }}</h2>
+                @php $parent = 0; @endphp
+                @foreach ($content->text->li7->paragraphs as $paragraphs)
+                    @foreach ((array) $paragraphs as $paragraph)
+                        <p>{{ $paragraph }}
+                        <p>
+                            @php
+                                $section = 'pe';
+                                $parent++;
+                            @endphp
+                            @include('school.recipes.inserted')
+                    @endforeach
+                @endforeach
             @endif
             @if (isset($content->text->li8->h2))
-            <h2>{{ $content->text->li8->h2 }}</h2>
-            @foreach ($content->text->li8->paragraphs as $paragraphs)
-            @foreach((array)$paragraphs as $paragraph)
-                <p>{{ $paragraph }}
-                <p>
-            @endforeach
-            @endforeach
+                <h2>{{ $content->text->li8->h2 }}</h2>
+                @php $parent = 0; @endphp
+                @foreach ($content->text->li8->paragraphs as $paragraphs)
+                    @foreach ((array) $paragraphs as $paragraph)
+                        <p>{{ $paragraph }}
+                        <p>
+                            @php
+                                $section = 'hb';
+                                $parent++;
+                            @endphp
+                            @include('school.recipes.inserted')
+                    @endforeach
+                @endforeach
             @endif
             @if (isset($content->text->li9->h2))
-            <h2>{{ $content->text->li9->h2 }}</h2>
-            @foreach ($content->text->li9->paragraphs as $paragraphs)
-            @foreach((array)$paragraphs as $paragraph)
-                <p>{{ $paragraph }}
-                <p>
-            @endforeach
-            @endforeach
+                <h2>{{ $content->text->li9->h2 }}</h2>
+                @php $parent = 0; @endphp
+                @foreach ($content->text->li9->paragraphs as $paragraphs)
+                    @foreach ((array) $paragraphs as $paragraph)
+                        <p>{{ $paragraph }}
+                        <p>
+                            @php
+                                $section = 'wh';
+                                $parent++;
+                            @endphp
+                            @include('school.recipes.inserted')
+                    @endforeach
+                @endforeach
             @endif
             @if (isset($content->text->li10->h2))
-            <h2>{{ $content->text->li10->h2 }}</h2>
-            @foreach ($content->text->li10->paragraphs as $paragraphs)
-            @foreach((array)$paragraphs as $paragraph)
-                <p>{{ $paragraph }}
-                <p>
-            @endforeach
-            @endforeach
+                <h2>{{ $content->text->li10->h2 }}</h2>
+                @php $parent = 0; @endphp
+                @foreach ($content->text->li10->paragraphs as $paragraphs)
+                    @foreach ((array) $paragraphs as $paragraph)
+                        <p>{{ $paragraph }}
+                        <p>
+                            @php
+                                $section = 'c';
+                                $parent++;
+                            @endphp
+                            @include('school.recipes.inserted')
+                    @endforeach
+                @endforeach
             @endif
 
             @include('includes.comments')
@@ -173,11 +220,21 @@
 
         </div>
     </div>
+    @desktop
+        <section>
 
-    <section>
+            @include('includes.sidebar-products')
 
-        @include('includes.sidebar-products')
+        </section>
+    @enddesktop
+    @handheld
+        <section>
 
-    </section>
+            @include('includes.sidebar-products')
+
+        </section>
+    @endhandheld
+
+
 
 </section>

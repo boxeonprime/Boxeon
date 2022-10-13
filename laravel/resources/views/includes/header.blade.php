@@ -14,17 +14,17 @@
         <a id='m-shop' class='button one-em-font' href='/search/products' title='#'>
             <span class='material-icons'>search</span></a>
         @auth
-            <a href="/gifts" class="button one-em-font phone-hide">Gifts‬</a>
+            <a href="/gifts" class="button one-em-font hide">Gifts‬</a>
             <a href="/cart/index" class="white button"><span><img id="cart" width="30px" height="auto"  src='{{ asset('../assets/images/cart.webp') }}'
                         alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
         @endauth
         @if (!Auth::check())
-        <a href="/gifts" class="button one-em-font phone-hide">Gifts‬</a>
+        <a href="/gifts" class="button one-em-font hide">Gifts‬</a>
             <a href="/cart/index" class="white button"><span><img width="30px" height="21"
                         src="../assets/images/cart.webp" alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
         @endif
         <div class="p-relative">
-            <a id="showDropdown" class='fadein button margin-right-1-em m-padding-right-zero' href='#'><span><img class="w30px" width="30px" height="30px" src='{{ asset('../assets/images/account_circle.svg') }}'
+            <a id="showDropdown" class='fadein button margin-right-1-em m-padding-right-zero' href='#'><span><img id="user-icon" class="w30px" width="30px" height="30px" src='{{ asset('../assets/images/account_circle.svg') }}'
                 alt="Account" /></span>
             </a>
             

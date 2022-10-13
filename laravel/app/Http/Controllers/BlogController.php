@@ -54,6 +54,10 @@ class BlogController extends Controller
 
         if (empty($request["id"])) {
 
+       
+            
+       //     return view('posts', compact('shareComponent'));
+
             $blog = DB::table("blog")
                 ->get();
             Session::flash('message', 'Success.');

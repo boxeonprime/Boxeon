@@ -79,7 +79,7 @@ $price = DB::table('products')
             </div>
         </section>
         <section class='section maxw1035 rounded-corner card'>
-            <h2 class="center font-size-3-em uppercase primary-color">Enjoy 60+ meals each month</h2>
+            <h2 class="center centered font-size-3-em uppercase primary-color">Enjoy 60+ meals each month</h2>
             <p class="centered">We'll send you the African ingredients you need to prepare 15+ Nigerian staple recipes.</p>
            
 

@@ -15,14 +15,14 @@ if (isset($_GET['c'])) {
 
 @endphp
 
-<section class="r-float maxw250px">
+<section id="sidebar-product-stream" class="r-float maxw250px">
    
     <div>
         @for ($i = 0; $i < count($product); $i++)
 
 
             <div class="maxw250px margin-auto">
-                <a href="/shop/item?id={{ $product[$i]->id }}"><img class="maxw250px"
+                <a href="/shop/item?id={{ $product[$i]->id }}"><img class="w250px"
                         src="../assets/images/products/medium/{{ $product[$i]->img }}"
                         alt="{{ $product[$i]->name }}" loading="lazy"></a>
                 <a class="" href="/shop/item?id={{ $product[$i]->id }}">

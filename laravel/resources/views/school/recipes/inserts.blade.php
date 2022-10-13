@@ -5,8 +5,6 @@
         $uls = $json->inserts->uls;
         $subs = $subs[0];
         $uls = $uls[0];
-        //echo count((array)$uls[0]);
-        
     @endphp
 
 @if (isset($subs))
@@ -25,7 +23,7 @@
 @endif
 
 
-    @if (isset($uls))
+@if (isset($uls))
         @for ($loop = 0; $loop < 10; $loop++)
             @if (isset($uls->$section->$loop) && $loop == $parent)
             @for($i=0;  $i < count($uls->$section->$loop); $i++)

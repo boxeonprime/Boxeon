@@ -1,8 +1,11 @@
 
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
+
 <head>
+
     @include('includes.meta')
+
 </head>
 <body id='index'>
     @if (session()->has('message'))

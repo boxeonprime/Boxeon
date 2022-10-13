@@ -163,13 +163,15 @@
 
 <dialog id="m">
     <a href="#" class="close-dialog primary-color">X</a><br>
-    <a href="/school/recipes" class="button clearbtn">Meal Kit</a>
-    <a href="/school/recipes" class="button clearbtn">Recipes</a>
+    <a href="/mealkit" class="button clearbtn">Meal Kit</a>
+    <a href="/gifts" class="button clearbtn">Gifts</a>
     <a href="/shop/index?c=staple" class="button clearbtn">Staple Essentials</a>
     <a href="/shop/index?c=spice" class="button clearbtn">Seasoning Essentials</a>
     <a href="/shop/index?c=produce" class="button clearbtn">Produce</a>
     <a href="/shop/index?c=body" class="button clearbtn">Body Essentials</a>
     <a href="/shop/index?c=snack" class="button clearbtn">Snacks</a>
+    <a href="/recipes" class="button clearbtn">Recipes</a>
+   
 </dialog>
 
 <button id="feedback" class="button"><span class="show"><img loading="lazy" class="w24px material-icons"

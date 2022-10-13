@@ -26,6 +26,8 @@ class SchoolController extends Controller
 
     public function article(Request $request)
     {
+      
+
         $article = $request['article'];
         $user = Auth::user();
         return view('school.' . $article, compact('user', $user));
@@ -49,6 +51,17 @@ class SchoolController extends Controller
 
     public function recipe(Request $request)
     {
+        $shareComponent = \Share::page(
+            'https://www.boxeon.com/recipe/',
+            'Your share text comes here',
+        )
+        ->facebook()
+        ->twitter()
+        ->linkedin()
+        ->telegram()
+        ->whatsapp()        
+        ->reddit();
+
         $uri = $request['uri'];
         $user = Auth::user();
         //Find comments
@@ -61,11 +74,23 @@ class SchoolController extends Controller
             ->get()[0];
         $meta = $content;
         $content = json_decode($content->json);
+        #SHARE
+        $shareComponent = \Share::page(
+            'https://www.boxeon.com/recipe/' . $uri,
+            $meta->blurb,
+        )
+        ->facebook()
+        ->twitter()
+        ->linkedin()
+        ->telegram()
+        ->whatsapp()        
+        ->reddit();
 
         return view('school.recipes.compiler', compact('user', $user))
             ->with("comments", $comments)
             ->with("id", $uri)
             ->with("meta", $meta)
+            ->with('shareComponent',   $shareComponent)
             ->with("content", $content);
     }
 

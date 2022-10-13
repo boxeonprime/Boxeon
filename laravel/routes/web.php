@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
+Route::get('/social-media-share', [SocialShareButtonsController::class,'ShareWidget']);
+
  // ON LOCAL ONLY
  Route::get('/publish', 'App\Http\Controllers\BlogController@edit')->name('blog.edit');
  Route::post('/publish/save', 'App\Http\Controllers\BlogController@save')->name('blog.save');
