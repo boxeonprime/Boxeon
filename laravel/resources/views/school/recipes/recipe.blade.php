@@ -8,8 +8,6 @@
                         src='{{ asset('../assets/images/me.webp') }}' alt="Trevor Prime" /></span> Chef Trevor Prime
                 &nbsp; &nbsp; Published September 21 2022</p><br>
             <div class="sharethis-inline-share-buttons margin-bottom-2-em"></div>
-
-
             <picture>
                 <source media="(max-width: 650px)" srcset="../assets/images/products/medium/{{ $content->img }}">
                 <source media="(max-width: 465px)" srcset="../assets/images/products/medium/{{ $content->img }}">

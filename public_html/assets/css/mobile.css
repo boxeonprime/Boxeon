@@ -82,6 +82,11 @@ Extra small devices (phones, 600px and down)
 */
 @media only screen and (max-width: 600px) {
 
+  #masthead {
+
+     background-image: none !important;
+    }
+
   .alert-info {
 
     width: 90%;
@@ -389,7 +394,7 @@ Extra small devices (phones, 600px and down)
     padding-left: .5em;
     width: 11em;
     color: #005ea6;
-    background: url("../images/googleg.png") no-repeat;
+    background: url("../images/googleg.webp") no-repeat;
     line-height: inherit !important;
     vertical-align: middle;
   }
@@ -521,11 +526,11 @@ Small devices (portrait tablets and large phones, 600px and up)
 */
 @media only screen and (min-width: 600px) {
 
-  .products-stream {
+  #products-stream {
     width: 100%;
     display: grid;
     /* grid-gap: 2%;  BAD for 1049px screens */
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50% !important;
 
   }
 
@@ -689,7 +694,25 @@ Small devices (portrait tablets and large phones, 600px and up)
 
 
 }
-
+/* 
+Medium devices (landscape tablets, 768px and down) 
+*/
+@media only screen and (max-width: 768px) {
+#m-menu {
+  width: 100%;
+  display: grid;
+  height: 70px;
+  background-color: green;
+  position: fixed;
+  bottom: 0;
+  padding-top: 1em;
+}
+.alert-info {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
 /* 
 Medium devices (landscape tablets, 768px and up) 
 */
@@ -699,15 +722,7 @@ Medium devices (landscape tablets, 768px and up)
   position: relative;
   left: 8em;
 }
-  #m-menu {
-    width: 100%;
-    display: grid;
-    height: 70px;
-    background-color: green;
-    position: fixed;
-    bottom: 0;
-    padding-top: 1em;
-  }
+
 
   #checkout-main {
     width: 100%;
@@ -759,11 +774,10 @@ Medium devices (landscape tablets, 768px and up)
 /* Large devices (laptops/desktops, 992px and down) */
 @media only screen and (max-width: 992px) {
 
-  #mealkit-masthead,
-  #masthead {
-
-    background-image: none !important;
+  #index #masthead{
+    background-position-x: -19em;
   }
+
 
   #mealkit-masthead {
 
@@ -778,7 +792,7 @@ Medium devices (landscape tablets, 768px and up)
   }
 
   #gifts-masthead {
-    background-image: url('../images/gifts.png');
+    background-image: url('../images/gifts.webp');
     background-size: cover;
     background-position: center 20em;
   }
@@ -851,7 +865,7 @@ Medium devices (landscape tablets, 768px and up)
 
 
   #gifts-masthead {
-    background-image: url('../images/ribbons.png');
+    background-image: url('../images/ribbons.webp');
     background-size: cover;
     background-position: -10em bottom;
 

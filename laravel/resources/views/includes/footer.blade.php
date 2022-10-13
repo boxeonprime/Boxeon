@@ -1,3 +1,4 @@
+
 <footer>
     <h2 class="centered">More questions?</h2>
     <section id="faqs" class="section margin-auto">

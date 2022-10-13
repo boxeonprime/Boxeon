@@ -14,8 +14,9 @@
     </dialog>
 @endif
     <div id="container">
-        <span id="loader" class="loader"></span><!-- Hack-->
+       
         @include('includes.header')
+        <span></span>
         @include('includes.menus.index')
         @yield('content')
     </div>

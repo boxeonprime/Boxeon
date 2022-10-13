@@ -17,7 +17,7 @@ $product = DB::table('products')
 <span></span>
 
 
-<div class="products-stream">
+<div id="products-stream" class="products-stream">
     @for ($i = 0; $i < count($product); $i++)
         @php
             // HACK

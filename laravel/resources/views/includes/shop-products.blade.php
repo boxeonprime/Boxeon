@@ -17,7 +17,7 @@ if (isset($_GET['c'])) {
 <span></span>
 <section class='section card maxw1036'>
     @include('includes.category-nav')
-    <div class="products-stream">
+    <div id="products-stream" class="products-stream">
         @for ($i = 0; $i < count($product); $i++)
 
             <div class="fit-content margin-auto">
