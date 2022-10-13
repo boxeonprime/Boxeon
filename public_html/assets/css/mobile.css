@@ -390,20 +390,6 @@ Extra small devices (phones, 600px and down)
     display: none;
   }
 
-  #mobile-signin a {
-    padding-left: .5em;
-    width: 11em;
-    color: #005ea6;
-    background: url("../images/googleg.webp") no-repeat;
-    line-height: inherit !important;
-    vertical-align: middle;
-  }
-
-  #mobile-signin {
-    display: block;
-    display: none;
-  }
-
 
   /* Shop */
   .cart-banner {
@@ -533,7 +519,6 @@ Small devices (portrait tablets and large phones, 600px and up)
     grid-template-columns: 50% 50% !important;
 
   }
-
 
   .order-summary {
     display: block;
@@ -764,24 +749,19 @@ Medium devices (landscape tablets, 768px and up)
     /* grid-gap: 2%;  BAD for 1049px screens */
     grid-template-columns: 32% 32% 32%;
    
-
   }
-
-
 
 }
 
 /* Large devices (laptops/desktops, 992px and down) */
+
 @media only screen and (max-width: 992px) {
 
   #index #masthead{
-    background-position-x: -19em;
+   // background-position-x: -19em;
   }
 
-
   #mealkit-masthead {
-
-    // background-position-x: -35em;
     background-position-x: -40em;
     background-size: auto;
   }
@@ -830,7 +810,6 @@ Medium devices (landscape tablets, 768px and up)
   display: none;
 }
 
-
 #banner-footer {
   background-image: none;
 
@@ -842,7 +821,7 @@ Medium devices (landscape tablets, 768px and up)
 
 }
 
-#index #masthead, #mealkit-masthead, {
+#index #masthead, #mealkit-masthead {
 
   max-height: 44em;
 }
@@ -861,8 +840,6 @@ Medium devices (landscape tablets, 768px and up)
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {
-
-
 
   #gifts-masthead {
     background-image: url('../images/ribbons.webp');

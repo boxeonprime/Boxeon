@@ -1,7 +1,5 @@
 @php
 
-
-
 $product = DB::table('products')
     ->whereIn('products.id', [47, 10, 8, 36, 9, 4, 48, 14, 26, 7, 41, 38, 66, 67, 53, 18])
     ->get();
@@ -10,12 +8,9 @@ $product = DB::table('products')
     ->whereIn('products.id', [47, 10, 8, 36, 9, 4, 48, 14, 26, 7, 41, 38, 66, 67, 53])
     ->sum("price");
 
-   
-
 @endphp
 
 <span></span>
-
 
 <div id="products-stream" class="products-stream">
     @for ($i = 0; $i < count($product); $i++)
@@ -25,7 +20,6 @@ $product = DB::table('products')
             $img = $name[0] . '.webp';
             
         @endphp
-
 
         <div class="fit-content margin-auto">
             <a href="/shop/item?id={{ $product[$i]->id }}"><img src="../assets/images/products/medium/{{ $img }}"
