@@ -89,11 +89,13 @@
                                 @endphp
 
                                 @for ($s = 0; $s < $stars; $s++)
-                                    <span class="material-icons text-black">star</span>
+                                <span><img loading="lazy" width="24" height="24" class="l-float" src="../assets/images/star.svg"
+                                    alt="1 Star" /></span>
                                 @endfor
 
                                 @for ($d = 0; $d < $diff; $d++)
-                                    <span class="material-icons text-grey">star</span>
+                                <span><img loading="lazy" width="24" height="24" class="l-float" src="../assets/images/star_empty.svg"
+                                    alt="0 Star" /></span>
                                 @endfor
 
                             </div>
@@ -105,7 +107,8 @@
                 @endfor
             @else
                 <div class="alert-info">
-                    <p><span class="material-icons">star</span>&nbsp;Be the first to leave a review!</p>
+                    <p>  <span><img loading="lazy" width="24" height="24" class="l-float" src="../assets/images/star.svg"
+                        alt="1 Star" /></span>&nbsp;Be the first to leave a review!</p>
                 </div>
             @endif
             <button id="show-review-form" class="button center margin-top-4-em">WRITE A REVIEW</button>

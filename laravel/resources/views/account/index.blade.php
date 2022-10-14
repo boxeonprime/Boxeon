@@ -15,7 +15,8 @@
             <div class="div-horizontal-rule"></div>
             <div class="card step-wrapper">
                 <h2>Shipping address</h2>
-                <p><span class="material-icons">pin_drop</span><span data-type-id="shipping-address"
+                <p>  <span><img loading="lazy" width="24" height="24" class="l-float" src="../assets/images/pin_drop.svg"
+                    alt="1 Star" /></span><span data-type-id="shipping-address"
                         class="preview">{{ $address->address_line_1 ?? 'Edit your shipping address.' }}</span></p>
                 <button data-type-id="shipping-address" class="button edit-btn">EDIT</button>
                 <div>
@@ -43,7 +44,8 @@
             </div>
             <div class="card step-wrapper">
                 <h2>Billing address</h2>
-                <p><span class="material-icons">pin_drop</span><span data-type-id="billing-address"
+                <p><span><img loading="lazy" width="24" height="24" class="l-float" src="../assets/images/pin_drop.svg"
+                    alt="1 Star" /></span><span data-type-id="billing-address"
                         class="preview">{{ $address->billing_address_line_1 ?? 'Edit your billing address.' }}</span></p>
                 <button data-type-id="billing-address" class="button edit-btn">EDIT</button>
                 <div>
@@ -66,7 +68,8 @@
             <div class="card step-wrapper">
                 <div>
                     <h2>Payment method</h2>
-                    <p><span class="material-icons">credit_card</span>&nbsp;<span data-type-id="payment"
+                    <p><span><img loading="lazy" width="24" height="24" class="l-float" src="../assets/images/credit_card.svg"
+                        alt="1 Star" /></span>&nbsp;<span data-type-id="payment"
                             class="preview">Edit payment method and details.</span></p>
                     <button data-type-id="payment" class="button edit-btn">EDIT</button>
                 </div>
