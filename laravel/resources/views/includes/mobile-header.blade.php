@@ -9,12 +9,9 @@
                 alt='logo' />
         </a>
 
-
-        <a id='m-shop' class='button one-em-font' href='/search/products' title='#'>
-            <span class='material-icons'>search</span></a>
         @auth
 
-            <a href="/cart/index" class="white button"><span><img id="cart" width="30px" height="auto"
+            <a href="/cart/index" class="white button"><span><img id="cart" width="30px" height="24px"
                         src='{{ asset('../assets/images/cart.webp') }}' alt="Cart" /></span><span
                     class="cart-count text-cart-count text-yellow"></span></a>
         @endauth

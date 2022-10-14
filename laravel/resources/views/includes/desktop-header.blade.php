@@ -15,7 +15,7 @@
 
         @auth
             <a href="/gifts" class="button one-em-font hide">Gifts‬</a>
-            <a href="/cart/index" class="white button"><span><img id="cart" width="30px" height="auto"  src='{{ asset('../assets/images/cart.webp') }}'
+            <a href="/cart/index" class="white button"><span><img id="cart" class="w30px" width="30px" height="24px"  src='{{ asset('../assets/images/cart.webp') }}'
                         alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
         @endauth
         @if (!Auth::check())
