@@ -698,7 +698,10 @@ dialog p {
   grid-template-rows: auto;
 }
 
-
+#m a,
+#m-menu a{
+  font-weight: bold;
+}
 
 #m-menu,
 #invites-menu {
@@ -1399,7 +1402,7 @@ input[type="checkbox"] {
   }
 
   100% {
-    width: 300px;
+    width: 75%;
 
   }
 
@@ -1422,7 +1425,8 @@ input[type="checkbox"] {
   z-index: 1001;
   animation-name: slideOutCart;
   animation-duration: 1s;
-  width: 300px;
+  width:75%;
+  max-width: 320px;
   padding: 2em;
 
 }

@@ -82,6 +82,14 @@ Extra small devices (phones, 600px and down)
 */
 @media only screen and (max-width: 600px) {
 
+  #flyout {
+    height: 65% !important;
+}
+
+#menu h2{
+  font-size: 1.5em !important;
+}
+
   #masthead {
 
      background-image: none !important;
@@ -566,7 +574,7 @@ Small devices (portrait tablets and large phones, 600px and up)
 
   #header-inner-wrapper {
 
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
   }
 
   #header-inner-wrapper .button {
@@ -683,6 +691,9 @@ Small devices (portrait tablets and large phones, 600px and up)
 Medium devices (landscape tablets, 768px and down) 
 */
 @media only screen and (max-width: 768px) {
+
+
+
 #m-menu {
   width: 100%;
   display: grid;
@@ -702,11 +713,7 @@ Medium devices (landscape tablets, 768px and down)
 Medium devices (landscape tablets, 768px and up) 
 */
 @media only screen and (min-width: 768px) {
-#user-icon{
 
-  position: relative;
-  left: 8em;
-}
 
 
   #checkout-main {
@@ -803,11 +810,11 @@ Medium devices (landscape tablets, 768px and up)
 
 #header-inner-wrapper {
 
-  grid-template-columns: auto auto auto;
+  //grid-template-columns: auto auto auto;
 }
 
 #header-inner-wrapper .hide {
-  display: none;
+ // display: none;
 }
 
 #banner-footer {
