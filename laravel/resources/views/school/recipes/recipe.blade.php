@@ -225,13 +225,14 @@
 
         </section>
     @enddesktop
-    @handheld
+
+    @tablet
         <section>
 
             @include('includes.sidebar-products')
 
         </section>
-    @endhandheld
+    @endtablet
 
 
 
