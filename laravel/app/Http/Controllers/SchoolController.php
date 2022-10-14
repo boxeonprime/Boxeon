@@ -75,7 +75,7 @@ class SchoolController extends Controller
         $meta = $content;
         $content = json_decode($content->json);
         #SHARE
-        $shareComponent = \Share::page(
+       /* $shareComponent = \Share::page(
             'https://www.boxeon.com/recipe/' . $uri,
             $meta->blurb,
         )
@@ -84,13 +84,13 @@ class SchoolController extends Controller
         ->linkedin()
         ->telegram()
         ->whatsapp()        
-        ->reddit();
+        ->reddit();*/
 
         return view('school.recipes.compiler', compact('user', $user))
             ->with("comments", $comments)
             ->with("id", $uri)
             ->with("meta", $meta)
-            ->with('shareComponent',   $shareComponent)
+          //  ->with('shareComponent',   $shareComponent)
             ->with("content", $content);
     }
 

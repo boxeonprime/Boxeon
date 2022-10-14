@@ -218,15 +218,21 @@
 
         </div>
     </div>
- 
+    @desktop
         <section>
 
             @include('includes.sidebar-products')
 
         </section>
-  
+    @enddesktop
 
+    @tablet
+        <section>
 
+            @include('includes.sidebar-products')
+
+        </section>
+    @endtablet
 
 
 
