@@ -51,16 +51,6 @@ class SchoolController extends Controller
 
     public function recipe(Request $request)
     {
-        $shareComponent = \Share::page(
-            'https://www.boxeon.com/recipe/',
-            'Your share text comes here',
-        )
-        ->facebook()
-        ->twitter()
-        ->linkedin()
-        ->telegram()
-        ->whatsapp()        
-        ->reddit();
 
         $uri = $request['uri'];
         $user = Auth::user();
