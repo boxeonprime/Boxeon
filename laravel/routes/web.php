@@ -16,6 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
+Route::get('/command', function () {
+	
+	/* php artisan migrate */
+    Artisan::call('view:clear');
+    dd("Done");
+});
+
 Route::get('/social-media-share', [SocialShareButtonsController::class,'ShareWidget']);
 
  // ON LOCAL ONLY
