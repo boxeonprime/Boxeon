@@ -12,7 +12,7 @@
                 <source media="(max-width: 650px)" srcset="../assets/images/products/medium/{{ $content->img }}">
                 <source media="(max-width: 465px)" srcset="../assets/images/products/medium/{{ $content->img }}">
                 <img class="fixed-w100per margin-bottom-2-em" width="640px" height="423px"
-                    src="../assets/images/products/{{ $content->img }}" loading="lazy" alt="{{ $content->title }}">
+                    src="../assets/images/products/{{ $content->img }}" alt="{{ $content->title }}">
             </picture>
 
             <p>{{ $content->p1 }}</p>

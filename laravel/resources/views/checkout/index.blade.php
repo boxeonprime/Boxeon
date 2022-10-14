@@ -104,9 +104,7 @@
                         </form>
                         <div>
                             <h2 class="hide text-red margin-top-zero margin-bottom-zero">Order total:&nbsp;&nbsp;<span class="checkout-total"></span></h2>
-                            <p class="one-em-font margin-top-zero">By placing your order, you agree to Boxeon's <a href="/terms"
-                                    class="one-em-font underline primary-color">Terms of Use</a><br>and <a href="/privacy"
-                                    class="one-em-font underline primary-color">Privacy Policy</a></p>
+                          
                         </div>
                     </div>
                 </div>
