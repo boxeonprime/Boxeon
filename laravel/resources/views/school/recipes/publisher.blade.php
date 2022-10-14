@@ -127,21 +127,21 @@
                                     </div>
                                     @include('school.recipes.inserts')
                                 @endforeach
-                        @else
-                        @php
-                        $parent = 0;
-                        @endphp
-
-                            @for($loop=0; $loop < 2; $loop++)
+                            @else
                                 @php
-                                    $section = 'hb';
-                                    $parent++;
+                                    $parent = 0;
                                 @endphp
-                                <div>
-                                    <textarea required name="hb[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
-                                    @include('school.recipes.editor')
-                                </div>
-                                @include('school.recipes.inserts')
+
+                                @for ($loop = 0; $loop < 2; $loop++)
+                                    @php
+                                        $section = 'hb';
+                                        $parent++;
+                                    @endphp
+                                    <div>
+                                        <textarea required name="hb[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+                                        @include('school.recipes.editor')
+                                    </div>
+                                    @include('school.recipes.inserts')
                                 @endfor
                             @endif
 
@@ -163,11 +163,11 @@
                                     @include('school.recipes.inserts')
                                 @endforeach
                             @else
-                            @php
-                            $parent = 0;
-                            @endphp
-    
-                                @for($loop=0; $loop < 2; $loop++)
+                                @php
+                                    $parent = 0;
+                                @endphp
+
+                                @for ($loop = 0; $loop < 2; $loop++)
                                     @php
                                         $section = 'preg';
                                         $parent++;
@@ -177,7 +177,7 @@
                                         @include('school.recipes.editor')
                                     </div>
                                     @include('school.recipes.inserts')
-                                    @endfor
+                                @endfor
                             @endif
 
                         </fieldset>
@@ -325,11 +325,11 @@
                                     </div>
                                 @endforeach
                             @else
-                            @php
-                            $parent = 0;
-                            @endphp
-    
-                                @for($loop=0; $loop < 2; $loop++)
+                                @php
+                                    $parent = 0;
+                                @endphp
+
+                                @for ($loop = 0; $loop < 2; $loop++)
                                     @php
                                         $section = 'rv';
                                         $parent++;
@@ -339,7 +339,7 @@
                                         @include('school.recipes.editor')
                                     </div>
                                     @include('school.recipes.inserts')
-                                    @endfor
+                                @endfor
 
                             @endif
 
@@ -360,11 +360,11 @@
                                     </div>
                                 @endforeach
                             @else
-                            @php
-                            $parent = 0;
-                            @endphp
-    
-                                @for($loop=0; $loop < 2; $loop++)
+                                @php
+                                    $parent = 0;
+                                @endphp
+
+                                @for ($loop = 0; $loop < 2; $loop++)
                                     @php
                                         $section = 'si';
                                         $parent++;
@@ -374,7 +374,7 @@
                                         @include('school.recipes.editor')
                                     </div>
                                     @include('school.recipes.inserts')
-                                    @endfor
+                                @endfor
 
                             @endif
 
@@ -395,11 +395,11 @@
                                         <div>
                                 @endforeach
                             @else
-                            @php
-                            $parent = 0;
-                            @endphp
-    
-                                @for($loop=0; $loop < 2; $loop++)
+                                @php
+                                    $parent = 0;
+                                @endphp
+
+                                @for ($loop = 0; $loop < 2; $loop++)
                                     @php
                                         $section = 'pe';
                                         $parent++;
@@ -409,7 +409,7 @@
                                         @include('school.recipes.editor')
                                     </div>
                                     @include('school.recipes.inserts')
-                                    @endfor
+                                @endfor
 
                             @endif
 
@@ -429,11 +429,11 @@
                                     </div>
                                 @endforeach
                             @else
-                            @php
-                            $parent = 0;
-                            @endphp
-    
-                                @for($loop=0; $loop < 2; $loop++)
+                                @php
+                                    $parent = 0;
+                                @endphp
+
+                                @for ($loop = 0; $loop < 2; $loop++)
                                     @php
                                         $section = 'wh';
                                         $parent++;
@@ -443,7 +443,7 @@
                                         @include('school.recipes.editor')
                                     </div>
                                     @include('school.recipes.inserts')
-                                    @endfor
+                                @endfor
 
                             @endif
 
@@ -463,11 +463,11 @@
                                     </div>
                                 @endforeach
                             @else
-                            @php
-                            $parent = 0;
-                            @endphp
-    
-                                @for($loop=0; $loop < 2; $loop++)
+                                @php
+                                    $parent = 0;
+                                @endphp
+
+                                @for ($loop = 0; $loop < 2; $loop++)
                                     @php
                                         $section = 'c';
                                         $parent++;
@@ -477,12 +477,30 @@
                                         @include('school.recipes.editor')
                                     </div>
                                     @include('school.recipes.inserts')
-                                    @endfor
+                                @endfor
                             @endif
 
                         </fieldset>
                         <fieldset>
                             <h2>Misc.</h2>
+                            <div class="div-horizontal-rule"></div>
+                            <label for="products">Select <b>ALL</b> products used in the recipe: </label>
+                            <p class="one-em-font"> Selecting multiple options vary in different operating systems and
+                                browsers:</p>
+                            <ul class="one-em-font">
+                                <li class="one-em-font">For windows: Hold down the control (ctrl) button to select
+                                    multiple options</li>
+                                <li class="one-em-font">For Mac: Hold down the command button to select multiple
+                                    options</li>
+                            </ul>
+                            <select name="products[]" required multiple>
+
+                                @foreach ($products as $item)
+                                    <option value="{{ $item->id }}">{{ $item->name }}</option>
+                                @endforeach
+                                
+                            </select>
+                            <div class="div-horizontal-rule"></div>
                             <input required type="text" name="keywords" value="{{ $edit->keywords ?? '' }}"
                                 placeholder="Keywords (Required)">
                             <input required type="text" name="img" value="{{ $json->img ?? '' }}"

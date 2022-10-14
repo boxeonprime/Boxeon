@@ -21,6 +21,7 @@ class CreateBlogTable extends Migration
             $table->string("category");
             $table->string("uri");
             $table->string("blurb");
+            $table->json("products");
             $table->timestamps();
         });
     }

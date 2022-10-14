@@ -1871,6 +1871,7 @@ h2 {
   font-size: 2em;
   color: green;
   text-transform: capitalize;
+  scroll-margin-top: 5rem;
 }
 
 h3 {
@@ -1889,6 +1890,7 @@ h3 {
 
 .extra-large-font {
   font-size: 2em;
+
 }
 
 #product-stream h2 {

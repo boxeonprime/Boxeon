@@ -44,13 +44,22 @@ class BlogController extends Controller
         // ->where("id", "=", $blogID)
             ->get();
 
+            $products = DB::table("products")
+            ->select("id", "name")
+            ->get();
+
         return view('school.recipes.publisher', compact('user', $user))
+        ->with("products", $products)
             ->with("blog", $blog);
     }
 
     public function get(Request $request)
     {
         $user = Auth::user();
+
+        $products = DB::table("products")
+        ->select("id", "name")
+        ->get();
 
         if (empty($request["id"])) {
 
@@ -60,9 +69,12 @@ class BlogController extends Controller
 
             $blog = DB::table("blog")
                 ->get();
-            Session::flash('message', 'Success.');
+
+
+            Session::flash('message', 'Ready.');
             return view('school.recipes.publisher', compact('user', $user))
                 ->with("json", '')
+                ->with("products", $products)
                 ->with("blog", $blog);
 
         }
@@ -75,9 +87,11 @@ class BlogController extends Controller
         $blog = DB::table("blog")
             ->get();
         $json = json_decode($edit->json);
-        Session::flash('message', 'Success.');
+
+        Session::flash('message', 'Begin.');
         return view('school.recipes.publisher', compact('user', $user))
             ->with("blog", $blog)
+            ->with("products", $products)
             ->with("json", $json)
             ->with("edit", $edit);
     }
@@ -98,8 +112,14 @@ class BlogController extends Controller
 
         $json = self::createJson($new);
 
-        if (isset($test->id)) {
+        $products = DB::table("products")
+        ->select("id", "name")
+        ->get();
 
+    
+
+        if (isset($test->id)) {
+           
             DB::table("blog")
                 ->where("id", "=", $id)
                 ->update([
@@ -109,6 +129,7 @@ class BlogController extends Controller
                     "category" => $new["category"],
                     "uri" => $new["uri"],
                     "blurb" => $new["blurb"],
+                    "products" => json_encode($new["products"]),
                     "short_title" => $new["short_title"],
 
                 ]);
@@ -124,6 +145,7 @@ class BlogController extends Controller
                     "category" => $new["category"],
                     "uri" => $new["uri"],
                     "blurb" => $new["blurb"],
+                    "products" => json_encode($new["products"]),
                     "short_title" => $new["short_title"],
                 ]);
 
@@ -134,6 +156,7 @@ class BlogController extends Controller
         Session::flash('message', 'Saved.');
         return view('school.recipes.publisher', compact('user', $user))
             ->with("json", '')
+            ->with("products", $products)
             ->with("blog", $blog);
 
     }
