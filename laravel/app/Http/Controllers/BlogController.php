@@ -104,10 +104,10 @@ class BlogController extends Controller
 
         $b = DB::table("blog")
             ->where("id", "=", $id)
-            ->get()[0];
+            ->get();
 
-        if (isset($b)) {
-            $test = $b;
+        if (isset($b[0])) {
+            $test = $b[0];
         }
 
         $json = self::createJson($new);

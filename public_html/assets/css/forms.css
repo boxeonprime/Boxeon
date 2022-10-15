@@ -150,7 +150,6 @@ input[type="submit"], .button, button {
   box-sizing: border-box;
   color: #ffffff;
   min-width: 200px;
-  font-weight: 100;
   text-align: center;
   cursor: pointer;
   font-size: 14px;
