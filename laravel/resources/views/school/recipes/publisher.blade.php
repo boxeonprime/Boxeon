@@ -394,6 +394,7 @@
                                         <textarea required name="si[]" col="45" rows="8">{{ $paragraph }}</textarea>
                                         @include('school.recipes.editor')
                                     </div>
+                                    @include('school.recipes.inserts')
                                 @endforeach
                             @else
                                 @php
@@ -429,6 +430,7 @@
                                         <textarea required name="pe[]" col="45" rows="8">{{ $paragraph }}</textarea>
                                         @include('school.recipes.editor')
                                         <div>
+                                            @include('school.recipes.inserts')
                                 @endforeach
                             @else
                                 @php
