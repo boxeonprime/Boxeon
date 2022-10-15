@@ -184,7 +184,7 @@ class BlogController extends Controller
                 ,
                 "content" => [
 
-                    "h2" => $blog['topics'][0],
+                    "h2" => $blog['topics'][0], // // What are moin moin's health benefits?
 
                     "paragraphs" =>
 
@@ -194,16 +194,16 @@ class BlogController extends Controller
 
                 "li2" => [
 
-                    "h2" => $blog['topics'][1],
+                    "h2" => $blog['topics'][1], // Can pregnant women eat moin moin?
 
                     "paragraphs" =>
 
-                    $blog['hb'],
+                    $blog['preg'],
 
                 ],
                 "li3" => [
 
-                    "h2" => $blog['topics'][2],
+                    "h2" => $blog['topics'][2],  // Out favorite recipe
                     "h41" => $blog['rech4'][0] ?? '',
                     "h42" => $blog['rech4'][1] ?? '',
 
@@ -227,7 +227,7 @@ class BlogController extends Controller
                 ],
                 "li4" => [
 
-                    "h2" => $blog['topics'][3],
+                    "h2" => $blog['topics'][3], // How to cook moin moin?
 
                     "instructions" =>
 
@@ -237,7 +237,7 @@ class BlogController extends Controller
 
                 "li5" => [
 
-                    "h2" => $blog['topics'][4],
+                    "h2" => $blog['topics'][4], //Recipe variations
 
                     "paragraphs" =>
 
@@ -246,35 +246,44 @@ class BlogController extends Controller
                 ],
                 "li6" => [
 
-                    "h2" => $blog['topics'][5],
+                    "h2" => $blog['topics'][5], // Tips and tricks
+
+                    "paragraphs" =>
+
+                    $blog['tt'],
+
+                ],
+                "li7" => [
+
+                    "h2" => $blog['topics'][6],  // Serving and storage instructions
 
                     "paragraphs" =>
 
                     $blog['si'],
 
                 ],
-                "li7" => [
 
-                    "h2" => $blog['topics'][6],
+                "li8" => [
+
+                    "h2" => $blog['topics'][7], // What to eat it with?
 
                     "paragraphs" =>
 
                     $blog['pe'],
 
                 ],
+                "li9" => [
 
-                "li8" => [
-
-                    "h2" => $blog['topics'][7],
+                    "h2" => $blog['topics'][8], // Where to find Moin Moin near  you?
 
                     "paragraphs" =>
 
                     $blog['wh'],
 
                 ],
-                "li9" => [
+                "li10" => [
 
-                    "h2" => $blog['topics'][8],
+                    "h2" => $blog['topics'][9], // Last but not least
 
                     "paragraphs" =>
 
@@ -304,3 +313,7 @@ class BlogController extends Controller
         return json_encode($json);
     }
 }
+
+ 
+
+

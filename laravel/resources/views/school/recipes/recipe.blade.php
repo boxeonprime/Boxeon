@@ -125,6 +125,7 @@
             <br>
             @if (isset($content->text->li5->h2))
                 <h2 id="jump5">{{ $content->text->li5->h2 }}</h2>
+                @php $parent = 0; @endphp
                 @foreach ($content->text->li5->paragraphs as $paragraphs)
                     @foreach ((array) $paragraphs as $paragraph)
                         <p>{{ $paragraph }}
@@ -145,7 +146,7 @@
                         <p>{{ $paragraph }}
                         <p>
                             @php
-                                $section = 'si';
+                                $section = 'tt';
                                 $parent++;
                             @endphp
                             @include('school.recipes.inserted')
@@ -160,7 +161,7 @@
                         <p>{{ $paragraph }}
                         <p>
                             @php
-                                $section = 'pe';
+                                $section = 'si';
                                 $parent++;
                             @endphp
                             @include('school.recipes.inserted')
@@ -175,7 +176,7 @@
                         <p>{{ $paragraph }}
                         <p>
                             @php
-                                $section = 'hb';
+                                $section = 'pe';
                                 $parent++;
                             @endphp
                             @include('school.recipes.inserted')

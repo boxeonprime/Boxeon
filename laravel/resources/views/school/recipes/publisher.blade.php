@@ -309,47 +309,83 @@
 
                         </fieldset>
 
-                        <fieldset>
-                            <h2>Recipe variations</h2>
-                            @if (isset($json->text->li5->h2))
-                                @php $parent = 0; @endphp
-                                @foreach ($json->text->li5->paragraphs as $paragraph)
-                                    @php
-                                        $section = 'rv';
-                                        $parent++;
-                                    @endphp
-                                    <div>
-                                        <textarea required name="rv[]" col="45" rows="8">{{ $paragraph }}</textarea>
-
-                                        @include('school.recipes.editor')
-                                    </div>
-                                @endforeach
-                            @else
+                        <h2>Recipe variations</h2>
+                        @if (isset($json->text->li5->h2))
+                            @php $parent = 0; @endphp
+                            @foreach ($json->text->li5->paragraphs as $paragraph)
                                 @php
-                                    $parent = 0;
+                                    $section = 'rv';
+                                    $parent++;
                                 @endphp
+                                <div>
+                                    <textarea required name="rv[]" col="45" rows="8">{{ $paragraph }}</textarea>
 
-                                @for ($loop = 0; $loop < 2; $loop++)
-                                    @php
-                                        $section = 'rv';
-                                        $parent++;
-                                    @endphp
-                                    <div>
-                                        <textarea required name="rv[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
-                                        @include('school.recipes.editor')
-                                    </div>
-                                    @include('school.recipes.inserts')
-                                @endfor
+                                    @include('school.recipes.editor')
+                                </div>
+                                @include('school.recipes.inserts')
+                            @endforeach
+                        @else
+                            @php
+                                $parent = 0;
+                            @endphp
 
-                            @endif
+                            @for ($loop = 0; $loop < 2; $loop++)
+                                @php
+                                    $section = 'rv';
+                                    $parent++;
+                                @endphp
+                                <div>
+                                    <textarea required name="rv[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+                                    @include('school.recipes.editor')
+                                </div>
+                                @include('school.recipes.inserts')
+                            @endfor
 
-                        </fieldset>
+                        @endif
+
+                    </fieldset>
+                    <fieldset>
+                        <h2>Tips and tricks</h2>
+                        @if (isset($json->text->li6->h2))
+                            @php $parent = 0; @endphp
+                            @foreach ($json->text->li6->paragraphs as $paragraph)
+                                @php
+                                    $section = 'tt';
+                                    $parent++;
+                                @endphp
+                                <div>
+                                    <textarea required name="tt[]" col="45" rows="8">{{ $paragraph }}</textarea>
+
+                                    @include('school.recipes.editor')
+                                </div>
+                                @include('school.recipes.inserts')
+                            @endforeach
+                        @else
+                            @php
+                                $parent = 0;
+                            @endphp
+
+                            @for ($loop = 0; $loop < 2; $loop++)
+                                @php
+                                    $section = 'tt';
+                                    $parent++;
+                                @endphp
+                                <div>
+                                    <textarea required name="tt[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+                                    @include('school.recipes.editor')
+                                </div>
+                                @include('school.recipes.inserts')
+                            @endfor
+
+                        @endif
+
+                    </fieldset>
 
                         <fieldset>
                             <h2>Serving instructions</h2>
-                            @if (isset($json->text->li6->h2))
+                            @if (isset($json->text->li7->h2))
                                 @php $parent = 0; @endphp
-                                @foreach ($json->text->li6->paragraphs as $paragraph)
+                                @foreach ($json->text->li7->paragraphs as $paragraph)
                                     @php
                                         $section = 'si';
                                         $parent++;
@@ -382,9 +418,9 @@
 
                         <fieldset>
                             <h2>What can be eaten with this recipe</h2>
-                            @if (isset($json->text->li7->h2))
+                            @if (isset($json->text->li8->h2))
                                 @php $parent = 0; @endphp
-                                @foreach ($json->text->li7->paragraphs as $paragraph)
+                                @foreach ($json->text->li8->paragraphs as $paragraph)
                                     @php
                                         $section = 'pe';
                                         $parent++;
@@ -416,9 +452,9 @@
                         </fieldset>
                         <fieldset>
                             <h2>Where to find dish nearby</h2>
-                            @if (isset($json->text->li8->h2))
+                            @if (isset($json->text->li9->h2))
                                 @php $parent = 0; @endphp
-                                @foreach ($json->text->li8->paragraphs as $paragraph)
+                                @foreach ($json->text->li9->paragraphs as $paragraph)
                                     @php
                                         $section = 'wh';
                                         $parent++;
@@ -450,9 +486,9 @@
                         </fieldset>
                         <fieldset>
                             <h2>Conclusion</h2>
-                            @if (isset($json->text->li9->h2))
+                            @if (isset($json->text->li10->h2))
                                 @php $parent = 0; @endphp
-                                @foreach ($json->text->li9->paragraphs as $paragraph)
+                                @foreach ($json->text->li10->paragraphs as $paragraph)
                                     @php
                                         $section = 'c';
                                         $parent++;
