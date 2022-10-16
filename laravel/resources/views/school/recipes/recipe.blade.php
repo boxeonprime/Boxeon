@@ -199,7 +199,7 @@
                 @endforeach
             @endif
             @if (isset($content->text->li10->h2))
-                <h2>{{ $content->text->li10->h2 }}</h2>
+                <h2 id="jump10">{{ $content->text->li10->h2 }}</h2>
                 @php $parent = 0; @endphp
                 @foreach ($content->text->li10->paragraphs as $paragraphs)
                     @foreach ((array) $paragraphs as $paragraph)

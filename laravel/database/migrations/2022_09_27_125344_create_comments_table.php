@@ -17,6 +17,7 @@ class CreateCommentsTable extends Migration
             $table->id();
             $table->string("message");
             $table->string("name");
+            $table->integer("user_id")->nullable;
             $table->integer('stars');
             $table->string("blog_id");
             $table->timestamps();

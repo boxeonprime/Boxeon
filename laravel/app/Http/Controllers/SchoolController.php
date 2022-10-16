@@ -56,6 +56,7 @@ class SchoolController extends Controller
         $user = Auth::user();
         //Find comments
         $comments = DB::table('comments')
+        ->join('users', 'users.id', '=', 'comments.user_id')
             ->where("blog_id", "=", $uri)
             ->get();
         //Find recipe

@@ -17,7 +17,7 @@ class CreateReviewsTable extends Migration
             $table->id();
             $table->string("message");
             $table->integer('stars');
-            $table->integer("user_id");
+            $table->integer("user_id")->nullable;
             $table->string("location");
             $table->integer("product");
             $table->timestamps();

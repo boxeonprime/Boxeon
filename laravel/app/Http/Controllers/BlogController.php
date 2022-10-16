@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
@@ -26,11 +27,19 @@ class BlogController extends Controller
 
     public function comment(Request $request)
     {
+        if ($user = Auth::user()) {
+            $id = auth()->user()->id;
+          
+        }else{
+            
+            $id = null;
+        }
+
         $blogID = $request["blog_id"];
         $name = $request["name"];
         $stars = $request["stars"];
         $comment = $request["message"];
-        DB::table("comments")->insert(["name" => $name, "stars" => $stars, "message" => $comment, "blog_id" => $blogID]);
+        DB::table("comments")->insert(["name" => $name, "user_id"=> $id, "stars" => $stars, "message" => $comment, "blog_id" => $blogID]);
         Session::flash('message', 'Comment posted');
         return Redirect::to(url()->previous());
     }
@@ -204,25 +213,14 @@ class BlogController extends Controller
                 "li3" => [
 
                     "h2" => $blog['topics'][2],  // Out favorite recipe
-                    "h41" => $blog['rech4'][0] ?? '',
-                    "h42" => $blog['rech4'][1] ?? '',
 
                     "recipe" => [
-
-                        "recipe1" => [
 
                             "paragraphs" =>
 
                             $blog['rec'],
 
-                        ],
-                        "recipe2" => [
-
-                            "paragraphs" =>
-
-                            $blog['rec2'] ?? '',
-
-                        ],
+                   
                     ],
                 ],
                 "li4" => [

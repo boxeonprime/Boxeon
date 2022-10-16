@@ -6,8 +6,8 @@
         <div class="review">
             <div class="three-col-grid reviewer-grid">
                 <p class="bold"> <span class="margin-block-start-end"><img
-                loading="lazy" class="w24px fix-comment-thumb" width="24px" height="24px" src="{{ asset("../assets/images/account_circle_black.svg")}}"
-                alt="Feedback" /></span>
+                loading="lazy" class="w24px fix-comment-thumb image-user-icon" width="24px" height="24px" src="{{$comments[$i]->profile_photo_path}}"
+                alt="Feedback" />&nbsp;</span>
                 
                    {{ $comments[$i]->name }}</p>
                 

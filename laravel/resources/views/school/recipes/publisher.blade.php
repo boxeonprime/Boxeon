@@ -186,37 +186,35 @@
 
                             <h2>Recipe</h2>
 
-                            @if (isset($json->text->li3->recipe->recipe1))
+                            @if (isset($json->text->li3->recipe))
                                 @php $parent = 0; @endphp
-                                @if (isset($json->text->li3->h41))
-                                    <input type="text" name="rech4[]" value="{{ $json->text->li3->h41 }}">
-                                @endif
-                                @foreach ($json->text->li3->recipe->recipe1 as $items)
-                                    @php
-                                        $section = 'rec';
-                                        
-                                    @endphp
-                                    @foreach ((array) $items as $item)
+                            
+                                @foreach ($json->text->li3->recipe as $paragraph)
+                                  
+                                        @php
+                                            $section = 'rec';
+                                            $parent++;
+                                        @endphp
                                         <div>
-                                            <input type="text" name="rec[]" value="{{ $item ?? '' }}"
-                                                required placeholder="((Measurement and ingredient))">
-                                            <div>
-                                                <a href="#/" data-type-id="add-in" onclick="createItem(this)"
-                                                    class="add-field point-7-em-font">+Ingredient</a> &nbsp;|&nbsp;
-                                                <a href="#/" data-type-id="remove-in"
-                                                    onclick="removeTopic(this)"
-                                                    class="remove-field point-7-em-font">-Ingredient</a>
-                                            </div>
+                                            <textarea required name="rec[]" col="45" rows="8" placeholder="(Paragraph)">{{ $paragraph ?? '' }}</textarea>
+                                            @include('school.recipes.editor')
                                         </div>
-                                    @endforeach
+                                        @include('school.recipes.inserts')
+                                        </div>
+                                  
                                 @endforeach
                             @else
                                 @php
                                     $section = 'rec';
                                     
                                 @endphp
+                                     <div>
+                                        <textarea required name="rec[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+                                        @include('school.recipes.editor')
+                                    </div>
+                                    @include('school.recipes.inserts')
                                 <div>
-                                    <input type="text" name="rec[]" value="" required
+                                    <input type="text" name="ul[rec][1][]" value="" required
                                         placeholder="(Measurement and ingredient)">
                                     <a href="#/" data-type-id="add-in" onclick="createItem(this)"
                                         class="add-field point-7-em-font">+Ingredient</a> &nbsp;|&nbsp;
@@ -224,7 +222,12 @@
                                         class="remove-field point-7-em-font">-Ingredient</a>
                                 </div>
                                 <div>
-                                    <input type="text" name="rec[]" value="" required
+                                    <textarea required name="rec[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+                                    @include('school.recipes.editor')
+                                </div>
+                                @include('school.recipes.inserts')
+                                <div>
+                                    <input type="text" name="ul[rec][2][]" value="" required
                                         placeholder="(Measurement and ingredient)">
                                     <div>
                                         <a href="#/" data-type-id="add-in" onclick="createItem(this)"
@@ -235,57 +238,33 @@
                                 </div>
                             @endif
 
-                            @if (isset($json->text->li3->recipe->recipe2))
-                                @if (isset($json->text->li3->h42))
-                                    <div>
-                                        <input type="text" name="rech4[]" value="{{ $json->text->li3->h42 }}">
-                                        <div>
-                                            <a href="#/" data-type-id="add-in" onclick="createItem(this)"
-                                                class="add-field point-7-em-font">+Ingredient</a> &nbsp;|&nbsp;
-                                            <a href="#/" data-type-id="remove-in" onclick="removeTopic(this)"
-                                                class="remove-field point-7-em-font">-Ingredient</a>
-                                        </div>
-                                    </div>
-                                @endif
-                                @foreach ($json->text->li3->recipe->recipe2 as $items)
-                                    @foreach ((array) $items as $item)
-                                        <div>
-                                            <input placeholder="(Measurement and ingredient)" required type="text"
-                                                name="rec2[]" value="{{ $item ?? '' }}">
-                                            <div>
-                                                <a href="#/" data-type-id="add-in" onclick="createItem(this)"
-                                                    class="add-field point-7-em-font">+Ingredient</a> &nbsp;|&nbsp;
-                                                <a href="#/" data-type-id="remove-in"
-                                                    onclick="removeTopic(this)"
-                                                    class="remove-field point-7-em-font">-Ingredient</a>
-                                            </div>
-                                        </div>
-                                    @endforeach
-                                @endforeach
-                            @endif
-
                         </fieldset>
 
                         <fieldset>
                             <h2>Cooking instructions</h2>
                             @if (isset($json->text->li4->instructions))
-                                @foreach ($json->text->li4->instructions as $items)
-                                    @foreach ((array) $items as $item)
-                                        <div>
-                                            <input required type="text" name="in[]"
-                                                value="{{ $item ?? '' }}" placeholder="(Instruction)">
-                                            <div>
-                                                <a href="#/" data-type-id="add-in" onclick="createItem(this)"
-                                                    class="add-field point-7-em-font">+Instruction</a> &nbsp;|&nbsp;
-                                                <a href="#/" data-type-id="remove-in"
-                                                    onclick="removeTopic(this)"
-                                                    class="remove-field point-7-em-font">-Instruction</a>
-                                            </div>
-                                        </div>
-                                    @endforeach
+                                @php $parent = 0; @endphp
+                                @foreach ($json->text->li4->instructions as $item)
+                                    @php
+                                        $section = 'in';
+                                        $parent++;
+                                    @endphp
+                                    <div>
+                                        <textarea required name="in[]" col="45" rows="8">{{ $item }}</textarea>
+
+                                        @include('school.recipes.editor')
+                                    </div>
+                                    @include('school.recipes.inserts')
                                 @endforeach
                             @else
                                 <div>
+                                    <textarea required name="in[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+
+                                    @include('school.recipes.editor')
+                                </div>
+                                @include('school.recipes.inserts')
+                                <div>
+
                                     <input required type="text" name="in[]" value=""
                                         placeholder="(Instruction)">
                                     <div>
@@ -295,6 +274,12 @@
                                             class="remove-field point-7-em-font">-Instruction</a>
                                     </div>
                                 </div>
+                                <div>
+                                    <textarea required name="in[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+
+                                    @include('school.recipes.editor')
+                                </div>
+                                @include('school.recipes.inserts')
                                 <div>
                                     <input required type="text" name="in[]" value=""
                                         placeholder="(Instruction)">
@@ -343,43 +328,43 @@
 
                         @endif
 
-                    </fieldset>
-                    <fieldset>
-                        <h2>Tips and tricks</h2>
-                        @if (isset($json->text->li6->h2))
-                            @php $parent = 0; @endphp
-                            @foreach ($json->text->li6->paragraphs as $paragraph)
+                        </fieldset>
+                        <fieldset>
+                            <h2>Tips and tricks</h2>
+                            @if (isset($json->text->li6->h2))
+                                @php $parent = 0; @endphp
+                                @foreach ($json->text->li6->paragraphs as $paragraph)
+                                    @php
+                                        $section = 'tt';
+                                        $parent++;
+                                    @endphp
+                                    <div>
+                                        <textarea required name="tt[]" col="45" rows="8">{{ $paragraph }}</textarea>
+
+                                        @include('school.recipes.editor')
+                                    </div>
+                                    @include('school.recipes.inserts')
+                                @endforeach
+                            @else
                                 @php
-                                    $section = 'tt';
-                                    $parent++;
+                                    $parent = 0;
                                 @endphp
-                                <div>
-                                    <textarea required name="tt[]" col="45" rows="8">{{ $paragraph }}</textarea>
 
-                                    @include('school.recipes.editor')
-                                </div>
-                                @include('school.recipes.inserts')
-                            @endforeach
-                        @else
-                            @php
-                                $parent = 0;
-                            @endphp
+                                @for ($loop = 0; $loop < 2; $loop++)
+                                    @php
+                                        $section = 'tt';
+                                        $parent++;
+                                    @endphp
+                                    <div>
+                                        <textarea required name="tt[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+                                        @include('school.recipes.editor')
+                                    </div>
+                                    @include('school.recipes.inserts')
+                                @endfor
 
-                            @for ($loop = 0; $loop < 2; $loop++)
-                                @php
-                                    $section = 'tt';
-                                    $parent++;
-                                @endphp
-                                <div>
-                                    <textarea required name="tt[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
-                                    @include('school.recipes.editor')
-                                </div>
-                                @include('school.recipes.inserts')
-                            @endfor
+                            @endif
 
-                        @endif
-
-                    </fieldset>
+                        </fieldset>
 
                         <fieldset>
                             <h2>Serving instructions</h2>
@@ -536,7 +521,7 @@
                                 @foreach ($products as $item)
                                     <option value="{{ $item->id }}">{{ $item->name }}</option>
                                 @endforeach
-                                
+
                             </select>
                             <div class="div-horizontal-rule"></div>
                             <input required type="text" name="keywords" value="{{ $edit->keywords ?? '' }}"

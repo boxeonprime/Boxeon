@@ -65,7 +65,7 @@
                 @for ($i = 0; $i < count($reviews); $i++)
                     <div class="review two-col-grid">
                         <div class="three-col-grid reviewer-grid">
-                         <span class=""><img width="30px" height="30px" src='{{ asset('../assets/images/account_circle.svg') }}'
+                         <span><img class="image-user-icon" width="30px" height="30px" src='{{$reviews[$i]->profile_photo_path}}'
                             alt="Commentor" /></span>
                             
                                 <p class="bold">{{ $reviews[$i]->name }}</p>

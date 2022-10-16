@@ -27,22 +27,16 @@ class ShopController extends Controller
 
     public function item(Request $request)
     {
-        $id = $request["id"];
-
-        if ($user = Auth::user()) {
-            $u = auth()->user()->id;
-            $user = User::find($u);
-        }
-
+        $user = Auth::user();
+       
         $id = $_GET["id"];
         $product = DB::table("products")
             ->where("id", "=", $id)
             ->get();
 
-            $new = explode(".", $product[0]->img);
-            $product[0]->img = $new[0] . ".webp";
 
             $reviews = DB::table("reviews")
+            ->join('users', 'users.id', '=', 'reviews.user_id')
             ->where("product", "=", $id)
             ->get();
 
