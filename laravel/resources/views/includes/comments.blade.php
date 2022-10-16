@@ -4,12 +4,12 @@
 @if (count($comments) > 0)
     @for ($i = 0; $i < count($comments); $i++)
         <div class="review">
-            <div class="three-col-grid reviewer-grid">
-                <p class="bold"> <span class="margin-block-start-end"><img
-                loading="lazy" class="w24px fix-comment-thumb image-user-icon" width="24px" height="24px" src="{{$comments[$i]->profile_photo_path}}"
-                alt="Feedback" />&nbsp;</span>
+            <div class="three-col-grid reviewer-grid gray-bg">
+                <span class="margin-block-start-end margin-right-1-em"><img
+                loading="lazy" class="w40px fix-comment-thumb image-user-icon" width="40px" height="40px" src="{{$comments[$i]->profile_photo_path}}"
+                alt="Feedback" /></span>
                 
-                   {{ $comments[$i]->name }}</p>
+                <p class="comment-name"> {{ $comments[$i]->name }}</p>
                 
                 <div class="stars-grid">
                     @php
@@ -44,7 +44,7 @@
             <div>
                
             </div>
-            <p class="comment">@php echo nl2br($comments[$i]->message); @endphp</p>
+            <p class="comment gray-bg">@php echo nl2br($comments[$i]->message); @endphp</p>
         </div>
     @endfor
 @else

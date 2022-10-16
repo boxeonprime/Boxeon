@@ -64,11 +64,11 @@
             @if (count($reviews) > 0)
                 @for ($i = 0; $i < count($reviews); $i++)
                     <div class="review two-col-grid">
-                        <div class="three-col-grid reviewer-grid">
-                         <span><img class="image-user-icon" width="30px" height="30px" src='{{$reviews[$i]->profile_photo_path}}'
-                            alt="Commentor" /></span>
+                        <div class="three-col-grid reviewer-grid gray-bg">
+                         <img class="image-user-icon w40px" width="40px" height="40px" src='{{$reviews[$i]->profile_photo_path}}'
+                            alt="Author: {{ $reviews[$i]->name }}" />
                             
-                                <p class="bold">{{ $reviews[$i]->name }}</p>
+                                <p class="comment-name">{{ $reviews[$i]->name }}</p>
                             
                             <div class="stars-grid">
                                 @php
