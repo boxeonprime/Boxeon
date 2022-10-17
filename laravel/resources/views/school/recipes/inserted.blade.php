@@ -20,19 +20,37 @@
     @endif
 
     @if (isset($uls))
-   
-            @for ($loop = 0; $loop < 10; $loop++)
-                @if (isset($uls->$section->$loop) && $loop == $parent)
-                <ol>
-                    @for ($i = 0; $i < count($uls->$section->$loop); $i++)
-                        @if (isset($uls->$section->$parent[$i]))
-                            <li>{{ ucfirst($uls->$section->$parent[$i]) }}</li>
-                        @endif
-                    @endfor
-                </ol>
+
+        @for ($loop = 0; $loop < 10; $loop++)
+            @if (isset($uls->$section->$loop) && $loop == $parent)
+                @if ($section == 'rec' || $section == 'in')
+                    <ul>
+                    @else
+                        <ol>
                 @endif
-            @endfor
-        
+                @for ($i = 0; $i < count($uls->$section->$loop); $i++)
+                    @if (isset($uls->$section->$parent[$i]))
+                        <li>
+                            @if ($section == 'rec' || $section == 'in')
+                            <form><input type="checkbox" id="{{ ucfirst($uls->$section->$parent[$i]) }}" name="1"><label for="{{ ucfirst($uls->$section->$parent[$i]) }}">  {{ ucfirst($uls->$section->$parent[$i]) }}</label>
+                            </form>
+
+                                @else
+                            {{ ucfirst($uls->$section->$parent[$i]) }}
+                            
+                            
+                            @endif
+                        </li>
+                    @endif
+                @endfor
+                @if ($section == 'rec' || $section == 'in')
+                        </ul>
+                @else
+                    </ol>
+            @endif
+            @endif
+        @endfor
+
     @endif
 
 @endif

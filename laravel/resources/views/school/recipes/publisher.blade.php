@@ -200,7 +200,6 @@
                                             @include('school.recipes.editor')
                                         </div>
                                         @include('school.recipes.inserts')
-                                        </div>
                                   
                                 @endforeach
                             @else
@@ -293,6 +292,7 @@
                             @endif
 
                         </fieldset>
+                        <fieldset>
 
                         <h2>Recipe variations</h2>
                         @if (isset($json->text->li5->h2))

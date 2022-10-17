@@ -214,9 +214,8 @@ class BlogController extends Controller
 
                     "h2" => $blog['topics'][2],  // Out favorite recipe
 
-                    "recipe" => [
+                    "recipe" => 
 
-                            "paragraphs" =>
 
                             $blog['rec'],
 
@@ -283,7 +282,7 @@ class BlogController extends Controller
 
                     "h2" => $blog['topics'][9], // Last but not least
 
-                    "paragraphs" =>
+                    "paragraphs" =>[
 
                     $blog['c'],
 

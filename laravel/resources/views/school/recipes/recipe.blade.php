@@ -59,52 +59,38 @@
             <h2 id="jump3">{{ $content->text->li3->h2 }}</h2>
             <p>This&nbsp;{{ $meta->short_title }}&nbsp; calls for specific African ingredients that you can purchase
                 right here on <a class="one-em-font" href="../shop/index?c=staple">Boxeon</a>.</p>
-
-            <div class="table-of-contents">
-                @if (isset($content->text->li3->h41))
-                    <h4>{{ $content->text->li3->h41 }}</h4>
-                @endif
-
-                <ul>
-                    @foreach ($content->text->li3->recipe->recipe1 as $items)
-                        @foreach ((array) $items as $item)
-                            <li>
-                                <form><input type="checkbox" id="{{ $item }}" name="1"><label
-                                        for="{{ $item }}">{{ $item }}</label>
-                                </form>
-                            </li>
+                <div class="table-of-contents">
+                    @php $parent = 0; @endphp
+                    @foreach ($content->text->li3->recipe as $paragraphs)
+                        @foreach ((array) $paragraphs as $paragraph)
+                            <p>{{ $paragraph }}
+                            <p>
+                                @php
+                                    $section = 'rec';
+                                    $parent++;
+                                @endphp
+                                @include('school.recipes.inserted')
                         @endforeach
                     @endforeach
-                </ul>
-                @if (isset($content->text->li3->recipe->recipe2))
-                    @if (isset($content->text->li3->h42))
-                        <h4>{{ $content->text->li3->h42 }}</h4>
-                    @endif
-                    <ul>
-                        @foreach ($content->text->li3->recipe->recipe2 as $items)
-                            @foreach ((array) $items as $item)
-                                <li>
-                                    <form><input type="checkbox" id="{{ $item }}" name="1"><label
-                                            for="{{ $item }}">{{ $item }}</label>
-                                    </form>
-                                </li>
-                            @endforeach
-                        @endforeach
-                    </ul>
-                @endif
-            </div>
+            
+                            </div>
+            
 
             <h2 class="primary-color extra-large-font" id="jump4">{{ $content->text->li4->h2 }}</h2>
             <p>Like my beloved grandma always said, love, is the most important ingredient in African ancestral cooking.
                 This means we should take our time, relax, put away our smartphones, and cook with care.</p>
             <div class="table-of-contents">
                 <ul>
-                    @foreach ($content->text->li4->instructions as $items)
-                        @foreach ((array) $items as $item)
-                            <li>
-                                <form><input type="checkbox" id="{{ $item }}" name="1"><label
-                                        for="{{ $item }}">{{ $item }}</label></form>
-                            </li>
+                    @php $parent = 0; @endphp
+                    @foreach ($content->text->li4->instructions as $paragraphs)
+                        @foreach ((array) $paragraphs as $paragraph)
+                            <p>{{ $paragraph }}
+                            <p>
+                                @php
+                                    $section = 'in';
+                                    $parent++;
+                                @endphp
+                                @include('school.recipes.inserted')
                         @endforeach
                     @endforeach
 
