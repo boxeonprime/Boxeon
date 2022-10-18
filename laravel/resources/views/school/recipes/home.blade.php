@@ -28,8 +28,8 @@
                     </a>
                 </div>
                 <div class="p-relative">
-                    <a href="/recipe/ata-dindin"> <img width="320px" height="466px"  src="../assets/images/products/medium/ata.webp"  loading="lazy" alt=""></a>
-                    <a class="p-title" href="/recipe/ata-dindin">
+                    <a href="/recipe/nigerian-ata-dindin"> <img width="320px" height="466px"  src="../assets/images/products/medium/ata.webp"  loading="lazy" alt=""></a>
+                    <a class="p-title" href="/recipe/nigerian-ata-dindin">
                         <h2 class="title-style"><span class="title-style-span">Nigerian Ata Dindin</h2>
                     </a>
                 </div>

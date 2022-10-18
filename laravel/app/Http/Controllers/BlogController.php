@@ -188,9 +188,9 @@ class BlogController extends Controller
             "text" => [
                 "tableOfContents" =>
 
-                $blog['topics']
+                $blog['topics'],
+            
 
-                ,
                 "content" => [
 
                     "h2" => $blog['topics'][0], // // What are moin moin's health benefits?
@@ -212,16 +212,13 @@ class BlogController extends Controller
                 ],
                 "li3" => [
 
-                    "h2" => $blog['topics'][2],  // Out favorite recipe
+                    "h2" => $blog['topics'][2],
 
-                    "recipe" => 
+                    "recipe"=>
 
-
-                            $blog['rec'],
-
-                   
-                    ],
+                        $blog["rec"],
                 ],
+                    
                 "li4" => [
 
                     "h2" => $blog['topics'][3], // How to cook moin moin?
@@ -282,11 +279,11 @@ class BlogController extends Controller
 
                     "h2" => $blog['topics'][9], // Last but not least
 
-                    "paragraphs" =>[
+                    "paragraphs" =>
 
                     $blog['c'],
-
                 ],
+
 
             ],
             "inserts" => [

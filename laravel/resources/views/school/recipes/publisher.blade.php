@@ -189,8 +189,8 @@
                             @if (isset($json->text->li3->recipe))
                                 @php $parent = 0; @endphp
                             
-                                @foreach ($json->text->li3->recipe as $paragraph)
-                                  
+                                @foreach ($json->text->li3->recipe as $paragraphs)
+
                                         @php
                                             $section = 'rec';
                                             $parent++;
@@ -200,41 +200,42 @@
                                             @include('school.recipes.editor')
                                         </div>
                                         @include('school.recipes.inserts')
-                                  
+                                      
                                 @endforeach
                             @else
-                                @php
-                                    $section = 'rec';
-                                    
-                                @endphp
-                                     <div>
-                                        <textarea required name="rec[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
-                                        @include('school.recipes.editor')
-                                    </div>
-                                    @include('school.recipes.inserts')
+                            <div>
+                                <textarea required name="rec[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+
+                                @include('school.recipes.editor')
+                            </div>
+                            @include('school.recipes.inserts')
+                            <div>
+
+                                <input required type="text" name="ul[rec][1][]" value=""
+                                    placeholder="(Instruction)">
                                 <div>
-                                    <input type="text" name="ul[rec][1][]" value="" required
-                                        placeholder="(Measurement and ingredient)">
                                     <a href="#/" data-type-id="add-in" onclick="createItem(this)"
-                                        class="add-field point-7-em-font">+Ingredient</a> &nbsp;|&nbsp;
+                                        class="add-field point-7-em-font">+Instruction</a> &nbsp;|&nbsp;
                                     <a href="#/" data-type-id="remove-in" onclick="removeTopic(this)"
-                                        class="remove-field point-7-em-font">-Ingredient</a>
+                                        class="remove-field point-7-em-font">-Instruction</a>
                                 </div>
+                            </div>
+                            <div>
+                                <textarea required name="rec[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
+
+                                @include('school.recipes.editor')
+                            </div>
+                            @include('school.recipes.inserts')
+                            <div>
+                                <input required type="text" name="ul[rec][2][]" value=""
+                                    placeholder="(Instruction)">
                                 <div>
-                                    <textarea required name="rec[]" col="45" rows="8" placeholder="(Paragraph)"></textarea>
-                                    @include('school.recipes.editor')
+                                    <a href="#/" data-type-id="add-in" onclick="createItem(this)"
+                                        class="add-field point-7-em-font">+Instruction</a> &nbsp;|&nbsp;
+                                    <a href="#/" data-type-id="remove-in" onclick="removeTopic(this)"
+                                        class="remove-field point-7-em-font">-Instruction</a>
                                 </div>
-                                @include('school.recipes.inserts')
-                                <div>
-                                    <input type="text" name="ul[rec][2][]" value="" required
-                                        placeholder="(Measurement and ingredient)">
-                                    <div>
-                                        <a href="#/" data-type-id="add-in" onclick="createItem(this)"
-                                            class="add-field point-7-em-font">+Ingredient</a> &nbsp;|&nbsp;
-                                        <a href="#/" data-type-id="remove-in" onclick="removeTopic(this)"
-                                            class="remove-field point-7-em-font">-Ingredient</a>
-                                    </div>
-                                </div>
+                            </div>
                             @endif
 
                         </fieldset>
@@ -264,7 +265,7 @@
                                 @include('school.recipes.inserts')
                                 <div>
 
-                                    <input required type="text" name="in[]" value=""
+                                    <input required type="text" name="ul[in][1][]" value=""
                                         placeholder="(Instruction)">
                                     <div>
                                         <a href="#/" data-type-id="add-in" onclick="createItem(this)"
@@ -280,7 +281,7 @@
                                 </div>
                                 @include('school.recipes.inserts')
                                 <div>
-                                    <input required type="text" name="in[]" value=""
+                                    <input required type="text" name="ul[in][1][]" value=""
                                         placeholder="(Instruction)">
                                     <div>
                                         <a href="#/" data-type-id="add-in" onclick="createItem(this)"
