@@ -21,9 +21,7 @@
                     class="cart-count text-cart-count text-yellow"></span></a>
         @endif
         <div class="p-relative">
-            <a id="showDropdown" class='fadein button margin-right-1-em m-padding-right-zero' href='#'><span><img
-                        id="user-icon" class="w30px" width="30px" height="30px"
-                        src='{{ asset('../assets/images/account_circle.svg') }}' alt="Account" /></span>
+            <a id="showDropdown" class='fadein button margin-right-1-em m-padding-right-zero' href='#'>Account
             </a>
 
             <div class="dropdown">
@@ -35,7 +33,7 @@
                     <a class="one-em-font" href="/signout">Sign Out</a>
                 </div>
             </div>
-            <span class="hide"></span>
+            
         </div>
 
     </div>
