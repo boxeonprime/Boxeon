@@ -34,5 +34,5 @@
         alt="Star" /></span>
         
     @endfor
-    <span>{{ $total_reviews }} Reviews</span>
+    <p class="hide">&nbsp;{{ $total_reviews }}&nbsp;Reviews</p>
 </div>

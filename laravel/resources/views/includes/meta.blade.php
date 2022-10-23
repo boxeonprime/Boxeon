@@ -27,6 +27,6 @@ header('Accept-Encoding: gzip, compress, br');
 <link defer rel="stylesheet" href="{{ asset('../css/app.min.css') }}">
 <link rel="stylesheet" media="screen and (min-width: 200px) and (max-width: 1810px)"
     href="{{ asset('../assets/css/mobile.min.css?v=3.6') }}" />
-<script defer type="module" src="{{ asset('../assets/js/global.min.js?v=2.1') }}"></script>
-<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=63371544b22a350012c877a6&product=inline-share-buttons" defer></script>
+<script defer type="module" src="{{ asset('../assets/js/global.js?v=2.1') }}"></script>
+@stack("script")
 

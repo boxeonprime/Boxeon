@@ -24,8 +24,9 @@
                     @php $count = 0; @endphp
                     @foreach ($content->text->tableOfContents as $items)
                         @foreach ((array) $items as $item)
-                        @php $count++ @endphp
-                            <li><a class="one-em-font primary-color" href="#jump{{$count}}">{{ $item }}</a> </li>
+                            @php $count++ @endphp
+                            <li><a class="one-em-font primary-color"
+                                    href="#jump{{ $count }}">{{ $item }}</a> </li>
                         @endforeach
                     @endforeach
 
@@ -59,22 +60,22 @@
             <h2 id="jump3">{{ $content->text->li3->h2 }}</h2>
             <p>This&nbsp;{{ $meta->short_title }}&nbsp; calls for specific African ingredients that you can purchase
                 right here on <a class="one-em-font" href="../shop/index?c=staple">Boxeon</a>.</p>
-                <div class="table-of-contents">
-                    @php $parent = 0; @endphp
-                    @foreach ($content->text->li3->recipe as $paragraphs)
-                        @foreach ((array) $paragraphs as $paragraph)
-                            <p>{{ $paragraph }}
-                            <p>
-                                @php
-                                    $section = 'rec';
-                                    $parent++;
-                                @endphp
-                                @include('school.recipes.inserted')
-                        @endforeach
+            <div class="table-of-contents">
+                @php $parent = 0; @endphp
+                @foreach ($content->text->li3->recipe as $paragraphs)
+                    @foreach ((array) $paragraphs as $paragraph)
+                        <p>{{ $paragraph }}
+                        <p>
+                            @php
+                                $section = 'rec';
+                                $parent++;
+                            @endphp
+                            @include('school.recipes.inserted')
                     @endforeach
-            
-                            </div>
-            
+                @endforeach
+
+            </div>
+
 
             <h2 class="primary-color extra-large-font" id="jump4">{{ $content->text->li4->h2 }}</h2>
             <p>Like my beloved grandma always said, love, is the most important ingredient in African ancestral cooking.
@@ -99,6 +100,10 @@
             <h2>Video instructions</h2>
             <p>Watch this video for clear instructions on how to make this
                 delicious&nbsp;{{ $meta->short_title }}&nbsp;recipe:</p>
+            <p>Subscribe to our YouTube channel for more videos like this.</p>
+            <div class="g-ytsubscribe" data-channel="UCxjZrfFw9XpEsKZ5hOa4EZA" data-layout="full" data-theme="dark" data-count="default"></div>
+            <br>
+
             <div id="video">
                 <iframe width="560" height="315" loading="lazy"
                     src="https://www.youtube.com/embed/{{ $content->videoID }}" title="{{ $content->text->li3->h2 }}"

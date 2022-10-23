@@ -45,9 +45,9 @@ Boxeon = {
     }
   },
 
-removeParagraph:function(){
-  alert(this);
-},
+  removeParagraph: function () {
+    alert(this);
+  },
 
   feedback: function (string) {
 
@@ -890,6 +890,9 @@ window.onload = function () {
   if (document.getElementById('cart_overlay')) {
     document.getElementById('cart_overlay').addEventListener('click', function () {
       document.getElementById('cart_overlay').className = "cart_overlay_hide";
+      if (document.getElementById("myDropdown").style.display == "block") {
+        document.getElementById("myDropdown").style.display = "none";
+      }
       document.getElementById('menu').className = "slideInCart";
       document.getElementById('menu').style.display = "none";
 
@@ -1066,8 +1069,8 @@ window.onload = function () {
     /* When the user clicks on the button,
     toggle between hiding and showing the dropdown content */
     document.getElementById('showDropdown').addEventListener('click', function () {
-
       document.getElementById("myDropdown").style.display = "block";
+      document.getElementById("cart_overlay").className = "cart_overlay_show";
 
 
     });
@@ -1279,7 +1282,7 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
@@ -1287,7 +1290,7 @@ for (i = 0; i < acc.length; i++) {
 
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-  
+
     }
   });
 }

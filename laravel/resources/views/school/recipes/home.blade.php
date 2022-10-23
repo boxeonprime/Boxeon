@@ -8,12 +8,11 @@
     repatriate their grocery shopping. We specialize in African and Caribbean foods and deliver nationwide. Get 16 free
     foods - this offer ends soon.')
 @section('content')
-
     <main>
-
         <section class='section maxw1035 rounded-corner card'>
             <h2 class="margin-bottom-zero">Nigerian Cuisine Delicacies</h2>
             <p>Nigerian cuisine is all about texture and taste; whether it's the tangy-spicy taste of pepper soup or the rich-creamy flavor of palm oil stewed beans, there are flavors for every palate. Perfect for families to cook together. Excellent to be restaurant specials.</p>
+            <div class="sharethis-inline-share-buttons margin-bottom-2-em"></div>
             <div class="recipes-stream">
                 <div class="p-relative">
                     <a href="/recipe/moin-moin"><img width="320px" height="466px"  src="../assets/images/products/medium/moin-moin.webp" alt="Nigerian Moin Moin"></a>
@@ -21,15 +20,14 @@
                         <h2 class="title-style"><span class="title-style-span">Savory Moin Moin Pudding</h2>
                     </a>
                 </div>
-            
                 <div class="p-relative">
-                    <a href="/recipe/nigerian-egusi-soup"> <img width="320px" height="466px"  src="../assets/images/products/medium/egusi.webp"  alt="Nigerian Egusi Soup"></a>
+                    <a href="/recipe/nigerian-egusi-soup"><img width="320px" height="466px"  src="../assets/images/products/medium/egusi.webp"  alt="Nigerian Egusi Soup"></a>
                     <a class="p-title" href="/recipe/nigerian-egusi-soup">
                         <h2 class="title-style"><span class="title-style-span">Creamy Egusi Soup</span></h2>
                     </a>
                 </div>
                 <div class="p-relative">
-                    <a href="/recipe/nigerian-ata-dindin"> <img width="320px" height="466px"  src="../assets/images/products/medium/ata.webp"  loading="lazy" alt=""></a>
+                    <a href="/recipe/nigerian-ata-dindin"><img width="320px" height="466px"  src="../assets/images/products/medium/ata.webp"  loading="lazy" alt=""></a>
                     <a class="p-title" href="/recipe/nigerian-ata-dindin">
                         <h2 class="title-style"><span class="title-style-span">Spicy Ata Dindin</h2>
                     </a>
@@ -107,12 +105,13 @@
                     </a>
                 </div>
             </div>
-            <div class="div-horizontal-rule"></div>
+            <!--
+       <br>
             <h2 class="margin-bottom-zero">Soul Food & African Cuisine Fusion</h2>
             <p>Soul food and African cuisine fusing are much more than a combination of the best-tasting cuisines in the world - it is a unification of formerly broken hearts, minds, and souls. More and more Black families cook these with their children while teaching them positive aspects of their history and culture, so that they will be empowered by that knowledge whenever they enjoy these meals.</p>
+            <div class="sharethis-inline-share-buttons margin-bottom-2-em"></div>
+            !-->
         </section>
-
     </main>
-
 
 @endsection
