@@ -20,7 +20,7 @@
                         src="../assets/images/cart.webp" alt="Cart" /></span><span
                     class="cart-count text-cart-count text-yellow"></span></a>
         @endif
-        <div class="p-relative">
+        <div class="relative">
             <a id="showDropdown" class='fadein button margin-right-1-em m-padding-right-zero' href='#'>Account
             </a>
 
