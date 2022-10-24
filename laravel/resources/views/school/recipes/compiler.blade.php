@@ -7,8 +7,8 @@
 @section('keywords',  $meta->keywords)
 @section('description',  $meta->blurb)
 @push('script')
-<script src="https://apis.google.com/js/platform.js"></script>
-<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=63371544b22a350012c877a6&product=inline-share-buttons" defer></script>
+<script defer src="https://apis.google.com/js/platform.js"></script>
+<script defer type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=63371544b22a350012c877a6&product=inline-share-buttons" defer></script>
 
 @endpush
 @section('content')

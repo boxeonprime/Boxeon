@@ -8,6 +8,11 @@
     repatriate their grocery shopping. We specialize in African and Caribbean foods and deliver nationwide. Get 16 free
     foods - this offer ends soon.')
 @section('content')
+@push('script')
+
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=63371544b22a350012c877a6&product=inline-share-buttons" defer></script>
+
+@endpush
     <main>
         <section class='section maxw1035 rounded-corner card'>
             <h2 class="margin-bottom-zero">Nigerian Cuisine Delicacies</h2>
