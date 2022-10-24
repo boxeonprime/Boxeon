@@ -97,21 +97,19 @@
 
                 </ul>
             </div>
-            <h2>Video instructions</h2>
-            <p>Watch this video for clear instructions on how to make this
-                delicious&nbsp;{{ $meta->short_title }}&nbsp;recipe:</p>
-            <p>Subscribe to our YouTube channel for more videos like this.</p>
-            <div class="g-ytsubscribe" data-channel="UCxjZrfFw9XpEsKZ5hOa4EZA" data-layout="full" data-theme="dark" data-count="default"></div>
-            <br>
+            <h2>The Boxeon Challenge</h2>
+            <p>It's true, we have a YouTube channel. Check out this episode of our cooking show where contestants are
+                given the difficult task of preparing this meal while being deaf, blind, and mute. And if you want more
+                videos like these (or just love cooking), subscribe to our YouTube Channel and share it with your
+                friends!</p>
+
+            <section class="section margin-bottom-4-em">
+                <div class="g-ytsubscribe" data-channelid="UCxjZrfFw9XpEsKZ5hOa4EZA" data-layout="full"
+                    data-theme="dark" data-count="default"></div>
+            </section>
 
             <div id="video">
-                <iframe width="560" height="315" loading="lazy"
-                    src="https://www.youtube.com/embed/{{ $content->videoID }}" title="{{ $content->text->li3->h2 }}"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; 
-                    clipboard-write; encrypted-media; 
-                    gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                <p class="centered">Video coming soon</p>
             </div>
             <br>
             @if (isset($content->text->li5->h2))
