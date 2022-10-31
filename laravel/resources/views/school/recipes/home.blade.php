@@ -15,8 +15,8 @@
 @endpush
     <main>
         <section class='section maxw1035 rounded-corner card'>
-            <h2 class="margin-bottom-zero">Nigerian Cuisine Delicacies</h2>
-            <p>Nigerian cuisine is all about texture and taste; whether it's the tangy-spicy taste of pepper soup or the rich-creamy flavor of palm oil stewed beans, there are flavors for every palate. Perfect for families to cook together. Excellent to be restaurant specials.</p>
+            <h2 class="margin-bottom-zero">West African Cuisine Delicacies</h2>
+            <p>West African cuisine is all about texture and taste; whether it's the tangy-spicy taste of pepper soup or the rich-creamy flavor of palm oil stewed beans, there are flavors for every palate. Perfect for families to cook together. Excellent to be restaurant specials.</p>
             <div class="sharethis-inline-share-buttons margin-bottom-2-em"></div>
             <div class="recipes-stream">
                 <div class="p-relative">
@@ -112,7 +112,7 @@
             </div>
             <!--
        <br>
-            <h2 class="margin-bottom-zero">Soul Food & African Cuisine Fusion</h2>
+            <h2 class="margin-bottom-zero">Caribbean Cuisine Delicacies</h2>
             <p>Soul food and African cuisine fusing are much more than a combination of the best-tasting cuisines in the world - it is a unification of formerly broken hearts, minds, and souls. More and more Black families cook these with their children while teaching them positive aspects of their history and culture, so that they will be empowered by that knowledge whenever they enjoy these meals.</p>
             <div class="sharethis-inline-share-buttons margin-bottom-2-em"></div>
             !-->

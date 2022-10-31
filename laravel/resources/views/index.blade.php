@@ -5,7 +5,7 @@
 @section('keywords',  "Boxeon, African Subscription Box, African Snack Box, Nigerian Cuisine, Caribbean Foods, African Food Recipes")
 @section('description',  "Boxeon is an African food and meal kit delivery service helping the diaspora automate and repatriate their grocery shopping. We specialize in African and Caribbean foods and deliver nationwide. Get 16 free foods - this offer ends soon.")
 @section('content')
-    <div id="masthead">
+    <div id="mealkit-masthead">
         <aside class="centered asides call-out mobile-scroll"><br>
             <h2 id="headline_h1" class="font-size-3-em">African Groceries Delivered To You Monthly</h2>
             <p class="centered center font-1-5-em">Home in a box. Subscribe to monthly deliveries of your favorite foods from
