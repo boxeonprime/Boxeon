@@ -1,15 +1,13 @@
 @php
 
-$price = DB::table('products')
-    ->whereIn('products.id', [47, 10, 8, 36, 9, 4, 48, 14, 26, 7, 41, 38, 66, 67, 53])
-    ->sum('price');
+$price = 40;
 
 @endphp
 
 @extends('layouts.index')
-@section('title', 'African Meal kit Delivery Service | Boxeon')
-@section('og:image', asset('../assets/images/logo_square.png'))
-@section('og:image:alt', asset('../assets/images/logo_square2.png'))
+@section('title', 'Meal kit Delivery Service | Boxeon')
+@section('og:image', asset('../assets/images/logo-square.webp'))
+@section('og:image:alt', asset('../assets/images/logo-square2.webp'))
 @section('keywords', 'Boxeon, African Subscription Box, African Snack Box, Nigerian Cuisine, Caribbean Foods, African
     Food Recipes')
 @section('description', 'Boxeon is an African food and meal kit delivery service helping the diaspora automate and
@@ -18,9 +16,8 @@ $price = DB::table('products')
 @section('content')
     <div id="mealkit-masthead">
         <aside class="centered asides call-out mobile-scroll"><br>
-            <h2 id="headline_h1" class="font-size-3-em">African Meal-kits Delivered To You Monthly</h2>
-            <p class="centered center font-1-5-em">Don't know what to buy? Boxeon's Nigerian Staples Mealkit
-                has all the ingredients and recipes you need to taste Mama Africa.
+            <h2 id="headline_h1" class="font-size-3-em">30-Minute Reliable Meal-kits Delivered Monthly</h2>
+            <p class="centered center font-1-5-em">Take stress out of mealtime. Subscribe to receive meal-kits for the best West African, Caribbean and American fusion meals. Cancel anytime.
             </p><br>
             <form class="form-plan center">
                 <select class="select-plan margin-top-zero" name="quantity">
@@ -35,15 +32,15 @@ $price = DB::table('products')
                 </select>
                 <select class="select-plan margin-top-zero" data-product="2" data-price="{{ $price }}"
                     name="plan">
-                    <option invalid="">Select Subscription</option>
-                    <option value="1" selected="">${{ $price }} - Every month</option>
-                    <option value="2">${{ $price + 1 }} - Every 2 months</option>
-                    <option value="3">${{ $price + 2 }} - Every 3 months</option>
-                    <option value="0">${{ $price + 3 }} - One-time purchase</option>
+                    <option invalid=""selected="">Select Subscription</option>
+                    <option value="1">${{ $price }} - Every month</option>
+                    <option value="2">${{ $price + 5 }} - Every 2 months</option>
+                    <option value="3">${{ $price + 7 }} - Every 3 months</option>
+                    <option value="0">${{ $price + 9 }} - One-time purchase</option>
                 </select>
 
             </form>
-            <button data-quantity="1" data-name="African Staples Mealkit" data-plan="1" data-img="sisi.webp" data-id="68"
+            <button data-quantity="1" data-name="30-Minute Reliable Meal-kit" data-plan="1" data-img="sisi.webp" data-id="68"
                 data-baseprice="{{ $price }}" data-price="{{ $price }}"
                 class="cart-add button center">SUBSCRIBE NOW</button>
 
@@ -59,15 +56,14 @@ $price = DB::table('products')
                 <div>
                     <img id="img-shopping" class="image-how-it-works" loading="lazy" src="../assets/images/shopping.webp"
                         alt="Shopping" />
-                    <h2 class="centered">Shop Kit</h2>
-                    <p class="centered">Subscribe to the monthly meal kit. Flat rate shipping. Cancel anytime.</p>
+                    <h2 class="centered">Select Meals</h2>
+                    <p class="centered">Scroll down and select the meals you want to enjoy. Flat rate shipping. Cancel anytime.</p>
                 </div>
                 <div>
                     <img id="img-reminder" class="image-how-it-works" loading="lazy" src="../assets/images/bike.webp"
                         alt="Delivery" />
-                    <h2 class="centered">Receive subscription</h2>
-                    <p class="centered">Recieve your delivery at home. Use our recipes and instructional videos to prepare
-                        your meals. </p>
+                    <h2 class="centered">Subscribe</h2>
+                    <p class="centered">Select how often you want to recieve your delivery, subscribe - we'll handle the rest. </p>
                 </div>
                 <div>
                     <img id="img-gifts" class="image-how-it-works" loading="lazy" src="../assets/images/schedule.webp"
@@ -79,8 +75,8 @@ $price = DB::table('products')
             </div>
         </section>
         <section class='section maxw1035 rounded-corner card'>
-            <h2 class="center centered font-size-3-em uppercase primary-color">Enjoy 60+ meals each month</h2>
-            <p class="centered">We'll send you the African ingredients you need to prepare 15+ Nigerian staple recipes.</p>
+            <h2 class="center centered font-size-3-em uppercase primary-color">Select Your Meals</h2>
+            <p class="centered">Select the meals you want to enjoy in your meal kit by clicking the plus (+) sign.</p>
            
 
             @include('includes.recipes-stream')
@@ -88,16 +84,8 @@ $price = DB::table('products')
             <br>
             <section class="section margin-top-4-em">
                 <h2 class="center font-size-3-em  uppercase primary-color">What We Ship You</h2>
-                <p class="centered">We'll send you enough ingredients to prepare 60+ meals each month.</p>
-            </section>
-
-            @include('includes.mealkit')
-
-            <section class="section margin-top-4-em">
-
-                <h2 class="center font-size-3-em centered primary-color">We save you serious time and stress</h2>
-                <p class="centered">You can automate your African grocery shopping with us, saving time <br>traveling long distances to find what you need.</p>
-
+                <p class="centered">We'll send you all the cut, portioned, and labeled ingredients to prepare<br> your selected meals and include the simple steps on how to<br> put everything together.</p>
+         
                 <form class="form-plan center">
                     <select class="select-plan margin-top-zero" name="quantity">
                         <option invalid="">Select Quantity</option>
@@ -111,15 +99,15 @@ $price = DB::table('products')
                     </select>
                     <select class="select-plan margin-top-zero" data-product="2" data-price="{{ $price }}"
                         name="plan">
-                        <option invalid="">Select Subscription</option>
-                        <option value="1" selected="">${{ $price }} - Every month</option>
-                        <option value="2">${{ $price + 1 }} - Every 2 months</option>
-                        <option value="3">${{ $price + 2 }} - Every 3 months</option>
-                        <option value="0">${{ $price + 3 }} - One-time purchase</option>
+                        <option invalid="" selected="">Select Subscription</option>
+                        <option value="1">${{ $price }} - Every month</option>
+                        <option value="2">${{ $price + 5 }} - Every 2 months</option>
+                        <option value="3">${{ $price + 7 }} - Every 3 months</option>
+                        <option value="0">${{ $price + 9 }} - One-time purchase</option>
                     </select>
 
                 </form>
-                <button data-quantity="1" data-name="African Mealkit by Jemimah" data-plan="1" data-img="sisi.jpeg"
+                <button data-quantity="1" data-name="30-Minute Reliable Meal-kit" data-plan="1" data-img="sisi.webp"
                     data-id="68" data-baseprice="{{ $price }}" data-price="{{ $price }}"
                     class="cart-add button center">SUBSCRIBE NOW</button>
             </section>

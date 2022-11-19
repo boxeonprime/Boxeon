@@ -14,12 +14,12 @@
         <span class="hack"></span>
 
         @auth
-            <a href="/gifts" class="button one-em-font hide">Gifts‬</a>
+       <span></span>
             <a href="/cart/index" class="white button"><span><img id="cart" class="w30px" width="30px" height="24px"  src='{{ asset('../assets/images/cart.webp') }}'
                         alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
         @endauth
         @if (!Auth::check())
-        <a href="/gifts" class="button one-em-font hide">Gifts‬</a>
+        <span></span>
             <a href="/cart/index" class="white button"><span><img width="30px" height="21"
                         src="../assets/images/cart.webp" alt="Cart" /></span><span class="cart-count text-cart-count text-yellow"></span></a>
         @endif
