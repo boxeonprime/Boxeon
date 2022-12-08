@@ -107,5 +107,4 @@
         </div>
     </section>
 
-    @include('includes.shop-products')
 @endif

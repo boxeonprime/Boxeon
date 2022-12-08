@@ -4,7 +4,7 @@
 
     <main>
         <section class="section card maxw1036">
-            @include('includes.category-nav')
+       
             <h1 class='extra-large-font centered darkblue'>Boxeon Terms of Use</h1>
             <p>Effective July 1, 2021</p>
 

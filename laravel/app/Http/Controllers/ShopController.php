@@ -14,14 +14,38 @@ class ShopController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function plans()
     {
         if ($user = Auth::user()) {
             $id = auth()->user()->id;
             $user = User::find($id);
         }
 
-        return view('shop.index', compact('user', 'user'));
+        return view('shop.plans', compact('user', 'user'));
+    }
+    public function meals()
+    {
+        if ($user = Auth::user()) {
+            $id = auth()->user()->id;
+            $user = User::find($id);
+        }
+
+        return view('shop.meals', compact('user', 'user'));
+    }
+    public function menus()
+    {
+        $user = Auth::user();
+
+        return view('shop.menus', compact('user'));
+    }
+    public function promo()
+    {
+        if ($user = Auth::user()) {
+            $id = auth()->user()->id;
+            $user = User::find($id);
+        }
+
+        return view('shop.promo', compact('user', 'user'));
     }
 
 
@@ -30,7 +54,7 @@ class ShopController extends Controller
         $user = Auth::user();
        
         $id = $_GET["id"];
-        $product = DB::table("products")
+        $product = DB::table("menu")
             ->where("id", "=", $id)
             ->get();
 

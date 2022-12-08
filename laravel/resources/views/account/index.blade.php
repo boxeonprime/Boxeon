@@ -10,8 +10,8 @@
             </dialog>
         @endif
         <section class="section rounded-corners card maxw1035">
-            @include('includes.category-nav')
-            <h2 class="margin-bottom-zero font-size-2-em">Manage your account</h2>
+         
+            <h2 class="margin-bottom-zero font-size-3-em">Manage account</h2>
             <div class="div-horizontal-rule"></div>
             <div class="card step-wrapper">
                 <h2>Shipping address</h2>

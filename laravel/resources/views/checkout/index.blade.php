@@ -4,29 +4,8 @@
     <main id="checkout-main">
         <span></span>
         <div>
-            <section id="checkout-content" class="margin-top-6-em max-width-1035 three-rows-grid">
-                <div class="card step-wrapper display-none-unimportant">
-                    <div>
-                        <h2>0.&nbsp;&nbsp;&nbsp;Apply coupon code </h2>
-                    </div>
-                    <div id="coupon">
-                        <form onsubmit="return false" action='/checkout/coupon' method='post'>
-                            @csrf
-                            @method('POST')
-                            <div class="row">
-                                <div class="col-75">
-                                    <input type="text" name="coupon" placeholder="Coupon code (optional)">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-75">
-                                    <input type='submit' value='APPLY'>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div></div>
-                </div>
+            <section id="checkout-content" class=" max-width-1035 three-rows-grid">
+     
                 <div class="card step-wrapper">
                     <h2>1.&nbsp;&nbsp;&nbsp;Shipping address</h2>
                     <p><span data-type-id="shipping-address" class="preview">{{ $address->address_line_1 ?? 'Enter your shipping address to continue.'}}</span></p>
@@ -126,19 +105,15 @@
                             <p>{{ count($cart) }}</p>
                         </div>
                         <div class="two-col-grid">
-                            <p>FLAT rate shipping:</p>
+                            <p>Shipping:</p>
                             <div>
-                                <p>$17</p>
+                                <p>$0</p>
                                 <hr>
                             </div>
                         </div>
                         <div class="two-col-grid">
-                            <p>Total before tax:</p>
+                            <p>Total:</p>
                             <p class="cart-total"></p>
-                        </div>
-                        <div class="two-col-grid">
-                            <p>Estimated tax:</p>
-                            <p>$0</p>
                         </div>
                         <hr>
                         <div class="two-col-grid">

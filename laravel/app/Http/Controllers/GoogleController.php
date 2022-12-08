@@ -53,7 +53,7 @@ class GoogleController extends Controller
                     return redirect($location)->withCookie($cookie);
                 } else {
                 
-                   return redirect('/home/index');
+                   return redirect('/dashboard');
                 }
             } else {
                 #Save new user

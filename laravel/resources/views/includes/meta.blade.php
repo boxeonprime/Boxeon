@@ -28,5 +28,8 @@ header('Accept-Encoding: gzip, compress, br');
 <link rel="stylesheet" media="screen and (min-width: 200px) and (max-width: 1810px)"
     href="{{ asset('../assets/css/mobile.min.css?v=3.6') }}" />
 <script defer type="module" src="{{ asset('../assets/js/global.js?v=2.1') }}"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap" rel="stylesheet">
 @stack("script")
 

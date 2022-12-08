@@ -3,12 +3,10 @@
 <header>
     <span id="top-bar"></span>
     <div id="header-inner-wrapper">
-        
         <a id='logo' href="/" title='Boxeon'>
-            <img id='logo' width="127px" height="30px" src='{{ asset('../assets/images/logo.webp') }}'
+            <img id='logo' width="127px" height="30px" src='{{ asset('../assets/images/logo-black.webp') }}'
                 alt='logo' />
         </a>
-
         @auth
 
             <a href="/cart/index" class="white button"><span><img id="cart" width="30px" height="24px"

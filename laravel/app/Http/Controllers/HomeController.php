@@ -17,6 +17,11 @@ class HomeController extends Controller
         $user = Auth::user();
         return view('index', compact('user'));
     }
+    public function dashboard()
+    {
+        $user = Auth::user();
+        return view('home.index', compact('user'));
+    }
 
     public function waiting(Request $request)
     {
@@ -133,21 +138,6 @@ class HomeController extends Controller
         $user = Auth::user();
 
         return view('about.index', compact('user'));
-    }
-
-    public function dashboard()
-    {
-        $user = Auth::user();
-
-        $subscriptions = DB::table("subscriptions")
-            ->join('products', 'products.id', '=', 'subscriptions.product_id')
-            ->where('subscriptions.user_id', '=', $user->id)
-          //  ->where('sub_id', '<>', null)
-            ->select('subscriptions.*', 'products.*')
-            ->get();
-
-        return view('home.index', compact('user'))
-            ->with('subscriptions', $subscriptions);
     }
 
 

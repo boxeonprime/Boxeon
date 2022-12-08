@@ -5,7 +5,7 @@
         <section class=" card rounded-corners maxw1035 margin-auto bg-yellow">
             <section class="section box-shadow">
                 <div class="center fit-content">
-                    <h2 class="extra-large-font primary-color"><span class="material-icons">circle_arrow_right</span>&nbsp;Forgot your password?</h2>
+                    <h1 class="ginormous margin-top-zero">Forgot your password?</h1>
                     <p>
                         {{ __(' No problem! Enter your account\'s email and we\'ll email you a password reset link.') }}
                     </p>
@@ -19,7 +19,7 @@
                             <input id="email" type="email" name="email"
                                 :value="old('email')" required autofocus placeholder="Email"/>
                 
-                            <button>
+                            <button class="text-black">
                                 {{ __('EMAIL RESET LINK') }}
                             </button>
                         </div>

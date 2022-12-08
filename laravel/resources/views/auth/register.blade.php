@@ -3,11 +3,11 @@
 @section('content')
     <div id="login-masthead" class="margin-top-4-em">
 
-        <section class=" card rounded-corners maxw1035 margin-auto bg-yellow">
+        <section class=" card rounded-corners maxw1035 margin-auto">
 
             <section class="section box-shadow">
                 <div class="center fit-content">
-                    <h2 class="extra-large-font primary-color">+&nbsp;Register new account</h2>
+                    <h1 class="ginormous margin-top-zero">Register new account</h1>
 
                     @if (session('status'))
                         <div class="mb-4 font-medium text-sm text-red-600">
@@ -42,9 +42,9 @@
                             <div>
                                 <label for="terms">
                                     <div class="flex items-center">
-                                        <input type="checkbox" required name="terms" id="terms" />
+                                        <input class="l-float" type="checkbox" required name="terms" id="terms" />
 
-                                        <div>
+                                        <div class="w300px">
                                             {!! __('I agree to the :terms_of_service and :privacy_policy', [
     'terms_of_service' => '<a target="_blank" href="' . route('terms') . '" class="underline text-sm text-gray-600 hover:text-gray-900">' . __('Terms of Service') . '</a>',
     'privacy_policy' => '<a target="_blank" href="' . route('privacy') . '" class="underline text-sm text-gray-600 hover:text-gray-900">' . __('Privacy Policy') . '</a>',
@@ -56,10 +56,10 @@
                         @endif
 
                         <div class="flex items-center justify-end mt-4">
-                            <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
+                            <a class="underline text-sm text-gray-600 hover:text-gray-900 display-block" href="{{ route('login') }}">
                                 {{ __('Already registered?') }}
                             </a>
-
+<br>
                             <button class="ml-4">
                                 {{ __('REGISTER') }}
                             </button>

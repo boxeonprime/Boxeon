@@ -944,7 +944,7 @@ window.onload = function () {
   }
 
 
-  if (document.getElementsByClassName('cart-add')) {
+  /*if (document.getElementsByClassName('cart-add')) {
     let btns = document.getElementsByClassName('cart-add');
     var total = btns.length;
     for (var i = 0; i < total; i++) {
@@ -953,6 +953,89 @@ window.onload = function () {
         Boxeon.cartPush(a);
         Boxeon.slideOutCart();
         Boxeon.addToFlyout();
+
+      });
+    }
+  }*/
+
+  if (document.getElementsByClassName('plan-option')) {
+
+    let isValid = false;
+    let btns = document.getElementsByClassName('plan-option');
+    var total = btns.length;
+    for (var i = 0; i < total; i++) {
+      btns[i].addEventListener('click', function () {
+        let a = this;
+        var check = a.getElementsByClassName("check-circle")[0];
+        if (check.style.display == "block") {
+          check.style.display = "none";
+          // Check all options to see if not selected
+          let options = document.getElementsByClassName("check-circle");
+          for (var i = 0; i < options.length; i++) {
+            if (options[i].style.display == "block") {
+
+             isValid = true;
+
+            }
+          }
+          if (isValid == false) {
+            document.getElementById("warning").style.visibility = "visible";
+          }
+        } else {
+          check.style.display = "block";
+          if (document.getElementById("warning").style.visibility == "visible") {
+            document.getElementById("warning").style.visibility = "hidden";
+          }
+          
+          
+        }
+
+      });
+ 
+    }
+  }
+  if (document.getElementsByClassName('plan-recipes')) {
+    let btns = document.getElementsByClassName('plan-recipes');
+    var total = btns.length;
+    for (var i = 0; i < total; i++) {
+      btns[i].addEventListener('click', function () {
+        let a = this;
+        if (a.style.backgroundColor == "green") {
+          a.style.backgroundColor = null;
+          a.style.color = "black";
+        } else {
+          a.style.backgroundColor = "green";
+          a.style.color = "white";
+        }
+      });
+    }
+  }
+  if (document.getElementsByClassName('plan-people')) {
+    let btns = document.getElementsByClassName('plan-people');
+    var total = btns.length;
+    for (var i = 0; i < total; i++) {
+      btns[i].addEventListener('click', function () {
+        let a = this;
+        if (a.style.backgroundColor == "green") {
+          a.style.backgroundColor = null;
+          a.style.color = "black";
+        } else {
+          a.style.backgroundColor = "green";
+          a.style.color = "white";
+        }
+
+      });
+    }
+  }
+
+  if (document.getElementsByClassName('cart-add')) {
+    let btns = document.getElementsByClassName('cart-add');
+    var total = btns.length;
+    for (var i = 0; i < total; i++) {
+      btns[i].addEventListener('click', function () {
+        let a = this;
+        Boxeon.cartPush(a);
+        location.assign("/checkout/index")
 
       });
     }
@@ -1257,6 +1340,21 @@ window.onload = function () {
       document.getElementById("m").style.display = "block";
     });
   }
+
+  if (document.getElementsByClassName('view-plans')) {
+    var buttons = document.getElementsByClassName('view-plans');
+    var num = buttons.length;
+    for (var i = 0; i < num; i++) {
+
+      buttons[i].addEventListener("click", function () {
+        location.assign("/plans");
+      });
+
+    }
+
+  }
+
+
 } // listeners end
 
 if (!document.getElementsByClassName("loader")[0]) {

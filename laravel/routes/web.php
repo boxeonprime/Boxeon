@@ -42,7 +42,10 @@ Route::middleware('cache.headers:public;max_age=2628000')->group(function () {
 
 Route::get('/mealkit', 'App\Http\Controllers\SchoolController@recipes')->name('mealkit');
 Route::get('/recipe/{uri}', 'App\Http\Controllers\SchoolController@recipe')->name('recipe');
-Route::get('/recipes', 'App\Http\Controllers\SchoolController@home')->name('recipes.home');
+Route::get('/meals', 'App\Http\Controllers\ShopController@meals')->name('shop.meals');
+Route::get('/menus', 'App\Http\Controllers\ShopController@menus')->name('shop.menus');
+Route::get('/plans', 'App\Http\Controllers\ShopController@plans')->name('shop.plans');
+
 
 Route::get('/gifts', 'App\Http\Controllers\InvitationsController@gifts')->name('gifts');
 Route::get('/terms', 'App\Http\Controllers\HomeController@terms')->name('terms');
@@ -91,8 +94,8 @@ Route::prefix('nearme')->group(function () {
 
 #SHOP
 Route::prefix('shop')->group(function () {
-    Route::get('/item', 'App\Http\Controllers\ShopController@item')->name('shop.item');
-    Route::get('/index', 'App\Http\Controllers\ShopController@index')->name('shop.index');
+   // Route::get('/item', 'App\Http\Controllers\ShopController@item')->name('shop.item');
+    Route::get('/promo', 'App\Http\Controllers\ShopController@promo')->name('shop.promo');
 
 });
 
@@ -125,7 +128,7 @@ Route::prefix('mail')->group(function () {
 
 Route::group(['middleware' => ['auth:sanctum']], function () {
 
-    Route::get('/home/index', 'App\Http\Controllers\HomeController@dashboard')->name('home.index');
+    Route::get('/dashboard', 'App\Http\Controllers\HomeController@dashboard')->name('home.dashboard');
     Route::get('/home/subscriptions', 'App\Http\Controllers\HomeController@subscriptions')->name('home.subscriptions');
     Route::get('/home/subscribers', 'App\Http\Controllers\HomeController@subscribers')->name('home.subscribers');
 

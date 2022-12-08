@@ -3,7 +3,7 @@
 @section('content')
     <main>
         <section class='section rounded-corners card maxw1036'>
-            @include('includes.category-nav')
+       
             <h2 class="font-size-2-em margin-bottom-zero">Returns & refunds</h2>
             <div class="div-horizontal-rule"></div>
             <p>
