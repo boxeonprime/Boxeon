@@ -77,7 +77,10 @@
                     <p>Recipes per week</p>
                     <div class="people-options five-col-grid">
                         <p data-type-recipes="2" class="plan-recipes border-right-zero">2</p>
-                        <p data-type-recipes="3" class="plan-recipes border-right-zero">3</p>
+                        <p data-type-recipes="3" class="plan-recipes border-right-zero"><span class="relative-position">
+                            <img id="super" width="16px" height="16px"
+                            src="{{ asset('../assets/images/fav.webp') }}" alt="Heart">    
+                        </span>3</p>
                         <p data-type-recipes="4" class="plan-recipes border-right-zero">4</p>
                         <p data-type-recipes="5" class="plan-recipes border-right-zero">5</p>
                         <p data-type-recipes="6"  class="plan-recipes">6</p>
@@ -116,9 +119,8 @@
                 </div>
                 <br>
             </section>
-           
         </div>
-        <button data-recipes="2" data-name="15-Minute Reliable Meal Kit" data-people="2" data-img="/sisi.webp" data-price="" class="cart-add button center">SELECT THIS PLAN</button>
+        <button id="select-plan" data-recipes="2" data-name="" data-people="2" data-img="/logo-square.webp" data-price="" class="cart-add button center">SELECT THIS PLAN</button>
 
     </section>
 

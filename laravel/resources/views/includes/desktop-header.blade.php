@@ -10,7 +10,7 @@
         
         <a class="button hide" href="/menus" title="Weekly Menu">Weekly Menus</a>
         <a class="button hide" href="/plans" title="Plans">Our Plans</a>
-        <a class="button hide" href="/shop/promo" title="Promo">Get 16 Free Meals + 3 Surprise Gifts<img id="white-arrow" width="15px" height="15px" src="../assets/images/arrow_forward-white.webp"></a>
+        <a class="button hide w100per" href="/shop/promo" title="Promo">Get 16 Free Meals + 3 Surprise Gifts<img id="white-arrow" width="15px" height="15px" src="../assets/images/arrow_forward-white.webp"></a>
         <span class="hack"></span>
 
         @auth

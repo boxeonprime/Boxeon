@@ -3,11 +3,11 @@
 @section('content')
     <main>
         <section class="section card maxw1035">
-            @include('includes.category-nav')
+       
             <div id="blogs-stream" class='two-col-grid'>
                 <div>
 
-                    <a href="/blog/post/"> <img class="maxw600px" src='{{ asset('../assets/images/placeholder.webp')}}' /></a>
+                    <a href="/blog/post/"> <img class="maxw600px" src='{{ asset('../assets/images//placeholder-small.webp')}}' /></a>
                     <a href="#">
                         <h1 class="extra-large-font maxw600px primary-color">Where to get spices or ingredients for Nigerian or West African dishes?</h1>
                     </a>
@@ -21,7 +21,7 @@
                 </div>
 
                 <div>
-                    <a href="#"> <img class="w100per" src="../assets/images/placeholder.webp" /></a>
+                    <a href="#"> <img class="w100per" src="../assets/images//placeholder-small.webp" /></a>
 
                     <a href="#">
                         <h2 class="primary-color">Lorem ipsum dolor sit amet</h2>
@@ -37,7 +37,7 @@
             <hr>
 
             <div class="three-col-grid">
-                <a href="#"> <img class="maxw200px" src="../assets/images/placeholder.webp" /></a>
+                <a href="#"> <img class="maxw200px" src="../assets/images//placeholder-small.webp" /></a>
                 <a href="#">
                     <h2 class="primary-color">Where to get spices or ingredients for Nigerian or West African dishes?</h2>
                 </a>
@@ -58,19 +58,19 @@
 
             <div class="three-col-grid">
                 <div>
-                <a href="#"> <img class="maxw300px" src="../assets/images/placeholder.webp" /></a>
+                <a href="#"> <img class="maxw300px" src="../assets/images//placeholder-small.webp" /></a>
                 <a href="#">
                     <h2 class="primary-color">Charities our subscriptions support</h2>
                 </a>
                 </div>
             <div>
-                <a href="#"> <img class="maxw300px" src="../assets/images/placeholder.webp" /></a>
+                <a href="#"> <img class="maxw300px" src="../assets/images//placeholder-small.webp" /></a>
                 <a href="#">
                     <h2 class="primary-color">Charities our subscriptions support</h2>
                 </a>
             </div>
             <div>
-                <a href="#"> <img class="maxw300px" src="../assets/images/placeholder.webp" /></a>
+                <a href="#"> <img class="maxw300px" src="../assets/images//placeholder-small.webp" /></a>
                 <a href="#">
                     <h2 class="primary-color">Charities our subscriptions support</h2>
                 </a>

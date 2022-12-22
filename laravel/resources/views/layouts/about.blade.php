@@ -7,7 +7,7 @@
 </head>
 
 <body id='index' class="neon-green-bg">
-    <div id="container" class="neon-green-bg">
+    <div id="container" class="bg-black">
         <span></span><!-- Hack-->
         @include('includes.header')
         @include('includes.menus.index')

@@ -965,29 +965,62 @@ window.onload = function () {
     var total = btns.length;
     for (var i = 0; i < total; i++) {
       btns[i].addEventListener('click', function () {
+
         let a = this;
         var check = a.getElementsByClassName("check-circle")[0];
+
         if (check.style.display == "block") {
+
           check.style.display = "none";
+
           // Check all options to see if not selected
           let options = document.getElementsByClassName("check-circle");
           for (var i = 0; i < options.length; i++) {
             if (options[i].style.display == "block") {
 
-             isValid = true;
+             isValid = true; break;
 
             }
           }
           if (isValid == false) {
+           
             document.getElementById("warning").style.visibility = "visible";
           }
+
+        // -ve Update button data
+        var btn = document.getElementById("select-plan");
+
+        if(btn.getAttribute("data-name")){
+
+          var planName = btn.getAttribute("data-name");
+
+          var regex = a.getAttribute("data-type-name");
+
+          var replacedstring = planName.replace(regex, ''); 
+
+          btn.setAttribute("data-name", replacedstring );
+
+        
+        }
+
         } else {
+
           check.style.display = "block";
           if (document.getElementById("warning").style.visibility == "visible") {
             document.getElementById("warning").style.visibility = "hidden";
           }
           
-          
+                  //Update button data
+        var btn = document.getElementById("select-plan");
+        if(btn.getAttribute("data-name")){
+
+          var planName = btn.getAttribute("data-name");
+          var newString = planName + " " + a.getAttribute("data-type-name");
+          btn.setAttribute("data-name", newString );
+
+        }else{
+         btn.setAttribute("data-name", a.getAttribute("data-type-name") );
+        }
         }
 
       });

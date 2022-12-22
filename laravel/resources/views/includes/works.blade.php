@@ -28,4 +28,5 @@
                     <p class="centered">Boxeon makes cooking fast, so you have more time to unwind and be with fam.</p>
                 </div>
             </div>
+            <a href="/plans" class="button  margin-auto clearbtn">Get Started</a>
         </section>
